@@ -1,0 +1,24 @@
+<link href="/assets/painel/css/saldo.css" rel="stylesheet" type="text/css">
+<div class="bg-saldo animated">
+	<div class="saldo animated">
+		<ul>
+			<a class="fechar" href="javascript:;" onclick="fechaSaldo();"><i class="fas fa-times"></i></a>
+			<li>
+				<span class="head">Campanhas <span><b><i class="fas fa-database "></i></b></span></span>
+				<span class="numero"><?php echo $this->layout()->saldoAtual['campanhas']; ?></span>
+			</li>
+			<li>
+				<span class="head">Validação <span><i class="far fa-check-circle"></i></span></span>
+				<span class="numero"><?php echo $this->layout()->saldoAtual['validacao'];?></span>
+			</li>
+			<li>
+				<span class="head">Complementos <span><i class="far fa-check-circle"></i> <i class="far fa-check-circle"></i></span></span>
+				<span class="numero"><?php echo $this->layout()->saldoAtual['complemento']; ?></span>
+			</li>
+			<li>
+				<span class="head">Comportamento <span><i class="far fa-check-circle"></i> <i class="far fa-check-circle"></i> <i class="far fa-check-circle"></i></span></span>
+				<span class="numero"><?php echo $this->layout()->saldoAtual['comportamento']; ?></span>
+			</li>
+		</ul>
+	</div>
+</div>

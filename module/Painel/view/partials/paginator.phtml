@@ -1,0 +1,67 @@
+<?php
+
+	$name_page = $_GET['name_page'];
+	$local_page = $_GET['local_page'];
+	unset($_GET['name_page']);
+	unset($_GET['local_page']);
+	
+	$q = \Naicheframework\Security\Security::antiInjection($_GET);
+	
+	if ( empty($name_page) ){
+		$p = $q['page'];
+		unset($q['page']);
+		$name_page = 'page';
+	} else {
+		$p = $q[$name_page];
+		unset($q[$name_page]);
+		$name_page = $name_page;
+	}
+	
+	$p = $p == NULL ? '1' : $p;
+	
+	$q = http_build_query($q);
+	$q = !empty($q) ? '&' . $q : null;
+	
+	if ( $local_page ) $q = $q.'#'.$local_page;
+	
+	$valida = explode( '?', $this->url );
+	$valida = count( $valida );
+	
+?>
+
+<?php if( $this->pageCount>1 ): ?>
+<ul class="paginator">	
+	
+	<!-- PREV -->
+	<li>
+    <?php if (isset($this->previous)): ?>
+    	<a href="/<?php echo $this->url; ?><?php echo $valida == 1 ? '?' : '&'; ?><?php echo $name_page; ?>=<?php echo $this->previous . $q; ?>" class="prev"><i class="fa fa-angle-left"></i></a>
+    <?php else: ?>
+        <a href="javascript:;" class="prev disabled"><i class="fa fa-angle-left"></i></a>
+    <?php endif; ?>
+	</li>
+	
+	<!-- PAGINATION -->
+    <?php foreach ($this->pagesInRange as $page): ?>
+    	
+    	<li>
+        <?php if ($page != $p): ?>
+            <a href="/<?php echo $this->url; ?><?php echo $valida == 1 ? '?' : '&'; ?><?php echo $name_page; ?>=<?php echo $page . $q; ?>">
+				<?php echo $page; ?>
+            </a>
+        <?php else: ?>
+           	<a href="javascript:;" class="active"><?php echo $page; ?></a>
+        <?php endif; ?>
+        </li>
+    <?php endforeach; ?>
+    
+    <!-- NEXT -->
+    <li>
+    <?php if (isset($this->next)): ?>
+    	<a href="/<?php echo $this->url; ?><?php echo $valida == 1 ? '?' : '&'; ?><?php echo $name_page; ?>=<?php echo $this->next . $q; ?>" class="next"><i class="fa fa-angle-right"></i></a>
+    <?php else: ?>
+        <a href="javascript:;" class="next disabled"><i class="fa fa-angle-right"></i></a>
+    <?php endif; ?>
+    </li>
+</ul>
+<?php endif; ?>

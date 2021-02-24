@@ -1,0 +1,23 @@
+<?php include 'module/Application/view/partials/headers/topo-cadastro.phtml'; ?>
+<div class="container">
+	<div class="box-full">
+		<div id="box-login" class="height-ajst">
+			<form id="form-submit" method="post" action="/<?php echo $this->layout()->routes['controller'];?>/muda-senha">
+				<label class="input-100">
+					<span>Nova Senha</span>
+					<input type="password" name="senha" value="" placeholder="">
+				</label>
+				
+				<label class="input-100">
+					<span>Repetir Senha</span>
+					<input type="password" name="repetir_senha" value="" placeholder="">
+				</label>
+				<input type="submit" style="display: none;">
+				<input type="hidden" name="method" value="recuperarSenhaPro">
+				<input type="hidden" name="slug" value="<?php echo $this->slug;?>">
+			</form>
+			<a class="button" onclick="$('#form-submit').submit();" href="javascript:;">Trocar senha</a>
+			<a class="n-cadastrado" href="/cadastro">Não é Cadastrado?</a>
+		</div>
+	</div>
+</div>

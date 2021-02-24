@@ -1,0 +1,65 @@
+<?php 
+	$title = '<span style="margin-top:20px; display: inline-block;">Trilha 3</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+<div class="container">
+	
+	<div class="content">
+	
+		<div class="content-left">
+			
+			<p class="tittle">Quais carreiras te atraem mais?</p>
+			
+			<p class="text-content">Procure responder às perguntas com honestidade e prossiga rapidamente. Quando tiver que fazer pontuações, evite as extremas quando não tiver absoluta certeza de ter sentimentos definidos na direção contrária.</p>
+		
+		</div>
+		
+		<div class="content-right">
+			
+			<a class="grafico"></a>
+			
+		</div>
+		
+	</div>	
+	
+	<div class="line" id="line-anc"></div>
+	
+	<form class="pesq-3" method="post" id="form-submit">
+		
+		<p class="pesq-tittle">
+			1. Observe essa figura e escolha o cargo que daria o match perfeito com você:
+		</p>
+		<p class="pesq-desc">
+			Escolha uma das imagens abaixo
+		</p>
+		
+		<div class="options" data-question="<?php echo $_GET['pg']; ?>">
+		
+			<a class="option" data-name="Gerencial" data-value="5" style="background: url('/assets/application/img/pesquisa3/option-1.png');"></a>
+			<a class="option" data-name="Especialista" data-value="5" style="background: url('/assets/application/img/pesquisa3/option-2.png');"></a>
+			
+		</div>
+
+		<input type="hidden" name="prev" value="<?php echo $prev; ?>">
+		<input type="hidden" name="next" value="<?php echo $next; ?>">
+		<input type="hidden" class="result">
+	
+	</form>
+	
+	<div class="line-buttons">
+		
+		<a class="button width-ajst" href="/minha-conta">Voltar</a>
+		
+		<div class="pagination">
+			
+			<a class="arrow-prev" href="/minha-conta"><i class="fas fa-caret-left"></i></a>
+			<p>1 | 24 </p>
+			<a class="arrow-next" href="javascript:$('#form-submit').submit();"><i class="fas fa-caret-right"></i></a>
+		
+		</div>
+	
+		<a class="button-blue width-ajst" href="javascript:$('#form-submit').submit();">Próxima</a>
+	
+	</div>
+	
+</div>

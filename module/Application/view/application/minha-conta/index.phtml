@@ -1,0 +1,139 @@
+<?php include 'module/Application/view/partials/headers/topo-minhaconta.phtml'; ?>
+
+<div id="barra-progresso">
+	<div class="container">
+		<div class="barra-pd">
+			<span class="tittle-des">Desenvolvimento na Trilha WantU</span>
+			<div class="bar-progresso">
+				<span class="dot1"></span>
+				<span class="bar"></span>
+				<span class="dot2"></span>
+				<a class="caneta" style="left:0%;"></a>
+			</div>
+			<script>
+				$('.caneta').animate({'left':'<?php echo $avanco ?>%'},1000);
+			</script>
+			<p class="text-prog"><span>0<?php echo $feitos ?></span>/09</p>
+		</div>
+	</div>
+	
+</div>
+
+<div id="testes">
+	<div class="container">
+		<p class="tittle-vc">Vamos Começar?</p>
+		<div class="row">
+			
+			
+			<?php if ($data_user['analise_de_curriculo'] == 'Completo') { ?>
+			
+				<div class="box-teste" style="background-position: 251px 18px; background-image: url('/assets/application/img/minhaconta/icon-box6.png'); float: left;">
+					<i class="icon-num">1</i>
+					<div class="box-teste-bts">
+						<a class="button-c1" href="/minha-conta/curriculo/<?php echo $this->layout()->me->id_login ?>">Visualizar currículo</a>
+						<a class="button-c2" href="/trilha1">Editar currículo</a>
+					</div>
+				</div>
+			
+			<?php } else { ?>
+			
+				<a class="box-teste" href="/trilha1" style="background-position: 251px 18px; background-image: url('/assets/application/img/minhaconta/icon-box6.png');">
+					<i class="icon-num">1</i>
+					<span class="text-box">Por onde começar? Quais experiências você já viveu até aqui?</span>
+				</a>
+			
+			<?php } ?>
+			
+			
+			<a class="box-teste" 
+				<?php if ($data_user['perfil_comportamental'] == 'Completo') {?> href="/minha-conta/trilha2-relatorio/<?php echo $this->layout()->me->id_login ?>" <?php } else { ?> href="/trilha2" <?php } ?> 
+				style="background-position: 260px -9px; background-image: url('/assets/application/img/minhaconta/icon-box1.png');">
+				
+				<?php if ($data_user['perfil_comportamental'] == 'Completo') {?>
+					<span class="view-rel">Clique para visualizar o seu relatório</span>
+				<?php } ?>
+				<span class="text-box <?php if ($data_user['perfil_comportamental'] == 'Completo') { ?>completo <?php } ?>">Como você tende a se comportar nas diversas situações do dia-a-dia?</span>
+				<span class="check" style="<?php if ($data_user['perfil_comportamental'] == 'Completo') {?> display: inline-block;  <?php } else { ?> display: none; <?php } ?>"></span>
+				<i class="icon-num">2</i>
+			</a>
+			
+			<a class="box-teste" 
+				<?php if ($data_user['aptidoes_profissionais'] == 'Completo') {?> href="/minha-conta/trilha3-relatorio/<?php echo $this->layout()->me->id_login ?>" <?php } else { ?> href="/trilha3?pg=1" <?php } ?> 
+				style="background-position: 200px -9px; background-image: url('/assets/application/img/minhaconta/icon-box2.png');">
+				
+				<?php if ($data_user['aptidoes_profissionais'] == 'Completo') {?>
+					<span class="view-rel">Clique para visualizar o seu relatório</span>
+				<?php } ?>
+				<span class="text-box <?php if ($data_user['aptidoes_profissionais'] == 'Completo') { ?>completo <?php } ?>">Quais carreiras te atraem mais?</span>
+				<span class="check" style="<?php if ($data_user['aptidoes_profissionais'] == 'Completo') {?> display: inline-block;  <?php } else { ?> display: none; <?php } ?>"></span>
+				<i class="icon-num">3</i>
+			</a>
+			
+			<a class="box-teste" 
+				<?php if ($data_user['inteligencias_multiplas'] == 'Completo') {?> href="/minha-conta/trilha4-relatorio/<?php echo $this->layout()->me->id_login ?>" <?php } else { ?> href="/trilha4?pg=1" <?php } ?> 
+				style="background-position: 200px -8px; background-image: url('/assets/application/img/minhaconta/icon-box3.png');">
+				
+				<?php if ($data_user['inteligencias_multiplas'] == 'Completo') {?>
+					<span class="view-rel">Clique para visualizar o seu relatório</span>
+				<?php } ?>
+				<span class="text-box <?php if ($data_user['inteligencias_multiplas'] == 'Completo') { ?>completo <?php } ?>">Como você aprende melhor?</span>
+				<span class="check" style="<?php if ($data_user['inteligencias_multiplas'] == 'Completo') {?> display: inline-block;  <?php } else { ?> display: none; <?php } ?>"></span>
+				<i class="icon-num">4</i>
+			</a>
+			
+			<a class="box-teste" 
+				<?php if ($data_user['pontos_fortes'] == 'Completo') {?> href="/minha-conta/trilha5-relatorio/<?php echo $this->layout()->me->id_login ?>" <?php } else { ?> href="/trilha5" <?php } ?> 
+				style="background-position: 243px 8px; background-image: url('/assets/application/img/minhaconta/icon-box4.png');">
+				
+				<?php if ($data_user['pontos_fortes'] == 'Completo') {?>
+					<span class="view-rel">Clique para visualizar o seu relatório</span>
+				<?php } ?>
+				<span class="text-box <?php if ($data_user['pontos_fortes'] == 'Completo') { ?>completo <?php } ?>">Quais são seus talentos extraordinários?</span>
+				<span class="check" style="<?php if ($data_user['pontos_fortes'] == 'Completo') {?> display: inline-block;  <?php } else { ?> display: none; <?php } ?>"></span>
+				<i class="icon-num">5</i>
+			</a>
+			
+			<a class="box-teste" 
+				
+				<?php if ($data_user['competencias'] == 'Completo') {?> href="/minha-conta/trilha6-relatorio/<?php echo $this->layout()->me->id_login ?>" <?php } else { ?> href="/trilha6" <?php } ?> 
+				style="background-position: 245px 0px; background-image: url('/assets/application/img/minhaconta/icon-box5.png');">
+
+				<?php if ($data_user['competencias'] == 'Completo') {?>
+					<span class="view-rel">Clique para visualizar o seu relatório</span>
+				<?php } ?>
+				<span class="text-box <?php if ($data_user['competencias'] == 'Completo') { ?>completo <?php } ?>">Quais são suas principais competências?</span>
+				<span class="check" style="<?php if ($data_user['competencias'] == 'Completo') {?> display: inline-block;  <?php } else { ?> display: none; <?php } ?>"></span>
+				<i class="icon-num">6</i>
+			</a>
+			
+			<a class="box-teste" 
+				
+				<?php if ( $feitos >= 6) {  ?>href="/minha-conta/relatorio-final/<?php echo $data_user['id_login']?>"<?php } ?>
+
+				style="background-position: 242px 0px; background-image: url('/assets/application/img/minhaconta/icon-box8.png');">
+				<i class="icon-num">7</i>
+				<span class="text-box"> E agora, qual caminho seguir? Qual carreira combina mais com você?</span>
+				<span class="check" style="<?php if ( $feitos >= 6) { ?> display: inline-block;  <?php } else { ?> display: none; <?php } ?>"></span>
+			</a>
+			
+			<a class="box-teste" 
+			<?php if (!empty($analise['id_login'])){ ?> target="_blank" href="/minha-conta/relatorio-ip/<?php echo $data_user['id_login']?>" <?php } ?>
+				style="background-position: 215px 9px; background-image: url('/assets/application/img/minhaconta/icon-box7.png');">
+				<i class="icon-num">8</i>
+				<span class="text-box">O quanto você está perto de alcançar uma carreira de sucesso?</span>
+				<span class="check" style="<?php if (!empty($analise['id_login'])){ ?> display: inline-block;  <?php } else { ?> display: none; <?php } ?>"></span>
+			</a>
+			
+			<a class="box-teste" 
+				<?php if (!empty($data_user['file_pdi'])){ ?> target="_blank" href="/assets/application/uploads/pdi/<?php echo $data_user['file_pdi']?>" <?php } ?>
+				style="background-position: 221px -5px; background-image: url('/assets/application/img/minhaconta/icon-box9.png');">
+				<i class="icon-num">9</i>
+				<span class="text-box">O que você deve fazer para chegar lá? </span>
+				<span class="check" style="<?php if (!empty($data_user['file_pdi'])){ ?> display: inline-block;  <?php } else { ?> display: none; <?php } ?>"></span>
+			</a>
+			
+			
+			
+		</div>
+	</div>
+</div>

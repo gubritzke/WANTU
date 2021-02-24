@@ -1,0 +1,71 @@
+<div class="row">
+
+	<form method="get" class="filter default">	
+
+
+
+		<div class="column column-12 margin-align2" align="right">
+
+			<a href="javascript:location.reload();" class="bt bt-inline bt-round bg-orange2 button-ajst">Atualizar <i class="fa fa-refresh"></i></a>
+
+			<a href="/painel/blog/formulario" class="bt bt-inline bt-round bg-blue">Adicionar Post</a>
+
+		</div>
+
+		
+
+	</form>
+
+	
+
+</div>
+
+	
+
+<hr>
+		
+<table class="content">
+<thead>
+	<tr>
+		<th width="1">ID</th>
+		<th width="600">Titulo</th>
+		<th width="150" style="text-align: center;">imagem</th>
+		<th width="150" style="text-align: center;">status</th>
+		<th width="150" style="text-align: center;">Data</th>
+		<th width="150" style="text-align: center;">Editar</th>
+		<th width="150" style="text-align: center;">excluir</th>
+	</tr>
+</thead>
+
+<tbody>
+		<?php foreach ($result as $row): ?>
+			<tr>
+				<td align="center"><?php echo $row->id_blog ?></td>
+				<td><?php echo $row->titulo ?></td>
+				<td style="text-align: center;"><img width="100" src="/assets/application/uploads/blog/<?php echo $row['imagem'];?>"/></td>
+				<td style="text-align: center;"><?php echo $row->status ?></td>
+				<td style="text-align: center;"><?php echo date('d/m/y', strtotime($row->criado)); ?></td>
+				<td style="text-align: center;"><a href="/painel/blog/editar/<?php echo $row->id_blog ?>" class="editar-button">Editar</a></td>
+				<td style="text-align: center;"><a href="javascript:;" class="delete excluir-button" data-href="/painel/blog/deletar/<?php echo $row->id_blog ?>">Excluir</a></td>
+			</tr>
+		<?php endforeach; ?>
+</tbody>
+
+</table>
+
+<script>
+
+	$('.delete').on('click', function(){
+
+		var hrefDelete = $(this).data('href');
+
+		if( confirm("Deseja realmente fazer isso?") ) {
+
+			location.href=hrefDelete;
+			
+		}
+		
+
+	});
+
+</script>

@@ -1,0 +1,12 @@
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-06-24 10:55:37","ip":"10.0.0.200"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-06-24 17:55:11","ip":"10.0.0.200"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-06-24 18:14:46","ip":"10.0.0.200"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/analise\/progresso\/caminhi\/1.png","type":"ERROR","message":"404","page":"\/assets\/application\/img\/analise\/progresso\/caminhi\/1.png","date":"2018-06-24 18:35:57","ip":"10.0.0.200"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/analise\/progresso\/caminhi\/1.png","type":"ERROR","message":"404","page":"\/assets\/application\/img\/analise\/progresso\/caminhi\/1.png","date":"2018-06-24 18:35:59","ip":"10.0.0.200"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-06-24 18:36:00","ip":"10.0.0.200"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/analise\/progresso\/caminho\/1.png","type":"ERROR","message":"404","page":"\/assets\/application\/img\/analise\/progresso\/caminho\/1.png","date":"2018-06-24 18:36:15","ip":"10.0.0.200"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-06-24 18:36:16","ip":"10.0.0.200"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-06-24 18:36:50","ip":"10.0.0.200"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-06-24 18:37:25","ip":"10.0.0.200"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-06-24 18:38:18","ip":"10.0.0.200"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-06-24 18:40:56","ip":"10.0.0.200"}

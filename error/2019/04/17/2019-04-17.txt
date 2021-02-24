@@ -1,0 +1,13 @@
+{"url":"10.0.0.224:8342\/painel\/usuarios\/save","type":"ERROR","message":"404","page":"\/painel\/usuarios\/save","date":"2019-04-17 16:01:24","ip":"10.0.2.29","post":{"banner":"","link":"","id_login":"1","method":"save"}}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-17 16:01:24","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/save","type":"ERROR","message":"404","page":"\/painel\/usuarios\/save","date":"2019-04-17 16:02:38","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-17 16:02:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/save","type":"ERROR","message":"404","page":"\/painel\/usuarios\/save","date":"2019-04-17 16:03:35","ip":"10.0.2.29","post":{"banner":"","link":"","id_login":"1","method":"save"}}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-17 16:03:35","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-17 16:03:35","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/save","type":"ERROR","message":"404","page":"\/painel\/usuarios\/save","date":"2019-04-17 16:05:38","ip":"10.0.2.29","post":{"banner":"","link":"","id_login":"1","method":"save"}}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-17 16:05:38","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-17 16:05:38","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/save","type":"ERROR","message":"404","page":"\/painel\/usuarios\/save","date":"2019-04-17 16:10:34","ip":"10.0.2.29","post":{"id_login":"1","method":"save"}}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-17 16:10:34","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-17 16:10:34","ip":"10.0.2.29"}

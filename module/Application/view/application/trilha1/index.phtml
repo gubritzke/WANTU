@@ -1,0 +1,125 @@
+<?php 
+	$title = '<span style="margin-top:20px; display: inline-block;">Trilha 1</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml'; 
+?>
+<link href="/assets/application/js/extensions/jquery.tooltipster/dist/css/tooltipster.bundle.min.css" media="" rel="stylesheet" type="text/css">
+
+<div id="full-teste">
+	<div class="container">
+		<div class="progresso">
+			<?php include 'module/Application/view/application/trilha1/progresso.phtml'; ?>
+		</div>
+		
+		<div class="formulario">
+			<div class="form-align">
+				<p class="tittle">Dados Pessoais</p>
+				<form id="form-submit1" class="validate" method="post">
+				
+					<label class="input-50">
+						<span>Data de Nascimento</span>
+						<input type="text" name="data_de_nascimento" value="<?php echo $this->layout()->me->nascimento ?>" >
+					</label>
+					
+					<label class="select-50 right">
+						<span>Sexo</span>
+						<select name="sexo">
+							<option></option>
+							<option value="Feminino">Feminino</option>
+							<option value="Masculino">Masculino</option>
+							<option value="Não informar">Não informar</option>
+						</select>
+					</label>
+					
+					<label class="select-50">
+						<span>Estado Civil</span>
+						<select name="estado_civil">
+							<option>Solteiro(a)</option>
+							<option>Casado(a)</option>
+							<option>Divorciado(a)</option>
+							<option>Viúvo(a)</option>
+							<option>Separado(a)</option>
+							<option>Amasiado(a) / União Estável</option>
+							<option>Outro</option>
+						</select>
+					</label>
+					
+					<label class="select-50 right">
+						<span>Filhos?</span>
+						<select name="filhos">
+							<option></option>
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>Outro</option>
+						</select>
+					</label>
+	
+					<label class="input-50">
+						<span>Nacionalidade</span>
+						<input type="text" name="nacionalidade" value="">
+					</label>
+					
+					<label class="input-50 right">
+						<span>CEP</span>
+						<input type="text" name="cep" value="<?php echo $this->layout()->me->cep ?>">
+					</label>
+					
+					<label class="input-75">
+						<span>Endereço</span>
+						<input type="text" name="endereco" value="<?php echo $this->layout()->me->endereco ?>">
+					</label>
+					
+					<label class="input-25 right">
+						<span>Nº</span>
+						<input type="text" name="numero" value="<?php echo $this->layout()->me->numero ?>">
+					</label>
+					
+					<label class="input-50">
+						<span>Complemento</span>
+						<input type="text" name="complemento" value="<?php echo $this->layout()->me->complemento ?>">
+					</label>
+					
+					<label class="input-50 right">
+						<span>Bairro</span>
+						<input type="text" name="bairro" value="<?php echo $this->layout()->me->bairro ?>">
+					</label>
+					
+					<label class="select-50">
+						<span>Estado</span>
+						<select name="estado">
+							<option disabled selected>UF</option>
+							<?php foreach ( $states as $key => $row ){ ?>
+							<option <?php echo $this->layout()->me->estado == $key ? 'selected' : '' ?> value="<?php echo $key?>"><?php echo $row?></option>
+							<?php } ?>
+						</select>
+					</label>
+
+					<label class="input-50 right">
+						<span>Cidade</span>
+						<input type="text" name="cidade" value="<?php echo $this->layout()->me->cidade ?>">
+					</label>
+					
+					<label class="input-50">
+						<span>Tel. Residencial</span>
+						<input type="text" name="telefone_residencial" value="">
+					</label>
+					
+					<label class="input-50 right">
+						<span>Tel. Celular</span>
+						<input type="text" name="telefone_celular" value="<?php echo $this->layout()->me->telefone?>">
+					</label>
+					
+					<input type="hidden" name="code" value="<?php echo $data->id_analise_de_curriculo; ?>"/>
+ 					<input type="hidden" name="method" value="salvarEtapa1" />
+ 					
+				</form>
+				<div class="buttons">
+					<a class="button-voltar" href="/minha-conta">voltar</a>
+					<a class="button right" href="javascript:$('#form-submit1').submit();">Próximo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,454 @@
+<div class="container">
+	<div class="row">
+	
+		<form method="get" class="filter default">
+			<div class="column column-4 margin-align">
+						
+				<div class="inline icon-right" align="left">
+		        	<b>DATA DE</b><br/>
+		        	<input type="text" name="data_inicial" value="<?php echo !empty($this->filter['data_inicial']) ? $this->filter['data_inicial'] : null; ?>" id="calendar_range_from" class="calendar_range_from" data-parent="calendar_range_to" />
+		        	<i class="far fa-calendar-alt"></i>
+		        </div>
+		        		
+		        <div class="inline icon-right" align="left">
+		        	<b>ATÉ</b><br/>
+		        	<input type="text" name="data_final" value="<?php echo !empty($this->filter['data_final']) ? $this->filter['data_final'] : null; ?>" id="calendar_range_to" class="calendar_range_to" data-parent="calendar_range_from" />
+		        	<i class="far fa-calendar-alt"></i>
+		      	</div>
+						
+				<button type="submit" class="bt bt-inline bt-round bg-orange" onclick="$(this).parents('form').submit();"><i class="fa fa-search"></i></button>
+			</div>
+		</form>
+				
+		<form method="get" class="filter default">	
+			<div class="column column-4 margin-align2" align="center">
+				<span class="font-small">Filtro: </span>
+				<div class="inline margin-select" align="left">
+					<select class="select-search">
+						<option>Análise de Currículo</option>
+						<option>Análise de Currículo</option>
+						<option>Análise de Currículo</option>
+					</select>
+		        </div>
+		        		
+		        <div class="inline" align="left">
+					<select class="select-search">
+						<option>Finalizado</option>
+						<option>Finalizado</option>
+						<option>Finalizado</option>
+					</select>
+		        </div>
+			</div>
+
+			<div class="column column-4 margin-align2" align="right">
+				<a href="javascript:location.reload();" class="bt bt-inline bt-round bg-orange2 button-ajst">Atualizar <i class="fa fa-refresh"></i></a>
+				<a href="javascript:location.reload();" class="bt bt-inline bt-round bg-blue">Exportar CSV <i class="fa fa-refresh"></i></a>
+			</div>
+			
+		</form>
+		
+	</div>
+		
+	<hr />
+		
+	<div class="row">
+		<div class="column column-8">
+		
+<!-- 			ANALISE DE CURRICULO         -->
+			
+			<form method="post">
+				<table class="content">
+				<thead style="border-bottom: 2px solid #6f6f6f;">
+					<tr>
+						<th width="500" style="color: #84139e; font-size: 18px; text-transform: none; text-align: left !important;">Análise de currículo e entrevista</th>
+						<th width="200"></th>
+						<th width="200" style="text-align: center;">Aguardando</th>
+						<th width="50"></th>
+						<th width="170" style="text-align: center;"><a href="javascript:;" class="order" data-order="status">Status</a></th>
+						<th width="50"></th>
+						<th width="70"></th>
+					</tr>
+				</thead>
+				
+				<tbody class="font-small" class="lines-td">
+					<?php foreach ( $curriculo as $row ): $row = (object)$row; ?>
+					<?php // echo '<pre>'; print_r($row); ?>
+					<tr>
+						<td style="line-height: 42px;">
+							<img alt="" class="img-user" <?php if (!empty($row->imagem)){ ?>src="/assets/application/uploads/user/<?php echo $row->imagem ?>"<?php } else { ?> src="/assets/application/img/minhaconta/user-padrao.jpg"<?php } ?>>
+							<?php echo $row->nome; ?>
+						</td>
+						<td align="center">
+							<span class="font-blue">Data:</span> 
+							<?php echo date('d/m/Y', strtotime($row->criado)); ?>
+						</td>
+						<td align="center">
+							<label class="switch">
+								<input type="checkbox" name="aguardando" data-id="<?php echo $row->id_analise_de_curriculo; ?>" <?php echo ($row->aguardando== 1) ? 'checked="checked"' : null; ?> 
+								onchange="$('#inputValue').val($(this).is(':checked')); $('#inputId').val($(this).data('id')); $('#formStatus').submit();" />
+								<span class="slider"></span>
+							</label>
+						</td>
+						<td align="center">
+							<a href="javascript:;"><i class="far fa-file-alt ico-size"></i></a>
+						</td>
+						<td align="center">
+							<a class="arquive-stats" href="javascript:;">Finalizado</a>
+						</td>
+						<td align="center">
+							<a href="javascript:;"><i class="fas fa-pencil-alt ico-size"></i></a>
+						</td>
+						<td align="center">
+							<a href="/painel/relatorios-gerais/analise/<?php echo $row->id_login; ?>" class="button-dowload"><img alt="" src="/assets/application/img/analise/seta.png"></a>
+						</td>
+					</tr>
+					<?php  endforeach; ?>
+				</tbody>
+				</table>
+				
+				<div class="right" align="right">
+					<?php echo $this->pagination($this->pagination); ?>
+				</div>
+				
+				<div class="paginacao" style="clear:both;">
+					<?php
+					$url = "painel/relatorios-gerais/";
+					$_GET['name_page'] = 'page_6';
+					$_GET['local_page'] = 'curriculo';
+					echo $this->paginationControl($curriculo, 'sliding', 'partials/paginator.phtml', ['url' => $url]);
+					?>
+				</div>
+				
+				<input type="hidden" name="method" value="delete" />
+			</form>
+			
+<!-- 			ANALISE DE PERFIL         -->
+			
+			<form method="post" id="analise">
+				<table class="content">
+				<thead style="border-bottom: 2px solid #6f6f6f;">
+					<tr>
+						<th width="400" style="color: #84139e; font-size: 18px; text-transform: none;">Análise de Perfis Comportamentais</th>
+						<th width="200"></th>
+						<th width="200" style="text-align: center;"></th>
+						<th width="50"></th>
+						<th width="170" style="text-align: center;"><a href="javascript:;" class="order" data-order="status">Status</a></th>
+						<th width="50"></th>
+						<th width="70"></th>
+					</tr>
+				</thead>
+				
+				<tbody class="font-small" class="lines-td">
+					<?php foreach ( $perfil as $row ): $row = (object)$row; ?>
+					<tr>
+						<td style="line-height: 42px;">
+							<img alt="" class="img-user" <?php if (!empty($row->imagem)){ ?>src="/assets/application/uploads/user/<?php echo $row->imagem ?>"<?php } else { ?> src="/assets/application/img/minhaconta/user-padrao.jpg"<?php } ?>>
+							<?php echo $row->nome; ?>
+						</td>
+						<td align="center">
+							<span class="font-blue">Data:</span> 
+							<?php echo date('d/m/Y', strtotime($row->criado)); ?>
+						</td>
+						<td align="center">
+
+						</td>
+						<td align="center">
+							<a href="/painel/relatorios-gerais/relatorio-perfil/<?php echo $row->id_login; ?>"><i class="far fa-file-alt ico-size"></i></a>
+						</td>
+						<td align="center">
+							<a class="arquive-stats" href="javascript:;">Finalizado</a>
+						</td>
+						<td align="center">
+						</td>
+						<td align="center">
+						</td>
+					</tr>
+					<?php  endforeach; ?>
+				</tbody>
+				</table>
+				
+				<div class="right" align="right">
+					<?php echo $this->pagination($this->pagination); ?>
+				</div>
+				
+				<div class="paginacao" style="clear:both;">
+					<?php
+					$url = "painel/relatorios-gerais/";
+					$_GET['name_page'] = 'page_1';
+					$_GET['local_page'] = 'analise';
+					echo $this->paginationControl($perfil, 'sliding', 'partials/paginator.phtml', ['url' => $url]);
+					?>
+				</div>
+				
+				<input type="hidden" name="method" value="delete" />
+			</form>
+			
+<!-- 			ANALISE DE APTIDAO         -->
+			
+			<form method="post" id="aptidao">
+				<table class="content">
+				<thead style="border-bottom: 2px solid #6f6f6f;">
+					<tr>
+						<th width="400" style="color: #84139e; font-size: 18px; text-transform: none;">Análise de Aptidão Profissionais</th>
+						<th width="200"></th>
+						<th width="200" style="text-align: center;"></th>
+						<th width="50"></th>
+						<th width="170" style="text-align: center;"><a href="javascript:;" class="order" data-order="status">Status</a></th>
+						<th width="50"></th>
+						<th width="70"></th>
+					</tr>
+				</thead>
+				
+				<tbody class="font-small" class="lines-td">
+					<?php foreach ( $aptidao as $row ): $row = (object)$row; ?>
+					<tr>
+						<td style="line-height: 42px;">
+							<img alt="" class="img-user" <?php if (!empty($row->imagem)){ ?>src="/assets/application/uploads/user/<?php echo $row->imagem ?>"<?php } else { ?> src="/assets/application/img/minhaconta/user-padrao.jpg"<?php } ?>>
+							<?php echo $row->nome; ?>
+						</td>
+						<td align="center">
+							<span class="font-blue">Data:</span> 
+							<?php echo date('d/m/Y', strtotime($row->criado)); ?>
+						</td>
+						<td align="center">
+
+						</td>
+						<td align="center">
+							<a href="/painel/relatorios-gerais/relatorio-aptidao/<?php echo $row->id_login; ?>"><i class="far fa-file-alt ico-size"></i></a>
+						</td>
+						<td align="center">
+							<a class="arquive-stats" href="javascript:;">Finalizado</a>
+						</td>
+						<td align="center">
+						</td>
+						<td align="center">
+						</td>
+					</tr>
+					<?php  endforeach; ?>
+				</tbody>
+				</table>
+				
+				<div class="right" align="right">
+					<?php echo $this->pagination($this->pagination); ?>
+				</div>
+				
+				<div class="paginacao" style="clear:both;">
+					<?php
+					$url = "painel/relatorios-gerais/";
+					$_GET['name_page'] = 'page_2';
+					$_GET['local_page'] = 'aptidao';
+					echo $this->paginationControl($aptidao, 'sliding', 'partials/paginator.phtml', ['url' => $url]);
+					?>
+				</div>
+				
+				<input type="hidden" name="method" value="delete" />
+			</form>		
+			
+			
+<!-- 			INTELIGENCIAS MULTIPLAS         -->
+			
+			<form method="post" id="inteligencias">
+				<table class="content">
+				<thead style="border-bottom: 2px solid #6f6f6f;">
+					<tr>
+						<th width="400" style="color: #84139e; font-size: 18px; text-transform: none;">Inteligencias multiplas</th>
+						<th width="200"></th>
+						<th width="200" style="text-align: center;"></th>
+						<th width="50"></th>
+						<th width="170" style="text-align: center;"><a href="javascript:;" class="order" data-order="status">Status</a></th>
+						<th width="50"></th>
+						<th width="70"></th>
+					</tr>
+				</thead>
+				
+				<tbody class="font-small" class="lines-td">
+					<?php foreach ( $inteligencia as $row ): $row = (object)$row; ?>
+					<tr>
+						<td style="line-height: 42px;">
+							<img alt="" class="img-user" <?php if (!empty($row->imagem)){ ?>src="/assets/application/uploads/user/<?php echo $row->imagem ?>"<?php } else { ?> src="/assets/application/img/minhaconta/user-padrao.jpg"<?php } ?>>
+							<?php echo $row->nome; ?>
+						</td>
+						<td align="center">
+							<span class="font-blue">Data:</span> 
+							<?php echo date('d/m/Y', strtotime($row->criado)); ?>
+						</td>
+						<td align="center">
+
+						</td>
+						<td align="center">
+							<a href="/painel/relatorios-gerais/inteligencia-multipla/<?php echo $row->id_login; ?>"><i class="far fa-file-alt ico-size"></i></a>
+						</td>
+						<td align="center">
+							<a class="arquive-stats" href="javascript:;">Finalizado</a>
+						</td>
+						<td align="center">
+						</td>
+						<td align="center">
+						</td>
+					</tr>
+					<?php  endforeach; ?>
+				</tbody>
+				</table>
+				
+				<div class="right" align="right">
+					<?php echo $this->pagination($this->pagination); ?>
+				</div>
+				
+				<div class="paginacao" style="clear:both;">
+					<?php
+					$url = "painel/relatorios-gerais/";
+					$_GET['name_page'] = 'page_3';
+					$_GET['local_page'] = 'inteligencias';
+					echo $this->paginationControl($inteligencia, 'sliding', 'partials/paginator.phtml', ['url' => $url]);
+					?>
+				</div>
+				
+				<input type="hidden" name="method" value="delete" />
+			</form>	
+			
+			
+			<!-- 			PONTOS FORTES         -->
+			
+			<form method="post" id="pontosfortes">
+				<table class="content">
+				<thead style="border-bottom: 2px solid #6f6f6f;">
+					<tr>
+						<th width="400" style="color: #84139e; font-size: 18px; text-transform: none;">Pontos fortes</th>
+						<th width="200"></th>
+						<th width="200" style="text-align: center;"></th>
+						<th width="50"></th>
+						<th width="170" style="text-align: center;"><a href="javascript:;" class="order" data-order="status">Status</a></th>
+						<th width="50"></th>
+						<th width="70"></th>
+					</tr>
+				</thead>
+				
+				<tbody class="font-small" class="lines-td">
+					<?php foreach ( $pontos_fortes as $row ): $row = (object)$row; ?>
+					<tr>
+						<td style="line-height: 42px;">
+							<img alt="" class="img-user" <?php if (!empty($row->imagem)){ ?>src="/assets/application/uploads/user/<?php echo $row->imagem ?>"<?php } else { ?> src="/assets/application/img/minhaconta/user-padrao.jpg"<?php } ?>>
+							<?php echo $row->nome; ?>
+						</td>
+						<td align="center">
+							<span class="font-blue">Data:</span> 
+							<?php echo date('d/m/Y', strtotime($row->criado)); ?>
+						</td>
+						<td align="center">
+
+						</td>
+						<td align="center">
+							<a href="/painel/relatorios-gerais/pontos-fortes/<?php echo $row->id_login; ?>"><i class="far fa-file-alt ico-size"></i></a>
+						</td>
+						<td align="center">
+							<a class="arquive-stats" href="javascript:;">Finalizado</a>
+						</td>
+						<td align="center">
+						</td>
+						<td align="center">
+						</td>
+					</tr>
+					<?php  endforeach; ?>
+				</tbody>
+				</table>
+				
+				<div class="right" align="right">
+					<?php echo $this->pagination($this->pagination); ?>
+				</div>
+				
+				<div class="paginacao" style="clear:both;">
+					<?php
+					$url = "painel/relatorios-gerais/";
+					$_GET['name_page'] = 'page_4';
+					$_GET['local_page'] = 'pontosfortes';
+					echo $this->paginationControl($pontos_fortes, 'sliding', 'partials/paginator.phtml', ['url' => $url]);
+					?>
+				</div>
+				
+				<input type="hidden" name="method" value="delete" />
+			</form>
+			
+			<!-- 			COMPETENCIAS         -->
+			
+			<form method="post" id="competencias">
+				<table class="content">
+				<thead style="border-bottom: 2px solid #6f6f6f;">
+					<tr>
+						<th width="400" style="color: #84139e; font-size: 18px; text-transform: none;">Competencias</th>
+						<th width="200"></th>
+						<th width="200" style="text-align: center;"></th>
+						<th width="50"></th>
+						<th width="170" style="text-align: center;"><a href="javascript:;" class="order" data-order="status">Status</a></th>
+						<th width="50"></th>
+						<th width="70"></th>
+					</tr>
+				</thead>
+				
+				<tbody class="font-small" class="lines-td">
+					<?php foreach ( $competencias as $row ): $row = (object)$row; ?>
+					<tr>
+						<td style="line-height: 42px;">
+							<img alt="" class="img-user" <?php if (!empty($row->imagem)){ ?>src="/assets/application/uploads/user/<?php echo $row->imagem ?>"<?php } else { ?> src="/assets/application/img/minhaconta/user-padrao.jpg"<?php } ?>>
+							<?php echo $row->nome; ?>
+						</td>
+						<td align="center">
+							<span class="font-blue">Data:</span> 
+							<?php echo date('d/m/Y', strtotime($row->criado)); ?>
+						</td>
+						<td align="center">
+
+						</td>
+						<td align="center">
+							<a href="/painel/relatorios-gerais/relatorio-competencias/<?php echo $row->id_login; ?>"><i class="far fa-file-alt ico-size"></i></a>
+						</td>
+						<td align="center">
+							<a class="arquive-stats" href="javascript:;">Finalizado</a>
+						</td>
+						<td align="center">
+						</td>
+						<td align="center">
+						</td>
+					</tr>
+					<?php  endforeach; ?>
+				</tbody>
+				</table>
+				
+				<div class="right" align="right">
+					<?php echo $this->pagination($this->pagination); ?>
+				</div>
+				
+				<div class="paginacao" style="clear:both;">
+					<?php
+					$url = "painel/relatorios-gerais/";
+					$_GET['name_page'] = 'page_5';
+					$_GET['local_page'] = 'competencias';
+					echo $this->paginationControl($competencias, 'sliding', 'partials/paginator.phtml', ['url' => $url]);
+					?>
+				</div>
+				
+				<input type="hidden" name="method" value="delete" />
+			</form>			
+			
+		</div>
+		
+		<!-- Quantidade de Avaliações -->
+		<div class="column column-4 box box-small box-small2">
+			<p class="font-medium qtd-aval-text">Quantidade de Avaliações</p>
+			<span class="qtd-aval">156</span>
+			
+		</div>
+		
+		<!-- Avaliações para Finalizar-->
+		<div class="column column-4 box box-small box-small2" style="float: right;">
+			<p class="font-medium qtd-aval-text">Avaliações para Finalizar</p>
+			<span class="qtd-fin">50</span>
+		</div>
+
+	</div>
+</div>
+
+<form method="post" id="formStatus" class="ajaxsubmit">
+	<input type="hidden" name="aguardando" id="inputValue" />
+	<input type="hidden" name="id_analise_de_curriculo" id="inputId" />
+	<input type="hidden" name="method" value="aguardando" />
+</form>

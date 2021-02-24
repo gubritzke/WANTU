@@ -1,0 +1,9 @@
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais","type":"ERROR","message":"error exception","page":"\/painel\/relatorios-gerais","date":"2019-07-23 13:32:24","ip":"10.0.2.29","get":{"name_page":"page_6","local_page":"curriculo"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/cartao\/","date":"2019-07-23 14:02:41","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/cartao\/fran.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/cartao\/fran.png","date":"2019-07-23 14:02:55","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2019-07-23 14:48:39","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2019-07-23 14:48:39","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2019-07-23 14:49:10","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2019-07-23 14:49:10","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/trilha6","type":"ERROR","message":"error exception","page":"\/trilha6","date":"2019-07-23 17:06:24","ip":"10.0.2.29","post":{"method":"salvar"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2019-07-23 17:31:13","ip":"10.0.2.29","get":{"version":"1.0"}}

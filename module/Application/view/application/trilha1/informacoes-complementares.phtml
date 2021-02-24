@@ -1,0 +1,220 @@
+<?php 
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 1</span>';
+include 'module/Application/view/partials/headers/topo-teste.phtml'; ?>
+<link href="/assets/application/js/extensions/jquery.tooltipster/dist/css/tooltipster.bundle.min.css" media="" rel="stylesheet" type="text/css">
+
+<div id="full-teste">
+	<div class="container">
+		<div class="progresso">
+			<?php include 'module/Application/view/application/trilha1/progresso.phtml'; ?>
+		</div>
+		
+		<div class="formulario">
+			<div class="form-align">
+				<p class="tittle" style="text-align: left; font-size: 29.5px;">Informações Complementares</p>
+				<form id="form-submit7" action="" class="validate" method="post">
+					
+					<label class="select-50">
+						<span>Você possui CNH?</span>
+						<select name="possui_cnh">
+							<option></option>
+							<option>Sim</option>
+							<option>Não</option>
+						</select>
+					</label>
+					
+					<label class="select-50 right">
+						<span>É fumante?</span>
+						<select name="e_fumante">
+							<option></option>
+							<option>Sim</option>
+							<option>Não</option>
+						</select>
+					</label>
+					
+					<label class="select-50">
+						<span>Alguma deficiência?</span>
+						<select name="alguma_deficiencia">
+							<option></option>
+							<option>Sim</option>
+							<option>Não</option>
+						</select>
+					</label>
+					
+					<label class="select-50 right">
+						<span>Qual</span>
+						<input type="text" name="qual_deficiencia">
+					</label>
+					
+					<label class="select-100 right">
+						<span>Mora com o responsável legal?</span>
+						<select name="mora_com_o_respnsalvel">
+							<option></option>
+							<option>Sim</option>
+							<option>Não</option>
+						</select>
+					</label>
+					
+					<label class="select-100 right">
+						<span>Você possui conta bancária?</span>
+						<select name="possui_conta_bancaria">
+							<option></option>
+							<option>Sim</option>
+							<option>Não</option>
+						</select>
+					</label>
+					
+					<label class="select-100 right">
+						<span>Você possui cartão de crédito próprio?</span>
+						<select name="possui_cartao_de_credito">
+							<option></option>	
+							<option>Sim</option>
+							<option>Não</option>
+						</select>
+					</label>
+					
+					<label class="select-100 right">
+						<span style="font-size: 17px; text-align: left;">Quantas pessoas moram em seu domicílio, incluindo você?</span>
+						<select style="margin-top: 21px;" name="quantas_pessoas_moram_em_seu_domiciolio">
+							<option></option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>Outro</option>
+
+						</select>
+					</label>
+					
+					<label class="select-100 right" style="margin-top: 35px;">
+						<span>Dessas pessoas, quantas trabalham?</span>
+						<select name="quantos_pessoas_trabalham_em_seu_domiciolio">
+							<option></option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>Outro</option>
+						</select>
+					</label>
+					
+					<label class="select-100 right">
+						<span style="font-size: 17px; text-align: left;">Possui disponibilidade para mudança em virtude de oportunidades profissionais?</span>
+						<select name="disponibilidade_internacional" style="margin-top: 21px;">
+							<option></option>
+							<option>Sim</option>
+							<option>Não</option>
+
+						</select>
+					</label>
+					
+					<label class="select-100 right" style="margin-top: 35px;">
+						<span>Como você avalia seu convívio familiar?</span>
+						<select name="como_voce_avalia_seu_convivio">
+							<option></option>
+							<option>Ótimo</option>
+							<option>Bom</option>
+							<option>Regular</option>
+							<option>Ruim</option>
+							<option>Outro</option>
+
+						</select>
+					</label>
+					
+					<label class="select-50 right">
+						<span>Seu domicilio é?</span>
+						<select name="seu_domiciolio_e">
+							<option></option>
+							<option>Próprio</option>
+							<option>Alugado</option>
+							<option>Cedido</option>
+							<option>Outro</option>
+
+						</select>
+					</label>
+					
+					<label class="select-50">
+						<span>Renda total</span>
+						<select name="renda_total">
+							<option>até 3 salários mínimos</option> 
+							<option>entre 3 e 5 salários mínimos</option>
+							<option>de 5 a 15 salários mínimos</option> 
+							<option>mais de 15 salários mínimos</option>
+						</select>
+					</label>
+					
+					<label class="input-100">
+						<span style="font-size: 17px; text-align: left;">Considerando você, quantas pessoas compartilham dessa renda?<i class="info tooltip" title="Caso seja dependente financeiramente, colocar as informações referentes ao domicílio familiar.">?</i></span>
+						<input type="text" name="quantas_compartilham" style="margin-top: 21px;">
+					</label>
+
+
+
+<!-- 					<label class="input-50"> -->
+<!-- 						<span>Renda total</span> -->
+<!-- 						<input type="text" name="renda_total" value=""> -->
+<!-- 					</label> -->
+					
+					<label class="select-100 right" style="margin-top: 35px;">
+						<span>Como você conheceu a WantU?</span>
+						<select name="como_voce_conheceu_a_wantu">
+							<option></option>
+							<option>Redes Sociais</option>
+							<option>Indicação de amigo</option>
+							<option>Portal da Instituição de Ensino</option>
+							<option>Site de busca</option>
+							<option>Anúncio na Instituição de Ensino</option>
+							<option>Outro</option>
+						</select>
+					</label>
+					
+					<label class="select-100 right" style="margin-top: 35px;">
+						<span> Você deseja incluir sua foto no seu currículo?<i class="info tooltip" title="Se você deseja que apareça a foto no curriculo você pode adicionar a qualquer momento no seu perfil.">?</i></span>
+						<select name="foto_curriculo">
+							<option></option>
+							<option>Sim</option>
+							<option>Não</option>
+						</select>
+					</label>
+					
+					<input type="hidden" name="code" value="<?php echo $data->id_analise_de_curriculo; ?>"/>
+ 					<input type="hidden" name="method" value="salvarEtapa7" />
+ 					<input type="hidden" name="button" class="button" value="">
+ 					<div class="buttons">
+						<a class="button-voltar" href="trilha1/experiencia-internacional" style="margin-right: 25px;">voltar</a>
+						
+						<button class="button" type="submit" onclick="alteraButton('proximo')" name="button" value="proximo">
+							Finalizar
+						</button>
+						
+						<button class="dowload-button right" onclick="alteraButton('download')" type="submit" name="button" value="download">
+							<img alt="" src="/assets/application/img/analise/seta.png">
+						</button>
+						
+<!-- 						<a class="button" href="javascript:$('#form-submit7').submit();">Próximo</a> -->
+<!-- 						<a class="dowload-button right" href="/analise/curriculo">Download</a> -->
+					</div>
+
+				</form>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	function alteraButton($x){
+		$('input.button').val($x);
+	}
+</script>
+
+<script type="text/javascript">
+$('.tooltip').tooltipster({
+	   animation: 'fade',
+	   delay: 200,
+	   theme: 'Light',
+	   arrow: false,
+});
+</script>

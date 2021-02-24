@@ -1,0 +1,3 @@
+{"module":"painel","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel","date":"2019-06-13 11:32:37","ip":"10.0.2.29"}
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-06-13 11:32:47","ip":"10.0.2.29"}
+{"module":"painel","controller":"relatorios-gerais","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/relatorios-gerais","date":"2019-06-13 11:32:48","ip":"10.0.2.29"}

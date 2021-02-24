@@ -1,0 +1,36 @@
+@media( max-width:650px ) {
+	#topo-teste p{
+		display: none;
+	}
+	a.logo-w {
+	    margin-left: -60px;
+	}
+	#vamos-comecar {
+	    margin-top: 200px !important;
+	}
+	header {
+	    position: unset;
+	}
+	.vc-conteudo{
+		width: 100% !important;
+	}
+	.formulario {
+	    width: 100%;
+	    float: left;
+	}
+	label.input-100 {
+	    width: 100% !important;
+	    height: 75px !important;
+	}
+	.imagem-upload {
+	    width: 100%;
+	    float: left;
+	    text-align: center;
+	}
+	#barra-progresso .barra-pd{
+		margin-top: 100px;
+	}	
+	.box-teste:FIRST-CHILD {
+		float: none !important;
+	}
+}

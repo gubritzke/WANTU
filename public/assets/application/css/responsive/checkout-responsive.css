@@ -1,0 +1,10 @@
+@media( max-width:650px ) {
+	#pagamento .box-plano{
+		float: none;
+		display: inline-block;
+		margin-top: 61px;
+	}
+	#pagamento .line-plano{
+		text-align: center;
+	}
+}

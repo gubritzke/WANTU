@@ -1,0 +1,66 @@
+<?php 
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 3</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+<link href="/assets/application/js/rangeslider/nouislider.min.css" media="" rel="stylesheet" type="text/css">
+<div class="container" id="anc-aqui">
+	
+	<form class="pesq-3" method="post" id="form-submit">
+		
+		<p class="pesq-tittle">
+			15. Assista ao trailer abaixo e avalie a afirmação na sequência:
+		</p>
+		<p class="pesq-desc">
+		</p>
+		
+		<div class="options" data-question="<?php echo $_GET['pg']; ?>">
+			<div class="frame-align">
+				<iframe width="570" height="325" src="https://www.youtube.com/embed/Jo6rd0kq_ZE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<p class="video-cridit">Crédito: Imagem Filmes</p>
+			</div>
+			<div class="box-right video-align" style="margin-top: 39px !important; ">
+			
+				<p class="desc-video">O sucesso na minha carreira é resultado do equilíbrio entre necessidades pessoais, familiares e profissionais. </p>
+				
+				<p class="text-content">Atribua os valores arrastando a barra</p>
+			
+				<div class="ratios">
+					<a href="javascript:changeRanger( 0.62 );" class="ratio-1"></a>
+					<a href="javascript:changeRanger( 1.88 );" class="ratio-2"></a>
+					<a href="javascript:changeRanger( 3.04 );" class="ratio-3"></a>
+					<a href="javascript:changeRanger( 4.25 );" class="ratio-4"></a>
+					<a href="javascript:changeRanger( 5.33 );" class="ratio-5"></a>
+				</div>
+				
+				<div id="ranger"></div>
+				
+				<p class="text-left">Discordo totalmente</p>
+				<p class="text-right">Concordo totalmente</p>
+				
+			</div>
+			
+		</div>
+		
+		<input type="hidden" name="prev" value="<?php echo $prev; ?>">
+		<input type="hidden" name="next" value="<?php echo $next; ?>">	
+		<input type="hidden" name="p<?php echo $_GET['pg']; ?>" class="result" value="3">
+	
+	</form>
+	
+	<div class="line-buttons">
+		
+		<a class="button width-ajst" href="trilha3?pg=<?php echo $prev; ?>">Voltar</a>
+		
+		<div class="pagination">
+			
+			<a class="arrow-prev" href="aptidoes-profissionais?pg=<?php echo $prev; ?>"><i class="fas fa-caret-left"></i></a>
+			<p><?php echo $_GET['pg'];?> | 24 </p>
+			<a class="arrow-next" href="javascript:$('#form-submit').submit();"><i class="fas fa-caret-right"></i></a>
+		
+		</div>
+	
+		<a class="button-blue width-ajst" href="javascript:$('#form-submit').submit();">Próxima</a>
+	
+	</div>
+	
+</div>

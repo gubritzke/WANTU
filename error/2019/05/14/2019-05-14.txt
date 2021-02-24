@@ -1,0 +1,1 @@
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2019-05-14 10:53:31","ip":"10.0.2.29","get":{"version":"1.0"}}

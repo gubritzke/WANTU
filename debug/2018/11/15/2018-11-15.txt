@@ -1,0 +1,2 @@
+{"module":"application","controller":"competencias","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/competencias","date":"2018-11-15 11:08:39","ip":"10.0.2.29"}
+{"module":"application","controller":"competencias","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/competencias","date":"2018-11-15 14:48:30","ip":"10.0.2.29"}

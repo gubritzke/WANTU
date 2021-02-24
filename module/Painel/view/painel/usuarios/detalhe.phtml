@@ -1,0 +1,143 @@
+<form method="post" enctype="multipart/form-data" class="container default" id="form-submit" action="/painel/usuarios/save">
+	<div class="row">
+		<h2 style="float: left;" class="title">Informações do usuário</h2>
+	</div>
+	<div class="row">
+		<div class="label column column-5">
+			<label>Nome</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->usuario->nome; ?>" />
+		</div>
+		
+		<div class="label column column-5">
+			<label>Email</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->usuario->email; ?>" />
+		</div>
+	</div>
+		
+	<div class="row">
+		<div class="label column column-5">
+			<label>CPF</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->usuario->cpf; ?>" />
+		</div>
+		
+		<div class="label column column-5">
+			<label>Telefone</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->usuario->telefone; ?>" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="label column column-5">
+			<label>Data de Nascimento</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->usuario->nascimento; ?>" />
+		</div>
+	</div>
+	<h2 class="title">Endereço</h2>
+	
+	<div class="row">
+		<div class="label column column-5">
+			<label>Cidade</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->usuario->cidade; ?>" />
+		</div>
+		
+		<div class="label column column-5">
+			<label>Estado</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->usuario->estado; ?>" />
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="label column column-5">
+			<label>Endereço</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->usuario->endereco; ?>" />
+		</div>
+		
+		<div class="label column column-5">
+			<label>Número</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->usuario->numero; ?>" />
+		</div>
+	</div>
+		
+	<div class="row">
+		<div class="label column column-5">
+			<label>Bairro</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->usuario->bairro; ?>" />
+		</div>
+		
+		<div class="label column column-5">
+			<label>Complemento</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->usuario->complemento; ?>" />
+		</div>
+	</div>
+	
+
+	<div class="row">
+		<div class="label column column-5">
+			<label>Arquivo PDI</label>
+			<input type="file" name="file_pdi">
+		</div>
+		
+<!-- 		<div class="label column column-5"> -->
+<!-- 			<label>Entrevista</label> -->
+<!-- 			<select name="entevista"> -->
+<!-- 				<option value="feita">Feita</option> -->
+<!-- 				<option value="aguardando">Aguardando</option> -->
+<!-- 			</select> -->
+<!-- 		</div> -->
+		
+	</div>
+	<div class="row">
+		<?php if (!empty($this->usuario->file_pdi)) { ?>
+			<div class="label column column-5">
+				Para visualizar o PDI do usuario <a target="_blank" href="/assets/application/uploads/pdi/<?php echo $this->usuario->file_pdi ?>">clique aqui</a>
+			</div>
+		<?php } ?>
+	</div>
+		
+	<div class="row">
+	
+		<table class="column column-10 t-trilha" >
+		
+			<thead>
+				<tr>
+					<th colspan="6" align="center">Trilha Wantu</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>Currículo</td>
+					<td>Perfil comportamental</td>
+					<td>Aptidões profissionais</td>
+					<td>Inteligência multipla</td>
+					<td>Pontos Fortes</td>
+					<td>Competências</td>
+					<td>Análise</td>
+					<td>Relatório Final</td>
+					
+				</tr>
+				<tr class="checkt">
+					<td><?php if ($this->usuario->analise_de_curriculo){?><a href="/painel/usuarios/curriculo?id=<?php echo $this->usuario->id_login ?>" target="_blank" ><i class="fas fa-check check"></i></a><?php } ?></td>
+					<td><?php if ($this->usuario->perfil_comportamental){?><a href="/painel/relatorios-gerais/relatorio-perfil/<?php echo $this->usuario->id_login ?>" target="_blank" > <i class="fas fa-check check"></i></a><?php } ?></td>
+					<td><?php if ($this->usuario->aptidoes_profissionais){?><a href="/painel/relatorios-gerais/relatorio-aptidao/<?php echo $this->usuario->id_login ?>" target="_blank" ><i class="fas fa-check check"></i></a> <?php } ?></td>
+					<td><?php if ($this->usuario->inteligencias_multiplas){?><a href="/painel/relatorios-gerais/inteligencia-multiplas/<?php echo $this->usuario->id_login ?>" target="_blank" > <i class="fas fa-check check"></i></a> <?php } ?></td>
+					<td><?php if ($this->usuario->pontos_fortes){?><a href="/painel/relatorios-gerais/pontos-fortes/<?php echo $this->usuario->id_login ?>" target="_blank" > <i class="fas fa-check check"></i></a> <?php } ?></td>
+					<td><?php if ($this->usuario->competencias){?><a href="/painel/relatorios-gerais/relatorio-competencias/<?php echo $this->usuario->id_login ?>" target="_blank" > <i class="fas fa-check check"></i></a> <?php } ?></td>
+					<td><?php if ($this->analise->id_login){?><a href="/painel/relatorios-gerais/relatorio-analise/<?php echo $this->usuario->id_login ?>" target="_blank" > <i class="fas fa-check check"></i></a> <?php } ?></td>
+					<td><?php if ($this->usuariorelfinal->id_login){?><a href="/painel/relatorio-final/relatorio-final/<?php echo $this->usuario->id_login ?>" target="_blank" > <i class="fas fa-check check"></i></a> <?php } ?></td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>	
+	
+	<a href="./painel/<?php echo $this->layout()->routes['controller']; ?>" class="bt bt-round left">
+		<i class="fa fa-chevron-left"></i> Voltar
+	</a>
+	
+	<a href="javascript:$('#form-submit').submit();" class="bt bt-round bt-featured right">
+		Finalizar <i class="fa fa-thumbs-o-up"></i>
+	</a>
+	
+	<input type="hidden" name="id_login" value="<?php echo $this->usuario->id_login?>"/>
+	<input type="hidden" name="method" value="save" />
+</form>

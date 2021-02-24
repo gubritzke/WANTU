@@ -1,0 +1,49 @@
+@media( max-width:1100px ) {
+
+}
+
+@media( max-width:650px ) {
+	.cf-1{
+		/* display: none; */
+		margin-bottom: 30px;
+		width: 100%;
+		margin-left: 0px;
+	}
+	.cf-2{
+		width: 100%;
+		float: left;
+	}
+	#vamos-comecar{
+		overflow-x: hidden; 
+	}
+	.banner{
+		background: url("/assets/application/img/banners/banner.jpg") no-repeat -453px 33px;
+	}
+	#blog .box-2 {
+    	width: 100%;
+	}
+	#blog .owl-next {
+    	right: 39px;
+	}
+	.owl-prev {
+	    left: 30px;
+	}
+	#blog .box-2{
+		margin-left: 0;
+	}
+	.box-blog {
+	    margin-left: 112px;
+	}
+	.banner .conteudo p {
+	    font-size: 42px;
+	}
+	.banner .conteudo p > span {
+	    font-size: 44px;
+	}
+	.cf-2-align {
+	    width: 100%;
+	}
+	#como-funciona{
+		margin-top: 60px;
+	}
+}

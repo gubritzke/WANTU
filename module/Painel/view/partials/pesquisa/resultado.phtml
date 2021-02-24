@@ -1,0 +1,95 @@
+<?php //  echo '<pre>'; print_r($this->result); exit;?>
+
+
+<div class="line-3 resultado">
+	
+	<?php if(!empty($this->result)):?>
+	<div class="card">
+	    <table class="list-users">
+	    	<thead>
+	    		<tr>
+	    			<th>
+	    				Nome
+	    			</th>
+	    			<th>
+	    				Cpf
+	    			</th>
+	    			<th>
+	    				Data de Nascimento
+	    			</th>
+	    			<th class="icons">
+	    				E-mails
+	    			</th>
+	    			<th class="icons">
+	    				Telefones
+	    			</th>
+	    			<th class="icons">
+	    				Enderecos
+	    			</th>
+	    			<th>
+	    				Ultima Revisão
+	    			</th>
+	    			<th>
+	    				Cadastro Completo
+	    			</th>
+	    		</tr>
+	    	</thead>
+	    	<tbody>
+	    		<?php foreach ($this->result as $row):?>
+	    		<tr>
+	    			<td><?php echo $row->nome;?></td>
+	    			<td><?php echo $row->cpf;?></td>
+	    			<td><?php  echo(!empty($row->data_nascimento) ? date('d/m/Y', strtotime($row->data_nascimento)) : '');?></td>
+	    			<td class=" icons icons-1">
+	    				<i class="fa fa-envelope"></i>
+						<?php echo  sizeof($row->emails);?>
+	    			</td>
+	    			<td class=" icons icons-2">
+	    				<i class="fa fa-phone"></i>
+						<?php echo  sizeof($row->telefones);?>
+	    			</td>
+	    			<td class="icons icons-3">
+	    				<i class="fa fa-map-marker"></i>
+						<?php echo  sizeof($row->enderecos);?>	
+	    			</td>
+	    			<td>
+	    				<?php echo ( !empty($row->modificado)) ? date('d/m/Y', strtotime($row->modificado)): date('d/m/Y', strtotime($row->criado));?>
+	    			</td>
+	    			<td>
+	    				<a class="pesquisa-lead" target="_blank" href="/painel/complemento/index/<?php echo $row->_id;?>" class="pesquisa-lead">Completar  <i class="far fa-check-circle"></i> <i class="far fa-check-circle"></i></a>
+	    			</td>
+	    		</tr>
+	    		<?php endforeach;?>
+	    	</tbody>
+	    	<?php if($this->page >= 1): ?>
+	    	<tfoot>
+	    		<tr>
+	    			<td></td>
+	    			<td></td>
+	    			<td></td>
+	    			<td></td>
+	    			<td></td>
+	    			<td></td>
+    	    		<?php if($this->page > 1){
+                            echo '<td><a href="/'.$this->layout()->routes['module'].'/'.$this->layout()->routes['controller'].'/'.$this->layout()->routes['action'].'?page=' . $this->prev . '"><i class="fa fa-caret-left"></i> Pagina Anterior</a></td>';
+                            if($this->page * $this->limit < $this->total) {
+                                echo '<td><a href="/'.$this->layout()->routes['module'].'/'.$this->layout()->routes['controller'].'/'.$this->layout()->routes['action'].'?page=' . $this->next . '">próxima página <i class="fa fa-caret-right"></i></a></td>';
+                            }
+                        } else {
+                            if($this->page * $this->limit < $this->total) {
+                                echo '<td></td><td><a href="/'.$this->layout()->routes['module'].'/'.$this->layout()->routes['controller'].'/'.$this->layout()->routes['action'].'?page=' . $this->next . '">próxima página <i class="fa fa-caret-right"></i></a></td>';
+                            }
+                        }
+        			?>
+				</tr>
+	    	</tfoot>
+	    	<?php endif;?>
+	    </table>
+    </div>
+    
+    <?php else:?>
+    	
+    	<h2>Nenhum lead encontrado</h2>
+    
+	<?php endif;?>	
+</div>

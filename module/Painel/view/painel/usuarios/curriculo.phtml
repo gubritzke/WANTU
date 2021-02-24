@@ -1,0 +1,238 @@
+<?php include 'module/Application/view/partials/headers/topo-curriculo.phtml'; ?>
+<link href="/assets/application/css/analise.css?version=1.0" media="" rel="stylesheet" type="text/css">
+<link href="/assets/application/css/main.css?version=1.0" media="" rel="stylesheet" type="text/css">
+<link href="/assets/application/css/minha-conta.css?version=1.0" media="" rel="stylesheet" type="text/css">
+
+
+<div id="box-curriculo">
+	<div class="container">
+		<div id="curriculo">
+			<?php foreach ( $usuario as $row ): $row = (object)$row; ?>
+			
+			<?php if ( $info_complementares->foto_curriculo == 'Sim') { ?>
+    			<?php if (!empty($row->imagem)){ ?>			
+    				<a class="img-perfil" ><img src="/assets/uploads/user/<?php echo $row->imagem ?>"></a>
+    			<?php } else { ?>
+    				<a class="img-perfil" ><img src="/assets/application/img/minhaconta/user-padrao.jpg"><span style="position: absolute; width: 226px; height: 226px; display: inline-block; right: 99px; top: 220px; font-size: 14px;">Adicione sua foto no seu perfil.</span></a>
+    			<?php } ?>
+			<?php } ?>
+
+			<div class="informacoes-pessois">
+				
+				<p class="name"><?php echo $row->nome; ?></p>
+				<?php endforeach;?>
+				<p class="text">
+					<?php echo $data->nacionalidade; ?> | <?php echo date('d/m/Y', strtotime( $data->data_de_nascimento)) ?> <br>
+					<?php if (!empty($data->telefone_residencial)){?><?php echo $data->telefone_residencial; ?><?php } else {?><?php echo $data->telefone_celular; ?><?php }?> |<?php foreach ( $usuario as $row ): $row = (object)$row; ?> <?php echo $row->email; ?> <?php endforeach;?> <br>
+					<?php echo $data->endereco; ?>, <?php echo $data->numero; ?><br>
+					<?php echo $data->bairro; ?> | <?php echo $data->cidade; ?> - <?php echo $data->estado; ?> <br>
+				</p>
+			</div>			
+		
+			<div class="obj-profissional">
+				<p class="c-tittle">Objetivo Profissional</p>
+				<p class="text">
+					<?php echo $data->objetivos_profissionais; ?>
+				</p>
+			</div>
+			<div class="formacao">
+				<?php if (!empty($dados_pos)){?>
+					<p class="c-tittle">Formação Pós Graduação</p>
+					<?php foreach ($dados_pos as $row): $row = (object)$row;?>
+					<div class="conteudo">
+	    				<p class="text">
+		    				<?php if ($row->status_curso_pos == 'Em andamento'){ ?>
+							
+								<?php echo $row->instituicao_de_ensino_pos ?>, <?php echo $row->tipo_pos ?> em <?php echo $row->nome_da_instituicao_pos?> <br>
+								Cursando o <?php echo $row->duracao_do_curso_andamento_pos ?> período, conclusão <?php echo $row->previsao_de_formatura_pos_andamento?>
+								  				
+		    				<?php } else { ?>
+							 
+								 <?php echo $row->instituicao_de_ensino_pos ?>, <?php echo $row->tipo_pos ?> em <?php echo $row->nome_da_instituicao_pos?> <br>
+			    				 Concluído em <?php echo $row->conclusao_pos_concluido?> <br> 	
+		    					 
+		    				<?php } ?>
+	    				</p>
+					</div>
+					<?php endforeach; ?>
+				<?php } ?>
+				
+				<?php if (!empty($dados_escolares)){?>
+					<p class="c-tittle">Formação Graduação</p>
+					<?php foreach ($dados_escolares as $row): $row = (object)$row;?>
+					<div class="conteudo">
+	    				<p class="text">
+		    				<?php if ($row->status_curso == 'Em andamento'){ ?>
+							
+								<?php echo $row->instituicao_de_ensino_andamento ?>, <?php echo $row->nome_do_curso_andamento?> <br>
+								Cursando o <?php echo $row->periodo_andamento?> período, conclusão <?php echo $row->previsao_de_formatura_andamento?> <br> 
+								Disponibilidade de estágio: <?php echo $row->disponibilidade_estagio_andamento?>
+								  				
+		    				<?php } else { ?>
+	
+		    					<?php echo $row->instituicao_de_ensino_concluido ?>, <?php echo $row->nome_do_curso_concluido ?> <br>
+								Concluído em <?php echo $row->conclusao_de_curso_concluido?> <br> 
+		    					
+		    				<?php } ?>
+	    				</p>
+					</div>
+					<?php endforeach; ?>
+				<?php } ?>
+				
+			</div>
+			
+			<?php if (!empty($profissional)){?>
+			<div class="experiencia-profissional">
+				<p class="c-tittle">Experiência Profissional</p>
+				<?php foreach ( $profissional as $row ): $row = (object)$row; ?>
+				<div class="conteudo">
+					<p class="text">
+						<span><?php echo $row->cargo; ?> - <?php echo $row->nome_da_empresa; ?></span><br>
+						<?php echo $row->resumo_das_atividades; ?><br>
+						<span><?php echo date('d/m/Y', strtotime($row->data_de_inicio_empresarial)) ?> - <?php if ( $row->trabalho_atual == 'Sim'){?> Atual <?php } else { ?><?php echo $row->data_de_termino_empresarial; ?><?php } ?></span>
+					</p>			
+				</div>
+				<?php endforeach; ?>
+			</div>
+			<?php } ?>
+			
+			<?php if (!empty($internacional)){?>
+			<div class="cursos-extracurriculares">
+				<p class="c-tittle">Experiência Internacional</p>
+				<?php foreach ( $internacional as $row ): $row = (object)$row; ?>
+					<p class="text">
+						<?php echo $row->tipo_de_experiencia ?>, <?php echo $row->pais_experiencia ?>, <?php echo $row->tempo_de_duracao ?> dias
+					</p>
+				<?php endforeach; ?>
+			</div>
+			<?php } ?>
+			
+			<?php if (!empty($cursos_cursos) || !empty($cursos_minicurso) || !empty($cursos_workshop) || !empty($cursos_outro) || !empty($cursos_evento)){?>
+			<div class="cursos-extracurriculares">
+				<p class="c-tittle">Atividades Extracurriculares</p>
+				
+				<?php if (!empty($cursos_cursos)){ ?>
+					<br><p class="c-tittle" style="font-size: 15px;">Cursos</p>
+    				<?php foreach ( $cursos_cursos as $row ): $row = (object)$row; ?>
+    					<p class="text">
+    						<?php echo $row->nome_do_curso;?>, <?php echo $row->nivel_do_curso;?>, <?php echo $row->carga_horaria;?>
+    					</p>
+    				<?php endforeach; ?>
+				<?php } ?>
+				
+				<?php if (!empty($cursos_minicurso)){ ?>
+					<br><p class="c-tittle" style="font-size: 15px;">Minicurso</p>
+    				<?php foreach ( $cursos_minicurso as $row ): $row = (object)$row; ?>
+    					<p class="text">
+    						<?php echo $row->nome_do_curso;?>, <?php echo $row->carga_horaria;?>
+    					</p>
+    				<?php endforeach; ?>
+				<?php } ?>
+			
+				<?php if (!empty($cursos_workshop)){ ?>
+					<br><p class="c-tittle" style="font-size: 15px;">Workshop</p>
+    				<?php foreach ( $cursos_workshop as $row ): $row = (object)$row; ?>
+    					<p class="text">
+    						<?php echo $row->nome_do_curso;?>, <?php echo $row->carga_horaria;?>
+    					</p>
+    				<?php endforeach; ?>
+				<?php } ?>
+				
+							
+				<?php if (!empty($cursos_evento)){ ?>
+					<br><p class="c-tittle" style="font-size: 15px;">Workshop</p>
+    				<?php foreach ( $cursos_evento as $row ): $row = (object)$row; ?>
+    					<p class="text">
+    						<?php echo $row->nome_do_curso;?>, <?php echo $row->carga_horaria;?>
+    					</p>
+    				<?php endforeach; ?>
+				<?php } ?>
+			
+				<?php if (!empty($cursos_outro)){ ?>
+					<br><p class="c-tittle" style="font-size: 15px;">Outros</p>
+    				<?php foreach ( $cursos_outro as $row ): $row = (object)$row; ?>
+    					<p class="text">
+    						<?php echo $row->nome_do_curso;?>, <?php echo $row->carga_horaria;?>
+    					</p>
+    				<?php endforeach; ?>
+				<?php } ?>
+			
+			</div>
+			<?php } ?>
+			
+			
+			
+			<?php if (!empty($dados_idiomas)){?>
+			<div class="cursos-extracurriculares">
+				<p class="c-tittle">Idiomas</p>
+				<?php foreach ( $dados_idiomas as $row ): $row = (object)$row; ?>
+					<p class="text">
+						<?php echo $row->idiomas;?>, <?php echo $row->nivel;?>
+					</p>
+				<?php endforeach; ?>
+			</div>
+			<?php } ?>
+			<?php if ( $info_complementares->possui_cnh == 'Sim' || $info_complementares->disponibilidade_internacional == 'Sim' ) { ?>
+		
+    			<div class="cursos-extracurriculares">
+    				<p class="c-tittle">Informações complementares</p>
+    					<p class="text">
+    					
+    						<?php if ($info_complementares->possui_cnh == 'Sim') { ?>
+    							Possui CNH<br>
+    						<?php } ?>
+    						
+    						<?php if ($info_complementares->disponibilidade_internacional == 'Sim'){ ?>
+    							Disponibilidade para mudança de cidade
+    						<?php } ?>
+    					</p>
+    			</div>
+    		
+    		<?php } ?>
+		</div>
+		
+		<div class="buttons-curriculo">
+			<a class="imp dowload-button" onclick="printCurriculo()"><img alt="" src="/assets/application/img/analise/seta.png"></a>	
+			<a class="button" href="/painel/usuarios">Voltar</a>
+		</div>
+	</div>
+</div>
+
+
+<script>
+function printCurriculo() {
+    window.print();
+}
+</script>
+
+<style>
+@page { 
+	size: auto;  
+	margin: 0mm; 
+}
+@media print {
+	footer{
+		display: none;
+	}
+	#topo-cadastro{
+		display: none;
+	}
+	#curriculo{
+		margin-top: 0;
+		box-shadow: none;
+		padding: 50px 50px 0 50px;
+	}
+	a[href]:after {
+	    content: none !important;
+	}
+	.buttons-curriculo{
+		display: none;
+	}
+	.mg-print{
+		margin-top: 360px;
+		display: inline-block;
+		height: 1px;
+		width: 1px;
+	}
+}
+</style>

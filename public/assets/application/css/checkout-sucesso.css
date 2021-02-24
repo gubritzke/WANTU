@@ -1,0 +1,97 @@
+/****************/
+/* GERAL */
+/****************/
+#checkout p{
+	margin: 0;
+}
+#checkout h3.title{
+	background-color: #ddd;
+	padding: 10px;
+	margin: 0 0 15px 0;
+	font-size: 14px;
+}
+#checkout p.color-yellow{
+	margin-bottom: 15px;
+}
+#checkout .bt-square{
+	background-color: #fff;
+	border: 1px solid #fb0;
+	text-transform: none;
+	color: #222;
+	margin: 15px 0;
+}
+#checkout .column-7{
+	padding-right: 30px;
+}
+
+/****************/
+/* PRODUTOS */
+/****************/
+#checkout .products{
+	width: 100%;
+}
+#checkout .products td{
+	padding: 10px 0;
+}
+#checkout p > img{
+	vertical-align: middle;
+}
+
+/****************/
+/* PAGAMENTO */
+/****************/
+#checkout .box{
+	border: 1px solid #ddd;
+	padding: 15px;
+	margin: 15px 0 30px 0;
+	text-align: left;
+}
+#checkout .box input{
+	box-sizing: border-box;
+	display: block;
+	border: 1px solid #ddd;
+	width: 100%;
+	padding: 10px;
+	margin: 15px 0;
+}
+#checkout .box .bt{
+	margin: 0;
+}
+
+#checkout ul.infolist{
+	padding: 0;
+	margin: 0;
+}
+#checkout ul.infolist > li{
+	list-style: none;
+	margin: 15px 0;
+}
+#checkout ul.infolist > li:before{
+	content: "•";
+	color: #ffa000;
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+#checkout .creditcard{
+	border: 2px solid #5bab9f;
+	border-radius: 10px;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+#checkout .creditcard .creditcard-brand{
+	padding: 15px;
+	background-color: #ddd;
+	text-align: right;
+	font-style: italic;
+	font-weight: bold;
+}
+#checkout .creditcard .creditcard-number{
+	padding: 15px;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+#checkout .creditcard .creditcard-name{
+	padding: 10px 15px;
+	font-style: italic;
+}

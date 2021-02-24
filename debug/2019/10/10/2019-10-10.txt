@@ -1,0 +1,1 @@
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-10-10 10:55:40","ip":"10.0.2.29"}

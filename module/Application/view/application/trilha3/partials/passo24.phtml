@@ -1,0 +1,180 @@
+<?php 
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 3</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+<link href="/assets/application/js/rangeslider/nouislider.min.css" media="" rel="stylesheet" type="text/css">
+<div class="container" id="anc-aqui">
+	
+	<form class="pesq-3" method="post" id="form-submit">
+		
+		<p class="pesq-tittle">
+
+			24. Escolha o personagem que melhor se aplica a você:
+
+		</p>
+		<p class="pesq-desc">
+			Escolha apenas uma alternativa.
+		</p>
+		
+		<a class="popup" style="display:none; " data-text="Na próxima questão não considere o sexo do personagem e sim suas características">Fafa de belem</a>
+		<script>setTimeout( function (){$('.popup').trigger('click');},500);</script>
+		
+		<div class="options" data-question="<?php echo $_GET['pg']; ?>">
+			<div class="box-for-options">
+				
+				<div class="option-box">
+					<label class="switch check1">
+						<input type="checkbox" name="opt" value='{"name":"Gerencial", "value":"5"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">A)</span> 
+						<span class="opt-perso">Pantera Negra:</span>
+						 Sinto-me mais satisfeito em meu trabalho quando posso liderar o trabalho de outras pessoas.
+					</span>
+				</div>
+				
+				<div class="option-box">
+					<label class="switch check2">
+						<input type="checkbox" name="opt" value='{"name":"Especialista", "value":"5"}' />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">B)</span> 
+						<span class="opt-perso">Velma, scooby-doo:</span>
+						Quero ser tão competente no que faço que minha opinião de expert será sempre solicitada.
+					</span>
+				</div>
+				
+				<div class="option-box">
+					<label class="switch check3">
+						<input type="checkbox" name="opt" value='{"name":"Autonomia", "value":"5"}' />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">C)</span> 
+						<span class="opt-perso">Pica-Pau:</span>
+						A liberdade de fazer as coisas como quero e a flexibilidade de horário são as características de uma carreira perfeita para mim.
+					</span>
+				</div>
+
+				<div class="option-box">
+					<label class="switch check4">
+						<input type="checkbox" name="opt" value='{"name":"Seguranca", "value":"5"}'/>
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">D)</span> 
+						<span class="opt-perso">Lineu, da Grande Família: </span>
+						Quando penso no trabalho ideal para mim, busco segurança e estabilidade mais do que liberdade e autonomia.
+					</span>
+				</div>
+
+				<div class="option-box">
+					<label class="switch check5">
+						<input type="checkbox" name="opt" value='{"name":"Empreendedorismo", "value":"5"}'/>
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">E)</span> 
+						<span class="opt-perso">Tio Patinhas:</span>
+						Sou um caçador de ideias de negócios, pois sonho em ter meu próprio empreendimento.
+					</span>
+				</div>
+
+				<div class="option-box">
+					<label class="switch check6">
+						<input type="checkbox" name="opt" value='{"name":"Dedicacao", "value":"5"}'/>
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">F)</span> 
+						<span class="opt-perso">Capitão Planeta:</span>
+						Contribuir para o bem-estar da sociedade é essencial para que eu considere minha carreira como um sucesso.
+					</span>
+				</div>
+
+				<div class="option-box">
+					<label class="switch check7">
+						<input type="checkbox" name="opt" value='{"name":"Desafio", "value":"5"}'/>
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">G)</span> 
+						<span class="opt-perso">Super Homem:</span>
+						Quanto maiores são os problemas mais me sinto incitado a resolvê-los e é isso que espero como realidade da minha carreira ideal.
+					</span>
+				</div>
+
+				<div class="option-box">
+					<label class="switch check8">
+						<input type="checkbox" name="opt" value='{"name":"Estilo", "value":"5"}'/>
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">H)</span> 
+						<span class="opt-perso">Mulher Maravilha:</span>
+						Os meus compromissos profissionais precisam se adequar aos meus interesses pessoais e familiares e não o contrário.
+					</span>
+				</div>
+
+				<div class="option-box">
+					<label class="switch check9">
+						<input type="checkbox" name="opt" value='{"name":"Internacional", "value":"5"}'/>
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">I)</span> 
+						<span class="opt-perso">Peter Pan:</span>
+						Sou apaixonado pelo novo e meu sonho é atuar no ambiente internacional de negócios.
+					</span>
+				</div>
+
+			
+			</div>
+		</div>
+		
+		<input type="hidden" name="prev" value="<?php echo $prev; ?>">
+		<input type="hidden" name="next" value="<?php echo $next; ?>">		
+		<input type="hidden" class="result" name="p<?php echo $_GET['pg']; ?>" value="" />
+		
+		<script type="text/javascript">
+			$('label.switch').click(function(){
+				$currentClass = $(this).attr('class');
+				$currentClass = $currentClass.split(" ");
+
+				$valor = $(this).find('input').val();
+
+				$('input.result').val($valor);
+
+				$('label.switch').each(function(){
+
+					if(!$(this).hasClass($currentClass[1])){
+						$(this).find('input').prop('checked',false);
+					}else{
+						$(this).find('input').prop('checked',true);
+					}
+				
+				});
+			});
+		</script>
+	
+	</form>
+	
+	<div class="line-buttons">
+		
+		<a class="button width-ajst" href="trilha3?pg=<?php echo $prev; ?>">Voltar</a>
+		
+		<div class="pagination">
+			
+			<a class="arrow-prev" href="aptidoes-profissionais?pg=<?php echo $prev; ?>"><i class="fas fa-caret-left"></i></a>
+			<p><?php echo $_GET['pg'];?> | 24 </p>
+			<a class="arrow-next" href="javascript:$('#form-submit').submit();"><i class="fas fa-caret-right"></i></a>
+		
+		</div>
+	
+		<a class="button-blue width-ajst" href="javascript:$('#form-submit').submit();">Próxima</a>
+	
+	</div>
+	
+</div>

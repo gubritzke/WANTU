@@ -1,0 +1,80 @@
+<?php 
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 3</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+<link href="/assets/application/js/rangeslider/nouislider.min.css" media="" rel="stylesheet" type="text/css">
+<div class="container" id="anc-aqui">
+	
+	<form class="pesq-3" method="post" id="form-submit">
+		
+		<p class="pesq-tittle">
+			21. Imagine a seguinte situação no trabalho: seu chefe informou que<br>
+			você precisa se mudar para outro estado para atuar em uma nova filial da empresa,<br>
+			mas sua família não pode mudar de cidade. O que você faz? 
+		</p>
+		<p class="pesq-desc">
+		</p>
+		
+		<div class="options" data-question="<?php echo $_GET['pg']; ?>">
+		
+			
+			<div class="opt-text">
+				
+				<a class="bg-text2"></a>
+				
+				<p class="big-text2">
+					Prefiro sair da empresa onde estou <br>
+					<span>
+						a ocupar um cargo que prejudique<br>
+						a possibilidade de satisfazer meus <br>
+						interesses pessoais e familiares.
+					</span>
+				</p>
+				
+			</div>			
+
+			
+			<div class="box-right" style="margin-top: 35px;">
+				
+				<p class="text-content">Atribua os valores arrastando a barra</p>
+				
+				<div class="ratios">
+					<a href="javascript:changeRanger( 0.62 );" class="ratio-1"></a>
+					<a href="javascript:changeRanger( 1.88 );" class="ratio-2"></a>
+					<a href="javascript:changeRanger( 3.04 );" class="ratio-3"></a>
+					<a href="javascript:changeRanger( 4.25 );" class="ratio-4"></a>
+					<a href="javascript:changeRanger( 5.33 );" class="ratio-5"></a>
+				</div>
+			
+				<div id="ranger"></div>
+				
+				<p class="text-left">Discordo totalmente</p>
+				<p class="text-right">Concordo totalmente</p>
+				
+			</div>
+			
+		</div>
+		
+		<input type="hidden" name="prev" value="<?php echo $prev; ?>">
+		<input type="hidden" name="next" value="<?php echo $next; ?>">		
+		<input type="hidden" name="p<?php echo $_GET['pg']; ?>" class="result" value="3">
+	
+	</form>
+	
+	<div class="line-buttons">
+		
+		<a class="button width-ajst" href="trilha3?pg=<?php echo $prev; ?>">Voltar</a>
+		
+		<div class="pagination">
+			
+			<a class="arrow-prev" href="aptidoes-profissionais?pg=<?php echo $prev; ?>"><i class="fas fa-caret-left"></i></a>
+			<p><?php echo $_GET['pg'];?> | 24 </p>
+			<a class="arrow-next" href="javascript:$('#form-submit').submit();"><i class="fas fa-caret-right"></i></a>
+		
+		</div>
+	
+		<a class="button-blue width-ajst" href="javascript:$('#form-submit').submit();">Próxima</a>
+	
+	</div>
+	
+</div>

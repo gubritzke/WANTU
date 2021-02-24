@@ -1,0 +1,4 @@
+{"module":"application","controller":"javascript","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/javascript","date":"2018-10-23 12:51:51","ip":"10.0.2.29"}
+{"module":"application","controller":"pontos-fortes","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/pontos-fortes","date":"2018-10-23 12:51:54","ip":"10.0.2.29"}
+{"module":"application","controller":"pontos-fortes","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/pontos-fortes","date":"2018-10-23 12:52:01","ip":"10.0.2.29"}
+{"module":"application","controller":"perfis-comportamentais","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/perfis-comportamentais","date":"2018-10-23 17:13:22","ip":"10.0.2.29"}

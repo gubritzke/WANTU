@@ -1,0 +1,5 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-08-26 22:28:11","ip":"10.0.0.200"}
+{"module":"application","controller":"blog","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/blog","date":"2018-08-26 22:28:41","ip":"10.0.0.200"}
+{"module":"application","controller":"blog","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/blog","date":"2018-08-26 22:28:51","ip":"10.0.0.200"}
+{"module":"application","controller":"blog","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/blog","date":"2018-08-26 22:29:19","ip":"10.0.0.200"}
+{"module":"application","controller":"blog","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/blog","date":"2018-08-26 22:29:36","ip":"10.0.0.200"}

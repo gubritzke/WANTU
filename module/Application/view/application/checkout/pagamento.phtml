@@ -1,0 +1,233 @@
+<div id="checkout" class="content container">
+	<h1 class="title">Pagamento</h1>
+	<hr class="mobile-hide" />
+	
+	<!-- TITULO -->
+	<div class="clear"></div><br/>
+	
+	<div class="row">
+	
+		<!-- DETALHES -->
+		<div class="column column-12 row">
+			
+			<!-- PRODUTOS -->
+			<table class="products column column-12">
+				<thead>
+				<tr>
+					<th align="left">VALORES</th>
+					<th  align="center">PREÇOS</th>
+				</tr>
+				</thead>
+				
+				<tbody>
+				
+				<tr>
+					<td><b>Valor do plano</b></td>
+					<td style="text-align: center !important;"><b>R$ <?php echo \Naicheframework\Helper\Convert::toReal($plano->valor); ?></b></td>
+				</tr>
+
+				<tr>
+					<td class="color-green">Desconto</td>
+					<td style="text-align: center !important;" class="color-green">R$ <?php echo \Naicheframework\Helper\Convert::toReal( $desconto_calc )?></td>
+				</tr>
+
+				
+				<tr>
+					<td class="color-green">Boleto</td>
+					<td style="text-align: center !important;" class="color-green">R$ <?php echo \Naicheframework\Helper\Convert::toReal($plano->valor - $desconto_calc); ?></td>
+				</tr>
+				
+				<tr>
+					<td class="color-green">Ou em até 12x no cartão de crédito</td>
+					<td style="text-align: center !important;" class="color-green">R$ <?php echo \Naicheframework\Helper\Convert::toReal(($plano->valor - $desconto_calc) / 12); ?></td>
+				</tr>
+				</tbody>
+			</table>
+			
+			
+			
+			
+			<form method="post" class="formcupom">
+				<?php if (!empty($this->cupom)){ ?>
+					
+					<p class="cupomselected">Cupom selecionado: <span style="font-weight: bold;"><?php echo $this->cupom['cupom'] ?></span></p>
+					<input type="hidden" name="method" value="delcupom">
+					<button class="button-del" type="submit">REMOVER CUPOM</button>
+					
+				<?php } else { ?>
+				<label class="labelcupom">
+					<span>Você possui cupom de desconto?</span>
+					<input type="text" name="cupom" value="" style="padding-bottom: 0; margin-top: 10px;">
+				</label>
+				
+				<input type="hidden" name="method" value="addcupom">
+				<button class="button-sub" type="submit">ADICIONAR</button>
+				
+				<?php } ?>
+			</form>		
+			
+		</div>
+	</div>
+	
+	<form method="POST" class="row payment card">
+		
+		<?php if ($plano->valor - ($cupom->valor * $plano->valor / 100) == 0){ ?>
+			<button type="submit" class="bt bg-yellow">Concluir Compra</button>
+		<?php } ?>
+		<?php if ($plano->valor - ($cupom->valor * $plano->valor / 100) == 0){ ?>
+		
+		<?php } else { ?>
+		
+			<!-- MÉTODO DE PAGAMENTO -->
+			<br/>
+			<h2 class="title">Métodos de pagamento</h2>
+			<hr/>
+		
+			<!-- CARTÃO DE CRÉDITO -->
+			<div class="column column-6 payment-creditcard">
+				<h3 class="color-green">
+					Cartão de crédito
+					<img src="/assets/<?php echo $this->layout()->routes['module']; ?>/img/checkout/payments.jpg" />
+				</h3>
+				
+				<div class="card-wrapper"></div>
+	
+				<label>
+					Número do cartão
+					<input type="text" class="integer" id="cc_number" value=""  />
+				</label>
+				
+				<label>
+					Código de segurança
+					<input type="text" maxlength="4" class="col3 integer" id="cc_cvc" value="" />
+				</label>
+				
+				<label>
+					Nome do titular (como consta no cartão)
+					<input type="text" name="cc_name" id="cc_name" maxlength="30" style="text-transform:uppercase;" />
+				</label>
+				
+				<label>
+					Opções de parcelamento
+					<select class="col3" name="cc_parcel">
+						<?php foreach( $this->parcelas as $key=>$value ): ?>
+						<option value="<?php echo $key; ?>"><?php echo $value; ?></option>
+						<?php endforeach; ?>
+					</select>
+					
+				</label>
+				
+				<div class="label">
+					Data de validade <br/>
+					<select class="col1" id="cc_exp_month">
+						<option value="">Mês</option>
+						<?php foreach( \Naicheframework\Helper\Constants::getMonths() as $key=>$value ): ?>
+						<option value="<?php echo $key; ?>"><?php echo $key; ?></option>
+						<?php endforeach; ?>
+					</select>
+					<select class="col2" id="cc_exp_year">
+						<option value="">Ano</option>
+						<?php foreach( \Naicheframework\Helper\Constants::getYears(date("Y", strtotime("+10 years")), date("Y")) as $key=>$value ): ?>
+						<option value="<?php echo substr($key, 2); ?>"><?php echo $value; ?></option>
+						<?php endforeach; ?>
+					</select>
+					<input type="hidden" id="cc_exp" />
+				</div>
+				
+				<div style="width: 100%; height: 1px; background: #cccccc;"></div>
+				<div class="clear"></div><br/>				
+				
+				<label>
+					Data de Nascimento do titular<br/>
+					<input type="text" name="cc_nascimento" value="<?php echo date('d/m/Y', strtotime($data_ani)); ?>" class="calendar " />
+				</label>
+				
+				<label>
+					Telefone do titular<br/>
+					<input type="text" name="cc_telefone" value="<?php echo $this->layout()->me->telefone; ?>" class="cellphone col3" />
+				</label>
+				
+				<label>
+					CPF do titular<br/>
+					<input type="text" name="cc_cpf" value="<?php echo $this->layout()->me->cpf; ?>" class="cpf"/>
+				</label>
+				
+				<button type="button" style="display: block; margin: 0 0 0 0;" class="bt bg-yellow" id="encrypt">Pagar com cartão de crédito</button>
+			</div>
+			
+			<!-- BOLETO -->
+			<div class="column column-6 row payment-boleto">
+				<h3 class="color-green">Boleto bancário</h3>
+				
+				<p>Após o pagamento o boleto pode levar até <b>2 dias úteis</b> para compensação.</p>
+				
+				<br/>
+				
+				<p>O vencimento é de <b>4 dias corridos</b> após conclusão da compra, após essa data ele perderá a validade.</p>
+				
+				<div style="display:table; width:100%; margin:15px 0;">
+					<img src="/assets/<?php echo $this->layout()->routes['module']; ?>/img/checkout/print.png" class="left" />
+					Imprima o boleto e <br/><b>pague em qualquer agência bancária</b>
+				</div>
+				
+				<div style="display:table; width:100%;">
+					<img src="/assets/<?php echo $this->layout()->routes['module']; ?>/img/checkout/notebook.png" class="left" />
+					<b>ou pague pela internet</b> <br/>utilizando o código de barras do boleto
+				</div>
+				
+				<br/><br/>
+				<p><b>Aproveite!</b></p>
+				
+				<p class="color-green">
+				<?php if( !empty($this->boleto_porcentagem) ): ?>
+				Desconto de <?php echo $this->boleto_porcentagem; ?>% no boleto: R$ <?php echo \Naicheframework\Helper\Convert::toReal($plano->valor); ?>
+				<?php endif; ?>
+				&nbsp;</p>
+				
+				<p class="font-medium color-green">Total no boleto R$ <?php echo \Naicheframework\Helper\Convert::toReal($plano->valor - $desconto_calc); ?></p>
+				
+				<button type="submit" class="bt bg-yellow">Pagar com boleto bancário</button>
+			</div>
+			
+			<textarea id="public_key" style="display:none;"><?php echo $this->public_key; ?></textarea>
+		    <input type="hidden" name="cc_hash" id="encrypted_value" />
+		    <input type="hidden" name="cc_type" id="card_type" />
+		    <?php } ?>
+	    	
+			<input type="hidden" name="method" value="pagamentoConfirmar" />
+		<?php echo \Naicheframework\Security\NoCSRF::generate("content"); ?>
+	</form>
+	<?php if ($plano->valor - ($cupom->valor * $plano->valor / 100) == 0){ ?>
+		
+	<?php } else { ?>
+		<p><b>Importante</b></p>
+		<p>No período de 30 dias, se houver cinco ou mais boletos bancários de um mesmo cliente, não pagos, poderá ocorrer bloqueio temporário desta forma de quitação, por até 30 dias. Nesse período, novas compras poderão ser feitas no site por meio de outras formas de pagamento ou com boleto, pelo Televendas.</p>
+		<p>Não faça depósito ou transferência entre contas. O boleto não é enviado pelos Correios. Imprima-o e pague-o no banco ou pela internet.</p>
+	<?php } ?>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#encrypt").click(function() {
+	    var cc = new Moip.CreditCard({
+		    number  : $("#cc_number").val(),
+		    cvc     : $("#cc_cvc").val(),
+		    expMonth: $("#cc_exp_month").val(),
+		    expYear : $("#cc_exp_year").val(),
+		    pubKey  : $("#public_key").val()
+	    });
+	    
+	    if( cc.isValid())
+	    {
+		    $("#encrypted_value").val(cc.hash());
+		    $("#card_type").val(cc.cardType());
+			$("form.payment").submit();
+			
+		} else {
+		    $("#encrypted_value").val('');
+		    $("#card_type").val('');
+		    alert('Cartão de crédito inválido. Verifique todos os dados informados!');
+	    }
+	});
+});
+</script>

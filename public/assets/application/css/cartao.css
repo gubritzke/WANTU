@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800');
+
+.bgfull{
+	background: #84139e;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.cartao{
+	display:inline-block;
+	width: 514px;
+	height: 710px;
+	background: #fff;
+	background-image: url("/assets/application/img/cartao/bg-fundo.png");
+	background-repeat: no-repeat;
+	background-position: 0 438px;
+	border-radius: 21px;
+	margin-top: 5vh;
+	box-sizing: border-box;
+	padding: 0 65px;
+	position: relative;
+}
+.cartao img.f-perfil{
+	margin-top: 55px;
+}
+.dados{
+	text-align: left;
+	margin-top: 41px;
+}
+.nome{
+	font-size: 24px;
+	color: #84139e;
+	font-weight: 700;
+}
+.cargo{
+	font-size: 14px;
+	color: #464646;
+	font-style: italic;
+	font-weight: 600;
+}
+.telefone{
+	font-size: 18px;
+	color: #84139e;
+	font-weight: 700;
+	margin-top: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+.email{
+	font-size: 18px;
+	color: #464646;
+	margin-top: 8px;
+}
+p.site{
+	margin-top: 8px;
+}
+.site a{
+	color: #84139e;
+	font-weight: 500;
+	text-decoration: underline;
+}
+.infos{
+	margin-top: 70px;
+	text-align: left;
+}
+.conheca{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+}
+.conheca img{
+	margin-left: 5px;
+}
+.info-mini{
+	color: #fff;
+	margin-top: 10px;
+	font-weight: 300;
+}
+ul.redes{
+	float: left;
+	margin-top: 15px;
+}
+ul.redes li{
+	float: left;
+	border: 2px solid #fff;
+	width: 44px;
+	height: 44px;
+	border-radius: 100px;
+	text-align: center;
+	font-size: 25px;
+	margin-right: 13px;
+}
+ul.redes li i{
+	color: #fff;
+	margin-top: 9px;
+}
+a.site{
+	width: 100%;
+	color: #fff;
+	float: left;
+	margin-top: 17px;
+	font-weight: 700;
+}
+.img-ico{
+	line-height: 13px;
+	margin-right: 21px;
+}
+.wantul{
+	position: absolute;
+	right: 55px;
+	bottom: 70px;
+	background-image: url("/assets/application/img/cartao/u-wantu.png");
+	width: 71px;
+	height: 86px;
+}
+
+
+
+
+
+
+
+
+
+
+

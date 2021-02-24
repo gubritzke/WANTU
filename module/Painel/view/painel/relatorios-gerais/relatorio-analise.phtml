@@ -1,0 +1,225 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+<style>
+    #graph {
+        min-width: 360px;
+        max-width: 600px;
+        height: 400px;
+        margin: 0 auto;
+    }
+</style>
+<div id="box-curriculo">
+	<div class="container">
+		<div id="curriculo">
+			<p class="name-topo">Trilha 8 | <?php  echo $usuariocr->nome  ?></p>
+			<hr>
+			<a class="logo-wantu"></a>
+			<span class="big-ola">Olá!</span>
+			<p class="text-perfil">
+				Neste relatório iremos apresentar um diagnóstico para ajudá-la em sua carreira, baseado em nossa tecnologia exclusiva de <b>People Analytics</b>:
+				<br><br>
+				Nessa ferramenta, utilizamos <b>4 indicadores,</b> todos interligados:
+				<br><br>
+				<span class="color-violet">1) Indicador “Onde Estou?”:</span> Representa seu ponto de partida. Inclui dados relacionados a seu contexto pessoal, escolha do seu curso e sua identificação com o que estudou, e continua estudando na pós-graduação e nos cursos que você tem feito.
+				<br><br>
+                <span class="color-violet">2) Indicador “Para onde vou?”:</span> Leva em consideração suas aspirações, disponibilidade para mudança, sua percepção do mercado e os planos que você tem hoje.
+                <br><br>
+                <span class="color-violet">3) Indicador “Como faço para chegar lá?”:</span> Considera todas as experiências profissionais que você já teve e o quanto elas contribuíram para o desenvolvimento de suas competências.
+                <br><br>
+                <span class="color-violet">4) Índice “WantU”:</span> Calculado a partir dos três indicadores anteriores, com diferentes pesos, indica o quanto você está “perdido” ou encaminhado em sua carreira.
+			</p>	
+			<div id="bg-pronto" style="display: none;">
+				<a class="bg-graph"></a>
+			</div>
+			<div id="graph">
+				
+			</div>		
+
+			<div class="line margin-line"></div>
+			
+			<p class="titulo-pd">
+				Com base em seu CV e na entrevista que fizemos,<br>
+				nosso diagnóstico aponta para o seguinte:
+			</p>
+			
+			<p class="text-perfil">
+			
+				<span class="color-violet font-big">Indicador “Onde Estou?”</span>
+				<br><br>
+				<span class="color-yellow font-big">Levando:</span> Sua jornada de autoavaliação acabou de começar e sugere que você sabe mais ou menos onde está e como chegou até aqui, porém parece não ter certeza se está no lugar certo ou não, se era isso mesmo que você queria. Mesmo assim, não significa que está tão pedido assim, e consegue “ir levando”, mas isso pode melhorar, não é mesmo?! Aguenta firme que nós já chegamos!
+				<br><br>
+				<span class="color-violet font-big">Indicador “Para onde vou?”</span>
+				<br><br>
+				<span class="color-red font-big">Perdidaço:</span> Você não tem noção nenhum de onde quer chegar, claramente precisa de um empurrãozinho para clarear alguns pensamentos e assim conseguir ter uma ideia bem definida de futuro.
+				<br><br>
+				<span class="color-violet font-big">Indicador “Como faço para chegar lá?”</span>
+				<br><br>
+				<span class="color-green font-big">Indo bem:</span> Parabéns! Você está no caminho certo para alcançar os lugares onde quer chegar, continue com esse foco e determinação, é muito importante ter conhecimento de que só conseguimos alcançar nossos objetivos com muito trabalho duro e investindo tempo em nossas carreiras, na direção certa do que queremos.
+				<br><br>
+				<span class="color-violet font-big">Indicador “Índice WantU”</span>
+				<br><br>
+				Com base nos três indicadores anteriores, calculamos um índice ponderado do quanto você está “perdidinho” em sua carreira. Quanto mais próximo de 100%, mais você está encaminhado, ou seja, seguindo os passos coerentemente com aquilo que você quer. Quanto mais próximo de 0, mais perdido você está.
+				<br><br>
+				<b>Seu Índice Geral WantU foi</b> <span class="color-violet font-big"><?php  echo $result->total_indice_de_perdidice ?>%</span> Isso quer dizer que você precisa realmente dar atenção à sua carreira. Neste momento, é hora de se questionar: o que eu quero de verdade? O que é importante para mim? Quais são meus pontos fortes? Quais são meus talentos? Como posso desenvolvê-los?
+				
+				
+			</p>
+			
+			<div class="line" style="margin-top: 45px;"></div>
+			
+			<div class="roda-inferior">
+				
+				<div class="roda-left">
+					<a class="img-roda"></a>
+				</div>
+				
+				<div class="roda-right">
+					<p class="text-perfil">
+					Sabemos que as respostas a estas questões não são fáceis, mas estamos aqui justamente para isso: ajudá-lo a se conhecer melhor, e alinhar suas ações em direção a seus talentos e sonhos!
+					<br><br>
+					Este relatório nos dá uma ideia da maneira como você está conduzindo sua careira até aqui. Combinando os dados que você nos passou em nosso modelo de People Analytics, temos várias sugestões do que você pode fazer para potencializar seu talento e alcançar a carreira que sempre sonhou. Ficou curioso? Então vamos continuar nesta aventura de descobrimento e aprendizado!
+					
+					</p>
+				</div>	
+				<div class="roda-full">
+					<p class="text-perfil">
+						Um grande abraço!<br>
+						Equipe <span class="text-style">WantU.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="buttons-curriculo">
+			<a style="display: none;" class="imp dowload-button" onclick="printCurriculo()"><img alt="" src="/assets/application/img/analise/seta.png"></a>	
+			<a class="button" style="float: right; margin-right: 137px; background: #430950; color: #fff; font-size: 17px; padding: 10px 39px; border-radius: 8px;" href="/painel/relatorios-gerais/analise-de-curriculo">Voltar</a>
+		</div>
+	</div>
+</div>
+
+<script>
+function printCurriculo() {
+    window.print();
+}
+</script>
+
+<style>
+@page { 
+	size: auto;  
+	margin: 0mm; 
+}
+@media print {
+	footer{
+		display: none;
+	}
+	#topo-cadastro{
+		display: none;
+	}
+	#curriculo{
+		margin-top: 0;
+		box-shadow: none;
+		padding: 50px 10px 0 10px !important;
+	}
+	a[href]:after {
+	    content: none !important;
+	}
+	.buttons-curriculo{
+		display: none;
+	}
+	.mg-print{
+		margin-top: 50px;
+		display: inline-block;
+		height: 1px;
+		width: 1px;
+	}
+	nav{
+	   display: none;
+	}
+	header{
+	   display: none;
+	}
+	#box-curriculo{
+	   display: inline-block;
+	}
+</style>
+
+<script type="text/javascript">
+Highcharts.chart('graph', {
+
+	  chart: {
+	    polar: true,
+	    type: 'line'
+	  },
+
+	  title: {
+	    text: '',
+	    x: -80
+	  },
+
+	  navigation: {
+		  buttonOptions: {
+		    enabled: false
+		    }
+	  },
+	  credits: {
+	      enabled: false
+	  },
+
+	  pane: {
+	    size: '80%'
+	  },
+
+	  xAxis: {
+	    categories: ['Onde Estou?', 'Pra Onde vou?', 'Como faço pra chegar la', 'índice WantU'],
+	    tickmarkPlacement: 'on',
+	    lineWidth: 0
+	  },
+
+	  yAxis: {
+	    gridLineInterpolation: 'polygon',
+	    lineWidth: 0,
+	    min: 1
+	  },
+
+	  tooltip: {
+	    shared: false,
+// 	    pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'
+	  },
+
+	  legend: {
+	    align: 'right',
+	    verticalAlign: 'middle'
+	  },
+
+	  series: [
+	  {
+	    name: 'Seu índice',
+	    data: [<?php  echo $result->total_onde_estou ?>, <?php  echo $result->total_para_onde_vou ?>, <?php  echo $result->total_como_faco_para_chegar ?>, <?php  echo $result->total_indice_de_perdidice ?>],
+	    pointPlacement: 'on'
+	  }],
+
+	  responsive: {
+	    rules: [{
+	      condition: {
+	        maxWidth: 500
+	      },
+	      chartOptions: {
+	        legend: {
+	          align: 'center',
+	          verticalAlign: 'bottom'
+	        },
+	        pane: {
+	          size: '70%'
+	        }
+	      }
+	    }]
+	  }
+
+	});
+</script>
+
+

@@ -1,0 +1,7 @@
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-17 13:34:48","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-17 14:22:18","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-17 15:28:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final\/relatorio-final\/22","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final\/relatorio-final\/22","date":"2018-12-17 17:48:47","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-17 18:20:55","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-17 18:23:15","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-17 18:25:07","ip":"10.0.2.29"}

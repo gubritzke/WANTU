@@ -1,0 +1,6 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-09-19 14:12:41","ip":"10.0.2.29"}
+{"module":"application","controller":"login","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/login","date":"2019-09-19 14:13:16","ip":"10.0.2.29"}
+{"module":"application","controller":"login","action":"index","get":[],"post":{"login":"gustavo.britzke@naiche.com.br","senha":"mudar123","method":"logaradmin"},"type":"DEBUG","message":"acesso","page":"\/login","date":"2019-09-19 14:13:25","ip":"10.0.2.29"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2019-09-19 14:13:25","ip":"10.0.2.29"}
+{"module":"painel","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel","date":"2019-09-19 14:13:31","ip":"10.0.2.29"}
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-09-19 14:13:49","ip":"10.0.2.29"}

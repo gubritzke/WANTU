@@ -1,0 +1,20 @@
+@media( max-width:650px ) {
+	.banner{
+		background: url("/assets/application/img/banners/banner.jpg") no-repeat -453px 33px;
+	}
+	form .label-assunto {
+	    width: 251px;
+	}
+	form .label-search {
+	    width: 198px;
+	}
+	.ajst-blog-m{
+		text-align: center;
+		width: 100%;
+		float: left;
+	}
+	.box-blog {
+	    float: none;
+	    display: inline-block;
+	}
+}

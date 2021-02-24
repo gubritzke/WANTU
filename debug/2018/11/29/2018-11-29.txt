@@ -1,0 +1,2 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-11-29 10:46:46","ip":"10.0.1.120"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-11-29 14:57:48","ip":"10.0.2.29"}

@@ -1,0 +1,72 @@
+	<div id="topo-teste">
+		<div class="container">
+
+			<a class="logo-w" href="/minha-conta"></a>
+			<?php /* if( !empty($this->layout()->me) ): */ ?>
+			<a class="button" style="background: #13939e" href="/minha-conta">Minha conta</a>
+			<?php /* endif; */ ?>
+			
+			<?php if ( $title == NULL ) {?>
+			<p>
+				Análise de<br>
+				currículo e entrevista
+			</p>
+			<?php } else {?>
+			<p><?php echo $title; ?></p>
+			<?php } ?>
+			
+		</div>
+	</div>
+	<?php if (!empty($this->layout()->breadcrumb)):?>
+	<div class="breadcrumb" style="line-height: 50px; height: 30px;">
+		<div class="container">
+			<ul>
+				<?php foreach ($this->layout()->breadcrumb as $key => $row):?>
+					<li><a href="<?php echo $row ?>"><?php echo $key ?></a></li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
+	</div>
+	<?php endif; ?>
+	
+
+<form class="campos_preenchidos" style="display: none;">
+
+	<?php foreach ( $data as $key => $row ) {?>
+		<?php if ($key == 'data_de_nascimento') { ?>
+			<input name="<?php echo $key?>" value="<?php echo date('d/m/Y', strtotime( $row )) ?>"/>
+		<?php } else { ?>
+			<input name="<?php echo $key?>" value="<?php echo $row;?>"/>
+		<?php } ?>
+	<?php } ?>
+
+</form>
+
+<script>
+$(function (){
+	
+	$('.campos_preenchidos input').each( function (){
+		
+		$('.form-align > form input[type="text"][name="'+$(this).attr('name')+'"]').val( $(this).val() );
+		$('.form-align > form input[type="date"][name="'+$(this).attr('name')+'"]').val( $(this).val() );
+		$('.form-align > form input[type="tel"][name="'+$(this).attr('name')+'"]').val( $(this).val() );
+		$('.form-align > form input[type="num"][name="'+$(this).attr('name')+'"]').val( $(this).val() );
+		$('.form-align > form input[type="email"][name="'+$(this).attr('name')+'"]').val( $(this).val() );
+		$('.form-align > form textarea[name="'+$(this).attr('name')+'"]').val( $(this).val() );
+	
+		var input = $(this);
+		
+		setTimeout( function (){
+	    	
+	    	$('.form-align > form input[type="radio"][name="'+$(input).attr('name')+'"][value="'+$(input).val()+'"]').trigger('click');
+	    	$('.form-align > form input[type="checkbox"][name="'+$(input).attr('name')+'"][value="'+$(input).val()+'"]').trigger('click');
+	    	$('.form-align > form select option[value="'+$(input).val()+'"]').attr('selected','selected');
+	    	$('.form-align > form select[name="'+$(input).attr('name')+'"]').val($(input).val());
+
+	
+		}, 200);
+		
+	});
+
+});
+</script>

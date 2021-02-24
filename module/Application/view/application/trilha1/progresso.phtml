@@ -1,0 +1,30 @@
+<?php 
+
+	$action = [];
+	$action['index'] = 0;
+	$action['documentos'] = 1;
+	$action['dados-escolares'] = 2;
+	$action['pos-graduacao'] = 2;
+	$action['cursos'] = 3;
+	$action['idiomas'] = 4 ;
+	$action['experiencia-profissional'] = 5;
+	$action['experiencia-internacional'] = 6;
+	$action['informacoes-complementares'] = 7;
+
+	$actionAtual = $this->layout()->routes['action'];
+	$numAction = $action[$actionAtual];
+	
+?>
+
+<div class="box-progresso" style="margin-top: -50px;">
+
+	<a class="etapa1 <?php if ($numAction == 0){ ?> active-img <?php } ?>"></a>
+	<a class="etapa2 <?php if ($numAction == 1){ ?> active-img <?php } ?>"></a>
+	<a class="etapa3 <?php if ($numAction == 2){ ?> active-img <?php } ?>"></a>
+	<a class="etapa4 <?php if ($numAction == 3){ ?> active-img <?php } ?>"></a>
+	<a class="etapa5 <?php if ($numAction == 4){ ?> active-img <?php } ?>"></a>
+	<a class="etapa6 <?php if ($numAction == 5){ ?> active-img <?php } ?>"></a>
+	<a class="etapa7 <?php if ($numAction == 6){ ?> active-img <?php } ?>"></a>
+	<a class="etapa8 <?php if ($numAction == 7){ ?> active-img <?php } ?>"></a>
+
+</div>

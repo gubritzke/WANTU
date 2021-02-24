@@ -1,0 +1,7 @@
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-04-01 11:54:26","ip":"10.0.2.148"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-04-01 13:21:23","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-04-01 13:22:52","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-04-01 13:27:37","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-04-01 14:26:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-04-01 15:24:23","ip":"10.0.2.29"}
+{"url":"test.naiche.net:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-04-01 15:41:11","ip":"177.33.4.9"}

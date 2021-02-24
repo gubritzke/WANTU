@@ -1,0 +1,860 @@
+<?php 
+	$title = '<span style="margin-top:20px; display: inline-block;">Trilha 1</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml'; 
+?>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" media="" rel="stylesheet" type="text/css">
+<link href="/assets/application/js/extensions/jquery.tooltipster/dist/css/tooltipster.bundle.min.css" media="" rel="stylesheet" type="text/css">
+<div id="full-teste">
+	<div class="container">
+		<div class="progresso">
+			<?php include 'module/Application/view/application/trilha1/progresso.phtml'; ?>
+		</div>
+		
+		<div class="formulario">
+			<div class="form-align">
+				<p class="tittle" style="position: relative;">Dados Escolares (Graduação)<i class="info tooltip" title="Você pode adicionar um ou mais cursos">?</i></p>
+				<form id="form-submit3" action="" method="post">
+				
+					<label class="select-100 right">
+						<span style="font-size: 17px !important; ">Você possui graduação completa ou em andamento?</span>
+						<select name="possui_graduacao" onchange="$(this).val() == 'Sim' ? $('#formContent').slideDown() : $('#formContent').slideUp(); ">
+							<option value="Sim">Sim</option>
+							<option value="Nao">Não</option>
+						</select>
+					</label>
+				
+					<div id="formContent">
+					
+						<label class="select-100 right">
+							<span>Status do curso</span>
+							<select name="status_curso" id="status_curso">
+								<option value=""></option>
+								<option value="Em andamento">Em andamento</option>
+								<option value="Concluído">Concluído</option>
+							</select>
+						</label>
+						
+						<div id="formAndamento" style="display: none;">
+							<label class="select-100">
+								<span>Estado da instituição de ensino</span>
+								<select name="estado_da_instituicao_andamento">
+									<option selected value=""></option>
+		        					<option value="AC">AC</option>
+		        					<option value="AL">AL</option>
+		        					<option value="AM">AM</option>
+		        					<option value="AP">AP</option>
+		        					<option value="BA">BA</option>
+		        					<option value="CE">CE</option>
+		        					<option value="DF">DF</option>
+		        					<option value="ES">ES</option>
+		        					<option value="GO">GO</option>
+		        					<option value="MA">MA</option>
+		        					<option value="MG">MG</option>
+		        					<option value="MS">MS</option>
+		      						<option value="MT">MT</option>
+		      						<option value="PA">PA</option>
+		        					<option value="PB">PB</option>
+		        					<option value="PE">PE</option>
+		        					<option value="PI">PI</option>
+		        					<option value="PR">PR</option>
+		        					<option value="RJ">RJ</option>
+		        					<option value="RN">RN</option>
+		        					<option value="RO">RO</option>
+		        					<option value="RR">RR</option>
+		        					<option value="RS">RS</option>
+		        					<option value="SC">SC</option>
+		        					<option value="SE">SE</option>
+		        					<option value="SP">SP</option>
+		        					<option value="TO">TO</option>
+								</select>
+							</label>					
+						
+							<label class="input-100">
+								<span>Nome da instituição de Ensino<i class="info tooltip" title="Colocar nome completo da instituição de ensino">?</i></span>
+								<input type="text" name="instituicao_de_ensino_andamento">
+							</label>
+							
+							<label class="input-100">
+								<span>Nome do Curso</span>
+								<select class="js-example-basic-single" name="nome_do_curso_andamento">
+									<option></option>
+									<option>Biologia</option>
+									<option>Biologia marinha</option>
+									<option>Biomedicina</option>
+									<option>Botânica</option>
+									<option>Ciências Agrárias</option>
+									<option>Ciências Ambientais</option>
+									<option>Ciências Biológicas</option>
+									<option>Ciências da Saúde</option>
+									<option>Ciências do Meio Aquático</option>
+									<option>Ecologia</option>
+									<option>Educação física</option>
+									<option>Enfermagem</option>
+									<option>Fisioterapia</option>
+									<option>Fonoaudiologia</option>
+									<option>Gerontologia</option>
+									<option>Medicina</option>
+									<option>Medicina veterinária</option>
+									<option>Meteorologia</option>
+									<option>Microbiologia e Imunologia</option>
+									<option>Naturologia</option>
+									<option>Neurociência</option>
+									<option>Nutrição</option>
+									<option>Odontologia</option>
+									<option>Quiropraxia</option>
+									<option>Saúde Coletiva</option>
+									<option>Terapia ocupacional</option>
+									<option>Zootecnia</option>
+									<option>Aquacultura</option>
+									<option>Cafeicultura</option>
+									<option>Biotecnologia</option>
+									<option>Ciência dos Alimentos</option>
+									<option>Cosmetologia</option>
+									<option>Drenagem e Irrigação</option>
+									<option>Enologia</option>
+									<option>Fruticultura</option>
+									<option>Gestão de Recursos Hídricos</option>
+									<option>Horticultura</option>
+									<option>Meliponicultura</option>
+									<option>Oftálmica</option>
+									<option>Radiologia</option>
+									<option>Silvicultura</option>
+									<option>Sistemas Biomédicos</option>
+									<option>Agronomia</option>
+									<option>Astronomia</option>
+									<option>Bioengenharia</option>
+									<option>Biofísica</option>
+									<option>Ciências Contábeis</option>
+									<option>Ciência da Computação</option>
+									<option>Ciências Biomoleculares</option>
+									<option>Ciências Matemáticas da Terra</option>
+									<option>Ciências Naturais</option>
+									<option>Ciências Náuticas</option>
+									<option>Ciência e Tecnologia</option>
+									<option>Educação do Campo</option>
+									<option>Engenharia aeroespacial</option>
+									<option>Engenharia aeronáutica</option>
+									<option>Engenharia Agrícola</option>
+									<option>Engenharia de Alimentos</option>
+									<option>Engenharia Ambiental</option>
+									<option>Engenharia biomédica</option>
+									<option>Engenharia Cartográfica</option>
+									<option>Engenharia Civil</option>
+									<option>Engenharia de Computação</option>
+									<option>Engenharia de controle e automação</option>
+									<option>Engenharia Elétrica</option>
+									<option>Engenharia Física</option>
+									<option>Engenharia Florestal</option>
+									<option>Engenharia geológica</option>
+									<option>Engenharia Industrial Madeireira</option>
+									<option>Engenharia de manufatura</option>
+									<option>Engenharia de Materiais</option>
+									<option>Engenharia Mecânica</option>
+									<option>Engenharia Mecatrônica</option>
+									<option>Engenharia Metalúrgica</option>
+									<option>Engenharia Militar</option>
+									<option>Engenharia de Minas</option>
+									<option>Engenharia Naval e Oceânica</option>
+									<option>Engenharia Nuclear</option>
+									<option>Engenharia de Pesca</option>
+									<option>Engenharia de Petróleo</option>
+									<option>Engenharia de Produção</option>
+									<option>Engenharia Química</option>
+									<option>Engenharia Sanitária</option>
+									<option>Engenharia de Sistemas Eletrônicos</option>
+									<option>Engenharia de Software</option>
+									<option>Engenharia de Tecidos</option>
+									<option>Engenharia de Telecomunicações</option>
+									<option>Engenharia Têxtil</option>
+									<option>Estatística</option>
+									<option>Farmácia (ou Bioquímica)</option>
+									<option>Física</option>
+									<option>Física computacional</option>
+									<option>Física médica</option>
+									<option>Geofísica</option>
+									<option>Geologia</option>
+									<option>Geoprocessamento e Sensoriamento Remoto</option>
+									<option>Informática</option>
+									<option>Informática biomédica</option>
+									<option>Matemática</option>
+									<option>Matemática Aplicada</option>
+									<option>Matemática computacional</option>
+									<option>Nanotecnologia</option>
+									<option>Oceanografia</option>
+									<option>Química</option>
+									<option>Química ambiental</option>
+									<option>Química industrial</option>
+									<option>Sistemas de Informação</option>
+									<option>Agrimensura</option>
+									<option>Agroindústria</option>
+									<option>Análise e Desenvolvimento de Sistemas</option>
+									<option>Automação Industrial</option>
+									<option>Biocombustíveis</option>
+									<option>Ciências Aeronáuticas</option>
+									<option>Ciência dos materiais</option>
+									<option>Construção de Edifícios</option>
+									<option>Construção de Estradas</option>
+									<option>Construção Naval</option>
+									<option>Energias Renováveis</option>
+									<option>Gestão da Tecnologia da Informação</option>
+									<option>Gestão de Petróleo e Gás</option>
+									<option>Gestão Portuária</option>
+									<option>Manutenção Industrial</option>
+									<option>Mecatrônica e Mecânica de Precisão</option>
+									<option>Mineração</option>
+									<option>Processos Metalúrgicos</option>
+									<option>Processamento de Dados</option>
+									<option>Produção de Laticínios</option>
+									<option>Produção de Materiais Plásticos</option>
+									<option>Produção Têxtil</option>
+									<option>Produção Sucroalcooeira</option>
+									<option>Projetos de Estruturas Aeronáuticas</option>
+									<option>Redes de Computadores</option>
+									<option>Redes de Telecomunicações</option>
+									<option>Saneamento Ambiental</option>
+									<option>Segurança da Informação</option>
+									<option>Sistemas Biomédicos</option>
+									<option>Sistemas Elétricos</option>
+									<option>Sistemas Embarcados</option>
+									<option>Sistemas de Navegação Fluvial</option>
+									<option>Sistemas para Internet</option>
+									<option>Telemática</option>
+									<option>Administração</option>
+									<option>Antropologia</option>
+									<option>Arqueologia</option>
+									<option>Arquitetura</option>
+									<option>Arquivística</option>
+									<option>Artes Cênicas</option>
+									<option>Artes Visuais</option>
+									<option>Biblioteconomia</option>
+									<option>Ciências Atuariais</option>
+									<option>Ciências Contábeis</option>
+									<option>Ciência da Religião</option>
+									<option>Ciências Humanas</option>
+									<option>Ciência Política (ou Ciências do Estado)</option>
+									<option>Ciências Sociais</option>
+									<option>Cinema</option>
+									<option>Comunicação social</option>
+									<option>Dança</option>
+									<option>Defesa e Gestão Estratégica Internacional</option>
+									<option>Desenho Industrial</option>
+									<option>Design de Interiores</option>
+									<option>Design de Moda</option>
+									<option>Direito</option>
+									<option>Economia</option>
+									<option>Economia Doméstica</option>
+									<option>Editoração</option>
+									<option>Educação Artística</option>
+									<option>Escultura</option>
+									<option>Filosofia</option>
+									<option>Gastronomia</option>
+									<option>Geografia</option>
+									<option>Gestão Ambiental</option>
+									<option>Gestão Pública</option>
+									<option>Gravurismo</option>
+									<option>História</option>
+									<option>História da Arte</option>
+									<option>Hotelaria</option>
+									<option>Jornalismo</option>
+									<option>Letras</option>
+									<option>Linguística</option>
+									<option>Museologia</option>
+									<option>Música</option>
+									<option>Ordenamento do Território</option>
+									<option>Paisagismo</option>
+									<option>Pedagogia</option>
+									<option>Pintura</option>
+									<option>Psicologia</option>
+									<option>Publicidade e Propaganda</option>
+									<option>Produção Audiovisual (popularmente referido como Rádio e TV, e mais arcaicamente como Radialismo)</option>
+									<option>Produção Cultural</option>
+									<option>Relações Internacionais</option>
+									<option>Relações Públicas</option>
+									<option>Segurança Pública</option>
+									<option>Serviço Social</option>
+									<option>Sociologia</option>
+									<option>Teatro</option>
+									<option>Teologia</option>
+									<option>Transporte Terrestre</option>
+									<option>Turismologia</option>
+									<option>Urbanismo</option>
+									<option>Agroecologia</option>
+									<option>Comércio Exterior</option>
+									<option>Cooperativismo</option>
+									<option>Design de Jogos Digitais</option>
+									<option>Design de produto</option>
+									<option>Design gráfico</option>
+									<option>Eventos</option>
+									<option>Esporte e Lazer</option>
+									<option>Fotografia</option>
+									<option>Gestão do Agronegócio</option>
+									<option>Gestão Comercial</option>
+									<option>Gestão Financeira</option>
+									<option>Gestão Hospitalar</option>
+									<option>Gestão de Segurança Privada</option>
+									<option>Gestão da Qualidade</option>
+									<option>Logística</option>
+									<option>Mercadologia</option>
+									<option>Negócios Imobiliários</option>
+									<option>Processos Escolares</option>
+									<option>Produção de Aguardente</option>
+									<option>Produção Fonográfica</option>
+									<option>Recursos Humanos</option>
+									<option>Secretariado</option>
+									<option>Segurança no Trabalho</option>
+									<option>Transporte Aéreo</option>
+									<option>Gestão em serviços jurídicos e notariais</option>
+								</select>
+							</label>	
+							
+							<label class="select-100">
+								<span>Tipo do Curso</span>
+								<select name="tipo_do_curso_andamento">
+									<option value=""></option>
+									<option>Tecnólogo</option>
+									<option>Bacharel</option>
+									<option>Licenciatura</option>
+								</select>
+							</label>
+		
+							<label class="select-50">
+								<span>Período atual</span>
+								<select name="periodo_andamento">
+									<option value=""></option>
+									<option>1º</option>
+									<option>2º</option>
+									<option>3º</option>
+									<option>4º</option>
+									<option>5º</option>
+									<option>6º</option>
+									<option>7º</option>
+									<option>8º</option>
+									<option>9º</option>
+									<option>10º</option>
+									<option>11º</option>
+									<option>12º</option>
+								</select>
+							</label>
+							
+							<label class="select-50 right">
+								<span>Duração do Curso</span>
+								<select name="duracao_do_curso_andamento">
+									<option value=""></option>
+									<option>1º</option>
+									<option>2º</option>
+									<option>3º</option>
+									<option>4º</option>
+									<option>5º</option>
+									<option>6º</option>
+									<option>7º</option>
+									<option>8º</option>
+									<option>9º</option>
+									<option>10º</option>
+									<option>11º</option>
+									<option>12º</option>
+								</select>
+							</label>										
+		
+							<label class="select-50">
+								<span>Horário</span>
+								<select name="horario_andamento">
+									<option value=""></option>
+									<option>Período da Manhã</option>
+									<option>Período da Tarde</option>
+									<option>Período da Noite</option>
+									<option>Período Integral</option>
+								</select>
+							</label>
+							
+							<label class="input-50 right">
+								<span>Previsão de Formatura</span>
+								<input type="text" class="calendarMD" name="previsao_de_formatura_andamento" >
+							</label>
+		
+							<label class="select-100">
+								<span style="font-size: 17.5px;">Disponibilidade Estágio</span>
+								<select name="disponibilidade_estagio_andamento">
+									<option value=""></option>	
+									<option>Período da Manhã</option>
+									<option>Período da Tarde</option>
+									<option>Período da Noite</option>
+									<option>Período Integral</option>
+								</select>
+							</label>
+							
+							<label class="input-100 ">
+								<span>Coeficiente de Rendimento <i class="info tooltip" title="Considere o coeficiente máximo de 100%">?</i></span>
+								<input type="text" name="coeficiente_de_rendimento_andamento">
+							</label>
+							
+						</div>
+					
+						<div id="formconcluido" style="display: none;"> 
+						
+							<label class="select-100">
+								<span>Estado da instituição de ensino</span>
+								<select name="estado_da_instituicao_concluido">
+									<option value=""></option>
+		        					<option value="AC">AC</option>
+		        					<option value="AL">AL</option>
+		        					<option value="AM">AM</option>
+		        					<option value="AP">AP</option>
+		        					<option value="BA">BA</option>
+		        					<option value="CE">CE</option>
+		        					<option value="DF">DF</option>
+		        					<option value="ES">ES</option>
+		        					<option value="GO">GO</option>
+		        					<option value="MA">MA</option>
+		        					<option value="MG">MG</option>
+		        					<option value="MS">MS</option>
+		      						<option value="MT">MT</option>
+		      						<option value="PA">PA</option>
+		        					<option value="PB">PB</option>
+		        					<option value="PE">PE</option>
+		        					<option value="PI">PI</option>
+		        					<option value="PR">PR</option>
+		        					<option value="RJ">RJ</option>
+		        					<option value="RN">RN</option>
+		        					<option value="RO">RO</option>
+		        					<option value="RR">RR</option>
+		        					<option value="RS">RS</option>
+		        					<option value="SC">SC</option>
+		        					<option value="SE">SE</option>
+		        					<option value="SP">SP</option>
+		        					<option value="TO">TO</option>
+								</select>
+							</label>					
+						
+							<label class="input-100">
+								<span>Nome da instituição de Ensino<i class="info tooltip" title="Colocar nome completo da instituição de ensino">?</i></span>
+								<input type="text" name="instituicao_de_ensino_concluido">
+							</label>
+							
+							<label class="input-100">
+								<span>Nome do Curso</span>
+								<select class="js-example-basic-single" name="nome_do_curso_concluido">
+									<option></option>
+									<option>Biologia</option>
+									<option>Biologia marinha</option>
+									<option>Biomedicina</option>
+									<option>Botânica</option>
+									<option>Ciências Agrárias</option>
+									<option>Ciências Ambientais</option>
+									<option>Ciências Biológicas</option>
+									<option>Ciências da Saúde</option>
+									<option>Ciências do Meio Aquático</option>
+									<option>Ecologia</option>
+									<option>Educação física</option>
+									<option>Enfermagem</option>
+									<option>Fisioterapia</option>
+									<option>Fonoaudiologia</option>
+									<option>Gerontologia</option>
+									<option>Medicina</option>
+									<option>Medicina veterinária</option>
+									<option>Meteorologia</option>
+									<option>Microbiologia e Imunologia</option>
+									<option>Naturologia</option>
+									<option>Neurociência</option>
+									<option>Nutrição</option>
+									<option>Odontologia</option>
+									<option>Quiropraxia</option>
+									<option>Saúde Coletiva</option>
+									<option>Terapia ocupacional</option>
+									<option>Zootecnia</option>
+									<option>Aquacultura</option>
+									<option>Cafeicultura</option>
+									<option>Biotecnologia</option>
+									<option>Ciência dos Alimentos</option>
+									<option>Cosmetologia</option>
+									<option>Drenagem e Irrigação</option>
+									<option>Enologia</option>
+									<option>Fruticultura</option>
+									<option>Gestão de Recursos Hídricos</option>
+									<option>Horticultura</option>
+									<option>Meliponicultura</option>
+									<option>Oftálmica</option>
+									<option>Radiologia</option>
+									<option>Silvicultura</option>
+									<option>Sistemas Biomédicos</option>
+									<option>Agronomia</option>
+									<option>Astronomia</option>
+									<option>Bioengenharia</option>
+									<option>Biofísica</option>
+									<option>Ciências Contábeis</option>
+									<option>Ciência da Computação</option>
+									<option>Ciências Biomoleculares</option>
+									<option>Ciências Matemáticas da Terra</option>
+									<option>Ciências Naturais</option>
+									<option>Ciências Náuticas</option>
+									<option>Ciência e Tecnologia</option>
+									<option>Educação do Campo</option>
+									<option>Engenharia aeroespacial</option>
+									<option>Engenharia aeronáutica</option>
+									<option>Engenharia Agrícola</option>
+									<option>Engenharia de Alimentos</option>
+									<option>Engenharia Ambiental</option>
+									<option>Engenharia biomédica</option>
+									<option>Engenharia Cartográfica</option>
+									<option>Engenharia Civil</option>
+									<option>Engenharia de Computação</option>
+									<option>Engenharia de controle e automação</option>
+									<option>Engenharia Elétrica</option>
+									<option>Engenharia Física</option>
+									<option>Engenharia Florestal</option>
+									<option>Engenharia geológica</option>
+									<option>Engenharia Industrial Madeireira</option>
+									<option>Engenharia de manufatura</option>
+									<option>Engenharia de Materiais</option>
+									<option>Engenharia Mecânica</option>
+									<option>Engenharia Mecatrônica</option>
+									<option>Engenharia Metalúrgica</option>
+									<option>Engenharia Militar</option>
+									<option>Engenharia de Minas</option>
+									<option>Engenharia Naval e Oceânica</option>
+									<option>Engenharia Nuclear</option>
+									<option>Engenharia de Pesca</option>
+									<option>Engenharia de Petróleo</option>
+									<option>Engenharia de Produção</option>
+									<option>Engenharia Química</option>
+									<option>Engenharia Sanitária</option>
+									<option>Engenharia de Sistemas Eletrônicos</option>
+									<option>Engenharia de Software</option>
+									<option>Engenharia de Tecidos</option>
+									<option>Engenharia de Telecomunicações</option>
+									<option>Engenharia Têxtil</option>
+									<option>Estatística</option>
+									<option>Farmácia (ou Bioquímica)</option>
+									<option>Física</option>
+									<option>Física computacional</option>
+									<option>Física médica</option>
+									<option>Geofísica</option>
+									<option>Geologia</option>
+									<option>Geoprocessamento e Sensoriamento Remoto</option>
+									<option>Informática</option>
+									<option>Informática biomédica</option>
+									<option>Matemática</option>
+									<option>Matemática Aplicada</option>
+									<option>Matemática computacional</option>
+									<option>Nanotecnologia</option>
+									<option>Oceanografia</option>
+									<option>Química</option>
+									<option>Química ambiental</option>
+									<option>Química industrial</option>
+									<option>Sistemas de Informação</option>
+									<option>Agrimensura</option>
+									<option>Agroindústria</option>
+									<option>Análise e Desenvolvimento de Sistemas</option>
+									<option>Automação Industrial</option>
+									<option>Biocombustíveis</option>
+									<option>Ciências Aeronáuticas</option>
+									<option>Ciência dos materiais</option>
+									<option>Construção de Edifícios</option>
+									<option>Construção de Estradas</option>
+									<option>Construção Naval</option>
+									<option>Energias Renováveis</option>
+									<option>Gestão da Tecnologia da Informação</option>
+									<option>Gestão de Petróleo e Gás</option>
+									<option>Gestão Portuária</option>
+									<option>Manutenção Industrial</option>
+									<option>Mecatrônica e Mecânica de Precisão</option>
+									<option>Mineração</option>
+									<option>Processos Metalúrgicos</option>
+									<option>Processamento de Dados</option>
+									<option>Produção de Laticínios</option>
+									<option>Produção de Materiais Plásticos</option>
+									<option>Produção Têxtil</option>
+									<option>Produção Sucroalcooeira</option>
+									<option>Projetos de Estruturas Aeronáuticas</option>
+									<option>Redes de Computadores</option>
+									<option>Redes de Telecomunicações</option>
+									<option>Saneamento Ambiental</option>
+									<option>Segurança da Informação</option>
+									<option>Sistemas Biomédicos</option>
+									<option>Sistemas Elétricos</option>
+									<option>Sistemas Embarcados</option>
+									<option>Sistemas de Navegação Fluvial</option>
+									<option>Sistemas para Internet</option>
+									<option>Telemática</option>
+									<option>Administração</option>
+									<option>Antropologia</option>
+									<option>Arqueologia</option>
+									<option>Arquitetura</option>
+									<option>Arquivística</option>
+									<option>Artes Cênicas</option>
+									<option>Artes Visuais</option>
+									<option>Biblioteconomia</option>
+									<option>Ciências Atuariais</option>
+									<option>Ciências Contábeis</option>
+									<option>Ciência da Religião</option>
+									<option>Ciências Humanas</option>
+									<option>Ciência Política (ou Ciências do Estado)</option>
+									<option>Ciências Sociais</option>
+									<option>Cinema</option>
+									<option>Comunicação social</option>
+									<option>Dança</option>
+									<option>Defesa e Gestão Estratégica Internacional</option>
+									<option>Desenho Industrial</option>
+									<option>Design de Interiores</option>
+									<option>Design de Moda</option>
+									<option>Direito</option>
+									<option>Economia</option>
+									<option>Economia Doméstica</option>
+									<option>Editoração</option>
+									<option>Educação Artística</option>
+									<option>Escultura</option>
+									<option>Filosofia</option>
+									<option>Gastronomia</option>
+									<option>Geografia</option>
+									<option>Gestão Ambiental</option>
+									<option>Gestão Pública</option>
+									<option>Gravurismo</option>
+									<option>História</option>
+									<option>História da Arte</option>
+									<option>Hotelaria</option>
+									<option>Jornalismo</option>
+									<option>Letras</option>
+									<option>Linguística</option>
+									<option>Museologia</option>
+									<option>Música</option>
+									<option>Ordenamento do Território</option>
+									<option>Paisagismo</option>
+									<option>Pedagogia</option>
+									<option>Pintura</option>
+									<option>Psicologia</option>
+									<option>Publicidade e Propaganda</option>
+									<option>Produção Audiovisual (popularmente referido como Rádio e TV, e mais arcaicamente como Radialismo)</option>
+									<option>Produção Cultural</option>
+									<option>Relações Internacionais</option>
+									<option>Relações Públicas</option>
+									<option>Segurança Pública</option>
+									<option>Serviço Social</option>
+									<option>Sociologia</option>
+									<option>Teatro</option>
+									<option>Teologia</option>
+									<option>Transporte Terrestre</option>
+									<option>Turismologia</option>
+									<option>Urbanismo</option>
+									<option>Agroecologia</option>
+									<option>Comércio Exterior</option>
+									<option>Cooperativismo</option>
+									<option>Design de Jogos Digitais</option>
+									<option>Design de produto</option>
+									<option>Design gráfico</option>
+									<option>Eventos</option>
+									<option>Esporte e Lazer</option>
+									<option>Fotografia</option>
+									<option>Gestão do Agronegócio</option>
+									<option>Gestão Comercial</option>
+									<option>Gestão Financeira</option>
+									<option>Gestão Hospitalar</option>
+									<option>Gestão de Segurança Privada</option>
+									<option>Gestão da Qualidade</option>
+									<option>Logística</option>
+									<option>Mercadologia</option>
+									<option>Negócios Imobiliários</option>
+									<option>Processos Escolares</option>
+									<option>Produção de Aguardente</option>
+									<option>Produção Fonográfica</option>
+									<option>Recursos Humanos</option>
+									<option>Secretariado</option>
+									<option>Segurança no Trabalho</option>
+									<option>Transporte Aéreo</option>
+									<option>Gestão em serviços jurídicos e notariais</option>
+								</select>
+							</label>	
+							
+							<label class="select-100">
+								<span>Tipo do Curso</span>
+								<select name="tipo_do_curso_concluido">
+									<option value=""></option>
+									<option>Tecnólogo</option>
+									<option>Bacharel</option>
+									<option>Licenciatura</option>
+								</select>
+							</label>
+							
+							<label class="select-100">
+								<span>Horário</span>
+								<select name="horario_concluido">
+									<option value=""></option>
+									<option>Período da Manhã</option>
+									<option>Período da Tarde</option>
+									<option>Período da Noite</option>
+									<option>Período Integral</option>
+								</select>
+							</label>
+		
+							<label class="select-50">
+								<span>Duração do Curso</span>
+								<select name="duracao_do_curso_concluido">
+									<option value=""></option>
+									<option>1º</option>
+									<option>2º</option>
+									<option>3º</option>
+									<option>4º</option>
+									<option>5º</option>
+									<option>6º</option>
+									<option>7º</option>
+									<option>8º</option>
+									<option>9º</option>
+									<option>10º</option>
+									<option>11º</option>
+									<option>12º</option>
+								</select>
+							</label>										
+		
+							<label class="input-50 right">
+								<span>Ano de conclusão</span>
+								<input type="text" class="calendarMD" name="conclusao_de_curso_concluido" >
+							</label>
+		
+							<label class="input-100">
+								<span>Coeficiente de Rendimento <i class="info tooltip" title="Considere o coeficiente máximo de 100%">?</i></span>
+								<input type="text" name="coeficiente_de_rendimento_concluido">
+							</label>
+						</div>
+					
+					</div>
+				
+					<a class="button right ajust-buttonadd"  style="margin-top: 0;" href="javascript:$('#form-submit3').submit();">
+						Adicionar
+					</a>
+					<input type="hidden" name="id_login" value="<?php echo $this->layout()->me->id_login?>"/>
+					<input type="hidden" name="code" value="<?php echo $data->id_analise_de_curriculo; ?>"/>
+ 					<input type="hidden" name="method" value="salvarEtapa3" />
+				</form>
+		
+				<div class="listagem">
+					<?php foreach ( $data3 as $row ): $row = (object)$row; ?>
+					<table class="empresas boxGrp boxAccordionHide" cellspacing="0">
+						<tbody>
+							<tr class="caixas">
+								<td class="width-td1"><p class="nome-curso">
+									<?php if ($row->status_curso == 'Em andamento' ){?>
+										<?php echo $row->nome_do_curso_andamento; ?> 
+									<?php } else { ?>
+										<?php echo $row->nome_do_curso_concluido; ?>
+									<?php } ?>
+								</p></td>
+								<td class="width-td2"><a href="javascript:;" class="delete" data-href="/trilha1/deletar-dados-escolares/<?php echo $row->id_dados_escolares ?>"><i class="far fa-trash-alt"></i> Excluir</a></td>
+								<td class="width-td3"><a href="javascript:;" class="vermais boxAccordionBt"><i class="fas fa-angle-down"></i></a></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									
+									<div class="boxAccordionContent">
+										<table class="resumo-serv" cellspacing="0">
+											<tbody>
+												<tr>
+													<td colspan="2"><?php echo $row->status_curso; ?></td>
+												</tr>
+												<tr>
+													<td width="50%">
+														<?php if ($row->status_curso == 'Em andamento' ){?>
+															<?php echo $row->instituicao_de_ensino_andamento; ?>
+														<?php } else { ?>
+															<?php echo $row->instituicao_de_ensino_concluido; ?>
+														<?php } ?>
+													</td>
+													<td>
+														<?php if ($row->status_curso == 'Em andamento' ){?>
+															<?php echo $row->estado_da_instituicao_andamento; ?>
+														<?php } else { ?>
+															<?php echo $row->estado_da_instituicao_concluido; ?>
+														<?php } ?>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					<?php endforeach; ?>
+				</div>				
+				
+				<div class="buttons" style="margin-top: 20px !important">
+					<a class="button-voltar" href="/trilha1/documentos">voltar</a>
+					<a class="button right confirmar" data-href="trilha1/pos-graduacao" href="javascript:;">Próximo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
+$( function() {
+    $( document ).tooltip();
+} );
+$('.tooltip').tooltipster({
+	   animation: 'fade',
+	   delay: 200,
+	   theme: 'Light',
+	   arrow: false,
+});
+
+
+test();
+$('#status_curso').change(function() { test(); });
+function test() {
+    if ($('#status_curso').val() === 'Em andamento') {
+        $('#formAndamento').slideDown();
+        $('#formconcluido').slideUp();
+    } 
+    if ($('#status_curso').val() === 'Concluído') {
+        $('#formAndamento').slideUp();
+        $('#formconcluido').slideDown();
+    } 
+    if ($('#status_curso').val() === '') {
+        $('#formAndamento').slideUp();
+        $('#formconcluido').slideUp();
+    }         
+}
+
+</script>
+
+<script>
+
+	$('.delete').on('click', function(){
+
+		var hrefDelete = $(this).data('href');
+
+		if( confirm("Deseja realmente fazer isso?") ) {
+
+			location.href=hrefDelete;
+			
+		}
+
+	});
+
+</script>
+
+<script>
+
+	$('.confirmar').on('click', function(){
+
+		var hrefDelete = $(this).data('href');
+
+		$.confirm({
+		    title: 'Cuidado!',
+		    content: 'Clique em adicionar para salvar seus dados antes de avançar.',
+		   	columnClass: 'small',
+		    buttons: {
+		        Próximo: function () {
+		        	location.href=hrefDelete;
+		        },
+		        Cancelar: function () {
+		        }
+		    }
+		});
+
+	});
+
+</script>

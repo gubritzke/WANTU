@@ -1,0 +1,26 @@
+<div id="graph_competencias" style="width: 600px; height: 400px; margin: 0 auto"></div>
+
+<script type="text/javascript">
+Highcharts.chart('graph_competencias', {
+  chart: {
+    type: 'bar'
+  },
+  title: {
+    text: 'Síntese das Competências'
+  },
+  xAxis: {
+    categories: ["<?php echo implode('","', array_column($this->chart_data, 'competencia')); ?>"]
+  },
+  yAxis: {
+    min: 0,
+    title: {
+      text: ''
+    }
+  },
+  series: [{
+    name: 'Competências',
+    data: <?php echo json_encode(array_values($this->chart_data)); ?>
+  }]
+});
+</script>
+			

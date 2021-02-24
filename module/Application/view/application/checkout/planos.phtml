@@ -1,0 +1,178 @@
+<link href="/assets/application/js/extensions/jquery.tooltipster/dist/css/tooltipster.bundle.min.css" media="" rel="stylesheet" type="text/css">
+
+<div id="pagamento">
+	<div class="line-pp"></div>
+	<div class="container">
+		
+		<div class="line-plano animated fadeIn">
+
+			<div class="box-plano bg-pp">
+				<i class="info tooltip" title="Plano de Desenvolvimento Individual WantU BestMe para potencialização de talentos e foco na sua gestão de carreira (O que faço para chegar lá?)">i</i>
+				<div class="tittle-plano">
+					BEST ME
+				</div>
+				<p class="text1 ft-white">
+					<span class="check1"></span>
+					Currículo WantU
+				</p>
+				<div class="linha-plano"></div>
+				<p class="text2 ft-white">
+					<span class="check"></span>
+					Trilha WantU<br>
+					Relatório WantU Match
+				</p>
+				<div class="linha-plano"></div>
+				<p class="text2 ft-white">
+					<span class="check"></span>
+					Sessão Individual Online<br>
+					Relatório WantU Self
+				</p>
+				<div class="linha-plano"></div>
+				<p class="text2 ft-white">
+					<span class="check"></span>
+					Plano de Desenvolvimento<br>
+					Individual WantU BestMe
+				</p>
+				<div class="linha-plano"></div>
+				
+				<?php if ($user['id_plano'] == 1) { ?>
+					<p class="valor ft-white">R$ 184,90 em até 12x</p>
+				<?php } elseif ($user['id_plano'] == 2) { ?>	
+					<p class="valor ft-white">R$ 99,90 em até 12x</p>
+				<?php } else { ?>
+					<p class="valor ft-white">R$ 269,90 em até 12x</p>
+				<?php } ?>	
+				
+				
+				<p class="desc-valor ft-white">SEM JUROS</p>
+				<?php if ($user['id_plano'] == 3) { ?>
+					<a class="button-enviar" style="background: #4bc5d6;" href="javascript:;">PLANO ATUAL</a>
+				<?php } else { ?>
+					<a class="button-enviar" href="/checkout/pagamento?tipo=3">COMEÇAR AGORA</a>
+				<?php } ?>
+			</div>
+			
+			<div class="box-plano">
+				<i class="info tooltip" title="Currículo WantU (cadastre-se e baixe seu currículo)">i</i>
+				<div class="tittle-plano">
+					Free
+				</div>
+				<p class="text1">
+					<span class="check1"></span>
+					Currículo WantU
+				</p>
+				<div class="linha-plano"></div>
+				<p class="text2">
+					<span class="block"></span>
+					Trilha WantU<br>
+					Relatório WantU Match
+				</p>
+				<div class="linha-plano"></div>
+				<p class="text2">
+					<span class="block"></span>
+					Sessão Individual Online<br>
+					Relatório WantU Self
+				</p>
+				<div class="linha-plano"></div>
+				<p class="text2">
+					<span class="block"></span>
+					Plano de Desenvolvimento<br>
+					Individual WantU BestMe
+				</p>
+				<div class="linha-plano"></div>
+				<p class="valor" style="margin-bottom: 6px; font-size: 34px;">-</p>
+				<a class="button-enviar" href="/minha-conta">COMEÇAR AGORA</a>
+			</div>
+			
+			<div class="box-plano">
+				<i class="info tooltip" title="Trilha WantU com 6 Testes Exclusivos + Relatórios de cada teste + Relatório WantU Match (Quais são meus talentos e qual carreira combina mais comigo?)">i</i>
+				<div class="tittle-plano">
+					Match
+				</div>
+				<p class="text1">
+					<span class="check1"></span>
+					Currículo WantU
+				</p>
+				<div class="linha-plano"></div>
+				<p class="text2">
+					<span class="check"></span>
+					Trilha WantU<br>
+					Relatório WantU Match
+				</p>
+				<div class="linha-plano"></div>
+				<p class="text2">
+					<span class="block"></span>
+					Sessão Individual Online<br>
+					Relatório WantU Self
+				</p>
+				<div class="linha-plano"></div>
+				<p class="text2">
+					<span class="block"></span>
+					Plano de Desenvolvimento<br>
+					Individual WantU BestMe
+				</p>
+				<div class="linha-plano"></div>
+				<p class="valor">R$ 111,90 em até 12x</p>
+				<p class="desc-valor">SEM JUROS</p>
+				<?php if ($user['id_plano'] == 1) { ?>
+					<a class="button-enviar" style="background: #84209e;" href="javascript:;">PLANO ATUAL</a>
+				<?php } else { ?>
+					<a class="button-enviar" href="/checkout/pagamento?tipo=1">COMEÇAR AGORA</a>
+				<?php } ?>
+			</div>
+			
+			<div class="box-plano">
+				<i class="info tooltip" title="Sessão Individual Online + Relatório WantU Self (Onde estou? Perto ou longe de uma carreira de sucesso?)">i</i>
+				<div class="tittle-plano">
+					Self
+				</div>
+				<p class="text1">
+					<span class="check1"></span>
+					Currículo WantU
+				</p>
+				<div class="linha-plano"></div>
+				<p class="text2">
+					<span class="check"></span>
+					Trilha WantU<br>
+					Relatório WantU Match
+				</p>
+				<div class="linha-plano"></div>
+				<p class="text2">
+					<span class="check"></span>
+					Sessão Individual Online<br>
+					Relatório WantU Self
+				</p>
+				<div class="linha-plano"></div>
+				<p class="text2">
+					<span class="block"></span>
+					Plano de Desenvolvimento<br>
+					Individual WantU BestMe
+				</p>
+				<div class="linha-plano"></div>
+				<?php if ($user['id_plano'] == 1) { ?>
+					<p class="valor">R$ 99,90 em até 12x</p>
+				<?php } else { ?>	
+					<p class="valor">R$ 201,90 em até 12x</p>
+				<?php } ?>	
+				
+				<p class="desc-valor">SEM JUROS</p>
+				<?php if ($user['id_plano'] == 2) { ?>
+					<a class="button-enviar" style="background: #84209e;" href="javascript:;">PLANO ATUAL</a>
+				<?php } else { ?>
+					<a class="button-enviar" href="/checkout/pagamento?tipo=2">COMEÇAR AGORA</a>
+				<?php } ?>
+			</div>
+			
+		</div>		
+	
+	</div>
+</div>
+
+<script type="text/javascript">
+$('.tooltip').tooltipster({
+	   animation: 'fade',
+	   delay: 200,
+	   theme: 'Light',
+	   arrow: false,
+});
+</script>

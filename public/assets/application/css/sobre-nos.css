@@ -1,0 +1,80 @@
+/* BANNER */
+#banner{
+	width: 100%;
+	float: left;
+}
+.banner{
+	background: url("/assets/application/img/sobre-nos/banner.jpg") no-repeat;
+	background-size: cover;
+	display: inline-block;
+	width: 100%;
+	height: 448px;
+}
+.banner .conteudo{
+	float: right;
+}
+.banner .conteudo p{
+	font-size: 47px;
+	color: #fff;
+	font-weight: 300;
+	margin-top: 169px;
+}
+.banner .conteudo p > span{
+	font-size: 47px;
+	color: #fff;
+	font-weight: 600;
+}
+.banner .conteudo > a{
+	background: #84139e;
+	color: #fff;
+	padding: 15px 45px;
+	border-radius: 7px;
+	display: inline-block;
+	text-transform: uppercase;
+	margin-top: 20px;
+	font-weight: 600;
+}
+/* CONTEUDO */
+.sobre-text-1{
+	width: 100%;
+	float: left;
+	margin-top: 100px;
+}
+.sobre-left{
+	width: 50%;
+	float: left;
+	text-align: justify;
+	line-height: 28px;
+	font-size: 18px;
+}
+.sobre-left p.text{
+	margin-top: 25px;
+}
+.sobre-right{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.sobre-right > img{
+	display: inline-block;
+}
+.sobre-text-2{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin: 100px 0;
+}
+.sobre-text-2 li{
+	display: inline-block;
+	margin-right: 100px;
+}
+.sobre-text-2 li:LAST-CHILD{
+	margin-right: 0;
+}
+.sobre-text-2 li p{
+	margin-top: 13px;
+	font-weight: 600
+}
+.sobre-text-2 li span{
+	margin-top: 12px;
+}

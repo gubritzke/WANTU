@@ -1,0 +1,222 @@
+<html lang="pt-br">
+<head>
+
+	<base href="/"/>
+	
+	<?php echo $this->headMeta(); ?>
+	
+	<?php echo $this->headTitle() ?>
+	
+	<?php echo $this->headLink(); ?>
+	
+	<?php echo $this->headScript(); ?>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124195776-15"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-124195776-15');
+    </script>
+
+</head>
+
+<body>
+
+	<div class="bg-popup animated">
+
+    	<div class="box-popup animated">
+    	
+    		<a class="close">[Fechar]</a>
+    		
+    		<div class="ajax-load"></div>
+    	
+    	</div>
+    
+    </div>
+
+	<!-- MESSAGES -->
+	<?php echo $this->message(); ?>
+	<?php if( isset($this->layout()->message) && is_array($this->layout()->message) ): ?>
+	<div class="<?php echo key($this->layout()->message); ?>" id="message">
+		<a href="javascript:;" class="fa fa-times close" onclick="$('#message').slideUp('slow');"></a>
+		<?php echo current($this->layout()->message); ?>
+	</div>
+	<?php endif; ?>
+
+	<?php if
+		(
+			$this->layout()->routes['controller']!='login' && 
+			$this->layout()->routes['controller']!='cadastro' && 
+			$this->layout()->routes['controller']!='trilha1' && 
+			$this->layout()->routes['controller']!='minha-conta' && 
+			$this->layout()->routes['controller']!='trilha2' && 
+			$this->layout()->routes['controller']!='trilha4' && 
+			$this->layout()->routes['controller']!='trilha3' &&
+			$this->layout()->routes['controller']!='trilha5' &&
+			$this->layout()->routes['controller']!='cartao' &&
+			$this->layout()->routes['controller']!='trilha6' 
+		){ 
+	?>
+	<header>
+	
+		<div id="menu-100" class="mobile-off">
+			<div class="container">
+				<div class="menu">
+					<a href="/" class="logo"></a>
+					
+					<ul class="menu-right">
+						<li><a href="/sobre-nos">Sobre Nós</a></li>
+						<li><a href="/como-funciona">Como Funciona?</a></li>
+						<li><a href="/checkout/planos">Planos</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="/contato">Contato</a></li>
+						<li><a style="border: 2px solid #37939e; padding: 15px 25px; border-radius: 7px; color: #37939e; font-weight: 600;" href="/para-empresas">Para Empresa</a></li>
+						<?php if (empty($this->layout()->me->id_login)){ ?>
+							<li><a href="/login" class="button-2">LOGIN</a></li>
+						<?php } else { ?>
+							<li><a href="/minha-conta" class="button-2" style=" padding: 15px 30px;">MINHA CONTA</a></li>
+						<?php } ?>
+					</ul>
+				</div>
+			
+				<div class="mobile">
+				
+					<div class="toggle-menu">
+						<span></span>
+					</div>
+				
+				</div>
+			
+			</div>
+		</div>
+		
+		<div class="container mobile-on" style="text-align: center;">
+		
+			<a class="logo" href="/"></a>
+			
+			<nav>
+				
+				<ul>
+					<li>
+						<a class="open-menu" href="javascript:;"><span></span></a>
+					</li>
+					<li>
+    					<ul style="font-family: 'Roboto', sans-serif !important;">
+    						<li><a class="animated fadeInRight" href="/sobre-nos">Sobre</a></li>
+    						<li><a class="animated fadeInRight" href="/como-funciona">Como Funciona?</a></li>
+    						<li><a class="animated fadeInRight" href="/blog">Blog</a></li>
+    						<li><a class="animated fadeInRight" href="/contato">Contato</a></li>
+    						<li><a class="animated fadeInRight" href="/para-empresas">Para Empresas</a></li>
+	    					<?php if (empty($this->layout()->me->id_login)){ ?>
+								<li><a style=" padding: 5px 10px;" href="/login" class="button-2 animated fadeInRight">LOGIN</a></li>
+							<?php } else { ?>
+								<li><a href="/minha-conta" class="button-2 animated fadeInRight" style=" padding: 5px 10px;">MINHA CONTA</a></li>
+							<?php } ?>
+    					</ul>
+					</li>
+					
+				</ul>
+				
+			</nav>
+			
+		</div>
+		<?php if ($this->layout()->routes['controller']=!'como-funciona'){ ?>
+			
+		<?php if (!empty($this->layout()->breadcrumb)):?>
+			<div class="breadcrumb">
+				<div class="container">
+					<ul>
+						<?php foreach ($this->layout()->breadcrumb as $key => $row):?>
+							<li><a href="<?php echo $row ?>"><?php echo $key ?></a></li>
+						<?php endforeach; ?>
+					</ul>
+				</div>
+			</div>
+		<?php endif; ?>
+
+		<?php } ?>
+	</header>
+	<?php } ?>
+	
+	<?php echo $this->content; ?>
+	
+	<?php if ($this->layout()->routes['controller']!='cartao'){ ?>
+	<footer>
+	
+		<div id="footer-100">
+			<div class="container">
+
+				<div class="footer">
+					<div class="bloco-20">
+						<ul>
+							<li><a href="javascript:;" class="footer-title">Institucional</a></li>
+							<li><a href="/sobre-nos">Sobre Nós</a></li>
+							<li><a href="/como-funciona">Como Funciona</a></li>
+							<li><a href="/blog">Blog</a></li>
+							<li><a href="/contato">Contato</a></li>
+						</ul>
+					</div>
+
+					<div class="bloco-20">
+						<ul>
+						
+							<li><a href="javascript:;" class="footer-title">Dúvidas</a></li>
+							<li><a href="/termos-de-uso">Termos de Uso</a></li>
+							<li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
+						</ul>
+					</div>
+					
+					<div class="bloco-40">
+						<p>Acompanhe as novidades de perto!</p>
+						<form action="">
+							<label>
+								<input class="input-100" name="nome" placeholder="Nome">
+							</label>
+	
+							<label>
+								<input class="input-100" name="telefone" placeholder="(00) 0000 0000">
+							</label>
+	
+							<label>
+								<input class="input-80" name="email" placeholder="E-mail">
+							</label>
+						</form>
+						
+						<a class="button" href="javascript:;">ENVIAR</a>
+					</div>
+					
+					
+					<div class="bloco-20r">
+						<ul class="redes">
+							<li><a target="_blank" href="https://www.instagram.com/wantucarreiras/"><i class="fa fa-instagram"></i></a></li>
+							<li><a target="_blank" href="https://www.facebook.com/wantuoficial"><i class="fa fa-facebook-f"></i></a></li>
+							<li><a target="_blank" href="https://www.linkedin.com/company/wantu-carreiras"><i class="fa fa-linkedin-in"></i></a></li>
+							
+						</ul>
+						<p class="mail">contato@wantu.com.br</p>
+						<p class="tel" style="font-family: sans-serif !important;">(34) 99133 2301</p>
+					</div>
+					
+				</div>
+			
+			</div>
+		</div>
+		
+		<div id="footer-100-b">
+			<div class="container">
+				
+				<div class="footer-2">
+					<p>© 2018 - <b>WANTU</b>. Todos os direitos reservados.</p>
+					<a href="javascript:;">POWERED BY NAICHE</a>
+				</div>
+			
+			</div>
+		</div>
+	
+	</footer>
+	<?php } ?>
+</body>
+</html>

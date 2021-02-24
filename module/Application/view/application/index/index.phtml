@@ -1,0 +1,199 @@
+<div id="banner">
+	<div class="banner">
+		<div class="container">
+		
+			<div class="conteudo">
+				<p>
+					Potencialize seu talento<br>
+					<span>
+    					Seja o protagonista<br>
+    					de sua carreira.
+					</span>
+				</p>
+				<a href="/cadastro">Comece agora</a>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+<div id="como-funciona">
+	<div class="container">
+		
+		<div class="cf-1">
+			<a class="img-1">
+				<span class="overflow">
+<!-- 				<span class="fundo"></span> -->
+					<iframe width="585" height="336" src="https://www.youtube.com/embed/WGcH4vnQZhg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</span>
+			</a>
+		</div>	
+		<div class="cf-2">
+    		<div class="cf-2-align">
+    			<span class="tittle">Como funciona?</span>
+    			<p>
+    				A Wantu oferece um programa 100% online e interativo que auxilia o jovem a planejar sua carreira e alcançar o seu sucesso profissional. Nosso método exclusivo, baseado numa tecnologia própria de people analytics, te ajuda a descobrir quem você é, o que mais combina com seu perfil e como se desenvolver, <a style="color: #414141; font-size: 18px; text-decoration: underline;" href="/como-funciona">entenda mais</a>.  
+    			</p>
+    			<a href="/cadastro">Comece agora</a>
+    		</div>
+		</div>	
+	
+	</div>
+</div>
+
+<?php if ($plano1 == 1 || $plano2 == 1 || $plano3 == 1 ){ ?>  <?php } ?>
+
+<div id="vamos-comecar" class="ajst-mrg">
+	<div class="container">
+		
+		<ul class="menu">
+			<li><a href="javascript:;" class="test-1"></a></li>
+			<li><a href="javascript:;" class="test-2"></a></li>
+			<li><a href="javascript:;" class="test-3"></a></li>
+			<li><a href="javascript:;" class="test-4"></a></li>
+			<li><a href="javascript:;" class="test-5"></a></li>
+			<li><a href="javascript:;" class="test-6"></a></li>
+		</ul>
+		
+		<div class="vc-conteudo carousel-1">
+		
+			<div class="vc-conteudo-align" data-aba="1">
+    			<span class="tittle">Vamos Começar</span>
+    			
+    			<p class="tittle-cont">Por onde começar? <br>Quais experiências você <br>já viveu até aqui?</p>
+    			
+    			<p class="desc-cont">
+    				Com base em indicadores exclusivos da WantU, calculamos um índice do quanto você está “perdidinho” ou encaminhado em sua carreira. Esse resultado vai te ajudar a compreender se você está no caminho certo e o quanto falta para chegar lá. 
+    			</p>
+    			
+    			<?php if ($data_user->analise_de_curriculo == "Completo"){ ?>
+    				<a  href="/minha-conta/curriculo/<?php echo $this->layout()->me->id_login ?>" >Visualizar resultado</a>
+    			<?php } else { ?>
+    				<a href="/trilha1">Comece agora</a>
+    			<?php } ?>
+    			
+    			<p class="selo">sobre:</p>	
+			</div>
+		
+			<div class="vc-conteudo-align" data-aba="2">
+    			<span class="tittle">Vamos Começar</span>
+    			
+    			<p class="tittle-cont">Como você tende a se comportar nas diversas situações do dia-a-dia?</p>
+    			
+    			<p class="desc-cont">
+    				Conheça seu perfil e o que você mais valoriza. Características como cumprimento de tarefas; relacionamento com os pares; estabilidade e resolução de problemas podem se combinar e apontar seu estilo comportamental.
+    			</p>
+    			
+    			<?php if ($data_user->perfil_comportamental == "Completo"){ ?>
+    				<a  href="/minha-conta/trilha2-relatorio/<?php echo $this->layout()->me->id_login ?>" >Visualizar resultado</a>
+    			<?php } else { ?>
+    				<a href="/trilha2">Comece agora</a>
+    			<?php } ?>
+    			
+    			<p class="selo">sobre:</p>	
+			</div>
+			
+			<div class="vc-conteudo-align" data-aba="3">
+    			<span class="tittle">Vamos Começar</span>
+    			
+    			<p class="tittle-cont"> Quais carreiras te atraem mais?</p>
+    			
+    			<p class="desc-cont">
+    				Conheça os pilares principais que norteiam as suas decisões de carreira. Lembre-se que você possui uma combinação única de preferências, competências, e aptidões principais que refletem os valores mais valiosos para sua vida. 
+    			</p>
+
+    			<?php if ($data_user->aptidoes_profissionais == "Completo"){ ?>
+    				<a  href="/minha-conta/trilha3-relatorio/<?php echo $this->layout()->me->id_login ?>" >Visualizar resultado</a>
+    			<?php } else { ?>
+    				<a href="/trilha3?pg=1">Comece agora</a>
+    			<?php } ?>
+    			
+    			<p class="selo">sobre:</p>	
+			</div>
+			
+			<div class="vc-conteudo-align" data-aba="4">
+    			<span class="tittle">Vamos Começar</span>
+    			
+    			<p class="tittle-cont">Como você aprende melhor?</p>
+    			
+    			<p class="desc-cont">
+    				Compreenda quais são suas principais capacidades e quais métodos podem ser mais eficazes no seu processo de aprendizagem. Capacite-se para ter um melhor desempenho nas suas atividades e no atingimento das suas metas.
+    			</p>
+    			
+    			<?php if ($data_user->inteligencias_multiplas == "Completo"){ ?>
+    				<a  href="/minha-conta/trilha4-relatorio/<?php echo $this->layout()->me->id_login ?>" >Visualizar resultado</a>
+    			<?php } else { ?>
+    				<a href="/trilha4?pg=1">Comece agora</a>
+    			<?php } ?>
+			
+    			<p class="selo">sobre:</p>	
+			</div>
+			
+			<div class="vc-conteudo-align" data-aba="5">
+    			<span class="tittle">Vamos Começar</span>
+    			
+    			<p class="tittle-cont">Quais são seus talentos extraordinários?</p>
+    			
+    			<p class="desc-cont">
+    				Descubra o que torna seu brilho especial e único.  A maioria das pessoas não sabe em que realmente são talentosas e isso as impede de utilizar todo o seu potencial. Pessoas focadas nos seus pontos fortes são mais produtivas, engajadas e felizes. 
+    			</p>
+
+    			<?php if ($data_user->pontos_fortes == "Completo"){ ?>
+    				<a  href="/minha-conta/trilha5-relatorio/<?php echo $this->layout()->me->id_login ?>" >Visualizar resultado</a>
+    			<?php } else { ?>
+    				<a href="/trilha5">Comece agora</a>
+    			<?php } ?>
+    			
+    			<p class="selo">sobre:</p>	
+			</div>
+			
+			<div class="vc-conteudo-align" data-aba="6">
+    			<span class="tittle">Vamos Começar</span>
+    			
+    			<p class="tittle-cont">Quais são suas principais competências?</p>
+    			
+    			<p class="desc-cont">
+    				Identifique se seus conhecimentos, habilidades e atitudes estão condizentes com as necessidades do mercado de trabalho atual. Conheça seu nível de proficiência em diversas competências e como atingir a excelência. 
+    			</p>
+    			
+    			 <?php if ($data_user->competencias == "Completo"){ ?>
+    				<a  href="/minha-conta/trilha6-relatorio/<?php echo $this->layout()->me->id_login ?>" >Visualizar resultado</a>
+    			<?php } else { ?>
+    				<a href="/trilha6">Comece agora</a>
+    			<?php } ?>
+			
+    			<p class="selo">sobre:</p>	
+			</div>
+			
+		</div>
+		
+		<div class="imagem"></div>
+		
+	</div>
+</div>
+
+<div id="blog">
+	<div class="container">
+	
+		<div class="box-1">
+			<p>Nosso <span>Blog</span></p>
+		</div>
+		
+		<div class="box-2">
+    		<div class="carousel-3" style="z-index: 999999999999999999;">
+				
+			<?php foreach ( $result as $row): ?>			
+				<div class="box-blog">
+					<img alt="" src="/assets/application/uploads/blog/<?php echo $row->imagem ?>">
+					<div class="cont-box">
+    					<p><?php echo $row->titulo?></p>
+    					
+    					<a href="/blog/<?php echo $row->slug ?>">ler mais</a>
+					</div>
+				</div>
+			<?php endforeach; ?>
+				    		
+    		</div>
+		</div>
+	</div>
+</div>

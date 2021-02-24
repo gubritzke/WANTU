@@ -1,0 +1,77 @@
+/****************/
+/* ENDEREÇOS */
+/****************/
+#checkout .column-3{
+	width: 21%!important;
+}
+#checkout .box-first{
+	background-color: #ddd!important;
+}
+#checkout .box-space{
+	margin-right: 30px;
+}
+#checkout .box{
+	position: relative;
+	box-sizing: border-box;
+	
+	height: 300px;
+	
+	padding: 15px;
+	border: 1px solid #eee;
+	background-color: #eee;
+	cursor: pointer;
+}
+#checkout .box .bt{
+	box-sizing: border-box;
+	position: absolute;
+	min-width: 80%;
+	width: 80%;
+	left: 10%;
+	bottom: -25px;
+	opacity: 1!important;
+}
+#checkout .box .bt-delete{
+	box-sizing: border-box;
+	position: absolute;
+	min-width: 100%;
+	bottom: 35px;
+	left: 0;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bold;
+}
+#checkout .box input{
+	width: 15px;
+	height: 15px;
+}
+#checkout label.box.active{
+	border: 1px solid #5bab9f!important;
+}
+#checkout a.box{
+	padding-top: 150px;
+	
+	background-image: url('/assets/bag365/img/checkout/map.png');
+	background-repeat: no-repeat;
+	background-position: center 90px;
+	
+	color: #c0c0c0;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+#checkout a.box:hover{
+	border: 1px solid #eee;
+}
+#checkout a.box:before{
+	content: "";
+	position: absolute;
+	
+	top: 10%;
+	left: 10%;
+	
+	display: block;
+	width: 80%;
+	height: 80%;
+	margin: -1px 0 0 -1px;
+	border: 2px dashed #c0c0c0;
+}

@@ -1,0 +1,75 @@
+<?php foreach( $comentarios as $comentario ): ?>
+<div class="item parent-<?php echo $comentario->id_parent; ?>" data-id="<?php echo $comentario->id_comentario; ?>">
+
+	<div class="left">
+		<span class="image">
+			<?php $image = './assets/uploads/users/' . $comentario->usuario_foto; ?>
+			<img src="<?php echo \Application\Classes\Convert::imageLink($image, $comentario->usuario_nome); ?>" alt="<?php echo $comentario->usuario_nome; ?>" title="<?php echo $comentario->usuario_nome; ?>" />
+		</span>
+	</div>
+	
+	<div class="left caption">
+		<p class="description">
+			<b><?php echo $comentario->usuario_nome; ?></b>
+			<em><?php echo \Application\Classes\Convert::date($comentario->criado); ?></em>
+		</p>
+		
+		<p class="description">
+			<?php if( !empty($comentario->star) ): ?>
+			<span class="stars">
+				<?php echo $comentario->star >= 0.5 ? ($comentario->star >= 1 ? '<i class="fa fa-star"></i>' : '<i class="fa fa-star-half-o"></i>') : '<i class="fa fa-star-o"></i>'; ?>
+				<?php echo $comentario->star >= 1.5 ? ($comentario->star >= 2 ? '<i class="fa fa-star"></i>' : '<i class="fa fa-star-half-o"></i>') : '<i class="fa fa-star-o"></i>'; ?>
+				<?php echo $comentario->star >= 2.5 ? ($comentario->star >= 3 ? '<i class="fa fa-star"></i>' : '<i class="fa fa-star-half-o"></i>') : '<i class="fa fa-star-o"></i>'; ?>
+				<?php echo $comentario->star >= 3.5 ? ($comentario->star >= 4 ? '<i class="fa fa-star"></i>' : '<i class="fa fa-star-half-o"></i>') : '<i class="fa fa-star-o"></i>'; ?>
+				<?php echo $comentario->star >= 4.5 ? ($comentario->star >= 5 ? '<i class="fa fa-star"></i>' : '<i class="fa fa-star-half-o"></i>') : '<i class="fa fa-star-o"></i>'; ?>
+			</span>
+			<br/>
+			<?php endif; ?>
+			
+			<?php echo \Application\Classes\Convert::formatText($comentario->comentario); ?>
+		</p>
+	</div>
+	<div class="clear comments-init-parent-<?php echo $comentario->id_comentario; ?>"></div>
+	
+	<?php if( !empty($comentario->parents) ): ?>
+	
+		<?php if( count($comentario->parents) == 2 ): ?>
+		<a href="javascript:;" class="readmore readmore-parent-<?php echo $comentario->id_comentario; ?>" data-form=".form-parent-<?php echo $comentario->id_comentario; ?>">
+			Mais comentários...
+		</a>
+		<?php endif; ?>
+		
+		<?php echo $this->partial("partials/comentario/comentarios", ["comentarios"=>$comentario->parents]); ?>
+	<?php endif; ?>
+	
+	<?php if( $comentario->id_parent == 0 ): ?>
+	<form action="<?php echo $this->url('application/default', ['controller'=>'comentario']); ?>" 
+		method="post" class="form-comment form-parent-<?php echo $comentario->id_comentario; ?> item" 
+		data-id_parent="<?php echo $comentario->id_comentario; ?>"
+		data-id_tipo="<?php echo $comentario->id_tipo; ?>" 
+		data-tipo="<?php echo $comentario->tipo; ?>">
+
+		<?php if( $comentario->allowComment == true ): ?>		
+		<div class="left">
+			<span class="image">
+				<?php $image = './assets/uploads/users/' . $this->layout()->me->foto_perfil; ?>
+				<img src="<?php echo \Application\Classes\Convert::imageLink($image, $this->layout()->me->nome); ?>" alt="<?php echo $this->layout()->me->nome; ?>" title="<?php echo $this->layout()->me->nome; ?>" />
+			</span>
+		</div>
+		
+		<div class="left caption">
+			<textarea name="comentario" placeholder="Escreva um comentário..." maxlength="400"></textarea>
+			<button type="submit">OK</button>
+		</div>
+		
+		<div class="clear"></div>
+		<input type="hidden" name="method" value="comentarioSalvar" />
+		<input type="hidden" name="tipo" value="<?php echo $comentario->tipo; ?>" />
+		<input type="hidden" name="id_tipo" value="<?php echo $comentario->id_tipo; ?>" />
+		<input type="hidden" name="id_parent" value="<?php echo $comentario->id_comentario; ?>" />
+		<?php endif; ?>
+	</form>
+	<?php endif; ?>
+	
+</div>
+<?php endforeach; ?>

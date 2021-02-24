@@ -1,0 +1,46 @@
+<?php 
+	$title = '<span style="margin-top:20px; display: inline-block;">Trilha 3</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+
+<div class="container" id="anc-aqui">
+	
+	<form class="pesq-3" method="post" id="form-submit">
+		
+		<p class="pesq-tittle">
+			2. Prefiro numa empresa: 
+		</p>
+		<p class="pesq-desc">
+			Escolha uma das imagens abaixo
+		</p>
+		
+		<div class="options" data-question="<?php echo $_GET['pg']; ?>">
+		
+			<a class="option" data-name="Autonomia" data-value="5" style="background: url('/assets/application/img/pesquisa3/option-3.png');"></a>
+			<a class="option" data-name="Seguranca" data-value="5" style="background: url('/assets/application/img/pesquisa3/option-4.png');"></a>
+			
+		</div>
+		
+		<input type="hidden" name="prev" value="<?php echo $prev; ?>">
+		<input type="hidden" name="next" value="<?php echo $next; ?>">		
+		<input type="hidden" class="result">
+	
+	</form>
+	
+	<div class="line-buttons">
+		
+		<a class="button width-ajst" href="trilha3?pg=<?php echo $prev; ?>">Voltar</a>
+		
+		<div class="pagination">
+			
+			<a class="arrow-prev" href="aptidoes-profissionais?pg=<?php echo $prev; ?>"><i class="fas fa-caret-left"></i></a>
+			<p>2 | 24 </p>
+			<a class="arrow-next" href="javascript:$('#form-submit').submit();"><i class="fas fa-caret-right"></i></a>
+		
+		</div>
+	
+		<a class="button-blue width-ajst" href="javascript:$('#form-submit').submit();">Próxima</a>
+	
+	</div>
+	
+</div>

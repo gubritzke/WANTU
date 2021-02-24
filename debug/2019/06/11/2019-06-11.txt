@@ -1,0 +1,8 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-06-11 11:44:40","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-06-11 11:47:35","ip":"10.0.2.29"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2019-06-11 11:47:37","ip":"10.0.2.29"}
+{"module":"application","controller":"login","action":"sair","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/login\/sair","date":"2019-06-11 11:47:40","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/index\/","date":"2019-06-11 11:47:40","ip":"10.0.2.29"}
+{"module":"application","controller":"login","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/login","date":"2019-06-11 11:47:42","ip":"10.0.2.29"}
+{"module":"application","controller":"login","action":"facebook","get":{"r":""},"post":[],"type":"DEBUG","message":"acesso","page":"\/login\/facebook","date":"2019-06-11 11:47:44","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-06-11 15:38:38","ip":"177.33.4.9"}

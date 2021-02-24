@@ -1,0 +1,774 @@
+<link href="/assets/painel/css/relatorios-gerais.css" media="" rel="stylesheet" type="text/css">
+<link href="/assets/application/css/main.css" media="" rel="stylesheet" type="text/css">
+<?php 
+	$title = 'Quais são seus talentos extraordinários?';
+	include 'module/Application/view/partials/headers/topo-analise-perfil.phtml'; 
+?>
+
+<?php $textos = array();?>
+
+<?php $textos['ADAPTABILIDADE'] = 
+'<div class="line-tittle">
+	<p>
+		Camaleão
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Camaleão.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+        Você muda quando o mundo muda. Se os planos saem do previsto você não pira, você respira. E assim,  responde às necessidades, afinal nada é imutável. Você vive e curte o momento, passo a passo constrói seu futuro. Planos? Você tem, mas não como uma rota já traçada. Essa flexibilidade o torna produtivo mesmo que a maré o puxe para várias direções. 
+	</span>
+</p>
+';?>
+
+<?php $textos['ANALÍTICO'] = 
+'<div class="line-tittle">
+	<p>
+		Polvo
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Polvo.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+	   Com sua mente e olhar refinados, você analisa atentamente, é objetivo e é lógico. O tempo todo você se questiona e questiona os outros: por que é assim e não assado? Você gosta de informações, busca padrões nos dados e como eles interferem nos resultados. Você desconecta para conectar. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['AUTO-AFIRMAÇÃO'] = 
+'<div class="line-tittle">
+	<p>
+		Bem-te-vi
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Bem-te-vi.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+       Você é foda! Você se acha foda, você tem autoestima, autoconfiança. Você chama a responsabilidade da sua vida para você, se arrisca, enfrenta, conhece seu discernimento e toma suas decisões. Alguém aí disse “desce e arrasa”?! Esse é você com suas fortes convicções e escolhas seguras.
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['CARISMA'] = 
+'<div class="line-tittle">
+	<p>
+		CANÁRIO
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Canário.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+      Você tem borogodó. Você conhece a arte da sedução. Gosta de conhecer gente nova e fazê-las gostar de você. Muito prazer, meu nome é Gil e o seu? Muitos evitam conversas por medo de não saber o que falar, mas você adora quebrar gelo e travar relações. E a vida segue, afinal você ainda tem muitos friends para conhecer.   
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['ATIVAÇÃO'] = 
+'<div class="line-tittle">
+	<p>
+		Tubarão
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Tubarão.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+       Seu Seu apelido é para ontem. Só a ação é real e é por isso que você faz acontecer. Para acertar ou errar, você aprende fazendo. A análise pode até ser importante, mas para você crescer o fundamental é ser ágil nas decisões e partir para execução.
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['COMANDO'] = 
+'<div class="line-tittle">
+	<p>
+		Leão
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Leão.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        No jogo da vida quem dá o play é você. Você não sabe o que é estar em cima do muro, você tem pontos de vista, você os expõe doa a quem doer e busca ainda os convencer. Essa presença faz com que você impulsione as pessoas para a direção desejada, você toma a frente e vai. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['COMPETIÇÃO'] = 
+'<div class="line-tittle">
+	<p>
+		Galo
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Galo.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+       Você joga para ganhar. Você olha para fora e vê seus competidores e isso não te intimida, ao contrário isso o motiva. Você sabe que precisa deles para se comparar, para jogar e para vencer. Mesmo sendo cordial com seus players, você está ali para subir ao pódium.
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['COMUNICAÇÃO'] = 
+'<div class="line-tittle">
+	<p>
+		Papagaio
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Papagaio.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Você conta histórias para envolver e dar vida. Explicar, falar em público, escrever...todas essas atividades são fichinhas para você. Você não quer que sua fala desapareça em segundos em meio à multidão de informações. Por isso você usa combinações únicas de palavras e prende a todos com seu blablabla.  
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['CONEXÃO'] = 
+'<div class="line-tittle">
+	<p>
+		Abelha
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Abelha.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        O universo conspira ao nosso favor. Você tem certeza disso e enxerga as milhares de conexões entre todos os seres e a existência de algo maior que tudo faz parte. Para você todos têm responsabilidades na terra, e isso o faz compreensivo, atencioso, um elo que aproxima pessoas de diferentes culturas. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['CONTEXTO'] = 
+'<div class="line-tittle">
+	<p>
+		Cobra
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Cobra.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Você olha para trás para poder olhar pra frente. As suas decisões são ancoradas no passado, lá você identifica qual semente foi plantada e consegue avaliar melhor o resultado que está colhendo agora. No ontem estão muitas das repostas que você procura e por isso, em novas situações você pode demorar a se orientar, mas não se cobre, siga seu próprio time!
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['CRENÇA'] = 
+'<div class="line-tittle">
+	<p>
+		Golfinho
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Golfinho.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Seu sistema de valores direciona suas ações. Você é família, é amigos, é espiritualizado. Você valoriza a ética, tanto em si quanto nos outros. Por tudo isso, é fácil confiar em você. Muito mais que dinheiro e sucesso, o trabalho precisa dar match com seus valores. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['DESENVOLVIMENTO'] = 
+'<div class="line-tittle">
+	<p>
+		Cavalo
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Cavalo.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        O seu progresso é meu progresso. Você adora ajudar as pessoas a crescerem e a cada sinal de desenvolvimento de competências você os encoraja ainda mais. Essa satisfação em ajudar os outros faz com que muitos procurem você. E pode vir, sempre cabe mais um.
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['DISCIPLINA'] = 
+'<div class="line-tittle">
+	<p>
+		Vaca
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Vaca.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Você é o meteorologista da sua vida. Você gosta de previsibilidade, de prazos e horários. Você não busca a perfeição, mas precisa ter controle de tudo. Abracadabra? Não gosta de mágicas, nem de surpresas. Mas prefere tem uma orientação detalhada na sua rotina. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['EMPATIA'] = 
+'<div class="line-tittle">
+	<p>
+		Cachorro
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Cachorro.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Feeling pra que te quero. Você sente o que os outros sentem e ouve as perguntas que sequer foram ditas. Você ajuda os outros a dar voz às suas emoções, você encontra o tom certo e o momento certo. Por ser assim, você é um imã que atrai as pessoas. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['ESTUDIOSO'] = 
+'<div class="line-tittle">
+	<p>
+		Coruja
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Coruja.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Você curte muito o processo de aprender e não para nunca. Você se empolga em aprender uma técnica e dominá-la, você gosta de estar num ambiente que lhe exija novas competências, e quanto mais alto o nível melhor. Preguiça em estudar? Isso você nunca nem ouviu falar.  
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['EXCELÊNCIA'] = 
+'<div class="line-tittle">
+	<p>
+		Leopardo
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Leopardo.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Você não é o tipo garoto (a) média, você busca a excelência. Quando conhece um ponto forte seu, você vai buscar desenvolvê-lo até o mais alto nível. Dá polimento até ele brilhar, é grato pelo dom que tem e sabe dar like em quem também reconhece os próprios pontos fortes.
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['FOCO'] = 
+'<div class="line-tittle">
+	<p>
+		Pombo
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Pombo.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Eu vou, eu vou, atrás da meta eu vou. Você precisa tem objetivos claros para correr atrás, e assim a cada dia, semana, mês ou ano você traça seu destino. Esse seu foco é infalível e te ajuda a saber qual ação te aproxima ou afasta das suas metas. Você tem sua bússola própria. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['FUTURISTA'] = 
+'<div class="line-tittle">
+	<p>
+		Gato
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Gato.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Como o sol vai nascer amanhã? Você gosta de imaginar o que vem pela frente e de falar das suas visões e é exatamente isso que leva esperança e conforto para as pessoas. Você projeta imagens do que ainda não viu, isso te inspira, você não para nunca de sonhar. Você é uma máquina do futuro.
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['HARMONIA'] = 
+'<div class="line-tittle">
+	<p>
+		Coala
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Coala.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Polêmica? Tô fora! Você prefere buscar zonas em comum do que enfrentar conflitos. Você não entende porque tanta gente perde tempo tentando convencer o outro de suas convicções. Entre massa ou japa para o jantar, você fica com os dois! Você pode até mudar uma nota para compor a melodia, desde que seus valores morais estejam ali. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['IDEATIVO'] = 
+'<div class="line-tittle">
+	<p>
+		Arara-Azul
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Arara-Azul.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Você mora no mundo das ideias. E você o vira de cabeça pra baixo o tempo todo para descobrir novas conexões e faz isso com facilidade. Todo mundo fala que você é criativo, é original, pensa fora da caixinha. Sempre que tem uma nova ideia, você sente como se fosse a primeira vez.
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['IMPARCIALIDADE'] = 
+'<div class="line-tittle">
+	<p>
+		Formiga
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Formiga.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Faça o bem sem olhar a quem. Num mundo cheio de favores e panelinhas, você prefere tratar todos sem diferenças. Regras do jogo existem para serem aplicadas. Você prioriza a igualdade, esse equilíbrio é fundamental pra você. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['INCLUSÃO'] = 
+'<div class="line-tittle">
+	<p>
+		Baleia
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Baleia.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        No seu coração sempre cabe mais um. Você prefere expandir ao invés de restringir seu grupo. Quanto mais gente melhor, sem julgamentos, sem preconceitos. Chega junto brow que aqui tem lugar para muito mais! 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['INDIVIDUALIZAÇÃO'] = 
+'<div class="line-tittle">
+	<p>
+		Urso
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Urso.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Você odeia generalizações. Você vê as características únicas de cada um. Essa perspicácia te ajuda a recrutar as pessoas certas para o local certo e a escolher os presentes certos para cada um dos seus amigos. Você enxerga o melhor das pessoas. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['INPUT'] = 
+'<div class="line-tittle">
+	<p>
+		Galinha
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Galinha.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Sua mente coleciona. Seu HD tem muito espaço, você adora adicionar informações e com um rápido processador sempre capta as novas conexões. E certo de que isso nunca é demais, você nunca para de absorver novos conhecimentos. Sua caixa está sempre aberta. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['INTELECÇÃO'] = 
+'<div class="line-tittle">
+	<p>
+		Morcego
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Morcego.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Seu cérebro faz musculação. Você gosta da atividade de pensar. Você valoriza sua companhia e adora seus momentos “alones” de concentração. Às vezes puxar um papinho com alguém pode ser até difícil para você. Mas uma coisa é fato, aonde quer que vá, você pensa sem cessar. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['ORGANIZAÇÃO'] = 
+'<div class="line-tittle">
+	<p>
+		Esquilo
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Esquilo.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Você busca a configuração perfeita. Quando se depara com várias peças soltas numa situação complexa você não desiste até ter certeza que esse arranjo é o mais produtivo. Você salta de paraquedas dentro do abismo buscando novas opções, novas parcerias. Sem medo de errar, você apenas vai. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['PENSAMENTO ESTRATÉGICO'] = 
+'<div class="line-tittle">
+	<p>
+		Águia
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Águia.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Você é um estrategista nato. Você consegue enxergar diversos cenários para uma mesma situação. E munido de possibilidades, você visualiza padrões, descarta aquilo que não serve e encontra a melhor rota. Você faz a sua estratégia. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['POSITIVO'] = 
+'<div class="line-tittle">
+	<p>
+		Macaco
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Macaco.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Você faz a alegria da galera. Sempre positivo, com um sorriso estampado na cara e palavras gentis, as pessoas se sentem bem perto de você. Você injeta ânimo em cada projeto novo e não perde seu senso de humor no meio da confusão. Você é luz.  
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['PRUDÊNCIA'] = 
+'<div class="line-tittle">
+	<p>
+		Onça
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Onça.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Você anda com um pé na frente e outro atrás. Você prefere agir com prudência, avaliar todos riscos e se antecipar ao que pode dar errado. Você abre seus pensamentos para poucos e elogia quando há merecimento. Você não quer ser o garoto (a) popular, você é reservado. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['REALIZAÇÃO'] = 
+'<div class="line-tittle">
+	<p>
+		Lebre
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Lebre.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Cada dia é um dia para vencer. De domingo a domingo, você precisa sentir que realizou algo importante. Você tem várias metas e muitas vezes as pressões de última hora lhe dão até mais gás para concretizar. Você precisa exercitar corpo e mente. Você está sempre em movimento. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['RELACIONAMENTO'] = 
+'<div class="line-tittle">
+	<p>
+		Elefante
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Elefante.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Toda relação é uma troca. Você reconhece a importância das pessoas, gosta de cultivar relacionamentos próximos, de ser confiado e de confiar. Você sabe que muitas vezes os outros vão querer se aproveitar de você por isso, mas você corre o risco. E só tem valor se é sincero. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['RESPONSABILIDADE'] = 
+'<div class="line-tittle">
+	<p>
+		Camelo
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Camelo.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Começou termina! Você se envolve de corpo e alma em tudo que faz e se sente obrigado a concretizar. Se não deu certo, já pensa em como se justificar, em como se redimir. As pessoas contam primeiro com você e esse senso de responsabilidade é a base da sua reputação.
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['RESTAURAÇÃO'] = 
+'<div class="line-tittle">
+	<p>
+		João de Barro
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/João-de-Barro.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        O que desconfigurou será reconfigurado. Você quer ver tudo funcionando...as máquinas, as pessoas, os processos. O desafio de buscar a solução para os problemas, mesmo que fracasse 1, 2 ou 3 vezes, move você rumo ao sucesso. Você faz reviver. 
+    
+    </span>
+</p>
+';?>
+
+<?php $textos['SIGNIFICÂNCIA'] = 
+'<div class="line-tittle">
+	<p>
+		Pavão
+	</p>
+</div>
+<span style="width:25%;float: left;">
+	<img style="width: 100%;" src="/assets/application/img/pesquisa5/Pavão.png">
+</span>
+				
+<p style="width:70%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+    
+        Você quer ser a estrela mais brilhante da constelação. Você deseja o sucesso e que esse brilho especial seja notado e admirado. Você se conecta às estrelas que também brilham, pois entende que essas pessoas também desejam o excepcional ao normal.  Sempre cheio de metas, você voa alto. 
+    
+    </span>
+</p>
+';?>
+
+
+
+
+
+
+
+<div id="box-curriculo">
+	<div class="container">
+		<div id="curriculo">
+			<?php foreach ( $perfil as $row ):?>
+			<p class="name-topo">Trilha WantU Etapa 5 | <?php echo $row->nome?></p>
+			<?php endforeach; ?>
+			<hr>
+			<a class="logo-wantu"></a>
+			<span class="big-ola">Olá!</span>
+			<p class="text-perfil">
+				Olá! Já parou para pensar no brilho especial que só você tem? Bora lá que vamos te mostrar quais são seus 5 pontos fortes principais!
+			</p>			
+
+			<div class="line margin-line"></div>
+			<?php echo $textos[$this->result[0]];?>
+				<div style="clear: both;"></div>
+				<p style="page-break-before: always">
+				<div style="clear: both;"></div>
+				<div class="mg-print"></div>
+			<?php echo $textos[$this->result[1]];?>
+			<?php echo $textos[$this->result[2]];?>
+				<div style="clear: both;"></div>
+				<p style="page-break-before: always">
+				<div style="clear: both;"></div>
+				<div class="mg-print"></div>
+			<?php echo $textos[$this->result[3]];?>
+			<?php echo $textos[$this->result[4]];?>
+			
+			<div style="clear: both;"></div>
+			<p style="page-break-before: always">
+			<div style="clear: both;"></div>
+			<div class="mg-print"></div>
+			
+			<div class="line"></div>
+			
+			<div class="roda-inferior">
+				
+				<div class="roda-left">
+					<a class="img-roda"></a>
+				</div>
+				
+				<div class="roda-right">
+					<p class="text-perfil">
+						Agora você já conhece seus talentos principais e pode começar a fortalecê-los ainda mais. Vamos partir para o próximo teste e aumentar ainda mais seu autoconhecimento!
+					</p>
+				</div>	
+				<div class="roda-full">
+					<p class="text-perfil">
+						Um grande abraço!<br>
+						Equipe <span class="text-style">WantU.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="buttons-curriculo">
+			<a class="imp dowload-button" onclick="printCurriculo()"><img alt="" src="/assets/application/img/analise/seta.png"></a>	
+			<a class="button" href="/minha-conta">Voltar</a>
+		</div>
+	</div>
+</div>
+
+<script>
+function printCurriculo() {
+    window.print();
+}
+</script>
+
+<style>
+@page { 
+	size: auto;  
+	margin: 0mm; 
+}
+@media print {
+	footer{
+		display: none;
+	}
+	#topo-cadastro{
+		display: none;
+	}
+	#curriculo{
+		margin-top: 100px !important;
+		box-shadow: none;
+		padding: 0px 10px 0 10px !important;
+	}
+	a[href]:after {
+	    content: none !important;
+	}
+	.buttons-curriculo{
+		display: none;
+	}
+	.mg-print{
+		margin-top: 50px;
+		display: inline-block;
+		height: 1px;
+		width: 1px;
+	}
+	.line-tittle {
+	    float: left !important;
+	    margin-top: 50px !important;
+	}
+	.p.box-int > span.text-full{
+		height: 125px;
+		display: block;
+	}
+	.text-perfil{
+		margin-bottom: 0 !important; 
+	}
+	img{
+		margin-top: 10px;
+	}
+</style>
+
+

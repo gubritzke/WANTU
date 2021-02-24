@@ -1,0 +1,186 @@
+<?php include 'module/Application/view/partials/headers/topo-minhaconta.phtml'; ?>
+
+<div id="dados">
+	<div class="container">
+			<p class="perfil-tittle">Olá, <?php echo $user->nome ?></p>	
+		
+			<div class="form-left">
+				<form class="form-align" enctype="multipart/form-data" method="post" id="form-submit">
+					<div class="formulario">
+						<label class="input-100">
+							<span>Nome</span>
+							<input type="text" name="nome" value="<?php echo $user->nome ?>">
+						</label>
+			
+						<label class="input-100">
+							<span>CPF</span>
+							<input type="text" class="cpf" name="cpf" value="<?php echo $user->cpf ?>">
+						</label>
+						
+						<label class="input-100">
+							<span>Email</span>
+							<input type="text" name="email" value="<?php echo $user->email ?>">
+						</label>
+						
+						<span style="float: left; margin: 10px 0 28px 0;">Deseja mudar sua senha?</span>
+	
+						<label class="input-100">
+							<span>Senha</span>
+							<input type="password" name="senha" value="<?php echo $user->senha ?>">
+						</label>
+		
+						<label class="input-100">
+							<span>Confirmar senha</span>
+							<input type="password" name="senha_confirmar" value="">
+						</label>
+						
+						<input type="hidden" name="id_login" value="<?php echo $user->id_login ?>"/>
+						<input type="hidden" name="method" value="salvar" />
+					</div>
+					
+					<div class="imagem-upload">
+						<div class="image" <?php if (!empty($data_user->imagem)){ ?> style="background-image: url('/assets/uploads/user/<?php echo $user->imagem ?>');" <?php } else { ?> style="background-image: url('/assets/application/img/minhaconta/user-padrao.jpg');" <?php } ?>>
+							<a id="button-foto" class="button-change" onclick="$('#button-input').trigger('click');">
+								<img src="/assets/application/img/icons/icon-foto.png" />
+							</a>
+						</div>					
+						<p style="margin-top: 15px; font-size: 14px; color: #272727; font-weight: 500;">Priorize fotos com postura profissional para aparecer no seu Currículo Wantu.</p>
+						<input id="button-input" type="file" name="foto" style="display: none;">
+						<input name="imagem" type="hidden">
+					</div>		
+				</form>
+			</div>
+			
+<!-- 			<div class="foto-perfil"> -->
+<!-- 				<img alt="" src="/assets/application/img/perfil/foto-perfil.png"> -->
+<!-- 			</div> -->
+
+		<div class="buttons-align">
+			<a href="/minha-conta" class="button" style="float: none; display: inline-block; padding: 15px 70px;    margin-right: 50px; background: #36939d;">voltar</a>	
+			<a href="javascript:$('#form-submit').submit();" class="button" style="float: none; display: inline-block; padding: 15px 70px;">SALVAR</a>
+		</div>
+	</div>
+</div>
+
+<div id="avaliacoes" style="display: none;">
+	<div class="container">
+		
+		<p class="perfil-tittle" style="margin-bottom: 70px; margin-top: 0;">Sua Avaliação</p>
+	
+		<div class="aval">
+			<div class="aval-align">
+				<p>Análise de currículo e entrevista</p>
+			</div>
+			<div class="aval-align">
+				<p class="mrg-aval">Status: <span>100%</span></p>
+			</div>
+			<div class="aval-align">
+				<?php if ($user->analise_de_curriculo == 'Completo'){ ?>
+					<a href="javascript:;" class="button">Análise</a>
+				<?php } else { ?>
+					<a href="javascript:;" class="button">Retomar</a>
+				<?php } ?>
+			</div>
+		</div>
+		
+		<div class="aval">
+			<div class="aval-align">
+				<p>Análise de perfil comportamental</p>
+			</div>
+			<div class="aval-align">
+				<p class="mrg-aval">Status: <span>100%</span></p>
+			</div>
+			<div class="aval-align">
+				<?php if ($user->perfil_comportamental == 'Completo'){ ?>
+					<a href="javascript:;" class="button">Análise</a>
+				<?php } else { ?>
+					<a href="javascript:;" class="button">Retomar</a>
+				<?php } ?>
+			</div>
+		</div>
+		
+		</div>
+	</div>
+</div>
+
+<script>
+$('input[type="file"]').on('change', function( event ){ 
+
+	var fotoAtual = $('label.photo').attr('style')
+	
+	console.log($(this).val())
+	
+	if ( $(this).val().length != 0 ) {
+		
+		var filename = $(this).val()
+		var filename = filename.split('\\')
+		var filename = filename[filename.length-1]
+		
+		var extensao = filename.split('.')
+		var extensao = extensao[extensao.length-1]
+
+		var extensoes = [];
+			extensoes.push('png')
+			extensoes.push('PNG')
+			extensoes.push('jpg')
+			extensoes.push('JPG')
+			extensoes.push('jpeg')
+			extensoes.push('JPEG')
+			extensoes.push('gif')
+			extensoes.push('GIF')
+			extensoes.push('pdf')
+			extensoes.push('PDF')
+
+		if ( jQuery.inArray(extensao, extensoes) !== -1 ) {
+		
+			$('.upload[data-file="'+name+'"] span').html( filename )
+			$('.upload[data-file="'+name+'"]').addClass('active')
+
+			var form;
+			form = new FormData()
+			form.append('foto', event.target.files[0])
+
+			var nameInput = $(this).attr('name')
+
+			$.ajax({
+				url: '/minha-conta/upload',
+				data: form,
+				processData: false,
+				//contentType: 'multipart/form-data',
+				contentType: false,
+				type: 'POST',
+				success: function ( data ) {
+
+					console.log(data)
+					$('.image').attr('style','background:url(/assets/uploads/user/'+data+'); background-size:cover;');
+					
+					$('input[type="file"][name="foto"]').val('')
+					
+					if ( data == 'error' ) {
+						
+						alert('foto', 'Erro ao fazer upload da imagem.')
+						
+					} else {
+
+						$('input[name="imagem"]').val(data);
+						
+					}
+				    
+				}, beforeSend: function(){
+
+					$('.bt-submit').hide(0)
+
+				}
+				
+			})
+			
+		} else {
+
+			alert('foto', 'Formato invalido.')
+			
+		}		
+
+	}
+	
+})
+</script>

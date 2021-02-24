@@ -1,0 +1,64 @@
+<?php 
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 3</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+<link href="/assets/application/js/rangeslider/nouislider.min.css" media="" rel="stylesheet" type="text/css">
+<div class="container" id="anc-aqui">
+	
+	<form class="pesq-3" method="post" id="form-submit">
+		
+		<p class="pesq-tittle">
+			7. Em que nível a possibilidade de trilhar<br>
+			uma carreira internacional é atraente para você? 
+		</p>
+		<p class="pesq-desc">
+		</p>
+		
+		<div class="options" data-question="<?php echo $_GET['pg']; ?>">
+		
+			<a class="image-7"></a>
+			
+			<div class="box-right" style="margin-top: 116px;">
+				
+				<p class="text-content">Atribua os valores arrastando a barra</p>
+				
+				<div class="ratios">
+					<a href="javascript:changeRanger( 0.62 );" class="ratio-1"></a>
+					<a href="javascript:changeRanger( 1.88 );" class="ratio-2"></a>
+					<a href="javascript:changeRanger( 3.04 );" class="ratio-3"></a>
+					<a href="javascript:changeRanger( 4.25 );" class="ratio-4"></a>
+					<a href="javascript:changeRanger( 5.33 );" class="ratio-5"></a>
+				</div>
+			
+				<div id="ranger"></div>
+				
+				<p class="text-left">Baixo</p>
+				<p class="text-right">Alto</p>
+				
+			</div>
+			
+		</div>
+		
+		<input type="hidden" name="prev" value="<?php echo $prev; ?>">
+		<input type="hidden" name="next" value="<?php echo $next; ?>">				
+		<input type="hidden" name="p<?php echo $_GET['pg']; ?>" class="result" value="3">
+	
+	</form>
+	
+	<div class="line-buttons">
+		
+		<a class="button width-ajst" href="trilha3?pg=<?php echo $prev; ?>">Voltar</a>
+		
+		<div class="pagination">
+			
+			<a class="arrow-prev" href="aptidoes-profissionais?pg=<?php echo $prev; ?>"><i class="fas fa-caret-left"></i></a>
+			<p><?php echo $_GET['pg'];?> | 24 </p>
+			<a class="arrow-next" href="javascript:$('#form-submit').submit();"><i class="fas fa-caret-right"></i></a>
+		
+		</div>
+	
+		<a class="button-blue width-ajst" href="javascript:$('#form-submit').submit();">Próxima</a>
+	
+	</div>
+	
+</div>

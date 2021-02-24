@@ -1,0 +1,136 @@
+<?php include 'module/Application/view/partials/headers/topo-cadastro.phtml'; ?>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+
+
+<div class="container">
+	<div class="box-full">
+		<div id="box-login">
+			<form id="form-submit" method="post" class="validate">
+				<label class="input-100">
+					<span>Nome</span>
+					<input type="text" name="nome" value="<?php if (!empty($data->nome)) echo $data->nome?>" placeholder="">
+				</label>
+				
+				<label class="input-100">
+					<span>Email</span>
+					<input type="text" name="email" value="<?php if (!empty($data->email)) echo $data->email?>" placeholder="">
+				</label>
+			
+				<label class="input-50">
+					<span>CPF</span>
+					<input type="text" name="cpf" value="" placeholder="" class="cpf">
+				</label>
+				
+				<label class="input-50 right">
+					<span>Telefone</span>
+					<input type="text" name="telefone" value="" placeholder="" class="cellphone">
+				</label>
+				
+				<label class="input-50">
+					<span>Data de nascimento</span>
+					<input type="text" name="nascimento" value="" placeholder="" class="calendar">
+				</label>
+				
+				<label class="input-50 right">
+					<span>CEP</span>
+					<input type="text" name="cep" value="" placeholder="" class="cep">
+				</label>
+				
+				
+				<label class="input-25">
+					<span>Estado</span>
+					<select name="estado">
+						<option disabled selected>UF</option>
+        				<option value="AC">AC</option>
+        				<option value="AL">AL</option>
+        				<option value="AM">AM</option>
+        				<option value="AP">AP</option>
+        				<option value="BA">BA</option>
+        				<option value="CE">CE</option>
+        				<option value="DF">DF</option>
+       					<option value="ES">ES</option>
+       					<option value="GO">GO</option>
+       					<option value="MA">MA</option>
+       					<option value="MG">MG</option>
+       					<option value="MS">MS</option>
+   						<option value="MT">MT</option>
+      					<option value="PA">PA</option>
+        				<option value="PB">PB</option>
+        				<option value="PE">PE</option>
+        				<option value="PI">PI</option>
+        				<option value="PR">PR</option>
+       					<option value="RJ">RJ</option>
+       					<option value="RN">RN</option>
+       					<option value="RO">RO</option>
+       					<option value="RR">RR</option>
+       					<option value="RS">RS</option>
+       					<option value="SC">SC</option>
+       					<option value="SE">SE</option>
+       					<option value="SP">SP</option>
+       					<option value="TO">TO</option>
+					</select>
+				</label>
+
+				<label class="input-75 right">
+					<span>Cidade</span>
+					<input type="text" name="cidade" value="" placeholder="">
+				</label>
+				
+				<label class="input-75">
+					<span>Endereço</span>
+					<input type="text" name="endereco" value="" placeholder="">
+				</label>
+				
+				<label class="input-25 right">
+					<span>Nº</span>
+					<input type="text" name="numero" value="" placeholder="">
+				</label>
+								
+				<label class="input-50">
+					<span>Bairro</span>
+					<input type="text" name="bairro" value="" placeholder="">
+				</label>
+				
+				<label class="input-50 right">
+					<span>Complemento</span>
+					<input type="text" name="complemento" value="" placeholder="">
+				</label>
+			
+				<label class="input-50">
+					<span>Senha</span>
+					<input type="password" name="senha" value="" placeholder="">
+				</label>
+				
+				<label class="input-50 right">
+					<span>Confirmar a senha</span>
+					<input type="password" name="senha_confirmar" value="" placeholder="">
+				</label>
+				
+				<input type="hidden" name="method" value="salvar">
+				<?php echo \Naicheframework\Security\NoCSRF::generate('content'); ?>
+			</form>
+			<a class="button confirmar" id="concluir" onclick="$('#form-submit').submit();" href="javascript:;">entrar</a>
+		</div>
+	</div>
+</div>
+
+<script>
+
+	$('.confirmar').on('click', function(){
+
+		$.confirm({
+		    title: 'Atenção!',
+		    content: 'Adicione sua foto em seu perfil para aparecer no seu Currículo Wantu.',
+		   	columnClass: 'small',
+		    buttons: {
+		        Avançar: function () {
+			        
+		        }
+		    }
+		});
+
+	});
+
+</script>

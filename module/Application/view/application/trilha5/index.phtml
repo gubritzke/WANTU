@@ -1,0 +1,355 @@
+<?php  /*echo '<pre>'; print_r($perguntas); exit; 
+<!-- 					“O único tempo que tenho é o agora. Portanto, <br> -->
+<!-- 					vivo um dia de cada vez, e vou me <br> -->
+<!-- 					adaptando conforme a necessidade. ” -->
+*/
+?>
+<?php 
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 5</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+<div id="topo-pontos">
+	<div class="container">
+		<h1>Quais são seus talentos extraordinários?</h1>
+		<p>
+			Dentre as frases a seguir, escolha as que melhor definem aquilo em que você é bom de verdade arrastando a imagem que <br>
+			aparecerá para o lado esquerdo ou direito! Ou seja, só vale marcar aquilo que faz seu talento brilhar, hein? Vá excluindo as que <br>
+			não têm nada a ver com você na tabela abaixo, até que restem as 5 frases que garantem o brilho da sua estrela:
+		</p>
+		
+		<div class="line"></div>
+	</div>
+</div>
+
+<div id="test-content">
+	<div class="container">
+		
+		<div class="like-button">
+			<a class="like action-send" data-tipo="like" href="javascript:;"></a>
+		</div>
+		
+		<div class="question-content questions">
+			
+			<?php $i=0; foreach ( $perguntas as $row ){?>
+			<div class="question animated zoomIn">
+			
+				<a class="image-question animated fadeInUp" title="lalal;" data-value="<?php echo $row['data'];?>" style="background: url('/assets/application/img/pesquisa5/<?php echo $row['imagem'];?>');"></a>
+				<p>
+					<?php echo $row['pergunta'];?>
+				</p>
+				
+			</div>
+			<?php $i++; } ?>
+			
+		</div>
+		<div class="dislike-button">
+			<a class="dislike action-send" data-tipo="dislike" href="javascript:;"></a>
+		</div>
+		
+		
+		<div class="results-cont">
+			<div class="like-descricao">
+				<form method="post" id="form-submit" class="like-column">
+				
+					<input type="hidden" name="id_login" value="<?php echo $this->layout()->me->id_login; ?>">
+					<input type="hidden" name="method" value="salvar" />
+					
+				</form>
+				<span class="frase-maior" style="display:none;">Possui <b class="total-selected">0</b> frase(s), escolha somente 5 :)</span>
+			</div>
+			
+			<div class="center-column">
+				
+				<a class="like-bt move-ponto" data-tipo="like" href="javascript:;"><i class="fas fa-arrow-left"></i>Enviar para Like</a>
+				<a class="dislike-bt move-ponto" data-tipo="dislike" href="javascript:;">Enviar para Deslike<i class="fas fa-arrow-right"></i></a>
+				
+			
+			</div>
+			
+			<div class="dislike-column"></div>
+			
+		</div>
+		<div class="button-line">
+			<a href="javascript:;">CONCLUIR</a>
+		</div>
+		
+	</div>
+</div>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$('.move-ponto').bind('click', function(){
+
+		var tipo = $(this).attr('data-tipo');
+
+		if ( tipo == 'like' ){
+
+			var elementDe = $('.dislike-column');
+			var elementPara = $('.like-column');
+			
+		} else {
+
+			var elementDe = $('.like-column');
+			var elementPara = $('.dislike-column');
+			
+		}
+
+		if ( elementDe.find('.active').length > 0 ) {
+
+			var posicao = elementPara.offset();
+			var objSelecionado = elementDe.find('.active');
+	
+			elementPara.animate({'paddingTop':'78px'}, 100);
+	
+			objSelecionado.attr('style', 'max-width:375px; position:absolute; ');
+			objSelecionado.animate({left:(posicao.left + 16), top:(posicao.top + 19)},500);
+
+			console.log( (posicao.left + 16),  (posicao.top + 19));
+
+			
+			setTimeout( function (){
+	
+				elementPara.animate({'paddingTop':'18px'}, 0);
+				elementPara.prepend('<a data-title="'+objSelecionado.attr('data-title')+'">'+objSelecionado.html()+'</a>');
+				objSelecionado.remove();
+	
+				contagem();
+				
+			}, 500);
+
+		}
+			
+	});
+
+	//
+	$('.action-send').bind('click', function(){
+
+		if ( !$(this).hasClass('loading') ){
+		
+			$('.action-send').addClass('loading');
+			
+			var tipo = $(this).attr('data-tipo');
+	
+			if ( tipo == 'like' ){
+	
+				var cor = '#00cff6';
+				var element = $('.like-column');
+				
+			} else {
+	
+				var cor = '#ff7c5c';
+				var element = $('.dislike-column');
+				
+			}
+			
+			var posicao = element.offset();
+			var posicaoElementos = $('.question-content').offset().top;
+	
+			//opcao selecionada
+			var elementSelected = $('.question:last-child');
+	
+			//id e value
+			var id = elementSelected.find('.image-question').attr('data-id');
+			var value = elementSelected.find('.image-question').attr('data-value');
+			
+			elementSelected.addClass('animated-before');
+	
+			elementSelected.css('backgroundColor',cor);
+			
+			setTimeout( function (){
+	
+				//add classe para aparentar o selecionado
+				elementSelected.addClass('moved');
+	
+				setTimeout( function (){
+				
+					//move para a posicao correta
+					elementSelected.attr('style', 'background:'+cor+'; left:'+(posicao.left + 16)+'px; top:'+(posicao.top - posicaoElementos + 19)+'px; margin-left:0px; position:absolute;  ');
+			
+					//remove o padding das colunas
+					$('.like-column, .dislike-column').animate({'paddingTop':'18px'}, 100);
+			
+					//adicionar padding a coluna correta que ele esta movendo
+					element.animate({'paddingTop': '78px'},500);
+
+					//adciona o novo/remove o antigo
+					setTimeout( function (){
+	
+						$('.like-column, .dislike-column').css('paddingTop','18px');
+						element.prepend('<a class="tooltip" data-title="'+elementSelected.find('p').html()+'">'+elementSelected.find('p').html()+'<input type="hidden" name="like['+id+']" value="'+value+'"/></a>');
+						elementSelected.remove();
+						
+						contagem();
+						$('.action-send').removeClass('loading');
+
+					}, 1000);
+	
+				}, 500);
+	
+			}, 500);
+
+		}
+		
+	});
+
+	function contagem(){
+
+		var totalQuestions = $('.question-content .question').length;
+
+		myTooltip();
+		
+		if ( totalQuestions == 0 ) {
+
+			$('.action-send, .question-content').fadeOut(0);
+	
+		}
+		
+		var total = $('.like-column a').length;
+		$('.total-selected').html(total);
+
+		if ( total > 5 ) {
+
+			$('.frase-maior').fadeIn();
+
+		}
+
+		if ( total == 5 ) {
+
+			$('.button-line a').attr('href', 'javascript:$(\'#form-submit\').submit();');
+
+		} else {
+
+			$('.button-line a').attr('href', 'javascript:;');
+			
+		}
+
+
+	}
+
+	
+	
+	$(document).on('click', '.like-column > a, .dislike-column > a', function() {
+	    $(this).addClass('active').siblings().removeClass('active');
+	});
+
+	$('.like-column, .dislike-column').sortable({
+		connectWith: '.dislike-column, .like-column',
+		revert: true,
+		stop: function(){
+
+			contagem();
+
+		}
+	}).disableSelection();
+	
+	function submitForm(){
+		$('.like-column').submit();
+	}
+
+	$( function() {
+
+		var i = 0;
+		$('.question-content .question a').each( function (){
+
+			$(this).attr('data-id', i);
+			i++;
+			
+		});
+
+	});
+
+	function ReordenaOptionsBox( event, ui ){
+
+		console.log('chegou');
+		
+		$('.like-column div.question, .dislike-column div.question').each(function(){
+
+			var texto = $(this).find('p').html();
+
+			var id = $(this).find('a').attr('data-id');
+			var value = $(this).find('a').attr('data-value');
+
+			var htmlApp  = '<a data-value="'+value+'" data-id="'+id+'">';
+				htmlApp += texto;
+				htmlApp += '<input type="hidden" name="option['+id+'][value]" value="'+value+'"/>';
+				htmlApp += '</a>';
+			
+			$(this).after('<a data-value="'+$(this).find('a').attr('data-value')+'" data-id="'+$(this).find('a').attr('data-id')+'">'+texto+'</a>');
+			$(this).remove();
+
+			
+		});
+	
+	}
+
+	function myTooltip(){
+
+	}
+
+	$(function(){
+
+		$(document).on('mouseenter', '.dislike-column > a, .like-column > a', function(){
+
+			var element = $(this);
+
+			var parent = element.parent().attr('class');
+
+			console.log(parent);
+			
+			var title = element.attr('data-title');
+
+			var heightElement = element.height();
+
+			var PosLeft = element.offset().left;
+			var PosRight = ($(window).width() - (element.offset().left + element.outerWidth()));
+			var PosTop = element.offset().top;
+
+			if ( parent == 'like-column ui-sortable' ){
+				$('body').append('<div class="cc-tooltip-mn-go left-arrow animated fadeIn" style="position:absolute; top:calc('+PosTop+'px + '+heightElement+'px); left:'+PosLeft+'px;">'+title+'</div>');
+			} else {
+				$('body').append('<div class="cc-tooltip-mn-go right-arrow animated fadeIn" style="position:absolute; top:calc('+PosTop+'px + '+heightElement+'px); right:'+PosRight+'px;">'+title+'</div>');
+			}
+			
+		});
+
+		$(document).on('mouseleave', '.dislike-column > a, .like-column > a', function(){
+
+			$('.cc-tooltip-mn-go').remove();
+			
+		});
+		
+	});
+	
+
+</script>
+<style>
+/* .ui-sortable-placeholder { display:none !important; } */
+.tooltipster-base{
+	display: none !important;
+}
+.cc-tooltip-mn-go {
+    background: rgba(0,0,0,0.9);
+    color: #FFF;
+    box-sizing: border-box;
+    padding: 9px;
+    font-size: 11px;
+    border-radius: 3px;
+    max-width: 350px;
+    margin-top: 10px;
+}
+.cc-tooltip-mn-go:after {
+	content:'';
+	border-left: 5px solid transparent;
+  	border-right: 5px solid transparent;
+  	border-bottom: 5px solid rgba(0,0,0,0.9);
+  	position:absolute;
+  	top:-5px;
+}
+.cc-tooltip-mn-go.left-arrow:after {
+  	left:10px;
+}
+.cc-tooltip-mn-go.right-arrow:after {
+  	right:10px;
+}
+</style>
+

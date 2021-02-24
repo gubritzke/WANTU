@@ -1,0 +1,10 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-06-12 16:10:30","ip":"10.0.2.29"}
+{"module":"application","controller":"login","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/login","date":"2019-06-12 16:11:18","ip":"10.0.2.29"}
+{"module":"painel","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel","date":"2019-06-12 16:11:25","ip":"10.0.2.29"}
+{"module":"painel","controller":"login","action":"index","get":{"r":"\/painel"},"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/login","date":"2019-06-12 16:11:25","ip":"10.0.2.29"}
+{"module":"painel","controller":"login","action":"index","get":{"r":"\/painel"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"},"type":"DEBUG","message":"acesso","page":"\/painel\/login","date":"2019-06-12 16:11:39","ip":"10.0.2.29"}
+{"module":"painel","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/index","date":"2019-06-12 16:11:39","ip":"10.0.2.29"}
+{"module":"painel","controller":"relatorio-final","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/relatorio-final","date":"2019-06-12 17:40:16","ip":"10.0.2.29"}
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-06-12 17:40:18","ip":"10.0.2.29"}
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-06-12 17:41:18","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-06-12 17:47:18","ip":"10.0.2.29"}

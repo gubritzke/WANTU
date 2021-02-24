@@ -1,0 +1,73 @@
+<div class="row">
+
+	<div class="column column-12 margin-align">
+			
+		<p align="left" class="font-medium tittle-box">Novo Post <i class="fas fa-sign-in-alt"></i></i>
+
+		</p>	
+		
+	</div>
+	
+</div>
+
+<hr>
+
+<div class="row">
+	<div class="column column-12">
+			<form method="post" id="form-submit" enctype="multipart/form-data">
+				<div class="column column-6 div-align">
+				
+					<label>
+						<span>Status</span>
+						<select name="status">
+						
+						<option value="Ativo" <?php echo $result->status=='Ativo' ? 'selected="selected"' : null; ?>>Ativo</option>
+						<option value="Inativo" <?php echo $result->status=='Inativo' ? 'selected="selected"' : null; ?>>Inativo</option>
+							
+						</select>
+					</label>
+				
+					<label>
+						<span>Titulo</span>
+						<input type="text" name="titulo" value="<?php echo $result->titulo ?>">
+					</label>	
+					
+				</div>
+				
+				<div class="column column-6 div-align">
+				<label class="input-file">
+					<span>Imagem da matéria</span>
+					<input type="file" name="imagem">
+				</label>
+				
+				<label>
+					<span>Tags</span>
+					<select name="tags" multiple="multiple" class="select2" data-tags="true">
+						<option value="No Brasil" <?php echo $result->tags=='No Brasil' ? 'selected="selected"' : null; ?>>No Brasil</option>
+						<option value="Estudantes" <?php echo $result->tags=='Estudantes' ? 'selected="selected"' : null; ?>>Estudantes</option>
+						<option value="Vestibular" <?php echo $result->tags=='Vestibular' ? 'selected="selected"' : null; ?>>Vestibular</option>
+						<option value="Tecnologia" <?php echo $result->tags=='Tecnologia' ? 'selected="selected"' : null; ?>>Tecnologia</option>
+						<option value="No Mundo" <?php echo $result->tags=='No Mundo' ? 'selected="selected"' : null; ?>>No Mundo</option>
+						<option value="Universidades" <?php echo $result->tags=='Universidades' ? 'selected="selected"' : null; ?>>Universidades</option>
+					</select>
+				</label>
+				</div>
+			
+				<div style="clear: both;"></div>
+			
+				<div class="row">
+					<textarea name="texto" id="ckeditor"><?php echo $result->texto ?></textarea>
+				</div>	
+			
+				<input type="hidden" name="method" value="salvar" />
+			
+			</form>
+	</div>
+</div>
+
+<div class="row">
+	<div class="column column-12">
+		<a class="button" href="javascript:$('#form-submit').submit();">Salvar</a>
+		<a class="button-blue" href="/painel/blog">Voltar</a>
+	</div>
+</div>

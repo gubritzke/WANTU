@@ -1,0 +1,55 @@
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 11:43:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 12:09:21","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 12:14:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 12:16:24","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 12:18:27","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 12:18:32","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:09:41","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:09:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:09:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:09:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:10:00","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:10:00","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:10:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:10:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:12:38","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:12:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:13:33","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:22:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:22:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:23:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:23:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:23:44","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:24:03","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:24:18","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:24:34","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:24:34","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:24:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:24:55","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:26:21","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:26:22","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:26:43","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:26:44","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:27:00","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:27:01","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:27:17","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:27:18","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:27:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:27:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:29:34","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:29:35","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:30:06","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:30:07","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:30:32","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:30:33","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:31:01","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:31:01","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:34:01","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:34:06","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:34:08","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:34:28","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:35:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:35:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:35:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final","date":"2018-12-19 14:36:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-19 14:36:29","ip":"10.0.2.29"}

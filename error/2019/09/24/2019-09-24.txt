@@ -1,0 +1,44 @@
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:23:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:23:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:33:32","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:33:32","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:34:52","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:34:52","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/uploads\/user\/39594020_948539165344716_7509688121634586624_n_5c49b678617f7.jpg","type":"ERROR","message":"404","page":"\/assets\/uploads\/user\/39594020_948539165344716_7509688121634586624_n_5c49b678617f7.jpg","date":"2019-09-24 14:34:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:34:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:37:11","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:37:11","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:37:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:37:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:37:48","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:37:48","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:37:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:37:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:38:37","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:38:37","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:38:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:38:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:39:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:39:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:39:18","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:39:18","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:39:56","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:39:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:40:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:40:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:40:58","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:40:58","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:41:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:41:47","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-09-24 14:41:56","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:41:56","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/uploads\/user\/39594020_948539165344716_7509688121634586624_n_5c49b678617f7.jpg","type":"ERROR","message":"404","page":"\/assets\/uploads\/user\/39594020_948539165344716_7509688121634586624_n_5c49b678617f7.jpg","date":"2019-09-24 14:42:37","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:42:37","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:55:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/uploads\/user\/39594020_948539165344716_7509688121634586624_n_5c49b678617f7.jpg","type":"ERROR","message":"404","page":"\/assets\/uploads\/user\/39594020_948539165344716_7509688121634586624_n_5c49b678617f7.jpg","date":"2019-09-24 14:55:56","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:55:56","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 14:56:01","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2019-09-24 17:55:07","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 18:38:33","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/uploads\/user\/39594020_948539165344716_7509688121634586624_n_5c49b678617f7.jpg","type":"ERROR","message":"404","page":"\/assets\/uploads\/user\/39594020_948539165344716_7509688121634586624_n_5c49b678617f7.jpg","date":"2019-09-24 18:38:35","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2019-09-24 18:38:35","ip":"10.0.2.29"}

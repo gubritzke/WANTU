@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<base href="/"/>
+	<?php echo $this->headMeta(); ?>
+	<?php echo $this->headTitle() ?>
+	<?php echo $this->headLink(); ?>
+	<?php echo $this->headScript(); ?>
+</head>
+
+<body class="bg-login">
+
+	<!-- MESSAGES -->
+	<?php echo $this->message(); ?>
+
+	<!-- LOGIN -->		
+	<div id="login" class="animated fadeInUp">
+	
+		<form method="post" class="mainform">
+			
+			<div class="label" onclick="$(this).find('input').select();">
+				<span>E-mail</span>
+				<input type="email" required name="lg" autocomplete="off"  autofocus="autofocus"/>
+			</div>
+			
+			<div class="label" onclick="$(this).find('input').select();">
+				<span>Senha</span>
+				<input type="password" required name="pw" autocomplete="off"/>
+			</div>
+			
+			<input type="submit" class="bt bt-inline bg-blue" value="Entrar" />
+			<input type="hidden" name="r" value="<?php echo \Naicheframework\Security\Security::antiInjectionItem($_GET['r']);  ?>" />
+			<input type="hidden" name="method" value="logar" />
+			
+		</form>
+		
+		<?php /*
+		<div align="center">
+			<a href="/painel/recuperar-senha" class="color-blue"><i class="fa fa-lock"></i> Esqueci minha senha</a>
+		</div>
+		*/ ?>
+	</div>
+
+</body>
+</html>

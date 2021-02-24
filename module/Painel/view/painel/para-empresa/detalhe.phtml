@@ -1,0 +1,72 @@
+<form method="post" enctype="multipart/form-data" class="container default" id="form-submit" action="/painel/usuarios/save">
+	<div class="row">
+		<h2 style="float: left;" class="title">Informações do contato</h2>
+	</div>
+	<div class="row">
+		<div class="label column column-5">
+			<label>Nome</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->result->nome; ?> <?php echo $this->result->sobrenome; ?>" />
+		</div>
+		
+		<div class="label column column-5">
+			<label>Email</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->result->email; ?>" />
+		</div>
+	</div>
+		
+	<div class="row">
+		<div class="label column column-5">
+			<label>Empresa</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->result->empresa; ?>" />
+		</div>
+		
+		<div class="label column column-5">
+			<label>Telefone</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->result->telefone; ?>" />
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="label column column-5">
+			<label>Estado</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->result->estado; ?>" />
+		</div>
+		
+		<div class="label column column-5">
+			<label>Área de atuação</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->result->area_de_atuacao; ?>" />
+		</div>
+	</div>
+	<h2 class="title">Dados sobre a empresa</h2>
+	
+	<div class="row">
+		<div class="label column column-5">
+			<label>Quantidade de colaboradores</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->result->colaboradores; ?>" />
+		</div>
+		
+		<div class="label column column-5">
+			<label>Quantidade de vagas por mês</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->result->vagas; ?>" />
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="label column column-5">
+			<label>Utiliza gestão por cometências</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->result->gestao_competencias; ?>" />
+		</div>
+		
+		<div class="label column column-5">
+			<label>Competências utilizadas</label>
+			<input type="text" readonly="readonly" value="<?php echo $this->result->competencias_utilizadas	; ?>" />
+		</div>
+	</div>
+		
+	<a href="./painel/<?php echo $this->layout()->routes['controller']; ?>" class="bt bt-round left">
+		<i class="fa fa-chevron-left"></i> Voltar
+	</a>
+	
+	<input type="hidden" name="id_login" value="<?php echo $this->usuario->id_login?>"/>
+	<input type="hidden" name="method" value="save" />
+</form>

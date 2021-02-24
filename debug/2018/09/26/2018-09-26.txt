@@ -1,0 +1,7 @@
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2018-09-26 10:40:16","ip":"10.0.2.29"}
+{"module":"application","controller":"inteligencias-multiplas","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/inteligencias-multiplas","date":"2018-09-26 10:40:17","ip":"10.0.2.29"}
+{"module":"application","controller":"inteligencias-multiplas","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/inteligencias-multiplas","date":"2018-09-26 11:04:38","ip":"10.0.2.29"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2018-09-26 16:37:55","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-09-26 16:37:57","ip":"10.0.2.29"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2018-09-26 16:48:06","ip":"10.0.2.29"}
+{"module":"application","controller":"inteligencias-multiplas","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/inteligencias-multiplas","date":"2018-09-26 16:48:09","ip":"10.0.2.29"}

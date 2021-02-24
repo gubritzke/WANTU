@@ -1,0 +1,124 @@
+<?php 
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 1</span>';
+include 'module/Application/view/partials/headers/topo-teste.phtml'; ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+<link href="/assets/application/js/extensions/jquery.tooltipster/dist/css/tooltipster.bundle.min.css" media="" rel="stylesheet" type="text/css">
+
+<div id="full-teste">
+	<div class="container">
+		<div class="progresso">
+			<?php include 'module/Application/view/application/trilha1/progresso.phtml'; ?>
+		</div>
+		
+		<div class="formulario">
+			<div class="form-align">
+				<p class="tittle" style="position: relative;">Idiomas<i class="info tooltip" title="Considere leitura e comunicação.">?</i></p>
+				<form id="form-submit6" action="" method="post">
+				
+					<label class="select-100 right">
+						<span>Você conhece outros idiomas, além do Português?</span>
+						<select name="possui_idioma" onchange="$(this).val() == 'Sim' ? $('#formContent').slideDown() : $('#formContent').slideUp(); ">
+							<option value="Sim">Sim</option>
+							<option value="Nao">Não</option>
+						</select>
+					</label>
+									
+					<div id="formContent">
+					
+						<label class="input-50">
+							<span>Qual?</span>
+							<input type="text" name="idiomas" value="">
+						</label>
+									
+						<label class="input-50 right">
+							<span>Nível</span>
+							<select name="nivel">
+								<option>Básico</option>
+								<option>Intermediário</option>
+								<option>Avançado</option>
+								<option>Fluente</option>
+							</select>
+						</label>
+						
+						<input type="hidden" name="code" value="<?php echo $data->id_analise_de_curriculo; ?>"/>
+	 					<input type="hidden" name="method" value="salvarEtapaIdioma" />
+	 					
+		 				<a class="right button ajust-buttonadd" style="margin-top: 0" href="javascript:$('#form-submit6').submit();">
+							Adicionar
+						</a>
+					</div>
+				</form>
+				
+
+				
+
+					
+				<table class="cursos" cellspacing="0">
+					<tbody>
+					<?php foreach ( $data as $row ): $row = (object)$row; ?>
+						<tr class="caixas">
+							<td><p class="nome-curso"><?php echo $row->idiomas; ?></p></td>
+							<td><p class="nivel-curso"><?php echo $row->nivel; ?></p></td>
+							<td><a href="javascript:;" class="delete" data-href="/trilha1/deletar-idiomas/<?php echo $row->id_idiomas ?>"><i class="far fa-trash-alt"></i> Excluir</a></td>
+						</tr>
+					<?php endforeach; ?>
+					</tbody>
+				</table>
+				
+				<div class="buttons2">
+					<a class="button-voltar" href="trilha1/cursos">voltar</a>
+					<a class="button right confirmar" href="javascript:;" data-href="trilha1/experiencia-profissional">Próximo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+
+	$('.delete').on('click', function(){
+
+		var hrefDelete = $(this).data('href');
+
+		if( confirm("Deseja realmente fazer isso?") ) {
+
+			location.href=hrefDelete;
+			
+		}
+
+	});
+
+</script>
+
+
+<script>
+
+	$('.confirmar').on('click', function(){
+
+		var hrefDelete = $(this).data('href');
+
+		$.confirm({
+		    title: 'Cuidado!',
+		    content: 'Clique em adicionar para salvar seus dados antes de avançar.',
+		    buttons: {
+		        Próximo: function () {
+		        	location.href=hrefDelete;
+		        },
+		        Cancelar: function () {
+		        }
+		    }
+		});
+
+	});
+
+</script>
+
+<script type="text/javascript">
+$('.tooltip').tooltipster({
+	   animation: 'fade',
+	   delay: 200,
+	   theme: 'Light',
+	   arrow: false,
+});
+</script>

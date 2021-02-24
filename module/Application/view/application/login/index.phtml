@@ -1,0 +1,26 @@
+<?php include 'module/Application/view/partials/headers/topo-cadastro.phtml'; ?>
+<div class="container">
+	<div class="box-full">
+		<div id="box-login" class="height-ajst">
+			<form id="form-submit" method="post">
+				<label class="input-100">
+					<span>Login</span>
+					<input type="text" name="login" value="" placeholder="Email">
+				</label>
+				
+				<label class="input-100">
+					<span>Senha</span>
+					<input type="password" name="senha" value="" placeholder="">
+				</label>
+				<input type="submit" style="display: none;">
+				<input type="hidden" name="method" value="logaradmin">
+			</form>
+			<a class="button" onclick="$('#form-submit').submit();" href="javascript:;">entrar</a>
+			<a href="/login/facebook?r=<?php echo \Naicheframework\Security\Security::antiInjectionItem($r); ?>" class="bt-facebook">
+    			<i class="fa fa-facebook"></i> Entrar com facebook
+    		</a>
+			<a class="esq-senha" href="/login/recuperar">Esqueci a senha</a>
+			<a class="n-cadastrado" href="/cadastro">Não é Cadastrado?</a>
+		</div>
+	</div>
+</div>

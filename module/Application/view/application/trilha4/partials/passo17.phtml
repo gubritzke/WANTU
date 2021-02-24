@@ -1,0 +1,56 @@
+<?php
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 4</span>';
+include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+
+<div id="pesquisa">
+	<div class="container">
+	
+		<div class="time">
+			<span>00:45</span>
+			<div class="time-bar"></div>
+			<div class="time-bar"></div>
+			<div class="time-bar"><span class="p1">+10</span></div>
+		</div>
+		
+		<div class="question">
+			<p>17- Esqueço fácil de ir pra balada quando:</p>
+		</div>
+		<form class="pesq" id="form-submit" method="post">
+			<div class="options" data-question="<?php echo $_GET['pg']; ?>">
+						
+				<a class="option" data-name="Linguistica" data-value="5">
+					<span class="image triangulo"></span>
+					<span class="text-opt" style="margin-top: 71px;">
+						Estou acabando de ler <br>
+						“aquele” livro.
+					</span>
+				</a>
+				
+				<a class="option" style="margin: 0 20px;"  data-name="Espacial" data-value="2">
+					<span class="image Quadrado"></span>
+					<span class="text-opt" style="margin-top: 65px;">
+						Tenho uma viagem <br>
+						marcada no outro dia pra <br>
+						conhecer um novo e <br>
+						lindo destino.
+					</span>
+				</a>
+				
+				<a class="option"  data-name="Logico-matematico" data-value="3">
+					<span class="image Losango"></span>
+					<span class="text-opt" style="margin-top: 47px;">
+						Faço as contas do mês e <br>
+						vejo que o orçamento para <br>
+						festas já deu.
+					</span>
+				</a>
+				
+				<input type="hidden" name="prev" value="<?php echo $prev; ?>">
+				<input type="hidden" name="next" value="<?php echo $next; ?>">
+				<input type="hidden" class="result">
+				
+			</div>
+		</form>	
+	</div>
+</div>

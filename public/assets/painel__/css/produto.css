@@ -1,0 +1,203 @@
+/****************/
+/* PRODUTO */
+/****************/
+#product{
+	border: 1px solid #ddd;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+#product .row:first-child{
+	margin-bottom: 40px;
+}
+#product p,
+#product .title{
+	margin: 0;
+}
+#product .stars{
+	margin: 15px 0;
+}
+#product .stars > i{
+	font-size: 18px;
+	line-height: 18px;
+	color: #ffa401;
+}
+#product .price-before{
+	text-decoration: line-through;
+}
+#product .bt-buy{
+	font-size: 20px;
+	border-radius: 0;
+	padding: 10px 0;
+	display: block;
+	background-color: #ffa401;
+	color: #fff;
+	margin: 15px 0;
+	padding: 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+#product .tab{
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: #e9e9e9;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	margin: 0;
+	padding: 5px 10px;
+	font-size: 100%;
+}
+#product .product-more{
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	width: 100%;
+	height: 227px;
+}
+#product .product-more td{
+	padding: 10px 20px;
+	border-bottom: 1px solid #ddd;
+}
+#product .product-more .logo{
+	display: block;
+	width: 77px;
+	height: 77px;
+	border-radius: 50%;
+	text-align: center;
+	border: 1px solid #ddd;
+	
+	background-color: rgba(0,0,0,0.6);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90% auto;
+}
+#product .product-detail{
+	box-sizing: border-box;
+	display: table;
+	border: 1px solid #ddd;
+	width: 100%;
+	height: 200px;
+	padding: 15px;
+}
+#product .product-detail ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	width: 50%;
+}
+#product .product-detail ul > li{
+	margin-top: 15px;
+}
+.box-status .title{
+	margin-top: 0;
+}
+
+/****************/
+/* GALLERY */
+/****************/
+#gallery{
+}
+#gallery .gallery-items{
+	box-sizing: border-box; 
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 0;
+	width: 15%;
+}
+#gallery .gallery-items > li{
+	box-sizing: border-box; 
+	overflow: hidden;
+	width: 100%;
+	height: 80px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	margin-bottom: 5px;
+	text-align: center;
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+#gallery .gallery-featured{
+	box-sizing: border-box; 
+	float: left;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	text-align: center;
+	width: 80%;
+	height: 400px;
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+}
+
+/****************/
+/* MATCHED */
+/****************/
+.content-featured{
+	background-color: rgba(60, 165, 70, 0.5);
+	padding: 0 15px;
+}
+#match .match-confirm > label{
+	display: inline-block;
+	margin: 15px 15px 15px 0;
+}
+#match h3.title{
+	margin: 0;
+}
+#match .image{
+	max-width: none;
+	margin: 0;
+}
+#match .image:after{
+	display: none;
+}
+#match .carousel-1 .owl-controls > .owl-nav > .owl-next,
+#match .carousel-1 .owl-controls > .owl-nav > .owl-prev {
+	position: absolute;
+	top: 40%;
+	left: 0;
+
+	font-size: 22px;
+	background-color: #4dc1b3;
+	
+	padding: 5px 10px 5px 5px;
+	border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+	-moz-transition: 1s;
+	-webkit-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+
+	opacity: 0.6;
+	color: #fff;
+}
+#match .carousel-1 .owl-controls > .owl-nav > .owl-next {
+	padding: 5px 5px 5px 10px;
+	border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+    right: 0;
+	left: auto;
+}
+#match .carousel-1 .owl-controls > .owl-nav > .owl-next:hover,
+#match .carousel-1 .owl-controls > .owl-nav > .owl-prev:hover {
+	opacity: 1;
+	color: #ffa401;
+}
+#match .carousel-1 .owl-controls > .owl-nav > .owl-next:before,
+#match .carousel-1 .owl-controls > .owl-nav > .owl-prev:before {
+	font-family:'FontAwesome';
+	content:"\f104";
+}
+#match .carousel-1 .owl-controls > .owl-nav > .owl-next:before {
+	content:"\f105";
+}

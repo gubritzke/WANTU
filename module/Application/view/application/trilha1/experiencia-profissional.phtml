@@ -1,0 +1,270 @@
+<?php 
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 1</span>';
+include 'module/Application/view/partials/headers/topo-teste.phtml'; ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+<link href="/assets/application/js/extensions/jquery.tooltipster/dist/css/tooltipster.bundle.min.css" media="" rel="stylesheet" type="text/css">
+<div id="full-teste">
+	<div class="container">
+		<div class="progresso">
+			<?php include 'module/Application/view/application/trilha1/progresso.phtml'; ?>
+		</div>
+		
+		<div class="formulario">
+			<div class="form-align">
+				<p class="tittle">Experiência Profissional</p>
+				<form id="form-submit5" action="" method="post">
+				
+					<label class="select-100 right">
+						<span>Você possui Experiência Profissional?</span>
+						<select name="experiencia_profissional" onchange="$(this).val() == 'Sim' ? $('#formContent').slideDown() : $('#formContent').slideUp(); ">
+							<option>Sim</option>
+							<option>Não</option>
+						</select>
+					</label>
+					
+					<div id="formContent">
+							
+					<label class="select-100 right">
+						<span>Tipo da Experiência<i class="info tooltip" title="Veja a lista de tipos de experiências profissionais possíveis logo abaixo">?</i></span>
+						<select name="tipo_da_experiencia">
+							<option></option>
+							<option>Atividades de pesquisa ou iniciação científica, como bolsista ou voluntário ativo</option>
+							<option>Experiência em projetos de extensão (atendimento à comunidade), como bolsista ou voluntário ativo nos projetos; </option>
+							<option>Experiência com projeto de ensino ou monitoria, como bolsista ou voluntário ativo;</option>
+							<option>Experiência de estágio, obrigatório ou extracurricular, remunerado ou não; </option>
+							<option>Experiência com empreendedorismo social, na Enactus ou outra entidade de incentivo à causa (inclui Igreja e demais entidades sociais); </option>
+							<option>Experiência na Empresa Júnior do curso; </option>
+							<option>Experiência em uma empresa familiar, em que você tenha laços familiares ou afetivos com o proprietário ou dirigente; </option>
+							<option>Experiência no Diretório Central dos Estudantes, Diretório Acadêmico ou outra entidade de representação estudantil; </option>
+							<option>Experiência como proprietário do seu negócio; </option>
+							<option>Experiência como funcionário de empresa com carteira assinada ou terceirizado/ prestação de serviço;  </option>
+							<option>Outras experiências anteriores ao ingresso na faculdade, ou não mencionadas acima. Detalhe sua experiência no campo “atividades”.</option>
+						</select>
+					</label>
+									
+					<label class="input-50">
+						<span>Nome da Empresa</span>
+						<input class="limpa" type="text" name="nome_da_empresa" >
+					</label>
+					
+					<label class="input-50 right">
+						<span>Cargo</span>
+						<input class="limpa" type="text" name="cargo" >
+					</label>
+										
+					<label class="select-50">
+						<span>Regime de Contrato</span>
+						<select name="regime_de_contrato">
+							<option>Bolsista</option>
+							<option>Voluntário</option>
+							<option>PJ</option>
+							<option>CLT</option>
+							<option>Contrato de estágio</option>
+							<option>Outro</option>
+						</select>
+					</label>
+					
+					<label class="input-50 right">
+						<span>Data de Início</span>
+						<input type="text" class="limpa" name="data_de_inicio_empresarial" >
+					</label>
+					
+					<label class="select-50 ">
+						<span>Trabalho Atual</span>
+						<select id="trab_atual" name="trabalho_atual">
+							<option selected></option>
+							<option value="Sim">Sim</option>
+							<option value="Não">Não</option>
+						</select>
+					</label>
+					
+					<label class="input-50 right" id="data_final" style="display: none;">
+						<span>Data de Término</span>
+						<input class="limpa" type="text" class="calendarMD" name="data_de_termino_empresarial">
+					</label>
+
+					<label class="textarea-100">
+						<span>Resumo das Atividades</span>
+						<textarea id="clear" name="resumo_das_atividades" maxlength="320"></textarea>
+					</label>
+						
+					<input type="hidden" name="code" value="<?php echo base64_decode($_GET['code']); ?>"/>
+ 					<input type="hidden" name="method" value="salvarEtapa5" />		
+ 					
+ 					<a class="button right ajust-buttonadd" href="javascript:;" onclick="salvaAtividade()">
+					Adicionar
+					</a>
+					
+					</div>					
+				</form>
+				
+				<div class="listagem">
+					<?php foreach ( $data2 as $row ): $row = (object)$row; ?>
+					<table class="empresas boxGrp boxAccordionHide" cellspacing="0">
+						<tbody>
+							<tr class="caixas">
+								<td class="width-td1"><p class="nome-curso"><?php echo $row->nome_da_empresa; ?></p></td>
+								<td class="width-td2"><a href="javascript:;" class="delete" data-href="/trilha1/deletar-experiencia-profissional/<?php echo $row->id_analise_experiencia_profissional?>"><i class="far fa-trash-alt"></i> Excluir</a></td>
+								<td class="width-td3"><a href="javascript:;" class="vermais boxAccordionBt"><i class="fas fa-angle-down"></i></a></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									
+									<div class="boxAccordionContent">
+										<table class="resumo-serv" cellspacing="0">
+											<tbody>
+												<tr>
+													<td colspan="2"><?php echo $row->tipo_da_experiencia; ?></td>
+												</tr>
+												<tr>
+													<td width="50%"><?php echo $row->nome_da_empresa; ?></td>
+													<td><?php echo $row->cargo; ?></td>
+												</tr>
+												<tr>
+													<td width="50%"><?php echo date('d/m/Y', strtotime($row->data_de_inicio_empresarial)) ?></td>
+													<td><?php echo date('d/m/Y', strtotime(  $row->data_de_termino_empresarial)) ?></td>
+												</tr>
+												<tr>
+													<td width="50%"><?php echo $row->trabalho_atual; ?></td>
+													<td><?php echo $row->regime_de_contrato; ?></td>
+												</tr>
+												<tr>
+													<td colspan="2"><?php echo $row->resumo_das_atividades; ?></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					<?php endforeach; ?>
+				</div>
+				
+				<div style="border-top:1px solid #bfbfbf; width: 100%; float: left; margin:25px 0 25px 0;"></div>
+				
+				<form id="form-submitnew" action="" class="validate" method="post">
+				
+					<label class="input-100">
+						<span>Objetivos Profissionais (máximo 140 caracteres)<i class="info tooltip" title="Considere os seus objetivos profissionais atuais, como o cargo, a função ou a área de trabalho pretendida. Ex: Atuar na área de Marketing e por meio deste estágio assumir novos desafios para meu crescimento profissional">?</i></span>
+						<textarea maxlength="140" name="objetivos_profissionais" placeholder="Resumo"></textarea>
+					</label>
+					
+					<input type="hidden" name="code" value="<?php echo $data->id_analise_de_curriculo; ?>"/>
+ 					<input type="hidden" name="method" value="salvarEtapanew" />	
+					
+				</form>
+				<div class="buttons2">
+					<a class="button-voltar" href="trilha1/idiomas">voltar</a>
+					<a class="button right confirmar" href="javascript:;" data-href="javascript:$('#form-submitnew').submit();">Próximo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$(document).ready(function(){
+	   $("#trab_atual").change(function(){ 
+
+		   if ( $(this).val() == 'Não' ) {
+
+			   $('#data_final').fadeIn(0).append('');
+
+		   } else {
+
+			   $('#data_final').fadeOut(0)
+
+		   }
+		      
+	   });
+	});
+</script>
+
+<script>
+
+	var submited = false;
+
+	function salvaAtividade(){
+
+		if ( submited == false ){
+
+			submited = true;
+			
+			$dados = $('form#form-submit5').serialize();
+	
+			$.ajax({
+				url: '/<?php echo $this->layout()->routes['controller'];?>/salva',
+				type: 'POST',
+				data: $dados,
+				dataType: "json",
+				success: function($returndata)
+				{
+					
+					$('div.listagem').append($returndata.html);
+					submited = false;
+					$('#form-submit5 input.limpa, .form-align select, .form-align #clear').val('');
+					//$('div.listagem table.id-'+$returndata.id+' .boxAccordionContent').slideToggle();
+					
+				}
+			});
+
+		}
+		
+	}
+</script>
+
+<script>
+
+	$('.delete').on('click', function(){
+
+		var hrefDelete = $(this).data('href');
+
+		if( confirm("Deseja realmente fazer isso?") ) {
+
+			location.href=hrefDelete;
+			
+		}
+
+	});
+
+</script>
+
+
+<script>
+
+	$('.confirmar').on('click', function(){
+
+		var hrefDelete = $(this).data('href');
+
+		$.confirm({
+		    title: 'Cuidado!',
+		    content: 'Clique em adicionar para salvar seus dados antes de avançar.',
+		    buttons: {
+		        Próximo: function () {
+		        	location.href=hrefDelete;
+		        },
+		        Cancelar: function () {
+		        }
+		    }
+		});
+
+	});
+
+</script>
+
+<script type="text/javascript">
+$('.tooltip').tooltipster({
+	   animation: 'fade',
+	   delay: 200,
+	   theme: 'Light',
+	   arrow: false,
+});
+</script>
+
+<style>
+	.tooltipster-base{
+	width: 500px;
+</style>

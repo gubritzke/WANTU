@@ -1,0 +1,16 @@
+@media( max-width:650px ) {
+	label.input-100 {
+	    width: 542px !important;
+	}
+	#contato form {
+	    width: 542px;
+	}
+	label.textarea-100 {
+	    width: 542px !important;
+	}
+	label.textarea-100 textarea {
+	    width: 542px !important;
+	    min-width: 542px !important;
+	    max-width: 542px !important;
+	}
+}

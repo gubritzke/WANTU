@@ -1,0 +1,32 @@
+{"url":"10.0.0.224:8342\/pagamento","type":"ERROR","message":"error exception","page":"\/pagamento","date":"2019-03-12 15:36:13","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/pagamento","type":"ERROR","message":"error exception","page":"\/pagamento","date":"2019-03-12 15:36:20","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:36:21","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:36:41","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:39:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:41:00","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:41:24","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:41:56","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:42:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:42:33","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:42:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:43:01","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:43:35","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:43:42","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:43:50","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:44:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:46:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:48:19","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:48:22","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:48:35","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:48:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:49:35","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:49:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:50:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/","type":"ERROR","message":"error exception","page":"\/checkout\/","date":"2019-03-12 15:53:55","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/","type":"ERROR","message":"error exception","page":"\/checkout\/","date":"2019-03-12 15:54:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/","type":"ERROR","message":"error exception","page":"\/checkout\/","date":"2019-03-12 15:54:10","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:54:10","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/","type":"ERROR","message":"error exception","page":"\/checkout\/","date":"2019-03-12 15:54:12","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/","type":"ERROR","message":"error exception","page":"\/checkout\/","date":"2019-03-12 15:54:19","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-03-12 15:54:19","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout","type":"ERROR","message":"error exception","page":"\/checkout","date":"2019-03-12 15:54:22","ip":"10.0.2.29"}

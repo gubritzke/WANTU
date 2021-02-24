@@ -1,0 +1,38 @@
+<header>
+
+	<!-- MESSAGES -->
+	<?php echo $this->message(); ?>
+	<?php if( isset($this->layout()->message) && is_array($this->layout()->message) ): ?>
+	<div class="<?php echo key($this->layout()->message); ?>" id="message">
+		<a href="javascript:;" class="fa fa-times close" onclick="$('#message').slideUp('slow');"></a>
+		<?php echo current($this->layout()->message); ?>
+	</div>
+	<?php endif; ?>
+	
+	<div id="topo-cadastro">
+		<div class="container">
+
+			<a class="logo-w" href="/"></a>
+			
+		</div>
+	</div>
+	<?php if (!empty($this->layout()->breadcrumb)):?>
+	<div class="breadcrumb">
+		<div class="container">
+			<ul>
+				<?php foreach ($this->layout()->breadcrumb as $key => $row):?>
+					<li><a href="<?php echo $row ?>"><?php echo $key ?></a></li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
+	</div>
+	<?php endif; ?>
+</header>
+
+<style>
+@media( max-width:600px ) {
+	#topo-cadastro {
+    	width: auto !important;
+	}
+}
+</style>

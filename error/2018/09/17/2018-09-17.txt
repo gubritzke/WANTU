@@ -1,0 +1,3 @@
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-09-17 11:59:27","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/informacoes-complementares","type":"ERROR","message":"404","page":"\/informacoes-complementares","date":"2018-09-17 12:00:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-09-17 12:00:57","ip":"10.0.2.29"}

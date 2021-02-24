@@ -1,0 +1,43 @@
+<!doctype html>
+<?php // echo $this->layout()->routes['action']; exit;?>
+<html lang="en">
+<head>
+	<base href="/"/>
+    <?php echo $this->headMeta(); ?>
+    
+	<?php echo $this->headLink(); ?>
+	
+	<?php echo $this->headScript(); ?>
+</head>
+<body class="bg-login">
+
+	<div id="login" class="animated fadeInUp">
+	
+		<!-- MESSAGES -->
+		<?php echo $this->message(); ?>
+			
+		<form method="post" class="mainform">
+			
+			<a class="logo">
+				<img src="assets/painel/img/logos/wantu.png" alt="Wantu">
+			</a>
+			
+			<div class="label">
+				<input type="email" required placeholder="Login" name="lg" autocomplete="off" />
+			</div>
+			
+			<div class="label">
+				<input type="password" required placeholder="Senha" name="pw" autocomplete="off"/>
+			</div>
+				
+			
+			<input type="submit" class="bt" value="Entrar" />
+			<a href="/esqueci-senha" style="text-decoration: underline; float: right;"><i>Esqueci a senha</i></a>
+			<input type="hidden" name="method" value="logarAdmin" />
+			<input type="hidden" name="r" value="/painel/index" />
+			
+		</form>
+	</div>
+
+</body>
+</html>

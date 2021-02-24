@@ -1,0 +1,281 @@
+<?php 
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 1</span>';
+include 'module/Application/view/partials/headers/topo-teste.phtml'; ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+<link href="/assets/application/js/extensions/jquery.tooltipster/dist/css/tooltipster.bundle.min.css" media="" rel="stylesheet" type="text/css">
+<div id="full-teste">
+	<div class="container">
+		<div class="progresso">
+			<?php include 'module/Application/view/application/trilha1/progresso.phtml'; ?>
+		</div>
+		
+		<div class="formulario">
+			<div class="form-align">
+				<p class="tittle">Pós Graduação</p>
+				<form id="form-submit3" action="" method="post">
+				
+					<label class="select-100 right">
+						<span style="font-size: 17px !important; ">Fez algum tipo de Pós Graduação?</span>
+						<select name="possui_pos_graduacao" onchange="$(this).val() == 'Sim' ? $('#formContent').slideDown() : $('#formContent').slideUp(); ">
+							<option value="Sim">Sim</option>
+							<option value="Nao">Não</option>
+						</select>
+					</label>
+				
+					<div id="formContent">
+						
+						<label class="select-100 right">
+							<span>Tipo de pós-graduação</span>
+							<select name="tipo_pos" id="">
+								<option value=""></option>
+								<option value="Especialização">Especialização</option>
+								<option value="MBA"> MBA</option>
+								<option value="Mestrado Acadêmico">Mestrado Acadêmico </option>
+								<option value="Mestrado Profissional">Mestrado Profissional </option>
+								<option value="Doutorado"> Doutorado</option>
+								<option value="Pós-doutorado"> Pós-doutorado</option>
+							</select>
+						</label>
+						<label class="select-100">
+							<span>Estado da instituição de ensino</span>
+							<select name="estado_da_instituicao_pos">
+								<option value=""></option>
+	        					<option value="AC">AC</option>
+	        					<option value="AL">AL</option>
+	        					<option value="AM">AM</option>
+	        					<option value="AP">AP</option>
+	        					<option value="BA">BA</option>
+	        					<option value="CE">CE</option>
+	        					<option value="DF">DF</option>
+	        					<option value="ES">ES</option>
+	        					<option value="GO">GO</option>
+	        					<option value="MA">MA</option>
+	        					<option value="MG">MG</option>
+	        					<option value="MS">MS</option>
+	      						<option value="MT">MT</option>
+	      						<option value="PA">PA</option>
+	        					<option value="PB">PB</option>
+	        					<option value="PE">PE</option>
+	        					<option value="PI">PI</option>
+	        					<option value="PR">PR</option>
+	        					<option value="RJ">RJ</option>
+	        					<option value="RN">RN</option>
+	        					<option value="RO">RO</option>
+	        					<option value="RR">RR</option>
+	        					<option value="RS">RS</option>
+	        					<option value="SC">SC</option>
+	        					<option value="SE">SE</option>
+	        					<option value="SP">SP</option>
+	        					<option value="TO">TO</option>
+							</select>
+						</label>
+							
+						<label class="input-100">
+							<span>Nome instituição de Ensino</span>
+							<input type="text" name="instituicao_de_ensino_pos">
+						</label>
+						
+						<label class="input-100">
+							<span>Nome do curso</span>
+							<input type="text" name="nome_da_instituicao_pos">
+						</label>
+						
+					
+						<label class="select-100 right">
+							<span>Status do curso</span>
+							<select name="status_curso_pos" id="status_curso">
+								<option value=""></option>
+								<option value="Em andamento">Em andamento</option>
+								<option value="Concluído">Concluído</option>
+							</select>
+						</label>
+						
+						<div id="formAndamento" style="display: none;">
+						
+							<label class="input-50 right">
+								<span>Previsão de Formatura</span>
+								<input type="text" class="calendarMD" name="previsao_de_formatura_pos_andamento" >
+							</label>
+							
+							<label class="select-50">
+								<span>Período atual</span>
+								<select name="periodo_andamento_pos">
+									<option value=""></option>
+									<option>1º</option>
+									<option>2º</option>
+									<option>3º</option>
+									<option>4º</option>
+									<option>5º</option>
+									<option>6º</option>
+									<option>7º</option>
+									<option>8º</option>
+									<option>9º</option>
+									<option>10º</option>
+									<option>11º</option>
+									<option>12º</option>
+								</select>
+							</label>
+							
+							<label class="select-100">
+								<span>Duração do Curso</span>
+								<select name="duracao_do_curso_andamento_pos">
+									<option value=""></option>
+									<option>1º</option>
+									<option>2º</option>
+									<option>3º</option>
+									<option>4º</option>
+									<option>5º</option>
+									<option>6º</option>
+									<option>7º</option>
+									<option>8º</option>
+									<option>9º</option>
+									<option>10º</option>
+									<option>11º</option>
+									<option>12º</option>
+								</select>
+							</label>	
+
+						</div>
+					
+						<div id="formConcluido" style="display: none;"> 
+						
+							<label class="input-50">
+								<span>Ano de início do curso</span>
+								<input type="text" class="calendarMD" name="ano_inicio_pos_concluido" >
+							</label>
+						
+							<label class="input-50 right">
+								<span>Ano de conclusão</span>
+								<input type="text" class="calendarMD" name="conclusao_pos_concluido" >
+							</label>
+					
+						</div>
+					
+					</div>
+				
+					<a class="button ajust-buttonadd right" style="margin-top: 0;" href="javascript:$('#form-submit3').submit();">
+						Adicionar
+					</a>
+				
+
+					<input type="hidden" name="code" value="<?php echo $data->id_analise_de_curriculo; ?>"/>
+ 					<input type="hidden" name="method" value="salvarEtapaPos" />
+				</form>
+
+				<div class="listagem">
+					<?php foreach ( $data3 as $row ): $row = (object)$row; ?>
+					<table class="empresas boxGrp boxAccordionHide" cellspacing="0">
+						<tbody>
+							<tr class="caixas">
+								<td class="width-td1"><p class="nome-curso">
+										<?php echo $row->nome_da_instituicao_pos; ?> 
+								</p></td>
+								<td class="width-td2"><a href="javascript:;" class="delete" data-href="/trilha1/deletar-pos/<?php echo $row->id_pos_graduacao ?>"><i class="far fa-trash-alt"></i> Excluir</a></td>
+								<td class="width-td3"><a href="javascript:;" class="vermais boxAccordionBt"><i class="fas fa-angle-down"></i></a></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									
+									<div class="boxAccordionContent">
+										<table class="resumo-serv" cellspacing="0">
+											<tbody>
+												<tr>
+													<td colspan="2"><?php echo $row->status_curso_pos; ?></td>
+												</tr>
+												<tr>
+												<?php if ($row->status_curso_pos == 'Em andamento'){ ?>
+													<td width="50%">
+														<?php echo $row->previsao_de_formatura_pos_andamento; ?>
+													</td>
+													<td>
+														<?php echo $row->periodo_andamento_pos; ?>
+													</td>
+												<?php } else { ?>
+													<td width="50%">
+														<?php echo $row->ano_inicio_pos_concluido; ?>
+													</td>
+													<td>
+														<?php echo $row->conclusao_pos_concluido; ?>
+													</td>
+												<?php } ?>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					<?php endforeach; ?>
+				</div>	
+		
+				<div class="buttons" style="margin-top: 20px !important">
+					<a class="button-voltar" href="/trilha1/dados-escolares">voltar</a>
+					<a class="button right confirmar" href="javascript:;" data-href="trilha1/cursos" >Próximo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+test();
+$('#status_curso').change(function() { test(); });
+function test() {
+    if ($('#status_curso').val() == 'Em andamento') {
+        $('#formAndamento').slideDown();
+        $('#formConcluido').slideUp();
+    } 
+    if ($('#status_curso').val() == 'Concluído') {
+        $('#formAndamento').slideUp();
+        $('#formConcluido').slideDown();
+    } 
+    if ($('#status_curso').val() == '') {
+        $('#formAndamento').slideUp();
+        $('#formConcluido').slideUp();
+    }         
+}
+
+
+</script>
+
+<script>
+
+	$('.delete').on('click', function(){
+
+		var hrefDelete = $(this).data('href');
+
+		if( confirm("Deseja realmente fazer isso?") ) {
+
+			location.href=hrefDelete;
+			
+		}
+
+	});
+
+</script>
+
+
+<script>
+
+	$('.confirmar').on('click', function(){
+
+		var hrefDelete = $(this).data('href');
+
+		$.confirm({
+		    title: 'Cuidado!',
+		    content: 'Clique em adicionar para salvar seus dados antes de avançar.',
+		    buttons: {
+		        Próximo: function () {
+		        	location.href=hrefDelete;
+		        },
+		        Cancelar: function () {
+		        }
+		    }
+		});
+
+	});
+
+</script>

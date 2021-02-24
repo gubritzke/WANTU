@@ -1,0 +1,1078 @@
+<div class="row bg-form">
+
+	<script>
+
+		$( function (){
+
+			$('.toggle').bind('click', function(){
+
+				$(this).parents('tbody').find('table').toggle(0);
+				$(this).toggleClass('fa-angle-down').toggleClass('fa-angle-up');
+
+			});
+
+			$('.toggle').each(function(){
+
+				$(this).parents('tbody').find('table').toggle(0);
+				$(this).toggleClass('fa-angle-down').toggleClass('fa-angle-up');
+
+			});
+
+			$('body').css('overflow-y','scroll');
+
+		});
+
+	</script>
+
+	<form method="post" id="form-submit" class="auto">
+		
+		<!-- TABBLE ONDE ESTOU -->
+		<table class="content2" style="width:100%;">
+			<thead style="border-bottom: 2px solid #6f6f6f;">
+				<tr>
+					<th width="500" style="color: #84139e; font-size: 18px; text-transform: none;">Análise de currículo e entrevista</th>
+					<th width="500" align="right" style="text-align: right; padding-right: 125px;">Métrica</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td width="500" style="color: #84139e; font-size: 18px; text-transform: none; font-weight: 400;">Onde Estou?</td>
+					<td width="500" align="right" style="text-align: right; padding-right: 134px;color: #84139e; font-size: 18px; text-transform: none; font-weight: 400;"><?php echo $result->total_onde_estou?>%</td>
+					<td width="50" align="center"><a href="javascript:;" class="vermais boxAccordionBt"><i class="fas fa-angle-down toggle "></i></a></td>
+				</tr>
+				<!-- SOBRE VOCE -->
+				<tr>
+					<td colspan="3" style="padding: 0;border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium td-tittle" style="border-top: none!important;">1) Sobre você:</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span> Jovem, solteiro, cursando faculdade e sem experiência profissional. Sustentado pelos pais.</td>
+								<?php /* <td width="790" align="right" style="padding-right: 160px; border: none;"><input class="input-valor" type="text" name="p1" value=""></td> */ ?>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p1" value="">
+											<input type="checkbox" name="p1" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>Jovem, solteiro, cursando faculdade, atualmente fazendo estágio e/ou trabalhando, ganho algum dinheiro, mas ainda dependo dos meus pais.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p2" value="">
+											<input type="checkbox" name="p2" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;"><span>c.</span> Jovem, graduado, trabalhando, financeiramente independente.</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p3" value="">
+											<input type="checkbox" name="p3" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				
+				<!-- ESCOLHA DO CURSO SUPERIOR -->
+				<tr>
+					<td colspan="3" style="padding: 0; border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium td-tittle">2) Escolha do Curso Superior:</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>Influência Externa (Pais, Familiares, Amigos, Outros)</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p4" value="">
+											<input type="checkbox" name="p4" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>Perspectivas Futuras (Status, Econômica, etc)</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p5" value="">
+											<input type="checkbox" name="p5" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;"><span>c.</span>Vocacional (Desejo, Afinidade)</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p6" value="">
+											<input type="checkbox" name="p6" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+
+				<!-- SITUAÇÃO ATUAL -->
+				<tr>
+					<td colspan="3" style="padding: 0; border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium td-tittle">3) Situação Atual na Faculdade (Caso já seja formado, considere sua percepção atual em relação ao curso superior que fez).</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>Odiando...Preciso parar ou mudar de curso imediatamente!</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p7" value="">
+											<input type="checkbox" name="p7" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>Levando...Contando os minutos pra sair daqui.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p8" value="">
+											<input type="checkbox" name="p8" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>c.</span>Amando! Era mesmo o que eu sempre sonhei...</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p9" value="">
+											<input type="checkbox" name="p9" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+								<tr style="height: 92px;">
+									<td width="790" align="left" class="font-small"></td>
+									<td width="790" align="right" style="padding-right: 160px;"></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	
+	
+		<!-- TABBLE PARA ONDE VOU -->
+		<table class="content2" style="width:100%;">
+			
+			<tbody>
+				<tr>
+					<td width="500" style="color: #84139e; font-size: 18px; text-transform: none; font-weight: 400;">Para onde vou?</td>
+					<td width="500" align="right" style="text-align: right; padding-right: 134px;color: #84139e; font-size: 18px; text-transform: none; font-weight: 400;"><?php echo $result->total_para_onde_vou?>%</td>
+					<td width="50" align="center"><a href="javascript:;" class="vermais boxAccordionBt"><i class="fas fa-angle-down toggle "></i></a></td>
+				</tr>
+				<!-- COMO SE VE DEPOIS DO FORMADO -->
+				<tr>
+					<td colspan="3" style="padding: 0;border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium td-tittle" style="border-top: none!important;">1) Como se vê depois de formado:</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span> Não tenho nenhuma ideia.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p10" value="">
+											<input type="checkbox" name="p10" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span> Trabalhando para sobreviver, seja relacionado ao meu curso ou não.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p11" value="">
+											<input type="checkbox" name="p11" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;"><span>c.</span> Trabalhando em algo que me realize.</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p12" value="">
+											<input type="checkbox" name="p12" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				
+				<!-- COMO VOCE VE O MERCADO DE TRABALHO -->
+				<tr>
+					<td colspan="3" style="padding: 0; border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium td-tittle">2) Como você percebe o mercado de trabalho para um profissional da sua área hoje:</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>Muito difícil. Não consigo identificar oportunidades.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p13" value="">
+											<input type="checkbox" name="p13" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>Difícil, mas está assim em todas as áreas.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p14" value="">
+											<input type="checkbox" name="p14" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;"><span>c.</span>Difícil, mas sempre existem oportunidades para bons profissionais.</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p15" value="">
+											<input type="checkbox" name="p15" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+
+				<!-- PROPOSTA INESPERADA -->
+				<tr>
+					<td colspan="3" style="padding: 0; border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium td-tittle">3) Caso tivesse uma proposta inesperada de mudança hoje, qual destes motivos mais lhe impulsionaria a aceitar:</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>Qualquer coisa, não aguento ficar como estou.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p16" value="">
+											<input type="checkbox" name="p16" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>Algo em que eu ganhasse mais, independentemente de ser relacionado ao que quero.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p17" value="">
+											<input type="checkbox" name="p17" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;"><span>c.</span>Algo que fosse relacionado aos meus sonhos, e me possibilitasse crescer profissionalmente.</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p18" value="">
+											<input type="checkbox" name="p18" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				
+				<!-- PROPOSTA INESPERADA 2 -->
+				<tr>
+					<td colspan="3" style="padding: 0; border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium td-tittle">4) Caso tivesse uma proposta inesperada de mudança hoje, qual destes motivos seria o maior obstáculo para aceitar:</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>Do jeito que estou, topo qualquer parada. Nada me segura.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p19" value="">
+											<input type="checkbox" name="p19" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>Mudar de cidade, ficar longe da minha família, sair do meu lugar.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p20" value="">
+											<input type="checkbox" name="p20" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border: none;"><span>c.</span>Medo do desconhecido, incerteza se daria certo, mesmo sabendo que eu poderia voltar depois.</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p21" value="">
+											<input type="checkbox" name="p21" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+
+				<!-- CONSIDERANDO QUE VOCE JA ESTIVESSE FORAMDO -->
+				<tr>
+					<td colspan="3" style="padding: 0; border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium td-tittle">5) Considerando que você já estivesse formado hoje, qual seria o plano ideal?:</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>Sem planos.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p22" value="">
+											<input type="checkbox" name="p22" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>Tenho um único plano, mas não me considero que estou preparada para ele.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p23" value="">
+											<input type="checkbox" name="p23" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>c.</span> Tenho um plano e estou me preparando para ele. Caso não dê certo, tenho também o Plano B, o C...</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p24" value="">
+											<input type="checkbox" name="p24" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+								<tr style="height: 92px;">
+									<td width="790" align="left" class="font-small"></td>
+									<td width="790" align="right" style="padding-right: 160px;"></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+	
+		<!-- TABBLE COMO FACO PARA CHEGAR LA -->
+		<table class="content2" style="width:100%;">
+			
+			<tbody>
+				<tr>
+					<td width="500" style="color: #84139e; font-size: 18px; text-transform: none; font-weight: 400;">Como faço para chegar lá?</td>
+					<td width="500" align="right" style="text-align: right; padding-right: 134px;color: #84139e; font-size: 18px; text-transform: none; font-weight: 400;"><?php echo $result->total_como_faco_para_chegar?>%</td>
+					<td width="50" align="center"><a href="javascript:;" class="vermais boxAccordionBt"><i class="fas fa-angle-down toggle "></i></a></td>
+				</tr>
+				<!-- CONSIDERANDO AS SEGUINTES POSSIBILIDADES -->
+				<tr>
+					<td colspan="3" style="padding: 0;border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium td-tittle" style="border-top: none!important;">1) Considerando as seguintes possibilidades de desenvolver suas competências para o trabalho enquanto ainda está na faculdade:</td>
+								</tr>
+								<tr>
+									<td colspan="3" class="font-medium" style="border-top: none!important;">I. Experiência com pesquisa, iniciação científica, como bolsista ou voluntário ativo nos projetos:</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>Não tenho experiência.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p25" value="">
+											<input type="checkbox" name="p25" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>Já fiz alguma atividade, mas não sei precisar o que agregou de aprendizado.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p26" value="">
+											<input type="checkbox" name="p26" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;">
+										<span>c.</span>Já fiz esta atividade, e considero que me ajudou a desenvolver melhor as seguintes habilidades:<br><br>
+										i.      Capacidade de aprender sozinho coisas novas, e me desenvolver teoricamente.<br><br>
+										ii.      Atender com qualidade, em termos de padrões, datas, conformidade.<br><br>
+										iii.      Capacidade de me planejar melhor e me organizar para cumprir prazos e conciliar com as demais atividades em que estava envolvido.
+									</td>
+
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p27" value="">
+											<input type="checkbox" name="p27" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				
+				<!-- EXPERIENCIA EM PROJETOS DE EXTENSAO -->
+				<tr>
+					<td colspan="3" style="padding: 0;border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium" style="border-top: 1px solid #d1d1d1;">
+										II.Experiência em projetos de extensão (Atendimento à comunidade), como bolsista ou voluntário ativo nos projetos:
+									</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>Não tenho experiência.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p28" value="">
+											<input type="checkbox" name="p28" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>Já fiz alguma atividade, mas não sei precisar o que agregou de aprendizado.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p29" value="">
+											<input type="checkbox" name="p29" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;">
+										<span>c.</span>Já fiz esta atividade, e considero que me ajudou a desenvolver melhor as seguintes habilidades:<br><br>
+										i.      Capacidade de propor novas ideias e implementar inovações, aplicando na prática o que aprendi na teoria.<br><br>
+										ii.     Capacidade de me planejar melhor e me organizar para cumprir prazos e conciliar com as demais atividades em que estava envolvido.<br><br>
+										iii.    Construir uma rede de relacionamentos com o público com o qual desenvolvi o projeto.
+									</td>
+
+
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p30" value="">
+											<input type="checkbox" name="p30" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				
+				<!-- EXPERIENCIA EM PROJETOS DE ENSINO OU MONITORIA -->
+				<tr>
+					<td colspan="3" style="padding: 0;border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium" style="border-top: 1px solid #d1d1d1;">
+										III. Experiência com projeto de ensino ou monitoria, como bolsista ou voluntário ativo nos projetos:
+									</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>Não tenho experiência.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p31" value="">
+											<input type="checkbox" name="p31" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>Já fiz esta atividade, e considero que me ajudou a desenvolver melhor as seguintes habilidades:</td>
+
+
+
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p32" value="">
+											<input type="checkbox" name="p32" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;">
+										<span>c.</span>Já fiz esta atividade, e considero que me ajudou a desenvolver melhor as seguintes habilidades:<br><br>
+										i.     	Capacidade de aprender sozinho coisas novas, e me desenvolver teoricamente.<br><br>
+										ii.     Capacidade de me planejar melhor e me organizar para cumprir prazos e conciliar com as demais atividades em que estava envolvido.<br><br>
+										iii.    Construir uma rede de relacionamentos com o público com o qual desenvolvi o projeto (professores e alunos)
+									</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p33" value="">
+											<input type="checkbox" name="p33" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+
+				
+				<!-- EXPERIENCIA DE ESTAGIO -->
+				<tr>
+					<td colspan="3" style="padding: 0;border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium" style="border-top: 1px solid #d1d1d1;">
+										IV. Experiência de estágio, obrigatório ou extracurricular, remunerado ou não.
+									</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>Não tenho experiência.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p34" value="">
+											<input type="checkbox" name="p34" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>Já fiz alguma atividade, mas não sei precisar o que agregou de aprendizado.</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p35" value="">
+											<input type="checkbox" name="p35" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;">
+										<span>c.</span>Já fiz esta atividade, e considero que me ajudou a desenvolver melhor as seguintes habilidades:<br><br>
+										i.     	Capacidade de me comunicar melhor e interagir mais com as pessoas.<br><br>
+										ii.     Capacidade de entregar resultados de acordo com o que me foi solicitado.<br><br>
+										iii.    Capacidade de analisar situações e agir conforme a melhor solução cabível.
+									</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p36" value="">
+											<input type="checkbox" name="p36" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+
+				<!-- EXPERIENCIA COM EMPREENDEDORIOSMO SOCIAL -->
+				<tr>
+					<td colspan="3" style="padding: 0;border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium" style="border-top: 1px solid #d1d1d1;">
+										V. Experiência com empreendedorismo social, na Enactus ou outra entidade de incentivo à causa:
+									</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>
+										Não tenho experiência.
+									</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p37" value="">
+											<input type="checkbox" name="p37" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>
+										Já fiz alguma atividade, mas não sei precisar o que agregou de aprendizado.
+									</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p38" value="">
+											<input type="checkbox" name="p38" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;">
+										<span>c.</span>Já fiz esta atividade, e considero que me ajudou a desenvolver melhor as seguintes habilidades:<br><br>
+										i.     	Capacidade de propor novas ideias e implementar inovações, aplicando na prática o que aprendi na teoria.<br><br>
+										ii.     Capacidade de inspirar e mobilizar pessoas em torno de um propósito.<br><br>
+										iii.    Trabalhar em grupo com pessoas cientes de suas responsabilidades, gerando sinergia e apoio mútuo.
+									</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p39" value="">
+											<input type="checkbox" name="p39" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+
+
+				<!-- EXPERIENCIA COM EMPREENDEDORIOSMO SOCIAL -->
+				<tr>
+					<td colspan="3" style="padding: 0;border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium" style="border-top: 1px solid #d1d1d1;">
+										VI. Experiência na Empresa Júnior do curso:
+									</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>
+										Não tenho experiência.
+									</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p40" value="">
+											<input type="checkbox" name="p40" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>
+										Já fiz alguma atividade, mas não sei precisar o que agregou de aprendizado.
+									</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p41" value="">
+											<input type="checkbox" name="p41" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;">
+										<span>c.</span>Já fiz esta atividade, e considero que me ajudou a desenvolver melhor as seguintes habilidades:<br><br>
+										i.     	Capacidade de propor novas ideias e implementar inovações, aplicando na prática o que aprendi na teoria.<br><br>
+										ii.     Capacidade de entregar resultados de acordo com o que me foi solicitado.<br><br>
+										iii.    Capacidade de me planejar melhor e me organizar para cumprir prazos e conciliar com as demais atividades em que estava envolvido.
+									</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p42" value="">
+											<input type="checkbox" name="p42" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+
+
+				<!-- EXPERIENCIA COM EMPREENDEDORIOSMO PROPRIO -->
+				<tr>
+					<td colspan="3" style="padding: 0;border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium" style="border-top: 1px solid #d1d1d1;">
+										VII. Experiência em um empreendimento próprio, empresa ou negócio que fundou ou atuou como sócio.
+									</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>
+										Não tenho experiência.
+									</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p43" value="">
+											<input type="checkbox" name="p43" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>
+										Já fiz alguma atividade, mas não sei precisar o que agregou de aprendizado.
+									</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p44" value="">
+											<input type="checkbox" name="p44" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;">
+										<span>c.</span>Já fiz esta atividade, e considero que me ajudou a desenvolver melhor as seguintes habilidades:<br><br>
+										i.     	Capacidade de me adaptar a diferentes circunstâncias e ser flexível diante dos desafios.<br><br>
+										ii.     Capacidade de propor novas ideias e implementar inovações, aplicando na prática o que aprendi na teoria.<br><br>
+										iii.    Capacidade de entregar resultados de acordo com o que me foi solicitado.
+									</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p45" value="">
+											<input type="checkbox" name="p45" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>									
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+
+
+				<!-- EXPERIENCIA EM UMA EMPRESA FAMILIAR -->
+				<tr>
+					<td colspan="3" style="padding: 0;border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium" style="border-top: 1px solid #d1d1d1;">
+										VIII. Experiência em uma empresa familiar, em que você tenha laços familiares ou afetivos com o proprietário ou dirigente:
+									</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>
+										Não tenho experiência.
+									</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p46" value="">
+											<input type="checkbox" name="p46" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>
+										Já fiz alguma atividade, mas não sei precisar o que agregou de aprendizado.
+									</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p47" value="">
+											<input type="checkbox" name="p47" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;">
+										<span>c.</span>Já fiz esta atividade, e considero que me ajudou a desenvolver melhor as seguintes habilidades:<br><br>
+										i.     	Capacidade de buscar soluções que atendessem a interesses divergentes de múltiplas partes.<br><br>
+										ii.     Construir uma rede de relacionamentos com o público com o qual trabalhei (familiares, funcionários, clientes)<br><br>
+										iii.    Capacidade de analisar a empresa como um todo as diferentes áreas que a compõe, e sua relação com o ambiente no qual está inserida.
+									</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p48" value="">
+											<input type="checkbox" name="p48" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+
+
+				<!-- EXPERIENCIA NO DIRETORIO CENTRAL DOS ESTUDANTES -->
+				<tr>
+					<td colspan="3" style="padding: 0;border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium" style="border-top: 1px solid #d1d1d1;">
+										IX. Experiência no Diretório Central dos Estudantes, Diretório Acadêmico ou outra entidade de representação estudantil:
+									</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>
+										Não tenho experiência.
+									</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p49" value="">
+											<input type="checkbox" name="p49" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>
+										Já fiz alguma atividade, mas não sei precisar o que agregou de aprendizado.
+									</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p50" value="">
+											<input type="checkbox" name="p50" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;">
+										<span>c.</span> Já fiz esta atividade, e considero que me ajudou a desenvolver melhor as seguintes habilidades:<br><br>
+										i.     	Capacidade de buscar soluções que atendessem a interesses divergentes de múltiplas partes.<br><br>
+										ii.     Capacidade de inspirar e mobilizar pessoas em torno de um propósito.<br><br>
+										iii.    Capacidade de analisar a universidade como um todo as diferentes áreas que a compõe, e sua relação com o ambiente no qual está inserida.
+									</td>
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p51" value="">
+											<input type="checkbox" name="p51" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				
+				<!-- OUTRAS EXPERIENCIAS ANTERIORES AO INGRESSO NA FACULDADE -->
+				<tr>
+					<td colspan="3" style="padding: 0;border-bottom: none;">
+						<table class="content3" style="margin-top: 0;">
+							<tbody>
+								<tr>
+									<td colspan="3" class="font-medium" style="border-top: 1px solid #d1d1d1;">
+										X. Outras experiências anteriores ao ingresso na faculdade, ou não mencionadas acima:
+									</td>
+								</tr>
+								<tr>
+									<td width="790" align="left" class="font-small"><span>a.</span>
+										Não tenho experiência.
+									</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p52" value="">
+											<input type="checkbox" name="p52" value="0" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small"><span>b.</span>
+										Já fiz alguma atividade, mas não sei precisar o que agregou de aprendizado.
+									</td>
+									<td align="right">
+										<label class="switch align-radio">
+											<input type="hidden" name="p53" value="">
+											<input type="checkbox" name="p53" value="1" />
+											<span class="slider"></span>
+										</label>
+									</td>	
+								</tr>
+
+								<tr>
+									<td width="790" align="left" class="font-small" style="border-bottom: none;">
+										<span>c.</span>  Já fiz outra atividade (Qual: ____________), e considero que me ajudou a desenvolver melhor as seguintes habilidades:<br><br>
+										i.     	Capacidade de me comunicar melhor e interagir mais com as pessoas.<br><br>
+										ii.     Capacidade de entregar resultados de acordo com o que me foi solicitado.<br><br>
+										iii.     Capacidade de me planejar melhor e me organizar para cumprir prazos e conciliar com as demais atividades em que estava envolvido.
+									</td>
+
+
+									<td width="790" align="right" style=" border-bottom: none; border: none;">
+										<label class="switch align-radio">
+											<input type="hidden" name="p54" value="">
+											<input type="checkbox" name="p54" value="2" />
+											<span class="slider"></span>
+										</label>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+		
+		<input type="hidden" name="id_analise_entrevista" value="<?php echo $result->id_analise_entrevista?>" />
+		<input type="hidden" name="method" value="salvar" />
+	</form>
+	
+</div>
+<div class="row">
+
+	<div class="column column-3" align="center">
+		<a href="javascript:;" onclick="$('#form-submit').submit();" class="bt bt-inline bt-round bg-orange2 ajst-buttons">Salvar <i class="fa fa-refresh"></i></a>
+	</div>
+
+	<div class="column column-6" align="center">
+		<p class="font-small align-text" align="center">
+			ÍNDICE DE PERDIDICE
+		</p>
+		<span class="qtd-aval align-span"><?php echo $result->total_indice_de_perdidice?>%</span>
+	</div>
+
+	<div class="column column-3" align="center">
+		<a class="bt bt-inline arquive-stats ajst-buttons" href="/painel/relatorios-gerais/relatorio-analise/<?php echo $this->id_login; ?>" >PRÓXIMO</a>
+	</div>
+
+</div>
+
+<form class="campos_preenchidos" style="display: none;">
+
+	<?php foreach ( $result as $key => $row ) {?>
+	<input name="<?php echo $key?>" value="<?php echo $row;?>"/>
+	<?php } ?>
+
+</form>
+
+<script>
+$(function (){
+	
+	$('.campos_preenchidos input').each( function (){
+		
+		$('.auto input[type="text"][name="'+$(this).attr('name')+'"]').val( $(this).val() );
+		$('.auto input[type="date"][name="'+$(this).attr('name')+'"]').val( $(this).val() );
+		$('.auto input[type="tel"][name="'+$(this).attr('name')+'"]').val( $(this).val() );
+		$('.auto input[type="num"][name="'+$(this).attr('name')+'"]').val( $(this).val() );
+		$('.auto input[type="email"][name="'+$(this).attr('name')+'"]').val( $(this).val() );
+		$('.auto textarea[name="'+$(this).attr('name')+'"]').val( $(this).val() );
+	
+		var input = $(this);
+
+		setTimeout( function (){
+	    	
+	    	$('.auto input[type="radio"][name="'+$(input).attr('name')+'"][value="'+$(input).val()+'"]').trigger('click');
+	    	$('.auto input[type="checkbox"][name="'+$(input).attr('name')+'"][value="'+$(input).val()+'"]').trigger('click');
+	    	$('.auto form select option[value="'+$(input).val()+'"]').attr('selected','selected');
+	    	$('.auto select[name="'+$(input).attr('name')+'"]').val($(input).val());
+
+	
+		}, 200);
+		
+	});
+
+});
+</script>

@@ -1,0 +1,1 @@
+function imageLoadInit(){	//imagens	var images = $("img[data-src]");		//loop	images.each( function(){				if( $(this).attr('src') == '/assets/painel/img/icons/loading.gif' )		{			$(this).attr('src', $(this).attr('data-src'));		}            });}$(window).load( function(){		//init	imageLoadInit();	});

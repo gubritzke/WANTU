@@ -1,0 +1,50 @@
+<style>
+
+table.content > thead > tr > th {
+    text-align: inherit !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 8px;
+    /* border-left: 1px solid #ccc; */
+}
+    
+</style>	
+	
+<table class="content">
+<thead>
+	<tr>
+		<th width="1" style="text-align:left !important;"><input type="checkbox" onchange="$(this).is(':checked') ? $('input[name=\'delete[]\']').prop('checked','checked') : $('input[name=\'delete[]\']').prop('checked',false);" /></th>
+		<th width="15" align="left">Nome</th>
+		<th width="15">Email</th>
+		<th width="23" align="left">Telefone</th>
+		<th width="23">Empresa</th>
+		<th width="2" style="text-align: center !important;">Data</th>
+		<th width="2" style="text-align: center !important;">Visualizar</th>
+	</tr>
+</thead>
+
+<tbody>
+	<?php foreach ($result as $row): ?>
+		<tr>
+			<td align="left"><input type="checkbox" name="delete[]" value="" /></td>
+			<td><?php echo $row->nome ?></td>
+			<td><?php echo $row->email ?></td>
+			<td><?php echo $row->telefone ?></td>
+			<td><?php echo $row->empresa ?></td>
+			<td style="text-align: center;"><?php echo date('d/m/y', strtotime($row->criado)); ?></td>
+			<td style="text-align: center !important;"><a clas="bt-visualizar" style="background: #440b50; color: #fff; padding: 4px 8px; border-radius: 11px; display: inline-block;" href="/painel/para-empresas/detalhe?id=<?php echo $row->id_para_empresas ?>">Visualizar</a></td>
+		</tr>
+	<?php endforeach; ?>
+</tbody>
+
+</table>
+<div class="right" align="right">
+	<?php echo $this->pagination($this->pagination); ?>
+</div>
+
+<div class="paginacao" style="clear:both;">
+	<?php
+				$url = "painel/contato/";
+ 				echo $this->paginationControl($result, 'sliding', 'partials/paginator.phtml', ['url' => $url]);
+			?>
+</div>

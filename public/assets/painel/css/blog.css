@@ -1,0 +1,89 @@
+form div > label{
+	width: 95%;
+	height: 66px;
+	border: 1px solid #cecece;
+	padding: 10px 15px;
+	position: relative;
+	float: left;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+form div > label > span{
+	position: absolute;
+	font-weight: 600;
+	color: #6c6c6c;
+	top: 9px;
+}
+form div > label input {
+    width: 98%;
+    margin-top: 25px;
+    height: 30px;
+    padding-left: 10px;
+}
+form div > label select {
+	width: 100%;
+    margin-top: 25px;
+    height: 36px;
+}
+.input-file input{
+	margin-top: 35px;	
+}
+.input-file span{
+	top: 17px;
+}
+.tittle-box{
+	position: relative;
+	margin: 0;
+	font-weight: 500;
+	color: #6c6c6c;
+}
+.tittle-box i{
+	position:absolute;
+	top: -3px;
+	font-size: 30px;
+	left: 101px;
+	color: #84139e;
+}
+.button{
+	background: #84139e;
+	color: #fff;
+	padding: 12px 35px;
+	border-radius: 7px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size:  15px;
+	border: none;
+	cursor:  pointer;
+	margin-top: 35px;
+	margin-bottom: 20px;
+	float: right;
+}
+.button-blue{
+	float: left;
+    text-transform: uppercase;
+    background: #28c2cf;
+    color: #fff;
+    font-weight: 600;
+   	padding: 12px 35px;
+    border-radius: 10px;
+    margin-top: 35px;
+	margin-bottom: 20px;
+	font-size:  15px;
+}
+.editar-button{
+    background: #ecb034;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    color: #fff;
+    font-weight: 600;
+}
+.excluir-button{
+    background: #ec3534;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    color: #fff;
+    font-weight: 600;
+}

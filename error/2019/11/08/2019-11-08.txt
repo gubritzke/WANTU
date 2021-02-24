@@ -1,0 +1,2 @@
+{"type":"ERROR","message":"retorno da fun\u00e7\u00e3o error_get_last()","file":"Unknown","line":0,"page":"\/","date":"2019-11-08 16:47:04","ip":"10.0.2.29"}
+{"type":"ERROR","message":"retorno da fun\u00e7\u00e3o error_get_last()","file":"Unknown","line":0,"page":"\/","date":"2019-11-08 16:47:36","ip":"10.0.1.209"}

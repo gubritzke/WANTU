@@ -1,0 +1,167 @@
+<?php 
+	$title = '<span style="margin-top:20px; display: inline-block;">Trilha 1</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml'; 
+?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+<link href="/assets/application/js/extensions/jquery.tooltipster/dist/css/tooltipster.bundle.min.css" media="" rel="stylesheet" type="text/css">
+
+<div id="full-teste">
+	<div class="container">
+		<div class="progresso">
+			<?php include 'module/Application/view/application/trilha1/progresso.phtml'; ?>
+		</div>
+		
+		<div class="formulario">
+			<div class="form-align">
+				<p class="tittle">Experiência Internacional</p>
+				<form id="form-submit6" action="" method="post">
+				
+					<label class="select-100 right">
+						<span>Você possui experiência internacional?</span>
+						<select name="possui_graduacao" onchange="$(this).val() == 'Sim' ? $('#formContent').slideDown() : $('#formContent').slideUp(); ">
+							<option value="Sim">Sim</option>
+							<option value="Nao">Não</option>
+						</select>
+					</label>
+									
+					<div id="formContent">
+									
+						<label class="input-50">
+							<span>Tipo de Experiência</span>
+							<select name="tipo_de_experiencia" id="tipo_experiencia">
+								<option></option>
+								<option value="Intercâmbio em outra Universidade">Intercâmbio em outra Universidade</option>
+								<option value="Mestrado">Mestrado</option>
+								<option value="Doutorado">Doutorado</option>
+								<option value="PHD">PHD</option>
+								<option value="Trabalho em área diferente da minha formação">Trabalho em área diferente da minha formação</option>
+								<option value="Trabalho na minha área de formação">Trabalho na minha área de formação</option>
+								<option value=" Congressos e/ou outros eventos"> Congressos e/ou outros eventos</option>
+								<option value="Realização de cursos de até 3 meses">Realização de cursos de até 3 meses</option>
+								<option>Outro</option>
+							</select>
+						</label>
+						
+						<label class="input-50 right">
+							<span>Tempo de Duração</span>
+							<input type="text" class="days" name="tempo_de_duracao" placeholder="Em dias" value="">
+						</label>
+						
+						<label class="input-100" id="outra-experiencia" style="display:none;">
+							<span>Descreva o tipo da sua experiência</span>
+						</label>
+						
+						<label class="input-100">
+							<span>País</span>
+							<input type="text" name="pais_experiencia" value="">
+						</label>
+						
+						<input type="hidden" name="code" value="<?php echo $data->id_analise_de_curriculo; ?>"/>
+	 					<input type="hidden" name="method" value="salvarEtapa6" />
+	 					
+		 				<a class="right button ajust-buttonadd" style="margin-top: 0" href="javascript:$('#form-submit6').submit();">
+							Adicionar
+						</a>
+					</div>
+				</form>
+				
+
+				
+
+					
+				<?php foreach ( $data as $row ): $row = (object)$row; ?>
+				<table class="empresas boxGrp boxAccordionHide" cellspacing="0">
+					<tbody>
+						<tr class="caixas">
+							<td class="width-td1"><p class="nome-curso"><?php echo $row->pais_experiencia; ?></p></td>
+							<td class="width-td2"><a href="javascript:;"  class="delete" data-href="/trilha1/deletar-experiencia-internacional/<?php echo $row->id_analise_experiencia_internacional?>"><i class="far fa-trash-alt"></i> Excluir</a></td>
+							<td class="width-td3"><a href="javascript:;" class="vermais boxAccordionBt"><i class="fas fa-angle-down"></i></a></td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<div class="boxAccordionContent">
+									<table class="resumo-serv" cellspacing="0">
+										<tbody>
+											<tr>
+												<td width="50%"><?php echo $row->tipo_de_experiencia; ?></td>
+												<td><?php echo $row->tempo_de_duracao; ?></td>
+											</tr>
+											<tr>
+												<td colspan="2"><?php echo $row->pais_experiencia; ?></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+						
+					</tbody>
+				</table>
+				<?php endforeach; ?>
+				
+				<div class="buttons2">
+					<a class="button-voltar" href="trilha1/experiencia-profissional">voltar</a>
+					<a class="button right confirmar" href="javascript:;" data-href="trilha1/informacoes-complementares">Próximo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+
+	$('.delete').on('click', function(){
+
+		var hrefDelete = $(this).data('href');
+
+		if( confirm("Deseja realmente fazer isso?") ) {
+
+			location.href=hrefDelete;
+			
+		}
+
+	});
+
+</script>
+
+
+<script>
+
+	$('.confirmar').on('click', function(){
+
+		var hrefDelete = $(this).data('href');
+
+		$.confirm({
+		    title: 'Cuidado!',
+		    content: 'Clique em adicionar para salvar seus dados antes de avançar.',
+		    buttons: {
+		        Próximo: function () {
+		        	location.href=hrefDelete;
+		        },
+		        Cancelar: function () {
+		        }
+		    }
+		});
+
+	});
+
+</script>
+<script>
+$(document).ready(function(){
+	   $("#tipo_experiencia").change(function(){ 
+
+		   if ( $(this).val() == 'Outro' ) {
+
+			   $('#outra-experiencia').fadeIn(0).append('<input type="text" name="tipo_de_experiencia"/>');
+
+		   } else {
+
+			   $('#outra-experiencia').fadeOut(0)
+			   $('#outra-experiencia input').remove();
+
+		   }
+		      
+	   });
+	});
+</script>

@@ -1,0 +1,230 @@
+<link href="/assets/painel/css/relatorios-gerais.css" media="" rel="stylesheet" type="text/css">
+<link href="/assets/application/css/main.css" media="" rel="stylesheet" type="text/css">
+<?php $title = 'Aptidões profissionais ';
+include 'module/Application/view/partials/headers/topo-analise-perfil.phtml'; ?>
+
+<?php $textos = array();?>
+
+<?php $textos['Especialista'] = 
+'<div class="line-tittle">
+	<p>Meu lema é “saber mais de menos”</p>
+</div>
+
+<p class="text-perfil box-int">
+	
+	<span class="text-full">
+		Você é aquele tipo de profissional que ser muito bom no que faz, para não dizer o expert! Para isso você costuma se aprofundar na sua área de interesse ao máximo sem preguiça de aprender! Ouse! Seu indicador foi de....
+	</span>
+
+</p>';?>
+
+<?php $textos['Gerencial'] = 
+'<div class="line-tittle">
+	<p>Meu lema é “manda quem pode”</p>
+</div>
+
+<p class="text-perfil box-int">
+	
+	<span class="text-full">
+		Você é aquele tipo de profissional que gosta de liderar e seu alvo não é menos que o topo da pirâmide. Para isso você prefere saber um pouco de tudo, fazendo as devidas conexões do sistema.  Escale! 
+	</span>
+
+</p>';?>
+
+<?php $textos['Autonomia'] = 
+'<div class="line-tittle">
+	<p>
+		Meu lema é “sou dono do meu nariz”
+	</p>
+</div>
+
+<p class="text-perfil box-int">
+	
+	<span class="text-full">
+		Você é aquele tipo de profissional que precisa fazer as coisas do seu jeito e tomar as rédeas do próprio destino. Procurar trabalhos que lhe proporcionem mais escolha e poder de decisão vão lhe possibilitar maior satisfação. Que tal dar um like nesse tipo de empresa?! 
+	</span>
+
+</p>';?>			
+
+<?php $textos['Seguranca'] = 
+'<div class="line-tittle">
+	<p>
+		Meu lema é “antes um pássaro na mão do que dois voando”
+	</p>
+</div>
+
+<p class="text-perfil box-int">
+	
+	<span class="text-full">
+		Previsibilidade...você gosta de saber “onde pisa e conhecer bem o terreno” para não arriscar sua sonhada estabilidade financeira. Procure empresas que lhe transmitam segurança e corre logo pro abraço! Partiu?! 
+	</span>
+
+</p>';?>			
+
+<?php $textos['Empreendedorismo'] = 
+'<div class="line-tittle">
+	<p>
+		Meu lema é “pense fora da caixa”
+	</p>
+</div>
+
+<p class="text-perfil box-int">
+	
+	<span class="text-full">
+		Você não enxerga o céu como limite e tem um espírito inventivo para criação de negócios e inovação. Com uma ideia fresca na cuca, você vai estudar e buscar maneiras de implantá-la! Que tal fazer um networking agora ou então aprender uma nova ferramenta de gestão? 
+	</span>
+
+</p>';?>			
+
+<?php $textos['Dedicacao'] = 
+'<div class="line-tittle">
+	<p>
+		Meu lema é “se não for pra mudar o mundo, eu nem começo”
+	</p>
+</div>
+
+<p class="text-perfil box-int">
+	
+	<span class="text-full">
+		Você tem uma missão no mundo e não cansa de lutar por ela. Acredita em seus valores e isso vai para além da sua vida pessoal. Portanto, busque trabalhos em que possa imprimir seus valores e crenças diariamente.  Plante a semente! 
+	</span>
+
+</p>';?>			
+
+<?php $textos['Desafio'] = 
+'<div class="line-tittle">
+	<p>
+		Meu lema é “perder uma batalha talvez, mas desistir da guerra jamais” 
+	</p>
+</div>
+
+<p class="text-perfil box-int">
+	
+	<span class="text-full">
+		Você é um profissional orientado para superação de obstáculos impossíveis ou quase impossíveis. Desafio lançado e você não cansa de tentar até conseguir sucesso. Suas decisões profissionais devem ter o objetivo de superar desafios cada vez maiores.  Vamos pra cima?! 
+	</span>
+
+</p>';?>			
+
+<?php $textos['Estilo'] = 
+'<div class="line-tittle">
+	<p>
+		Meu lema é “comigo é tudo junto e misturado ou então game over”
+	</p>
+</div>
+
+<p class="text-perfil box-int">
+	
+	<span class="text-full">
+		Você quer trabalhar, mas também quer amar! Match! Você pode ser altamente motivado pelo trabalho, mas para isso precisa integrar todas as suas necessidades: individuais, de família e de carreira. Mais atenção para a atitude da empresa do que para o programa de trabalho propriamente dito e vamos logo ser feliz!
+	</span>
+
+</p>';?>			
+
+<?php $textos['Internacional'] = 
+'<div class="line-tittle">
+	<p>
+		Meu lema é “minhas raízes estão no ar, minha casa é qualquer lugar”
+	</p>
+</div>
+
+<p class="text-perfil box-int">
+	
+	<span class="text-full">
+		Opa! Será que eu ouvi as palavras “mala”, “passaporte”, “lugares diferentes” e “pessoas novas”? O trabalho no ambiente internacional de negócios te anima e muito! Busque oportunidades de carreira que proporcionem novas experiências como o contato com outras culturas. Explore e voe longe! 
+	</span>
+
+</p>';?>	
+
+
+<div id="box-curriculo">
+	<div class="container">
+		<div id="curriculo">
+			<?php foreach ( $perfil as $row ):?>
+			<p class="name-topo">Trilha 3 | <?php echo $row->nome?></p>
+			<?php endforeach; ?>
+			<hr>
+			<a class="logo-wantu"></a>
+			<span class="big-ola">Olá!</span>
+			<p class="text-perfil">
+				Neste relatório iremos apresentar um diagnóstico para ajudá-lo a compreender quais são os pilares principais que norteiam as suas decisões de carreira. 
+			</p>			
+
+			<div class="line margin-line"></div>
+			<?php echo $textos[$this->tres[0]['ancora']];?>
+			<?php echo $textos[$this->tres[1]['ancora']];?>
+													<div style="clear: both;"></div>
+				<p style="page-break-before: always">
+				<div style="clear: both;"></div>
+				<div class="mg-print"></div>
+			<?php echo $textos[$this->tres[2]['ancora']];?>
+			
+			<div class="line"></div>
+			
+			<div class="roda-inferior">
+				
+				<div class="roda-left">
+					<a class="img-roda"></a>
+				</div>
+				
+				<div class="roda-right">
+					<p class="text-perfil">
+						É importante entender que você possui uma combinação única de preferências, competências, e aptidões principais que refletem os valores mais valiosos para suas decisões de vida, portanto, de carreira.  Elas representam a combinação única de cada um em relação à percepção de competência de carreira, motivos e valores. Agora você sabe mais sobre as carreiras pelas quais você consegue se sentir confortável e feliz! Vamos dar logo esse macht perfeito?
+						<br><br>
+						Seguimos juntos nessa viagem pelo universo de descobertas e até a próxima!
+					</p>
+				</div>	
+				<div class="roda-full">
+					<p class="text-perfil">
+						Um grande abraço!<br>
+						Equipe <span class="text-style">WantU.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="buttons-curriculo">
+			<a class="imp dowload-button" onclick="printCurriculo()"><img alt="" src="/assets/application/img/analise/seta.png"></a>	
+			<a class="button" href="/painel/relatorios-gerais/aptidoes-profissionais">Voltar para o painel</a>
+		</div>
+	</div>
+</div>
+
+<script>
+function printCurriculo() {
+    window.print();
+}
+</script>
+
+<style>
+@page { 
+	size: auto;  
+	margin: 0mm; 
+}
+@media print {
+	footer{
+		display: none;
+	}
+	#topo-cadastro{
+		display: none;
+	}
+	#curriculo{
+		margin-top: 100px !important;
+		box-shadow: none;
+		padding: 0px 10px 0 10px !important;
+	}
+	a[href]:after {
+	    content: none !important;
+	}
+	.buttons-curriculo{
+		display: none;
+	}
+	.mg-print{
+		margin-top: 50px;
+		display: inline-block;
+		height: 1px;
+		width: 1px;
+	}
+</style>
+

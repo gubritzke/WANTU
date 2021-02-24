@@ -1,0 +1,39 @@
+	
+<table class="content">
+<thead>
+	<tr>
+		<th width="25" style="text-align:center;"><input type="checkbox" onchange="$(this).is(':checked') ? $('input[name=\'delete[]\']').prop('checked','checked') : $('input[name=\'delete[]\']').prop('checked',false);" /></th>
+		<th width="1"><a href="javascript:;" class="order" data-order="titulo">ID</a></th>
+		<th>Nome</th>
+		<th><a href="javascript:;" class="order" data-order="data_inicial">Email</a></th>
+		<th><a href="javascript:;" class="order" data-order="data_final">Telefone</a></th>
+		<th width="700"><a href="javascript:;" class="order" data-order="status">Mensagem</a></th>
+		<th width="100" style="text-align: center;">Data</th>
+	</tr>
+</thead>
+
+<tbody>
+	<?php foreach ($result as $row): ?>
+		<tr>
+			<td align="center"><input type="checkbox" name="delete[]" value="" /></td>
+			<td align="center"><?php echo $row->id_contato ?></td>
+			<td><?php echo $row->nome ?></td>
+			<td><?php echo $row->email ?></td>
+			<td><?php echo $row->telefone ?></td>
+			<td><?php echo $row->mensagem ?></td>
+			<td style="text-align: center;"><?php echo date('d/m/y', strtotime($row->criado)); ?></td>
+		</tr>
+	<?php endforeach; ?>
+</tbody>
+
+</table>
+<div class="right" align="right">
+	<?php echo $this->pagination($this->pagination); ?>
+</div>
+
+<div class="paginacao" style="clear:both;">
+	<?php
+				$url = "painel/contato/";
+ 				echo $this->paginationControl($result, 'sliding', 'partials/paginator.phtml', ['url' => $url]);
+			?>
+</div>

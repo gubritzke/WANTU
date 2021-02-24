@@ -1,0 +1,52 @@
+<?php
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 4</span>';
+include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+
+<div id="pesquisa">
+	<div class="container">
+	
+		<div class="time">
+			<span>00:45</span>
+			<div class="time-bar"></div>
+			<div class="time-bar"></div>
+			<div class="time-bar"><span class="p1">+10</span></div>
+		</div>
+		
+		<div class="question">
+			<p>6- Esse sou eu na família:</p>
+		</div>
+		<form class="pesq" id="form-submit" method="post">
+			<div class="options" data-question="<?php echo $_GET['pg']; ?>">
+						
+				<a class="option" data-name="Existencial" data-value="5">
+					<span class="image grafico"></span>
+					<span class="text-opt" style="margin-top: 81px;">
+						Uma pessoa evoluída<br>
+						espiritualmente.
+					</span>
+				</a>
+				
+				<a class="option" style="margin: 0 20px;"  data-name="Interpessoal" data-value="2">
+					<span class="image coracao"></span>
+					<span class="text-opt" style="margin-top: 90px;">
+						O conselheiro de todos.
+					</span>
+				</a>
+				
+				<a class="option"  data-name="Naturalista" data-value="3">
+					<span class="image hexagono"></span>
+					<span class="text-opt" style="margin-top: 78px;">
+						Defensor das plantas e <br>
+						dos animais.
+					</span>
+				</a>
+				
+				<input type="hidden" name="prev" value="<?php echo $prev; ?>">
+				<input type="hidden" name="next" value="<?php echo $next; ?>">
+				<input type="hidden" class="result">
+				
+			</div>
+		</form>	
+	</div>
+</div>

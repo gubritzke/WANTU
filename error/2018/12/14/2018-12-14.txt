@@ -1,0 +1,5 @@
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-14 14:40:10","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final\/relatorio-final\/3","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final\/relatorio-final\/3","date":"2018-12-14 14:45:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final\/relatorio-final\/3","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final\/relatorio-final\/3","date":"2018-12-14 14:46:45","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-final\/relatorio-final\/3","type":"ERROR","message":"error exception","page":"\/painel\/relatorio-final\/relatorio-final\/3","date":"2018-12-14 14:46:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-12-14 14:46:47","ip":"10.0.2.29"}

@@ -1,0 +1,139 @@
+/* BANNER */
+#banner{
+	width: 100%;
+	float: left;
+}
+.banner{
+	background: url("/assets/application/img/como-funciona/banner.jpg") no-repeat;
+	background-size: cover;
+	display: inline-block;
+	width: 100%;
+	height: 448px;
+}
+.banner .conteudo{
+	float: right;
+}
+.banner .conteudo p{
+	font-size: 47px;
+	color: #fff;
+	font-weight: 300;
+	margin-top: 169px;
+}
+.banner .conteudo p > span{
+	font-size: 47px;
+	color: #fff;
+	font-weight: 600;
+}
+.banner .conteudo > a{
+	background: #84139e;
+	color: #fff;
+	padding: 15px 45px;
+	border-radius: 7px;
+	display: inline-block;
+	text-transform: uppercase;
+	margin-top: 20px;
+	font-weight: 600;
+}
+/* CONTEUDO */
+.sobre-text-1{
+	width: 100%;
+	float: left;
+	margin-top: 100px;
+	text-align: justify;
+	line-height: 28px;
+	font-size: 18px;
+}
+.sobre-text-1 p.text{
+	margin-top: 25px;
+}
+.sobre-text-2{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin: 100px 0;
+}
+.faq-item{
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+}
+.faq-top{
+	width: 100%;
+	float: left;
+	cursor: pointer;
+}
+.faq-left{
+	width: 70%;
+	float: left;
+}
+.faq-right{
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+.faq-top > p.tittle-faq{
+	font-size: 21px;
+	color: #84139e;
+	font-weight: 700;
+	text-align: left;
+	float: left;
+}
+.faq-top > p.tittle-faq > span{
+	font-size: 40px;
+	color: #13939e;
+	margin-right: 15px;
+}
+.faq-top > i{
+	float: right;
+	margin-top: 20px;
+	font-size: 33px;
+	margin: 22px 30px 0 0;
+	color: #13939e;
+	font-weight: 900;
+}
+.faq-left > p{
+	text-align: left;
+	font-size: 19px;
+	padding: 40px 30px;
+}
+.faq-right > span.image1{
+	background: url("/assets/application/img/como-funciona/faq1.png");
+	display: inline-block;
+	width: 168px;
+	height: 178px;
+	margin-top: -20px;
+}
+.faq-right > span.image2{
+	background: url("/assets/application/img/como-funciona/faq2.png");
+	display: inline-block;
+	width: 168px;
+	height: 178px;
+	margin-top: -20px;
+}
+.faq-right > span.image3{
+	background: url("/assets/application/img/como-funciona/faq3.png");
+	display: inline-block;
+	width: 160px;
+	height: 169px;
+	margin-top: -20px;
+}
+.faq-right > span.image4{
+	background: url("/assets/application/img/como-funciona/faq4.png");
+	display: inline-block;
+	width: 175px;
+	height: 161px;
+	margin-top: -20px;
+}
+.faq-right > span.image5{
+	background: url("/assets/application/img/como-funciona/faq5.png");
+	display: inline-block;
+	width: 160px;
+	height: 161px;
+	margin-top: -20px;
+}
+.boxGrp.boxAccordionHide i:before {
+    content: "\f106";
+}
+.fa-angle-down:before {
+    content: "\f107";
+}

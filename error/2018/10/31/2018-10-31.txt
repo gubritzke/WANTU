@@ -1,0 +1,5 @@
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-10-31 13:35:18","ip":"10.0.0.200"}
+{"type":"ERROR","message":"retorno da fun\u00e7\u00e3o error_get_last()","file":"Unknown","line":0,"page":"\/painel\/login","date":"2018-10-31 13:35:34","ip":"10.0.0.200","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-10-31 19:18:27","ip":"10.0.2.29"}
+{"type":"ERROR","message":"retorno da fun\u00e7\u00e3o error_get_last()","file":"Unknown","line":0,"page":"\/painel\/relatorios-gerais\/pontos-fortes\/12","date":"2018-10-31 19:18:27","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-10-31 19:18:29","ip":"10.0.2.29"}

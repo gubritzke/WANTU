@@ -1,0 +1,2 @@
+{"module":"application","controller":"minha-conta","action":"perfil","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta\/perfil","date":"2018-11-21 12:46:12","ip":"10.0.0.200"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-11-21 12:46:17","ip":"10.0.0.200"}

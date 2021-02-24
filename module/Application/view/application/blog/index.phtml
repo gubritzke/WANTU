@@ -1,0 +1,61 @@
+<div id="banner">
+	<div class="banner">
+		<div class="container">
+		
+			<div class="conteudo">
+				<p>
+					Teste Vocacional<br>
+					<span>colabora na busca<br>
+					pelo curso ideal</span>
+				</p>
+				<a class="button" href="javascript:;">Leia mais</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+			<div class="breadcrumb" style="margin-top: 20px;">
+				<div class="container">
+					<ul>
+						<?php foreach ($this->layout()->breadcrumb as $key => $row):?>
+							<li><a href="<?php echo $row ?>"><?php echo $key ?></a></li>
+						<?php endforeach; ?>
+					</ul>
+				</div>
+			</div>
+
+<div id="blog-content">
+	<div class="container">
+		<form action="post">
+		
+			<label class="label-search">
+				<i class="fas fa-search"></i>
+				<input type="text" name="search" placeholder="Buscar">
+			</label>
+			
+			<label class="label-assunto">
+				<select name="assunto">
+					<option value="">Escolha Assunto</option>
+					<option value="Todos">Todos</option>
+					<option value="No Brasil">No Brasil</option>
+					<option value="Estudantes">Estudantes</option>
+					<option value="Vestibular">Vestibular</option>
+					<option value="Tecnologia">Tecnologia</option>
+					<option value="No Mundo">No Mundo</option>
+					<option value="Universidades">Universidades</option>
+				</select>
+			</label>
+		</form>
+			<div class="ajst-blog-m">
+				<?php foreach ($result as $row): ?>
+					<div class="box-blog">
+						<img alt="" src="/assets/application/uploads/blog/<?php echo $row->imagem ?>">
+						<div class="cont-box">
+	    					<p><?php echo $row->titulo ?></p>
+	    					<a href="/blog/<?php echo $row->slug ?>">ler mais</a>
+						</div>
+					</div>
+				<?php endforeach; ?>
+			</div>	
+	</div>
+</div>

@@ -1,0 +1,180 @@
+<?php 
+	use Application\Model\ModelAptidoesProfissionais;
+use Application\Model\ModelInteligenciasMultiplas;
+
+    $title = '<span style="margin-top:20px; display: inline-block;">Trilha 4</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+
+<div class="container">
+	
+	<form class="pesq-3" method="post" id="form-submit">
+		
+		<p class="pesq-tittle">
+
+			Escolha abaixo a alternativa que você mais se identifica
+
+		</p>
+		<p class="pesq-desc">
+	
+
+		</p>
+		
+		<div class="options">
+			<div class="box-for-options">
+				
+				<?php if (!empty($empate[0])){ ?>
+				<div class="option-box">
+					<label class="switch check1">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[0]?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">A)</span> 
+						<?php echo ModelInteligenciasMultiplas::getPerguntas($empate[0]);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[1])){ ?>
+				<div class="option-box">
+					<label class="switch check2">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[1]?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">B)</span> 
+						<?php echo ModelInteligenciasMultiplas::getPerguntas($empate[1]);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[2])){ ?>
+				<div class="option-box">
+					<label class="switch check3">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[2]?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">C)</span> 
+						<?php echo ModelInteligenciasMultiplas::getPerguntas($empate[2]);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[3])){ ?>
+				<div class="option-box">
+					<label class="switch check4">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[3]?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">D)</span> 
+						<?php echo ModelInteligenciasMultiplas::getPerguntas($empate[3]);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[4])){ ?>
+				<div class="option-box">
+					<label class="switch check5">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[4]?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">E)</span> 
+						<?php echo ModelInteligenciasMultiplas::getPerguntas($empate[4]);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[5])){ ?>
+				<div class="option-box">
+					<label class="switch check6">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[5]?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">F)</span> 
+						<?php echo ModelInteligenciasMultiplas::getPerguntas($empate[5]);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[6])){ ?>
+				<div class="option-box">
+					<label class="switch check7">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[6]?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">G)</span> 
+						<?php echo ModelInteligenciasMultiplas::getPerguntas($empate[6]);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[7])){ ?>
+				<div class="option-box">
+					<label class="switch check8">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[7]?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">H)</span> 
+						<?php echo ModelInteligenciasMultiplas::getPerguntas($empate[7]);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[8])){ ?>
+				<div class="option-box">
+					<label class="switch check9">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[8]?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">I)</span> 
+						<?php echo ModelInteligenciasMultiplas::getPerguntas($empate[8]);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+			
+			
+			</div>
+		</div>
+		
+		<input type="hidden" class="empate" name="empate" value="empate" />		
+		<input type="hidden" class="result" name="p19" value="" />
+		
+		<script type="text/javascript">
+			$('label.switch').click(function(){
+				$currentClass = $(this).attr('class');
+				$currentClass = $currentClass.split(" ");
+
+				$valor = $(this).find('input').val();
+
+				$('input.result').val($valor);
+
+				$('label.switch').each(function(){
+
+					if(!$(this).hasClass($currentClass[1])){
+						$(this).find('input').prop('checked',false);
+					}else{
+						$(this).find('input').prop('checked',true);
+					}
+				
+				});
+			});
+		</script>
+	
+	</form>
+	
+	<div class="line-buttons">
+		
+		<a class="button-blue width-ajst" href="javascript:$('#form-submit').submit();">Finalizar</a>
+	
+	</div>
+	
+</div>

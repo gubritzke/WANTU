@@ -1,0 +1,30 @@
+/****************/
+/* BT */
+/****************/
+.bt-upload{
+	display: block;
+	margin: 50px 0;
+	padding: 50px 0;
+	
+	border: 5px dashed #ddd;
+	
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #aaa;
+}
+.bt-upload:hover{
+	border: 5px dashed #ffa401;
+	color: #ffa401;
+}
+
+/****************/
+/* SCROLL */
+/****************/
+section .scroll{
+	max-height: 600px; 
+	margin: 20px 0;
+}
+section .scroll > table{
+	margin: 0;
+}

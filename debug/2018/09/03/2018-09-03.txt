@@ -1,0 +1,4 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-09-03 17:03:53","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-09-03 17:18:58","ip":"10.0.2.29"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2018-09-03 17:26:17","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-09-03 17:28:22","ip":"10.0.2.29"}

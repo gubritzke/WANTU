@@ -1,0 +1,91 @@
+/****************/
+/* FANCYBOX */
+/****************/
+html, body {
+	height: 100%;
+	overflow-x: hidden;
+}
+#main {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    min-width: 600px;
+    overflow-x: hidden;
+}
+.fancybox-skin .mobile-hide{
+	display: block!important;
+}
+.fancybox-skin{
+	background-color: #fff!important;
+	border-radius: 0!important;
+	padding: 0!important;
+}
+.fancybox-wrap > .fancybox-skin > .fancybox-outer > .fancybox-inner{
+	overflow: hidden!important;
+}
+.outbox-header{
+	background-color: #d2dce6;
+	font-style: italic;
+	margin: 0;
+	padding: 15px 0;
+}
+.fancybox-opened {
+    z-index: 9999999!important;
+}
+
+@media(max-width: 680px){
+	/****************/
+	/* FANCYBOX */
+	/****************/
+	.fancybox-wrap{
+		width: 100%!important;
+		left: 0!important;
+	}
+	.fancybox-wrap > .fancybox-skin > .fancybox-outer > .fancybox-inner{
+		width: 100%!important;
+	}
+}
+
+@media(max-width: 600px){
+	/****************/
+	/* FANCYBOX */
+	/****************/
+	.fancybox-wrap{
+		width: 100%!important;
+		left: 0!important;
+		top: 0!important;
+		height: 100%!important;
+		position: fixed!important;
+	}
+	.fancybox-wrap > .fancybox-skin{
+		height: 100%!important;
+	}
+	.fancybox-wrap > .fancybox-skin > .fancybox-outer{
+		height: 100%!important;
+	}
+	.fancybox-wrap > .fancybox-skin > .fancybox-outer > .fancybox-inner{
+		width: 100%!important;
+		height: 100%!important;
+	}
+	.fancybox-wrap .fancybox-close{
+		display: block;
+		position: fixed;
+		z-index: 9999;
+		top: 0;
+	    right: 0;
+	    font-size: 28px;
+	    background-color: #5bab9f;
+		color: #fff;
+	    width: 60px;
+	    height: 59px;
+		line-height: 59px;
+	    text-align: center;
+		background-image: none;
+	}
+	.fancybox-wrap .fancybox-close:before{
+		font-family: "fontAwesome";
+		content: "\f00d";
+		color: #fff;
+		font-size: 28px;
+	}
+}

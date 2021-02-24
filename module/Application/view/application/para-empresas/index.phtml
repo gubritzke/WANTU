@@ -1,0 +1,127 @@
+<div id="banner">
+	<div class="container">
+		<div class="text-banner">
+			<h1>Para <span>empresas</span></h1>
+			<p>Estamos vivendo uma grande revolução no mundo do trabalho e os profissionais estão cada vez mais em busca de autonomia, propósito, fit cultural com empresas e novos jeitos de construir suas carreiras.  Por outro lado, a maior parte das empresas não está preparada para enfrentar essas mudanças e aproveitar todo potencial dos seus talentos. Nossas soluções inovadoras abarcam a utilização de ferramentas próprias de people analytics que contribuem para tomadas de decisões mais assertivas. Assim, nosso propósito é ajudar pessoas a serem protagonistas de suas carreiras e ajudar as empresas a terem gente certa no lugar certo, as desenvolvendo de forma inteligente e ágil.</p>
+		
+			<a class="img-banner"></a>
+			<span>SERVIÇOS</span>		
+		</div>
+	</div>	
+</div>
+
+<div class="container">
+    <div id="box-text">
+    	<p>Com ferramentas próprias de people analytics, a Wantu- Gestão de Carreira- atua em empresas para <span>otimizar os processos de gestão de pessoas,</span> como recrutamento e seleção, treinamento e desenvolvimento e retenção de talentos. <span>Utilizamos a inteligência de dados sobre pessoas para aumentar a assertividade das suas decisões.</span></p>
+    </div>
+</div>
+
+<div class="container">
+	<div class="passos">
+		<div class="box-passos">
+			<a>
+				<img alt="" src="/assets/application/img/para-empresas/image1.png">
+			</a>
+			<p>
+				Possui uma vaga em aberto?
+			</p>
+			<span>
+				Vamos entender melhor as necessidades da sua empresa em relação ao perfil de competências exigido para o cargo e aumentar a assertividade das suas contratações. 
+			</span>
+		</div>
+	
+		<div class="box-passos">
+			<a>
+				<img alt="" src="/assets/application/img/para-empresas/image2.png">
+			</a>
+			<p>
+				Como essa ferramenta funciona? 
+			</p>
+			<span>
+				Por meio de seis testes inovadores, nossa plataforma garante resultados assertivos e com um alto nível de confiabilidade sobre o potencial de competências do candidato e o alinhamento com o cargo e com o perfil da empresa.  Focando ainda na melhor experiência possível para o candidato, os nossos testes são rápidos, envolventes e prazerosos. 
+			</span>
+		</div>
+		
+		<div class="box-passos">
+			<a>
+				<img style="margin-top: 13px;" alt="" src="/assets/application/img/para-empresas/image3.png">
+			</a>
+			<p>
+				Quer conhecer melhor seus<br> funcionários e potencializar os<br> resultados do seu time? 
+			</p>
+			<span>
+				Nossas soluções lhe ajudam a conhecer seus talentos e a investir melhor seus recursos destinados para treinamento e desenvolvimento. 
+			</span>
+		</div>
+	
+	</div>
+</div>
+
+<div class="container">
+	<div class="formulario">
+		<h2>Quer conhecer <span>melhor nossa plataforma?</span></h2>
+		
+		<form method="post">
+		
+			<label class="lb-50">
+				<input type="text" name="nome" value="" placeholder="Nome">
+			</label>
+			
+			<label class="lb-50 l-right">
+				<input type="text" name="sobrenome" value="" placeholder="Sobrenome">
+			</label>
+			
+			<label class="lb-50">
+				<input type="text" name="email" value="" placeholder="E-mail de trabalho">
+			</label>
+			
+			<label class="lb-50 l-right">
+				<input type="text" name="telefone" class="cellphone" value="" placeholder="DDD + Telefone">
+			</label>
+			
+			<label class="lb-50">
+				<input type="text" name="empresa" value="" placeholder="Em qual empresa você trabalha?">
+			</label>
+			
+			<label class="lb-50 l-right">
+				<input type="text" name="colaboradores" value="" placeholder="Quantos colaboradores a empresa possui?">
+			</label>
+		
+			<label class="lb-50">
+				<input type="text" name="vagas" value="" placeholder="Em média, quantas vagas a empresa abre por mês?">
+			</label>
+			
+			<label class="lb-50 l-right">
+				<select name="gestao_competencias">
+					<option value="">Sua empresa utiliza gestão por competências?</option>
+					<option value="Sim">Sim</option>
+					<option value="Não">Não</option>
+				</select>
+			</label>
+			
+			<label class="lb-100">
+				<input type="text" name="competencias_utilizadas" value="" placeholder="Se sim, quais são as competências utilizadas nos processos de gestão de pessoas?">
+			</label>
+			
+			<label class="lb-50">
+				<select name="estado">
+					<option disabled selected>Em qual estado se localiza a empresa?</option>
+					<?php foreach ( $states as $key => $row ){ ?>
+					<option <?php echo $this->layout()->me->estado == $key ? 'selected' : '' ?> value="<?php echo $key?>"><?php echo $row?></option>
+					<?php } ?>
+				</select>
+			</label>
+			
+			<label class="lb-50 l-right">
+				<input type="text" name="area_de_atuacao" value="" placeholder="Qual é a área de atuação da empresa?">
+			</label>
+			
+			<input type="hidden" name="method" value="salvar" />
+			
+			<button>ENVIAR</button>
+			
+		</form>
+	</div>
+	
+</div>
+<div class="bg-fundo"></div>

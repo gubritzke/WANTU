@@ -1,0 +1,60 @@
+<?php if (!empty($data_user->imagem)){ ?>
+<style>
+	#topo-teste a.user:after{
+		background-image: url('/assets/uploads/user/<?php echo $data_user->imagem ?>') !important;
+		display: inline-block;
+		background-position:center;
+		background-size:contain;
+		width: 70px;
+		height: 70px;
+		border-radius: 1000px;
+		border: 2px solid #fff;
+	}
+</style>
+<?php } else { ?>
+<style>
+	#topo-teste a.user:after{
+		background-image: url('/assets/application/img/minhaconta/user-padrao.jpg') !important;
+		display: inline-block;
+		background-position:center;
+		background-size:contain;
+		width: 70px;
+		height: 70px;
+		border-radius: 1000px;
+	}
+</style>
+<?php } ?>
+<header>
+	<div id="topo-teste">
+		<div class="container">
+		
+			<div class="menu-user">
+				<p>Minha conta</p>
+				<a class="logo-w" href="/"></a>
+				<div class="sub-div">
+	    			<a class="user">Olá, <?php echo $data_user->nome ?> <i class="fas fa-angle-down"></i></a>
+				    <ul class="submenu active">
+						<li><a href="/minha-conta/perfil">Perfil</a></li>
+						<li><a href="/checkout/planos">Planos</a></li>
+						<li><a href="/login/sair">Logout</a></li>
+					</ul>
+				</div>
+			</div>    	
+			
+		</div>
+	</div>
+    	<?php if (!empty($this->layout()->breadcrumb)):?>	
+        	<div class="breadcrumb" style="line-height: 50px; height: 30px;">
+        		<div class="container">
+        			<ul>
+        				<?php foreach ($this->layout()->breadcrumb as $key => $row):?>
+        					<li><a href="<?php echo $row ?>"><?php echo $key ?></a></li>
+        				<?php endforeach; ?>
+        			</ul>
+        		</div>
+        	</div>
+    	<?php endif; ?>
+	
+	
+</header>
+

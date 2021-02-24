@@ -1,0 +1,47 @@
+<div id="contato">
+	<div class="container"> 
+		<p class="tittle">Olá!</p>
+		
+		<form action="" method="post">
+			<label class="input-100">
+				<span>Nome*</span>
+				<input type="text" name="nome" value="">
+			</label>
+	
+			<label class="input-50">
+				<span>Email*</span>
+				<input type="text" name="email" value="">
+			</label>
+			
+			<label class="input-50 right">
+				<span>Telefone</span>
+				<input type="text" name="telefone" class="cellphone" value="">
+			</label>
+			
+			<label class="input-100">
+				<span>Assunto*</span>
+				<input type="text" name="assunto" value="">
+			</label>
+			
+			<label class="input-100">
+				<span style="margin-bottom: 8px; display: inline-block;">Selecione o motivo do contato</span>
+				<select name="motivo_contato" style="background: #84139e; color: #fff; padding-top: 10px;">
+					<option value="Dúvidas">Dúvidas</option>
+					<option value="Sugestões">Sugestões</option>
+					<option value="Elogios">Elogios</option>
+					<option value="Reclamações">Reclamações</option>
+					<option value="Outros">Outros</option>
+				</select>
+			</label>
+	
+			<label class="textarea-100">
+				<span>Mensagem</span>
+				<textarea name="mensagem"></textarea>
+			</label>
+			
+			<input type="hidden" name="method" value="salvar" />
+			
+			<button class="button-blue">enviar</button>
+		</form>
+	</div>
+</div>

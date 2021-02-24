@@ -1,0 +1,100 @@
+.bg-login {
+    background: url("/assets/painel/img/login/bg01.jpg");
+    background-size: cover;
+}
+#login {
+    width:350px;
+    background:#FFF;
+    border-radius: 4px;
+    box-sizing:border-box;
+    margin-top: -240px;
+    margin-left:-175px;
+    top:50%;
+    left:50%;
+    position:fixed;
+    box-sizing:border-box;
+    padding:30px;
+    box-shadow: 0px 20px 101px rgba(0,0,0,0.5);
+}
+#login .logo {
+	display: block;
+	width:100%;
+	text-align:center;
+	margin-bottom:20px;
+}
+#login .logo img {
+	max-width:200px;
+}
+
+form.mainform {
+	width:100%;
+	float:left;
+}
+form.mainform .label {
+    width:100%;
+    min-height: 52px;
+    float:left;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top:10px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+form.mainform .label:after {
+    width:0%;
+    left:50%;
+    height:2px;
+    position:absolute;
+    bottom:5px;
+    content:'';
+    background:rgba(0, 193, 188, 31);
+    -webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+}
+form.mainform .label.active:after {
+    width: 100%;
+    left: 0px;
+}
+form.mainform .label span {
+	width:100%;
+	position: absolute;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.58);
+	padding:15px 10px 10px 10px;
+	cursor: text;
+	box-sizing: border-box;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	left: 0px;
+}
+form.mainform .label.active span,
+form.mainform .label span.active {
+    top: 3px;
+    font-size:9px;
+    padding-top: 0;
+    font-style:italic;
+}
+form.mainform .label input,
+form.mainform .label select,
+form.mainform .label textarea {
+    width:100%;
+    box-sizing: border-box;
+    padding: 15px 10px 10px 10px;
+    float:left;
+    outline: none;
+    border:none;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.58);
+    font-weight:400;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+form.mainform .label textarea {
+	min-height:100px;
+}
+form.mainform .bt{
+	width: 100%;
+}

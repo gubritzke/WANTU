@@ -1,0 +1,94 @@
+/****************/
+/* MENU */
+/****************/
+#nav > ul > li:hover .submenu,
+#nav > ul > li.active .submenu{
+	display: block!important;
+}
+#nav{
+	border: 1px solid #ccc;
+	padding: 0 10px;
+	background-color: #454648;
+}
+#nav ul{
+	list-style: none;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px dashed #ccc;
+	min-height: 100px;
+}
+#nav ul > li{
+}
+#nav ul > li > a{
+	color: #fff;
+}
+#nav .category{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #5bab9f;
+}
+#nav img{
+	width: 100%;
+}
+#nav .separate{
+	border-left: 1px solid rgba(0,0,0,0.1);
+}
+#nav .upload{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 254px;
+	margin-top: 10px;
+	background: transparent;
+	border: 1px dashed #ccc;
+	text-align: center;
+}
+#nav .upload:after{
+	content: "\f03e";
+	font-family: "fontAwesome";
+	font-size: 50px;
+	position: absolute;
+	z-index: 1;
+	top: 45%;
+	left: 0;
+	width: 100%;
+	color: #fff;
+}
+#nav .column-4{
+	position: relative;
+}
+#nav .column-4 .button{
+	position: absolute;
+	display: block;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	right: 0;
+	top: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	color: #333;
+}
+
+/****************/
+/* CONTENT */
+/****************/
+form.container .filters{
+	float: left;
+	width: 16%;
+	padding: 15px;
+	margin-bottom: 15px;
+	margin-right: 1%;
+	background-color: #dfdfdf;
+	border-radius: 15px;
+}
+form.container .filters .scroll{
+	height: 260px;
+}
+form.container .filters .title{
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #333;
+	color: #fff;
+}

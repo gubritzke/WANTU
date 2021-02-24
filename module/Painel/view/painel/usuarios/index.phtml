@@ -1,0 +1,372 @@
+<div class="container">
+	<div class="row">
+	
+		<form method="get" class="filter default">
+			<div class="column column-12 margin-align2">
+						
+				<div class="inline icon-right" align="left">
+		        	<b>Data de</b><br/>
+		        	<input type="text" name="data_inicial" value="<?php echo !empty($this->filter['data_inicial']) ? $this->filter['data_inicial'] : null; ?>" id="calendar_range_from" class="calendar_range_from calendar" data-parent="calendar_range_to" />
+		        	<i class="far fa-calendar-alt"></i>
+		        </div>
+		        		
+		        <div class="inline icon-right" align="left" style="margin-right: 20px">
+		        	<b>Até</b><br/>
+		        	<input type="text" name="data_final" value="<?php echo !empty($this->filter['data_final']) ? $this->filter['data_final'] : null; ?>" id="calendar_range_to" class="calendar_range_to calendar" data-parent="calendar_range_from" />
+		        	<i class="far fa-calendar-alt"></i>
+		      	</div>
+		      	
+    		    <div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Testes não finalizados</span>
+    					<input type="checkbox" name="testes_nao_finalizados" >	
+    				</label>		
+    			</div>
+    			
+    			<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Testes finalizados</span>
+    					<input type="checkbox" name="testes_finalizados" >	
+    				</label>		
+    			</div>
+
+			</div>
+			
+			<div class="column column-12 margin-align2">
+			
+				<div class="inline" align="left">
+		        	<b>Nome</b><br/>
+		        	<input type="text" name="nome" value=""/>
+		      	</div>
+		      	
+		      	<div class="inline icon-right" align="left" style="margin-right: 20px">
+		        	<b>Data de nascimento</b><br/>
+		        	<input type="text" name="data_nascimento" value="" />
+		        	<i class="far fa-calendar-alt"></i>
+		        </div>
+    			
+    			<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Graduando</span>
+    					<input type="checkbox" name="graduando" >	
+    				</label>		
+    			</div>
+    			
+    			<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Formado</span>
+    					<input type="checkbox" name="formado" >	
+    				</label>		
+    			</div>
+				
+			</div>
+			
+			<div class="column column-12 margin-align2">
+				<b class="titulo-filtro">Carreiras</b>
+				
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Acadêmica</span>
+    					<input type="checkbox" name="academica" >	
+    				</label>		
+    			</div>
+    			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Gerencial</span>
+    					<input type="checkbox" name="gerencial" >	
+    				</label>		
+    			</div>
+    			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Empreendedora</span>
+    					<input type="checkbox" name="empreendedora" >	
+    				</label>		
+    			</div>
+    			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Especialista</span>
+    					<input type="checkbox" name="especialista" >	
+    				</label>		
+    			</div>
+    			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Pública</span>
+    					<input type="checkbox" name="publica" >	
+    				</label>		
+    			</div>
+    			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Política</span>
+    					<input type="checkbox" name="politica" >	
+    				</label>		
+    			</div>
+				
+			</div>
+			
+			<div class="column column-12 margin-align2">
+				<b class="titulo-filtro">Competências</b>
+				
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Autodesenvolvimento e Gestão do Conhecimento</span>
+    					<input type="checkbox" name="cp1" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Capacidade de Adaptação e Flexibilidade</span>
+    					<input type="checkbox" name="cp2" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Capacidade Empreendedora</span>
+    					<input type="checkbox" name="cp3" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Capacidade Negocial</span>
+    					<input type="checkbox" name="cp4" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Comunicação e Interação</span>
+    					<input type="checkbox" name="cp5" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Criatividade e Interação</span>
+    					<input type="checkbox" name="cp6" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Cultura da qualidade</span>
+    					<input type="checkbox" name="cp7" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Liderança</span>
+    					<input type="checkbox" name="cp8" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Motivação e Energia para o Trabalho</span>
+    					<input type="checkbox" name="cp9" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Orientação para resultados</span>
+    					<input type="checkbox" name="cp10" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Planejamento e Organização</span>
+    					<input type="checkbox" name="cp11" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Relacionamento Interpessoal</span>
+    					<input type="checkbox" name="cp12" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Tomada de decisão</span>
+    					<input type="checkbox" name="cp13" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Trabalho em Equipe</span>
+    					<input type="checkbox" name="cp14" >	
+    				</label>		
+    			</div>
+			
+				<div class="inline " align="left">
+    				<label class="lb-filtro">
+    					<span class="check-filtro">Visão Sistêmica</span>
+    					<input type="checkbox" name="cp15" >	
+    				</label>		
+    			</div>
+			
+			
+			</div>
+				
+        	<div class="column column-12 margin-align2" align="left">
+        		<a onclick="$(this).parents('form').submit();" class="bt bt-inline bt-round bg-orange2 button-ajst">Filtrar <i class="fa fa-refresh"></i></a>
+        		<a onclick="javascript:downloadGeral();" class="bt bt-inline bt-round bg-blue">Exportar CSV <i class="fa fa-refresh"></i></a>
+        	</div>
+			
+		</form>
+		
+	</div>
+		
+	<hr />
+		
+	<div class="row">
+		<div class="column column-12">
+		
+<!-- 			ANALISE DE CURRICULO         -->
+			
+			<form method="post">
+				<table class="content">
+				<thead style="border-bottom: 2px solid #6f6f6f;">
+					<tr>
+						<th width="500" style="color: #84139e; font-size: 18px; text-transform: none; text-align: left;">Usuários</th>
+						<th width="200"></th>
+						<!-- 	<th width="130" style="text-align: center;">Plano</th>  -->
+						<th width="80" align="right">Curriculo</th>
+						<th width="80" align="right">IP</th>
+						<th width="80" align="center">Dados</th>
+					</tr>
+				</thead>
+				
+				<tbody class="font-small" class="lines-td">
+					<?php foreach ( $users as $row ): $row = (object)$row; ?>
+					<?php // echo '<pre>'; print_r($row); ?>
+					<tr>
+						<td style="line-height: 42px;">
+							<img alt="" class="img-user" style="width: 30px; height: 30px; border-radius:100px;" <?php if (!empty($row->imagem)){ ?>src="/assets/uploads/user/<?php echo $row->imagem ?>"<?php } else { ?> src="/assets/application/img/minhaconta/user-padrao.jpg"<?php } ?>>
+							<?php echo $row->nome; ?>
+						</td>
+						<td align="center">
+							<span class="font-blue">Data:</span> 
+							<?php echo date('d/m/Y', strtotime($row->criado)); ?>
+						</td>
+						<td align="center" style="display: none;">
+							
+							<?php if ($row['id_plano'] == ''){ ?><p class="p-free">Free</p><?php } ?>
+							<?php if ($row['id_plano'] == 1){ ?><p class="p-match">Match</p><?php } ?>
+							<?php if ($row['id_plano'] == 2){ ?><p class="p-self">Self</p><?php } ?>
+							<?php if ($row['id_plano'] == 3){ ?><p class="p-best">Best Me</p><?php } ?>
+							
+						</td>
+						<td align="center">
+							
+							<?php if ($row['analise_de_curriculo'] == 'Completo') {?>
+								<a href="/painel/usuarios/curriculo?id=<?php echo $row->id_login ?>" ><i class="far fa-file-alt ico-size"></i></a>
+							<?php } ?>
+							
+						</td>
+						<td align="center">
+							<a href="/painel/relatorios-gerais/analise/<?php echo $row->id_login; ?>"><i class="fas fa-pencil-alt ico-size"></i></a>
+						</td>
+						<td align="center">
+							<a href="/painel/usuarios/detalhe?id=<?php echo $row->id_login ?>" target="_blank" class="button-dowload"><i class="fas fa-align-justify"></i></a>
+						</td>
+					</tr>
+					<?php  endforeach; ?>
+				</tbody>
+				</table>
+				
+				<div class="right" align="right">
+					<?php echo $this->pagination($this->pagination); ?>
+				</div>
+				
+				<div class="paginacao" style="clear:both;">
+					<?php
+					$url = "painel/usuarios";
+					$_GET['name_page'] = 'page_10';
+					$_GET['local_page'] = 'curriculo';
+					echo $this->paginationControl($users , 'sliding', 'partials/paginator.phtml', ['url' => $url]);
+					?>
+				</div>
+				
+				<input type="hidden" name="method" value="delete" />
+			</form>
+			
+		</div>
+		
+		<!-- Quantidade de Avaliações -->
+		<div class="column column-4 box box-small box-small2" style="display: none;">
+			<p class="font-medium qtd-aval-text">Quantidade de Avaliações</p>
+			<span class="qtd-aval">156</span>
+			
+		</div>
+		
+		<!-- Avaliações para Finalizar-->
+		<div class="column column-4 box box-small box-small2" style="float: right; display: none;">
+			<p class="font-medium qtd-aval-text">Avaliações para Finalizar</p>
+			<span class="qtd-fin">50</span>
+		</div>
+
+	</div>
+</div>
+
+<form method="post" id="formStatus" class="ajaxsubmit">
+	<input type="hidden" name="aguardando" id="inputValue" />
+	<input type="hidden" name="id_analise_de_curriculo" id="inputId" />
+	<input type="hidden" name="method" value="aguardando" />
+</form>
+
+<div class="links-download"></div>
+
+<script>
+
+	function download( link, tipo, pagina, arquivo ) {
+
+		$.ajax({
+			url: link,
+			type: 'POST',
+			data: { tipo: tipo, arquivo: arquivo, page_10: pagina },
+			dataType: 'JSON',
+			success: function( response ) {
+
+				console.log( response, tipo, pagina, link, arquivo )
+
+				if ( pagina < response.last ) {
+
+					download( link, tipo, response.next, arquivo )
+					
+				} else {
+
+					window.open('assets/downloads/'+arquivo+'.csv', '_blank');
+					
+				}
+
+			}
+		})
+
+	}
+
+	function downloadGeral(){
+
+		download('<?php unset($_GET['page_10']); echo '/painel/usuarios?'.http_build_query($_GET); ?>', 'download_excel_1', '1', 'excel_1_<?php echo uniqid().time(); ?>')
+		download('<?php unset($_GET['page_10']); echo '/painel/usuarios?'.http_build_query($_GET); ?>', 'download_excel_2', '1', 'excel_2_<?php echo uniqid().time(); ?>')
+		download('<?php unset($_GET['page_10']); echo '/painel/usuarios?'.http_build_query($_GET); ?>', 'download_excel_3', '1', 'excel_3_<?php echo uniqid().time(); ?>')
+		download('<?php unset($_GET['page_10']); echo '/painel/usuarios?'.http_build_query($_GET); ?>', 'download_excel_4', '1', 'excel_4_<?php echo uniqid().time(); ?>')
+		download('<?php unset($_GET['page_10']); echo '/painel/usuarios?'.http_build_query($_GET); ?>', 'download_excel_5', '1', 'excel_5_<?php echo uniqid().time(); ?>')
+		download('<?php unset($_GET['page_10']); echo '/painel/usuarios?'.http_build_query($_GET); ?>', 'download_excel_6', '1', 'excel_6_<?php echo uniqid().time(); ?>')
+		download('<?php unset($_GET['page_10']); echo '/painel/usuarios?'.http_build_query($_GET); ?>', 'indicePerdidice', '1', 'Indice_Perdidice<?php echo uniqid().time(); ?>')
+		download('<?php unset($_GET['page_10']); echo '/painel/usuarios?'.http_build_query($_GET); ?>', 'resultadosFinais', '1', 'Resultados_Finais<?php echo uniqid().time(); ?>')
+
+	}
+
+</script>

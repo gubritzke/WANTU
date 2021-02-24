@@ -1,0 +1,2 @@
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-02-04 13:51:52","ip":"10.0.0.200"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2019-02-04 19:15:24","ip":"10.0.1.211"}

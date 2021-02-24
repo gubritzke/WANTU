@@ -1,0 +1,14 @@
+{"url":"10.0.0.224:8342\/painel\/usuarios\/curriculo?id=3","type":"ERROR","message":"error exception","page":"\/painel\/usuarios\/curriculo","date":"2019-04-15 14:07:58","ip":"10.0.2.29","get":{"id":"3"}}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/curriculo?id=3","type":"ERROR","message":"error exception","page":"\/painel\/usuarios\/curriculo","date":"2019-04-15 14:08:52","ip":"10.0.2.29","get":{"id":"3"}}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/curriculo?id=3","type":"ERROR","message":"error exception","page":"\/painel\/usuarios\/curriculo","date":"2019-04-15 14:10:21","ip":"10.0.2.29","get":{"id":"3"}}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/curriculo?id=3","type":"ERROR","message":"error exception","page":"\/painel\/usuarios\/curriculo","date":"2019-04-15 14:10:57","ip":"10.0.2.29","get":{"id":"3"}}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/curriculo?id=3","type":"ERROR","message":"error exception","page":"\/painel\/usuarios\/curriculo","date":"2019-04-15 14:11:11","ip":"10.0.2.29","get":{"id":"3"}}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/curriculo?id=3","type":"ERROR","message":"error exception","page":"\/painel\/usuarios\/curriculo","date":"2019-04-15 14:11:19","ip":"10.0.2.29","get":{"id":"3"}}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/curriculo?id=3","type":"ERROR","message":"error exception","page":"\/painel\/usuarios\/curriculo","date":"2019-04-15 14:36:57","ip":"10.0.2.29","get":{"id":"3"}}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/curriculo?id=3","type":"ERROR","message":"error exception","page":"\/painel\/usuarios\/curriculo","date":"2019-04-15 14:39:06","ip":"10.0.2.29","get":{"id":"3"}}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/curriculo?id=3","type":"ERROR","message":"error exception","page":"\/painel\/usuarios\/curriculo","date":"2019-04-15 14:39:08","ip":"10.0.2.29","get":{"id":"3"}}
+{"url":"10.0.0.224:8342\/painel\/usarios","type":"ERROR","message":"404","page":"\/painel\/usarios","date":"2019-04-15 14:57:45","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-15 14:57:45","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/curriculo?id=3","type":"ERROR","message":"error exception","page":"\/painel\/usuarios\/curriculo","date":"2019-04-15 15:00:38","ip":"10.0.2.29","get":{"id":"3"}}
+{"url":"10.0.0.224:8342\/painel\/usuarios\/curriculo?id=3","type":"ERROR","message":"error exception","page":"\/painel\/usuarios\/curriculo","date":"2019-04-15 15:01:15","ip":"10.0.2.29","get":{"id":"3"}}
+{"url":"10.0.0.224:8342\/painel\/usuarios","type":"ERROR","message":"error exception","page":"\/painel\/usuarios","date":"2019-04-15 15:11:59","ip":"10.0.2.29","get":{"name_page":"page","local_page":"curriculo"}}

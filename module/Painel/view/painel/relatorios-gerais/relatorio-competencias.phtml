@@ -1,0 +1,162 @@
+<link href="/assets/painel/css/relatorios-gerais.css" media="" rel="stylesheet" type="text/css">
+<link href="/assets/application/css/main.css" media="" rel="stylesheet" type="text/css">
+<?php 
+$title = 'Competências';
+include 'module/Application/view/partials/headers/topo-analise-perfil.phtml'; ?>
+
+
+<div id="box-curriculo">
+	<div class="container">
+		<div id="curriculo">
+			<?php foreach ( $perfil as $row ):?>
+			<p class="name-topo">Trilha 6 | <?php echo $row->nome?></p>
+			<?php endforeach; ?>
+			<hr>
+			<a class="logo-wantu"></a>
+			<span class="big-ola">Olá!</span>
+			<p class="text-perfil">
+				Olá! Estudos apontam para a busca de 15 competências principais nos profissionais do mercado de trabalho brasileiro. As competências são formadas por um conjunto de conhecimentos, habilidades e atitudes que você mobiliza em seu trabalho para fazer da melhor forma possível aquilo que você se propõe. Vamos conhecer abaixo os resultados da sua autoavaliação em relação ao seu nível dessas competências?
+			</p>			
+
+			<div class="line margin-line"></div>
+			
+			
+				<div class="line-legend">
+					
+					<div class="pin-legend">Nível atual de competência</div>
+					
+				</div>
+				
+				<div class="graf-relatorio">
+				
+					<div class="coluna-legenda">
+						<p><span>1.</span> Autodesenvolvimento e Gestão do Conhecimento</p>
+						<p><span>2.</span> Capacidade de adaptação e flexibilidade</p>
+						<p><span>3.</span> Capacidade empreendedora</p>
+						<p><span>4.</span> Capacidade negocial</p>
+						<p><span>5.</span> Comunicação e interação</p>
+						<p><span>6.</span> Criatividade e inovação</p>
+						<p class="ajust-print"><span>7.</span> Cultura da qualidade</p>
+						<p><span>8.</span> Liderança</p>
+						<p><span>9.</span> Motivação e energia para o trabalho</p>
+						<p><span>10.</span> Orientação para resultados</p>
+						<p><span>11.</span> Planejamento e organização</p>
+						<p><span>12.</span> Relacionamento interpessoal</p>
+						<p><span>13.</span> Tomada de decisão</p>
+						<p><span>14.</span> Trabalho em equipe</p>
+						<p><span>15.</span> Visão sistêmica</p>
+					</div>
+					
+					<div class="coluna-resultado">
+					
+						<table >
+							<thead>
+								<tr align="left" >
+									<td>0</td>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+								</tr>								
+							</thead>
+							<tbody>
+								
+								<?php for ($i = 1; $i <= 15; $i++) {?>
+								<tr>
+									<td><div class="<?php echo $result['p'.$i] >= 1 ? 'active' : '';?> <?php echo $result['p'.$i] == 1 ? 't6final' : '';?>"></div></td>
+									<td><div class="<?php echo $result['p'.$i] >= 2 ? 'active' : '';?> <?php echo $result['p'.$i] == 2 ? 't6final' : '';?>"></div></td>
+									<td><div class="<?php echo $result['p'.$i] >= 3 ? 'active' : '';?> <?php echo $result['p'.$i] == 3 ? 't6final' : '';?>"></div></td>
+									<td><div class="<?php echo $result['p'.$i] >= 4 ? 'active' : '';?> <?php echo $result['p'.$i] == 4 ? 't6final' : '';?>"></div></td>
+									<td></td>
+								</tr>
+								<?php } ?>
+							
+							</tbody>
+						
+						</table>
+					
+					</div>
+				</div>
+			
+			
+			<div class="line"></div>
+			
+						<div style="clear: both;"></div>
+			<p style="page-break-before: always">
+			<div style="clear: both;"></div>
+			<div class="mg-print"></div>
+			
+			<div class="roda-inferior">
+				
+				<div class="roda-left">
+					<a class="img-roda"></a>
+				</div>
+				
+				<div class="roda-right">
+					<p class="text-perfil">
+						Agora chegou a hora de ter uma visão aprofundada sobre suas competências e sobre o que mais combina com você! Aproveite e acesse logo seu relatório da Trilha 7, que já está prontinho te esperando! Vamos lá?
+					</p>
+				</div>	
+				<div class="roda-full">
+					<p class="text-perfil">
+						Um grande abraço!<br>
+						Equipe <span class="text-style">WantU.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="buttons-curriculo">
+			<a class="imp dowload-button" onclick="printCurriculo()"><img alt="" src="/assets/application/img/analise/seta.png"></a>	
+			<a class="button" href="/painel/relatorios-gerais/competencias">Voltar para o painel</a>
+		</div>
+	</div>
+</div>
+
+<script>
+function printCurriculo() {
+    window.print();
+}
+</script>
+
+<style>
+#curriculo{
+	height: 2255px !important; 
+}
+@page { 
+	size: auto;  
+	margin: 0mm; 
+}
+@media print {
+	footer{
+		display: none;
+	}
+	#topo-cadastro{
+		display: none;
+	}
+	#curriculo{
+		margin-top: 110px !important;
+		box-shadow: none;
+		padding: 0px 10px 0 10px !important;
+	}
+	a[href]:after {
+	    content: none !important;
+	}
+	.buttons-curriculo{
+		display: none;
+	}
+	.mg-print{
+		margin-top: 50px;
+		display: inline-block;
+		height: 1px;
+		width: 1px;
+	}
+	.graf-relatorio .coluna-legenda > p{
+		width: 200px;
+	}
+	.ajust-print{
+		margin-top: 40px;
+		display: inline-block;
+	}
+</style>

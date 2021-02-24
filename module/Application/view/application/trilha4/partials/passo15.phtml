@@ -1,0 +1,53 @@
+<?php
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 4</span>';
+include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+
+<div id="pesquisa">
+	<div class="container">
+	
+		<div class="time">
+			<span>00:45</span>
+			<div class="time-bar"></div>
+			<div class="time-bar"></div>
+			<div class="time-bar"><span class="p1">+10</span></div>
+		</div>
+		
+		<div class="question">
+			<p>15- Gosto de passear em um parque para:</p>
+		</div>
+		<form class="pesq" id="form-submit" method="post">
+			<div class="options" data-question="<?php echo $_GET['pg']; ?>">
+						
+				<a class="option" data-name="Intrapessoal" data-value="5">
+					<span class="image estrela"></span>
+					<span class="text-opt" style="margin-top: 71px;">
+						Refletir sobre minha <br>
+						vida e fazer meus <br>
+						planos.
+					</span>
+				</a>
+				
+				<a class="option" style="margin: 0 20px;"  data-name="Naturalista" data-value="2">
+					<span class="image hexagono"></span>
+					<span class="text-opt" style="margin-top: 65px;">
+						Curtir a natureza – fauna <br>
+						e flora.
+					</span>
+				</a>
+				
+				<a class="option"  data-name="Corporal" data-value="3">
+					<span class="image positivo"></span>
+					<span class="text-opt" style="margin-top: 47px;">
+						Correr.
+					</span>
+				</a>
+				
+				<input type="hidden" name="prev" value="<?php echo $prev; ?>">
+				<input type="hidden" name="next" value="<?php echo $next; ?>">
+				<input type="hidden" class="result">
+				
+			</div>
+		</form>	
+	</div>
+</div>

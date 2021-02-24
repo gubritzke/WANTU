@@ -1,0 +1,55 @@
+<?php
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 4</span>';
+include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+
+<div id="pesquisa">
+	<div class="container">
+	
+		<div class="time">
+			<span>00:45</span>
+			<div class="time-bar"></div>
+			<div class="time-bar"></div>
+			<div class="time-bar"><span class="p1">+10</span></div>
+		</div>
+		
+		<div class="question">
+			<p>13- Se eu pudesse escolher um conteúdo alternativo para aprender na facul, eu queria:</p>
+		</div>
+		<form class="pesq" id="form-submit" method="post">
+			<div class="options" data-question="<?php echo $_GET['pg']; ?>">
+						
+				<a class="option" data-name="Naturalista" data-value="5">
+					<span class="image hexagono"></span>
+					<span class="text-opt" style="margin-top: 60px;">
+						Aprender sobre plantas<br>
+						medicinais, cultivo de<br>
+						 flores e proteção aos animais.
+					</span>
+				</a>
+				
+				<a class="option" style="margin: 0 20px;"  data-name="Musical" data-value="2">
+					<span class="image Circulo"></span>
+					<span class="text-opt" style="margin-top: 60px;">
+						Aulas de canto e <br>
+						instrumentos musicais.
+					</span>
+				</a>
+				
+				<a class="option"  data-name="Existencial" data-value="3">
+					<span class="image grafico"></span>
+					<span class="text-opt" style="margin-top: 65px;">
+						Participar de projetos<br>
+						de impacto social, <br>
+						voluntários e assistenciais.
+					</span>
+				</a>
+				
+				<input type="hidden" name="prev" value="<?php echo $prev; ?>">
+				<input type="hidden" name="next" value="<?php echo $next; ?>">
+				<input type="hidden" class="result">
+				
+			</div>
+		</form>	
+	</div>
+</div>

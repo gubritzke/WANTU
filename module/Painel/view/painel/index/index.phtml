@@ -1,0 +1,100 @@
+<div class="container">
+	
+	<div class="row">
+		
+		<!-- Acessos Site -->
+		<div class="column column-6 box box-small">
+			<p align="right" class="font-medium tittle-box">Cadastros Realizados</p>
+			<ul class="inline">
+				<li class="left">
+					<i class="acessos"></i>
+				</li>
+				
+				<li class="box-info">
+					<span class="font-big"><b><?php echo $usuariosnif ?></b></span>
+					<span class="font-small">Não informado</span>
+				</li>
+				
+				<li class="box-info">
+					<span class="font-big"><b><?php echo $usuariosf ?></b></span>
+					<span class="font-small">Mulheres</span>
+				</li>
+				<li class="box-info">
+					<span class="font-big"><b><?php echo $usuariosm ?></b></span>
+					<span class="font-small">Homens</span>
+				</li>
+				<li class="box-info">
+					<span class="font-big"><b><?php echo $usuarios ?></b></span>
+					<span class="font-small">Total</span>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- Cadastros Realizados -->
+		<div class="column column-6 box box-small">
+			<p class="font-medium tittle-box">Evolução dos usuários</p>
+			
+			<ul class="inline">
+				<li class="left">
+					<i class="cadastros-realizados"></i>
+				</li>
+				<li class="box-info">
+					<span class="font-big"><b><?php echo $usuariosconcluidos ?></b></span>
+					<span class="font-small">Finalizados</span>
+				</li>
+				<li class="box-info">
+					<span class="font-big"><b><?php echo $usuariosincompletos - $usuariosconcluidos ?></b></span>
+					<span class="font-small">Incompletos</span>
+				</li>
+				
+				<li class="box-info">
+					<span class="font-big"><b><?php echo $usuariosnfeito ?></b></span>
+					<span class="font-small">Não realizados</span>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+	
+	<div class="row tabela-list-t">
+	<span class="font-small tit-list-t">Testes Completos</span>
+	<table class="content">
+				<thead>
+					<tr>
+						<th>Trilha 1</th>
+						<th>Trilha 2</th>
+						<th>Trilha 3</th>
+						<th>Trilha 4</th>
+						<th>Trilha 5</th>
+						<th>Trilha 6</th>
+						
+					</tr>
+				</thead>
+				
+				<tbody class="font-small" class="lines-td">
+					<tr>
+						<td align="center">
+							<?php echo $trilha1exibe ?>
+						</td>
+						<td align="center">
+							<?php echo $trilha2exibe ?>
+						</td>
+						<td align="center">
+							<?php echo $trilha3exibe ?>
+						</td>
+						<td align="center">
+							<?php echo $trilha4exibe ?>
+						</td>
+						<td align="center">
+							<?php echo $trilha5exibe ?>
+						</td>
+						<td align="center">
+							<?php echo $trilha6exibe ?>
+						</td>
+					</tr>
+				</tbody>
+				</table>
+	
+	</div>
+	
+</div>

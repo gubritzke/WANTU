@@ -1,0 +1,143 @@
+#blog-content{
+	width: 100%;
+	float: left;
+}
+/* BANNER */
+#banner{
+	width: 100%;
+	float: left;
+}
+.banner{
+	background: url("/assets/application/img/banners/banner.jpg") no-repeat;
+	background-size: cover;
+	display: inline-block;
+	width: 100%;
+	height: 746px;
+}
+.banner .conteudo{
+	float: left;
+}
+.banner .conteudo p{
+	width: 60%;
+	font-size: 47px;
+	color: #fff;
+	font-weight: 300;
+	margin-top: 265px;
+}
+.banner .conteudo p > span{
+	font-size: 47px;
+	color: #fff;
+	font-weight: 600;
+}
+.banner .conteudo > a{
+	background: #13939e;
+	color: #fff;
+	padding: 15px 45px;
+	border-radius: 7px;
+	display: inline-block;
+	text-transform: uppercase;
+	margin-top: 20px;
+	font-weight: 600;
+}
+/* SEARCH */
+#blog-content form{
+	width: 100%;
+	float: left;
+	margin-top: 75px;
+	margin-bottom: 30px;
+}
+form .label-assunto{
+	width: 310px;
+	height: 45px;
+ 	display: inline-block;
+ 	float: right;
+ 	margin-right: 50px;
+ 	color: #95a0aa;
+}
+form .label-search{
+	width: 310px;
+	height: 45px;
+	display: inline-block;
+	float: right;
+	position: relative;
+	margin-right: 41px;
+	color: #95a0aa;
+}
+form .label-search > i{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+label > input{
+	padding-bottom: 11px !important; 
+}
+
+/* BLOG */
+.box-blog{
+	width: 350px;
+	height: 430px;
+	border: #e8e8e8 0.6px solid;
+	float: left;
+	margin: 0 38px 83px 38px;
+	box-shadow: -1px 1px 20px 4px #0000001a;
+}
+.box-blog > img {
+	width: 350px;
+	height: 240px;
+}
+.cont-box{
+	box-sizing:border-box;
+	padding: 30px 30px;
+}
+.box-blog .cont-box > p{
+	font-size: 18px;
+	color: #6d6d70;
+	font-weight: 600;
+	margin: 0px 0 35px 0;
+}
+.box-blog .cont-box > a{
+	text-transform: uppercase;
+	color: #fff;
+	background: #13939e;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 13px 28px;
+	border-radius: 6px;
+}
+/* detalhe */
+#conteudo-blog{
+	width: 100%;
+	float: left;
+	margin-top: 125px;
+}
+.cont-tittle{
+	font-size: 30px !important;
+	margin-bottom: 35px;
+} 
+.cont-text{
+	color: #424242;
+}
+.line-butttons{
+	width: 100%;
+	float: left;
+	margin-top: 180px;
+	margin-bottom: 140px;
+}
+.buttons-right{
+	float: left;
+}
+.buttons-right p.color-text{
+	color: #84139e;
+}
+.buttons-right p.color-text > a{
+	color: #68696b;
+	text-decoration: underline;
+}
+a.buttons-left{
+	float: right;
+	border: 1px solid #84139e;
+	color: #84139e;
+	padding:  11px 29px;
+	font-weight: 500;
+	margin-top: -15px;
+}

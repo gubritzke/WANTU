@@ -1,0 +1,270 @@
+<?php
+use Zend\Memory\Value;
+?>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<link href="/assets/painel/css/relatorios-gerais.css" media="" rel="stylesheet" type="text/css">
+<link href="/assets/application/css/main.css" media="" rel="stylesheet" type="text/css">
+
+<?php
+	$title = 'Relatório Match WantU';
+	include 'module/Application/view/partials/headers/topo-analise-perfil.phtml'; 
+?>
+
+<div id="box-curriculo">
+	<div class="container">
+		
+		<div id="curriculo">
+			<p class="name-topo">Relatório Match WantU | <?php echo $userdata->nome?></p>
+			<hr>
+			<a class="logo-wantu"></a>
+			<span class="big-ola">Olá!</span>
+			<p class="text-perfil">
+				Chegamos ao final de um processo intenso de autoconhecimento e descobertas. Por meio de cada etapa que você cumpriu, avançamos na identificação de suas principais competências, e com isso, chegamos à previsão da carreira que mais combina com você! E então, preparada? 
+			</p>	
+			<br>		
+			<p class="text-perfil">
+				Este relatório final tem o objetivo de nortear suas decisões de carreira com base em nossa tecnologia exclusiva de People Analytics. Entretanto, nada ou nenhuma tecnologia ou ferramenta substitui o que o ser humano possui de mais valioso: seu poder de fazer escolhas com base em seus desejos. Portanto, não se sinta frustrada caso não “concordar” com os resultados que estamos apresentando a você. Lembre-se que todo nosso processo de planejamento de carreira se baseia nas três perguntas iniciais que utilizamos para calcular seu Índice WantU, lembra? 1) Onde estou? 2) Para onde vou? 3) Como faço para chegar lá?
+			</p>
+			<br>
+			<p class="text-perfil">
+				Portanto, a resposta ao terceiro questionamento deve estar ligada aos seus objetivos. Continuaremos aqui para ajudar você a fortalecer o que tem de melhor!
+			</p>
+			<div class="line margin-line"></div>
+			
+			<p class="tittle-graph"><span>1)</span>Visão Geral de suas Competências:</p>
+			<br><br>
+			<p class="text-perfil">
+				As 15 competências mensuradas são as que costumam ser mais demandadas no mercado de trabalho brasileiro. Ao falar em competências nos referimos ao conjunto de conhecimentos, habilidades e atitudes que você mobiliza em seu trabalho para fazer, da melhor maneira possível, aquilo que você faz. Em síntese, as competências são comportamentos perceptíveis que diferenciam um profissional de outro, juntamente com as entregas de resultados às organizações. Além disso, quando uma pessoa percebe que está utilizando suas competências no ambiente profissional, fica com aquela sensação incrível de que seu trabalho gera valor social, ou seja, contribui também para o seu próprio desenvolvimento como ser humano, em suas múltiplas dimensões: como pessoa, profissional e cidadão, política e socialmente inserido. 
+			</p>
+			<br><br>
+			<p class="text-perfil">
+				Por meio do resultado de cada teste que você participou, conseguimos mensurar o seu nível em cada uma destas competências. Os resultados que aparecem em <span class="color-greenf">verde</span> no gráfico abaixo são as competências que você tem mais desenvolvidas. Ou seja,
+				<?php foreach ($maiorescps as $key => $value ): ?>
+					<?php echo \Application\Classes\Relatorio::getCompetenciaNome($key); ?>, 
+				<?php endforeach; ?>
+			</p>
+			<br><br>
+			<p class="text-perfil">
+				á os resultados em <span class="color-yellow">amarelo</span> são competências que você tem desenvolvidas, só que em menor grau. Se seu trabalho exigir, você poderá até demonstrar, mas isso lhe demandaria algum esforço. Neste bloco, estamos nos referindo a
+				<?php foreach ($medioscps as $key => $value ): ?>
+					<?php echo \Application\Classes\Relatorio::getCompetenciaNome($key); ?>, 
+				<?php endforeach; ?>
+			</p>
+			<br><br>
+			<p class="text-perfil">
+				Os resultados em <span class="color-red">vermelho</span> apresentam as competências que você ainda não desenvolveu, que estão em níveis mais baixos, ou porque você não precisou delas ainda, ou porque elas demandariam um grande esforço de sua parte. Dessa forma,
+				<?php foreach ($menorescps as $key => $value ): ?>
+					<?php echo \Application\Classes\Relatorio::getCompetenciaNome($key); ?>, 
+				<?php endforeach; ?>
+				não fazem parte de seu portfólio atual de competências.
+			</p> 
+			<br><br>
+			
+			<?php echo $this->partial('partials/chart_competencias.phtml'); ?>		
+			
+			<p class="tittle-graph"><span>2)</span> Aptidão para Carreiras</p>	
+			<br><br>
+			<p class="text-perfil">
+				O que fazer depois que se formar? Do que você realmente gosta? Para que você realmente leva jeito? Muitos universitários e recém-formados se sentem “perdidinhos” muitas vezes porque não se conhecem o suficiente para responder a estas perguntas, ou simplesmente por falta de experiência mesmo, afinal de contas, o estudante ou profissional entrante no mercado está apenas começando sua vida profissional e é nessa fase de vida que ele deve vivenciar suas primeiras “aventuras” de trabalho. 
+				<br><br>
+				Se observarmos de perto, praticamente todos os cursos oferecem uma variedade de opções para que a pessoa graduada naquela área possa atuar. Quando alguém forma em medicina, por exemplo, o mais óbvio é pensar: pronto. Agora vai ser médico. Mas de quantas maneiras diferentes ele pode exercer sua profissão: abrindo seu próprio consultório ou clínica, e portanto, iniciando uma carreira como empreendedor; prestando um concurso público e atuando na carreira pública; continuando a estudar, cursando mestrado e doutorado e seguindo a carreira acadêmica; ou até mesmo ingressando em um trabalho voluntário ou apoiando o empreendedorismo social; e ainda, se candidatando a um cargo político e atuando como um governante. 
+				<br><br>
+				São várias opções, não é mesmo? E você? O que vai ser quando crescer? Sua dúvida não termina quando entra na faculdade...Ela pode até piorar, pois aí você descobre que dentro do seu curso mesmo existem inúmeras opções. 
+				<br><br>
+				Foi por isso que a WantU criou esta tecnologia exclusiva de People Analytics que nos permite identificar para qual carreira você leva mais jeito. Preparada pra descobrir?
+			</p>
+			
+			<?php echo $this->partial('partials/chart_carreiras.phtml'); ?>
+			
+			<p class="text-perfil">
+				Então, como você pode ver, seus testes indicam que você leva mais jeito para seguir uma carreira:
+				<br><br>
+				
+				<?php if (key($maiorcarreira) == 'empreendedora'){ ?>
+				
+					<p class="text-perfil">
+						<b>EMPREENDEDOR!</b> Já havia pensado nisso antes? Inovar, criar, assumir riscos, abrir seu próprio negócio, causar impacto no mundo, fazer do seu jeito!					
+					</p>
+				
+				<?php } ?>
+				
+				<?php if (key($maiorcarreira) =='especialista'){ ?>
+				
+					<p class="text-perfil">
+						<b>ESPECIALISTA!</b> Já havia pensado nisso antes? Ser um profissional referência na sua área, estudar muito sobre a mesma e estar sempre se atualizando e claro, trabalhar em uma organização que ama e lhe dá condições de ser o melhor naquilo que faz!
+					</p>
+				
+				<?php } ?>
+				
+				<?php if (key($maiorcarreira) == 'academica'){ ?>
+				
+					<p class="text-perfil">
+						<b>ACADÊMICA!</b> Já havia pensado nisso antes? Realizar pesquisas complexas, estudar muito, ensinar, ser curioso, estar sempre se atualizando e trabalhar em um ambiente universitário e/ou laboratório!
+					</p>
+				
+				<?php } ?>
+				
+				<?php if (key($maiorcarreira) == 'publica'){ ?>
+				
+					<p class="text-perfil">
+						<b>PÚBLICA!</b> Já havia pensado nisso antes? Ter muito foco e energia para estudar até chegar lá! Depois trabalhar pelo seu país, desenvolver um trabalho de qualidade, com menos incertezas e mais estabilidade! 
+					</p>
+				
+				<?php } ?>
+				
+				<?php if (key($maiorcarreira) == 'gerencial'){ ?>
+				
+					<p class="text-perfil">
+						<b>GERENCIAL!</b> Já havia pensado nisso antes? Gerenciar e motivar equipes, buscar resultados de alta performance em uma organização, tomar decisões e estar sempre ligada nas novas tendências e desafios do mercado!
+					</p>
+				
+				<?php } ?>
+				
+				<?php if (key($maiorcarreira) == 'politica'){ ?>
+				
+					<p class="text-perfil">
+						<b>POLÍTICA!</b> Já havia pensado nisso antes? Fazer a diferença no nosso país, planejar ações e tomar decisões que vão impactar na vida de muitas pessoas, prezar pelo interesse do todo, estar sempre negociando entrada e aplicação de recursos!
+					</p>
+				
+				<?php } ?>
+				
+				<br><br>
+			<p>
+				Que tal? Isso parece algo atraente para você? Note que ainda há um longo percurso para se tornar uma
+				 
+				<?php if (key($maiorcarreira) == 'empreendedora'){?> empreendedor <?php } ?>
+				<?php if (key($maiorcarreira) == 'especialista'){?> especialista <?php } ?>
+				<?php if (key($maiorcarreira) == 'academica'){?> acadêmica <?php } ?>
+				<?php if (key($maiorcarreira) == 'publica'){?> pública <?php } ?>
+				<?php if (key($maiorcarreira) == 'gerencial'){?> gerencial <?php } ?>
+				<?php if (key($maiorcarreira) == 'politica'){?> política <?php } ?>
+				
+				real, afinal seu indicador nessa carreira foi de <?php echo $maiorcarreirac ?>%
+				ou seja, há um gap de <?php echo 100 - $maiorcarreirac ?>%
+				a ser preenchido para você se tornar
+				<?php if (key($maiorcarreira) == 'empreendedora'){?> empreendedor <?php } ?>
+				<?php if (key($maiorcarreira) == 'especialista'){?> especialista <?php } ?>
+				<?php if (key($maiorcarreira) == 'academica'){?> acadêmica <?php } ?>
+				<?php if (key($maiorcarreira) == 'publica'){?> pública <?php } ?>
+				<?php if (key($maiorcarreira) == 'gerencial'){?> gerencial <?php } ?>
+				<?php if (key($maiorcarreira) == 'politica'){?> política <?php } ?>
+				100%. Se for esse o caminho, estamos juntos com você e vamos ajudá-la a se preparar para “chegar lá”. Entretanto, se você optar por outra carreira, também podemos ajuda-la. Conte conosco!
+			</p>
+			<br><br>
+			<p class="tittle-graph"><span>3)</span> Gap para a Carreira Principal: 
+				<?php if (key($maiorcarreira) == 'empreendedora'){?> empreendedor <?php } ?>
+				<?php if (key($maiorcarreira) == 'especialista'){?> especialista <?php } ?>
+				<?php if (key($maiorcarreira) == 'academica'){?> acadêmica <?php } ?>
+				<?php if (key($maiorcarreira) == 'publica'){?> pública <?php } ?>
+				<?php if (key($maiorcarreira) == 'gerencial'){?> gerencial <?php } ?>
+				<?php if (key($maiorcarreira) == 'politica'){?> política <?php } ?>
+			</p>
+			<br><br>
+			<p class="text-perfil">
+				Agora que você já sabe qual caminho seguir, e quanto falta para ser bem-sucedida nessa rota, preparamos uma análise detalhada das competências que você já tem, e daquilo que precisa desenvolver para se tornar uma servidora pública de verdade! E claro, ser muito feliz com isso.
+			</p>
+			
+			<?php if (key($maiorcarreira) == 'empreendedora'){ ?>
+				<?php echo $this->partial('partials/chart_carreira_empreendedora.phtml'); ?>
+			<?php } ?>
+			<?php if (key($maiorcarreira) == 'especialista'){ ?>
+				<?php echo $this->partial('partials/chart_carreira_especialista.phtml'); ?>
+			<?php } ?>
+			<?php if (key($maiorcarreira) == 'academica'){ ?>
+				<?php echo $this->partial('partials/chart_carreira_academica.phtml'); ?>
+			<?php } ?>
+			<?php if (key($maiorcarreira) == 'publica'){ ?>
+				<?php echo $this->partial('partials/chart_carreira_publica.phtml'); ?>
+			<?php } ?>
+			<?php if (key($maiorcarreira) == 'gerencial'){ ?>
+				<?php echo $this->partial('partials/chart_carreira_gerencial.phtml'); ?>
+			<?php } ?>
+			<?php if (key($maiorcarreira) == 'politica'){ ?>
+				<?php echo $this->partial('partials/chart_carreira_politica.phtml'); ?>
+			<?php } ?>
+			
+			<p class="text-perfil">
+				O gráfico acima apresenta uma síntese das principais competências que todo 
+				<?php if (key($maiorcarreira) == 'empreendedora'){?> empreendedor <?php } ?>
+				<?php if (key($maiorcarreira) == 'especialista'){?> especialista <?php } ?>
+				<?php if (key($maiorcarreira) == 'academica'){?> acadêmica <?php } ?>
+				<?php if (key($maiorcarreira) == 'publica'){?> pública <?php } ?>
+				<?php if (key($maiorcarreira) == 'gerencial'){?> gerencial <?php } ?>
+				<?php if (key($maiorcarreira) == 'politica'){?> política <?php } ?>
+				precisa ter. Todas são muito importantes, e claro, existem outras que ao longo de sua trajetória serão demandadas em maior ou menor grau. Entretanto, imagine que este seria uma espécie de “kit básico”, sem o qual você dificilmente conseguirá se transformar em uma servidora pública bem sucedida. 
+				<br><br>
+				A parte <span class="color-greenf">verde</span> das barras, junto com os números que estão sobre elas, representam o percentual da competência que você já tem. E a parte <span class="color-red">vermelha</span> da barra representa o quanto você ainda precisa se desenvolver. É aqui que sua jornada de transformação começa! E aí, ficou animado?
+				<br><br>
+			</p>
+			
+			
+			<div class="line" style="margin-top: 50px;"></div>
+			
+			<div class="roda-inferior">
+				
+				<div class="roda-left">
+					<a class="img-roda"></a>
+				</div>
+				
+				<div class="roda-right">
+					<p class="text-perfil">
+						É importante reforçar que para ser feliz e buscar o sucesso que deseja, você deverá fazer escolhas dentre uma gama de alternativas que você considere interessante. Assim, lembre-se que é você quem está na direção da sua carreira! Você é o protagonista, mas conte com a gente para te ajudar a descobrir o melhor caminho para seu destino
+					</p>
+				</div>	
+				<div class="roda-full">
+					<p class="text-perfil">
+						Um grande abraço!<br>
+						Equipe <span class="text-style">WantU.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="buttons-curriculo">
+			<a class="imp dowload-button" onclick="printCurriculo()"><img alt="" src="/assets/application/img/analise/seta.png"></a>	
+			<a class="button" href="/minha-conta">Voltar</a>
+		</div>
+	</div>
+</div>
+
+
+<?php /* 	
+<div style="clear: both;"></div>
+<p style="page-break-before: always">
+<div style="clear: both;"></div>
+*/ ?>
+
+<style type="text/css">
+ @page { 
+	size: auto;  
+	margin: 0mm; 
+}
+@media print {
+	#topo-cadastro{
+		display: none;
+	}
+	#curriculo{
+		margin-top: 0;
+		box-shadow: 0px 0px 0px 0px #fff;
+		padding: 0 50px 0 0;
+	}
+	a[href]:after {
+	    content: none !important;
+	}
+	.buttons-curriculo{
+		display: none;
+	}
+	.name-topo{
+	margin-top: 50px;
+}
+</style>
+
+
+<script>
+function printCurriculo() {
+    window.print();
+}
+</script>
+

@@ -1,0 +1,156 @@
+/****************/
+/* GERAL */
+/****************/
+
+
+/****************/
+/* PRODUCTS */
+/****************/
+#checkout .products{
+	border-collapse: collapse;
+	border: 1px solid #ddd;
+}
+#checkout .products p{
+	margin: 0;
+}
+#checkout .products th,
+#checkout .th{
+	box-sizing: border-box;
+	padding: 0 10px;
+	background-color: #84139e;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 39px;
+}
+#checkout .products td{
+	padding: 5px 10px;
+	text-align: left;
+}
+#checkout .products .border-bottom{
+	border-bottom: 1px solid #ccc;
+}
+
+/****************/
+/* ENTREGAS */
+/****************/
+#checkout .shipments{
+	margin: 0;
+}
+#checkout .shipments label{
+	display: block;
+	cursor: pointer;
+	padding: 15px;
+}
+#checkout .shipments input{
+	float: left;
+    height: 35px;
+    margin: 0 10px 0 0;
+}
+#checkout .shipments .right{
+	margin-top: 10px;
+}
+
+/****************/
+/* RESUMO */
+/****************/
+#checkout .summary{
+	text-align: left;
+}
+#checkout .summary .box{
+	box-sizing: border-box;
+	margin-top: 15px;
+	padding: 15px;
+	border: 1px solid #ccc;
+}
+#checkout .summary .bt{
+	margin: 15px 0 0 0;
+	font-weight: bold;
+}
+
+/****************/
+/* M�TODO DE PAGAMENTO */
+/****************/
+#checkout .payment{
+	text-align: left;
+}
+#checkout .payment label,
+#checkout .payment .label{
+	display: inline-block;
+	text-align: left;
+	margin-bottom: 15px;
+	width: 45%;
+}
+#checkout .payment input,
+#checkout .payment select{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 10px;
+	line-height: 36px;
+	height: 36px;
+	border: 1px solid #ddd;
+}
+#checkout .payment .col1{
+	width: 30%;
+}
+#checkout .payment .col2{
+	width: 50%;
+}
+#checkout .payment .col3{
+	width: 70%;
+}
+#checkout .payment img{
+	vertical-align: middle;
+}
+#checkout .payment-boleto{
+	border-left: 1px solid #ccc;
+	padding-left: 30px;
+}
+#checkout .payment-boleto .column-6{
+	margin-top: 38px;
+	margin-bottom: 38px;
+}
+#checkout .payment-boleto img{
+	margin-right: 10px;
+}
+#checkout .payment-boleto p{
+	margin: 0;
+}
+
+.formcupom{
+	float: left;
+	padding-left: 11px;
+	margin-top: 20px;
+}
+.cupomselected{
+	color: #000;
+}
+label.labelcupom{
+	width: 255px;
+	float: left;
+}
+label.labelcupom > span{
+	color: #000;
+	font-weight: 600;
+}
+.button-sub{
+	background: #84209e;
+	float: left;
+	width: 110px;
+	border: none;
+	height: 47px;
+	color: #fff;
+	font-weight: 400;
+	margin-left: 27px;
+	border-radius: 6px;
+}
+.button-del{
+	background: #84209e;
+	float: left;
+	width: 158px;
+	border: none;
+	height: 34px;
+	color: #fff;
+	font-weight: 400;
+	border-radius: 6px;
+	margin-top: 9px;
+}

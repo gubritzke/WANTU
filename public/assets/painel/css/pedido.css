@@ -1,0 +1,67 @@
+/****************/
+/* GERAL */
+/****************/
+.image{
+    float: left;
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    margin: 0 5px 5px 0;
+}
+.image:after{
+    display: none;
+}
+.circle{
+    display: block;
+    margin: 10px 0;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+/****************/
+/* TABLE */
+/****************/
+table.content > tbody > tr:nth-child(even) > td {
+    background-color: #eee;
+}
+table.content > tbody > tr.tr-dark > td {
+    background-color: #ddd;
+}
+
+/****************/
+/* PRINT */
+/****************/
+@media print {
+	@page {
+		size: landscape;
+	}
+	* {
+	    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+	    color-adjust: exact !important;                 /*Firefox*/
+	}
+	body * {
+		visibility: hidden;
+	}
+	nav, header, footer{
+		display: none;
+	}
+	#content{
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+	#section-to-print, #section-to-print * {
+		visibility: visible;
+	}
+	#section-to-print {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}

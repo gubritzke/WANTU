@@ -1,0 +1,33 @@
+<meta name="author" content="http://naiche.com.br">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=600px, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-status-bar-style" content="black-translucent">	
+<link href="/assets/application/css/responsive/relatorio-responsive.css" media="" rel="stylesheet" type="text/css">
+<header>
+	<div id="topo-cadastro">
+		<div class="container">
+
+			<?php if ( $title == NULL ) {?>
+			<a class="topo-curriculo">Análise de Perfis Comportamentais</a>
+			<?php } else {?>
+				<a class="topo-curriculo"><?php echo $title; ?></a>
+			<?php } ?>
+			
+		</div>
+	</div>
+	<?php if (!empty($this->layout()->breadcrumb)):?>
+	<div class="breadcrumb" style="line-height: 50px; height: 30px;">
+		<div class="container">
+			<ul>
+				<?php foreach ($this->layout()->breadcrumb as $key => $row):?>
+					<li><a href="<?php echo $row ?>"><?php echo $key ?></a></li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
+	</div>
+	<?php endif; ?>
+</header>

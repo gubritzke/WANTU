@@ -1,0 +1,76 @@
+<form class="etapa etapa3 animated card" method="post" action="/checkout" style="display: none;" >
+	<p>Realizar Pagamento</p>
+	<input type="hidden" class="id_plano" name="id_plano" value="" />
+	
+	<div class="payment-creditcard">
+		<div class="form-half" style="margin-top: 20px;">
+			<h3 class="color-green">
+				Cartão de Credito
+				<img style="margin-bottom: 25px;" src="/assets/application/img/checkout/payments.jpg" />
+			</h3>
+			
+			<div class="card-wrapper"></div>
+		</div>
+		<div class="" style="margin-top: 20px;">
+			<div class="group">      
+                <input type="text" name="numero" id="cc_number" class="required" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Número do Cartão</label>
+            </div>
+			<div class="group">      
+                <input type="text" name="cod_seg" id="cc_cvc" class="required" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Código de Segurança</label>
+            </div>
+			<div class="group">      
+                <input type="text" name="nome_titular" id="cc_name" style="text-transform:uppercase;" class="required" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Nome do Titular (Como consta no cartão)</label>
+            </div>
+			<div class="">
+				<div class="group">      
+                    <select class="col1" id="cc_exp_month" name="mes">
+    					<option value="">Mês</option>
+    					<?php foreach( \Naicheframework\Helper\Constants::getMonths() as $key=>$value ): ?>
+    					<option value="<?php echo $key; ?>"><?php echo $key; ?></option>
+    					<?php endforeach; ?>
+    				</select>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                </div>
+			</div>
+			<div class="">
+				<div class="group">      
+                    <select class="col2" id="cc_exp_year" name="ano">
+    					<option value="">Ano</option>
+    					<?php foreach( \Naicheframework\Helper\Constants::getYears(date("Y", strtotime("+10 years")), date("Y")) as $key=>$value ): ?>
+    					<option value="<?php echo substr($key, 2); ?>"><?php echo $value; ?></option>
+    					<?php endforeach; ?>
+    				</select>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                </div>
+			</div>
+		</div>
+		<input type="hidden" id="cc_exp" value="validade" />
+		<textarea id="public_key" style="display:none;">-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiIXoSRYoWNgGzkjzaGH8
+Z1GSaLjC7hj3cx9Sc9iJ/qSbf4TW7fGLx5QY2b9lJUaSIw4ceOPkBWaixWfFhgGD
+KXwxbZW3jgAclIdyTamX5Z4vXo6TJ74Ov4/A4E4LhytdAdAAMQYNed17f+SeMTzt
+tXKciWWfjulvuZFrxOF3/4GhmMCTWfZ3YzcPGMhrUmgXt/VkRbgUIVqbqDNavmuE
+7Q2vBYo4T6uz5cyerSVH9Un4+ZYwRPoawvUaTP4THBRkf8gUpA+bnFDGMf+Tclk8
++UwaAMRx3ZIfVHWD07LxQ6rF6Hnu02413HRBZQh48UM256bGvnk7+8M1iikJ6pXS
+0wIDAQAB
+-----END PUBLIC KEY-----</textarea>
+    	<input type="hidden" name="cc_hash" id="encrypted_value" />
+    	<input type="hidden" name="cc_type" id="card_type" />
+	</div>	
+
+	<div class="footer" style="display: inline-block; width: 100%;">
+		<button type="button" onclick="voltaSegundoPasso()" class="btn" style="float: left;">Anterior</button>
+		<button type="button"  id="encrypt" class="btn">Finalizar Assinatura</button>
+	</div>
+</form>

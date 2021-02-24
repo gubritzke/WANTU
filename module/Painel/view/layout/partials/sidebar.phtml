@@ -1,0 +1,64 @@
+<nav>
+	<a href="/" class="logo" target="_blank"></a>
+	
+	<ul class="menu">
+		
+		<li class="title">
+			Menu do administrador
+		</li>
+		
+		<li>
+			<a href="/painel"><i class="fa fa-bar-chart"></i> <span>Relatórios Gerais</span></a>
+		</li>
+		
+		<li class="submenu">
+			<a href="javascript:;"><span>Avaliações</span></a>
+			<ul>
+				<li class="<?php echo in_array($this->layout()->routes['controller'], ['RelatoriosGerais']) ? 'active' : null; ?>">
+        			<a href="/painel/relatorios-gerais/analise-de-curriculo/"> Análise de currículo</a>
+        		</li>
+			
+				<li class="<?php echo in_array($this->layout()->routes['controller'], ['RelatoriosGerais']) ? 'active' : null; ?>">
+        			<a href="/painel/relatorios-gerais/perfil-comportamental"> Perfis Comportamentais</a>
+        		</li>
+			
+				<li class="<?php echo in_array($this->layout()->routes['controller'], ['RelatoriosGerais']) ? 'active' : null; ?>">
+        			<a href="/painel/relatorios-gerais/aptidoes-profissionais"> Aptidões Profissionais</a>
+        		</li>
+
+				<li class="<?php echo in_array($this->layout()->routes['controller'], ['RelatoriosGerais']) ? 'active' : null; ?>">
+        			<a href="/painel/relatorios-gerais/inteligencias-multiplas"> Inteligencias multiplas</a>
+        		</li>
+        		
+        		<li class="<?php echo in_array($this->layout()->routes['controller'], ['RelatoriosGerais']) ? 'active' : null; ?>">
+        			<a href="/painel/relatorios-gerais/pontos-forte"> Pontos Fortes</a>
+        		</li>
+
+        		<li class="<?php echo in_array($this->layout()->routes['controller'], ['RelatoriosGerais']) ? 'active' : null; ?>">
+        			<a href="/painel/relatorios-gerais/competencias"> Competências </a>
+        		</li>
+
+
+			</ul>
+		</li>
+		
+		<li class="<?php echo in_array($this->layout()->routes['controller'], ['RelatorioFinal']) ? 'active' : null; ?>">
+			<a href="/painel/relatorio-final"><i class="fas fa-book-open"></i> Relatório Final</a>
+		</li>
+		
+		<li class="<?php echo in_array($this->layout()->routes['controller'], ['Usuarios']) ? 'active' : null; ?>">
+			<a href="/painel/usuarios"><i class="fas fa-user"></i> Usuários</a>
+		</li>		
+		
+		<li class="submenu">
+			<a href="javascript:;"><i class="ico ico-produtos"></i> <span>Site</span></a>
+			<ul>
+				<li><a href="/painel/contato">Contato</a></li>
+				<li><a href="/painel/para-empresas">Para Empresas</a></li>
+				<li><a href="/painel/blog">Blog</a></li>
+			</ul>
+		</li>
+
+	</ul>
+
+</nav>

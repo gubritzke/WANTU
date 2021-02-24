@@ -1,0 +1,61 @@
+#curriculo{
+	margin-top: 0 !important;
+}
+.font-big{
+	font-size: 24px;
+}
+span.color-violet{
+	color: #84139e;
+	font-weight: 800;
+}
+span.color-yellow{
+	color: #ffd71a;
+	font-weight: 800;
+}
+span.color-red{
+	color: #ff0000;
+	font-weight: 800;
+}
+span.color-green{
+	color: #95d9a2;
+	font-weight: 800;
+}
+.titulo-pd{
+	text-align: center;
+	color: #292828;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 62px 0;
+}
+#curriculo {
+    padding: 90px 60px 545px 90px;
+}
+rect.highcharts-background{
+	fill: #0000 !important;
+}
+g.highcharts-axis-labels{
+/* 	display: none; */
+}
+#bg-pronto{
+	position: relative;
+}
+.bg-graph{
+	background: url("/assets/painel/img/relatorio-analise/img-graph.png");
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	position: absolute;
+	top: 48px;
+	left: 220px;
+}
+path.highcharts-graph{
+	stroke: #430950 !important;
+}
+path.highcharts-point{
+	fill: #430950 !important;
+}
+g.highcharts-yaxis-labels{
+	display: none;
+}
+
+

@@ -1,0 +1,185 @@
+
+<div id="checkout" class="content row container">
+	
+	<hr style="margin-bottom: 25px;">
+	<div class="column column-7">
+	
+		<!-- INFORMAÇÕES  DO PEDIDO -->
+		<h1 class="title font-big color-green" style="color: #84139e;">Pedido efetuado com sucesso!</h1>
+		<p>SEU PEDIDO SERÁ ENVIADO SOMENTE APÓS A CONFIRMAÇÃO DO PAGAMENTO.</p>
+		<br/>
+		
+		<p class="font-medium"><b>N&deg; DO PEDIDO <span class="color-green"><?php echo strtoupper($pedido->codigo); ?></span></b></p>
+		<p>Confirmação do pedido enviada para <b><?php echo $usuario->email; ?></b></p>
+		<br/>
+		<?php if ($pedido->total - $pedito->desconto != 0){ ?>
+		
+		<?php if( $pedido->tipo == "Boleto" ): ?>
+			
+			<!-- PAGAMENTO BOLETO -->
+			<p class="color-yellow left">
+				<img src="/assets/<?php echo $this->layout()->routes['module']; ?>/img/checkout/success-boleto.png" />
+				<b>BOLETO BANCÁRIO</b>
+			</p>
+			
+			<p class="left"><b>Status do pedido:</b> 	
+				<?php if ($pedido->status == '0'){ ?>
+					Pendente					 
+				<?php } ?>
+				 
+				<?php if ($pedido->status == '1'){ ?>
+					Pago					 
+				<?php } ?>
+
+				<?php if ($pedido->status == '2'){ ?>
+					Cancelado					 
+				<?php } ?>
+			</p>
+			<div class="clear"></div>
+			
+			<div class="box bg-gray">
+				Copie o código do seu boleto para fazer o pagamento online ou imprima abaixo.
+				<input id="copyText" type="text" value="<?php echo $pedido->gateway->detail->boleto->lineCode; ?>" readonly="readonly" />
+				
+				<a href="javascript:;" onclick="copyText($('#copyText'));" class="bt bt-inline bg-green">Copiar código <i class="fa fa-files-o"></i></a>
+				<a href="<?php echo \Naicheframework\Shopping\Payment\PaymentMoipSplit::getBoletoLink($pedido->gateway->id, $is_sandbox, $this->pedido->pagamento_info->detail->print); ?>" target="_blank" class="bt bt-inline bg-green">Imprimir boleto <i class="fa fa-print"></i></a>
+			</div>
+			
+			<!-- PAGAMENTO BOLETO - INFORMAÇÕES -->
+			<h3 class="title">Importante</h3>
+			
+			<ul class="infolist">
+				<li>Após o pagamento o boleto pode levar até <b>2 dias úteis</b> para compensação.</li>
+				<li>Você terá <b>2 dias úteis</b> para efetuar o pagamento do boleto.</li>
+				<li>O pedido só será aprovado se o pagamento for realizado no <b>valor integral</b> do boleto.</li>
+				<li>O prazo de entrega é válido somente <b>após confirmação do pagamento do boleto</b>.</li>
+				<li>Em caso de não pagamento do boleto, seu pedido será cancelado.</li>
+				<li>Seu pedido pode ser dividido e alguns itens podem chegar antes do prazo total da compra.</li>
+			</ul>
+			
+		<?php else: ?>
+		
+			<!-- PAGAMENTO CARTÃO DE CRÉDITO -->
+			<p class="color-yellow">
+				<img src="/assets/<?php echo $this->layout()->routes['module']; ?>/img/checkout/success-credit-card.png" />
+				<b>CARTÃO DE CRÉDITO</b>
+			</p>
+			
+			<div class="row">
+				
+				<form class="card column column-7">
+					<div class="card-wrapper"></div>
+					<input type="hidden" id="cc_number" value="•••• •••• •••• <?php echo !empty($pedido->gateway->detail->creditCard->last4) ? $pedido->gateway->detail->creditCard->last4 : "XXXX"; ?>" />
+    				<input type="hidden" id="cc_name" value="<?php echo $pedido->gateway->name; ?>" />
+    				<script type="text/javascript">
+    				setTimeout(function(){ 
+        			    var evt = document.createEvent('HTMLEvents');
+        			    evt.initEvent('change', false, true);
+        			    document.getElementById('cc_number').dispatchEvent(evt);
+        			    document.getElementById('cc_name').dispatchEvent(evt);
+        			}, 100);
+    				</script>
+				</form>
+				
+			 	<div class="column column-5">
+					<p><b>Status do pedido:</b>
+					<?php if ($pedido->status == '0'){ ?>
+						Pendente					 
+					<?php } ?>
+					 
+					<?php if ($pedido->status == '1'){ ?>
+						Pago					 
+					<?php } ?>
+
+					<?php if ($pedido->status == '2'){ ?>
+						Cancelado					 
+					<?php } ?>
+
+					 </p>
+					<p class="color-green"><b>R$ <?php echo \Naicheframework\Helper\Convert::toReal($pedido->total - $pedido->desconto); ?></b></p>
+					<?php if ($pedido->tipo <> 'Boleto'){ ?>
+						<p><?php echo $pedido->gateway->parcel; ?>x de R$ <?php echo \Naicheframework\Helper\Convert::toReal(($pedido->total + $pedido->adicional - $pedido->desconto) / $pedido->gateway->parcel); ?></p>
+					<?php } ?>
+				</div>
+				
+			</div>
+			
+		<?php endif; ?>
+		<?php } ?>
+		
+	</div>
+	
+	<div class="column column-5">
+		
+		<!-- ENDEREÇO DE ENTREGA -->
+		<h3 class="title color-green">Dados do comprador</h3>
+		
+		<b class="color-green"><?php echo $usuario->identificacao; ?></b>
+		
+		
+		<b>Endereço</b> <?php echo $usuario->endereco; ?>, <?php echo $usuario->numero; ?>
+		<br/>
+		
+		<b>Bairro:</b> <?php echo $usuario->bairro; ?>
+		<br/>
+
+		<b>Cidade:</b> <?php echo $usuario->cidade; ?>/<?php echo $usuario->estado; ?>
+		<br/>
+		
+		<b>CEP:</b> <?php echo $usuario->cep; ?>
+		<br/>
+		
+		<?php if( !empty($usuario->complemento) ): ?>
+		<b>Referência:</b> <?php echo $usuario->complemento; ?>
+		<?php endif; ?>
+		
+		<!-- PRODUTOS -->
+		<br/>
+		<br/>
+		<h3 class="title color-green">Resumo da compra</h3>
+		
+		<table class="products">
+			<thead>
+			<tr>
+				<th align="left">Item do pedido</th>
+				<th align="left">Preço</th>
+			</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td align="left"><?php echo $pedido->plano; ?></td>
+					<td>R$ <?php echo $pedido->total ?></td>
+				</tr>
+				
+				<?php if( !empty($pedido->desconto) ): ?>
+				<tr>
+					<td><b>Desconto</b></td>
+					<td class="color-green">R$ <?php echo \Naicheframework\Helper\Convert::toReal($pedido->desconto); ?></td>
+				</tr>
+				<?php endif; ?>
+				
+				<?php if( !empty($this->pedido->pagamento_adicional) ): ?>
+				<tr>
+					<td><b>Juros</b></td>
+					<td class="color-green">R$ <?php echo \Naicheframework\Helper\Convert::toReal($pedido->adicional); ?></td>
+				</tr>
+				<?php endif; ?>
+				
+				<tr>
+					<td class="color-green"><b>Total</b></td>
+					<td class="color-green"><b>R$ <?php echo \Naicheframework\Helper\Convert::toReal($pedido->total + $pedido->adicional - $pedido->desconto); ?></b></td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+	
+	<div class="clear"></div><hr>
+	
+	<!-- BTS -->
+	<a href="/minha-conta" class="button right" style="margin-top: 15px;">
+	 	Voltar para minha conta
+	</a>
+	
+</div>

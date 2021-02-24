@@ -1,0 +1,1 @@
+{"module":"application","controller":"para-empresas","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/para-empresas","date":"2019-10-21 13:47:31","ip":"10.0.2.29"}

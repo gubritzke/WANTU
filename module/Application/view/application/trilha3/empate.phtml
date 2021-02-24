@@ -1,0 +1,182 @@
+<?php 
+	use Application\Model\ModelAptidoesProfissionais;
+
+	$title = '<span style="margin-top:20px; display: inline-block;">Trilha 3</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+
+<div class="container">
+	
+	<form class="pesq-3" method="post" id="form-submit">
+		
+		<p class="pesq-tittle">
+
+			Escolha abaixo a alternativa que você mais se identifica
+
+		</p>
+		<p class="pesq-desc">
+	
+
+		</p>
+		
+		<?php /*
+		<a class="popup" style="display:none; " data-text="Na próxima questão não considere o sexo do personagem e sim suas características">Fafa de belem</a>
+		<script>setTimeout( function (){$('.popup').trigger('click');},500);</script>
+		*/ ?>
+		
+		<div class="options">
+			<div class="box-for-options">
+				
+				<?php if (!empty($empate[0])){ ?>
+				<div class="option-box">
+					<label class="switch check1">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[0]['ancora']?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">A)</span> 
+						<?php echo ModelAptidoesProfissionais::getPerguntas($empate[0]['ancora']);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[1])){ ?>
+				<div class="option-box">
+					<label class="switch check2">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[1]['ancora']?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">B)</span> 
+						<?php echo ModelAptidoesProfissionais::getPerguntas($empate[1]['ancora']);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[2])){ ?>
+				<div class="option-box">
+					<label class="switch check3">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[2]['ancora']?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">C)</span> 
+						<?php echo ModelAptidoesProfissionais::getPerguntas($empate[2]['ancora']);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[3])){ ?>
+				<div class="option-box">
+					<label class="switch check4">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[3]['ancora']?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">D)</span> 
+						<?php echo ModelAptidoesProfissionais::getPerguntas($empate[3]['ancora']);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[4])){ ?>
+				<div class="option-box">
+					<label class="switch check5">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[4]['ancora']?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">E)</span> 	
+						<?php echo ModelAptidoesProfissionais::getPerguntas($empate[4]['ancora']);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[5])){ ?>
+				<div class="option-box">
+					<label class="switch check6">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[5]['ancora']?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">F)</span> 
+						<?php echo ModelAptidoesProfissionais::getPerguntas($empate[5]['ancora']);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[6])){ ?>
+				<div class="option-box">
+					<label class="switch check7">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[6]['ancora']?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">G)</span> 
+						<?php echo ModelAptidoesProfissionais::getPerguntas($empate[6]['ancora']);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[7])){ ?>
+				<div class="option-box">
+					<label class="switch check8">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[7]['ancora']?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">H)</span> 
+						<?php echo ModelAptidoesProfissionais::getPerguntas($empate[7]['ancora']);?>
+					</span>
+				</div>
+				<?php } ?>
+				
+				<?php if (!empty($empate[8])){ ?>
+				<div class="option-box">
+					<label class="switch check9">
+						<input type="checkbox" name="opt" value='{"name":"<?php echo $empate[8]['ancora']?>", "value":"1"}'  />
+						<span class="slider"></span>
+					</label>
+					<span class="text-check">
+						<span class="opt-numero">I)</span> 
+						<?php echo ModelAptidoesProfissionais::getPerguntas($empate[8]['ancora']);?>
+					</span>
+				</div>
+				<?php } ?>
+			
+			</div>
+		</div>
+		
+		<input type="hidden" class="empate" name="empate" value="empate" />		
+		<input type="hidden" class="result" name="p25" value="" />
+		
+		<script type="text/javascript">
+			$('label.switch').click(function(){
+				$currentClass = $(this).attr('class');
+				$currentClass = $currentClass.split(" ");
+
+				$valor = $(this).find('input').val();
+
+				$('input.result').val($valor);
+
+				$('label.switch').each(function(){
+
+					if(!$(this).hasClass($currentClass[1])){
+						$(this).find('input').prop('checked',false);
+					}else{
+						$(this).find('input').prop('checked',true);
+					}
+				
+				});
+			});
+		</script>
+	
+	</form>
+	
+	<div class="line-buttons">
+		
+		<a class="button-blue width-ajst" href="javascript:$('#form-submit').submit();">Finalizar</a>
+	
+	</div>
+	
+</div>

@@ -1,0 +1,47 @@
+{"url":"10.0.0.224:8342\/perfis-comportamentais","type":"ERROR","message":"404","page":"\/perfis-comportamentais","date":"2019-04-24 11:29:10","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 11:29:10","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/perfis-comportamentais\/send","type":"ERROR","message":"404","page":"\/perfis-comportamentais\/send","date":"2019-04-24 11:40:24","ip":"10.0.2.29","post":{"id_login":"35","option":{"1":{"name":"Gosta de privacidade","value":"2"},"3":{"name":"Reservado","value":"3"},"8":{"name":"Suave, tem tato","value":"2"},"6":{"name":"Facilmente entediado","value":"4"},"10":{"name":"Assertivo","value":"4"},"20":{"name":"Bom comunicador","value":"1"},"22":{"name":"Espont\u00e2neo","value":"1"},"21":{"name":"Diz a coisa certa","value":"1"},"19":{"name":"Paciente","value":"3"},"36":{"name":"L\u00edder","value":"3"},"37":{"name":"Mentor","value":"3"},"34":{"name":"Perfeccionista","value":"2"}}}}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 11:40:24","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha2\/35","type":"ERROR","message":"404","page":"\/minha-conta\/trilha2\/35","date":"2019-04-24 11:41:58","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 11:41:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/aptidoes-profissionais?pg=1","type":"ERROR","message":"404","page":"\/aptidoes-profissionais","date":"2019-04-24 11:54:00","ip":"10.0.2.29","get":{"pg":"1"}}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 11:54:00","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/aptidoes-profissionais?pg=23","type":"ERROR","message":"404","page":"\/aptidoes-profissionais","date":"2019-04-24 11:55:51","ip":"10.0.2.29","get":{"pg":"23"}}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 11:55:51","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha3-relatorio\/35","type":"ERROR","message":"404","page":"\/minha-conta\/trilha3-relatorio\/35","date":"2019-04-24 12:01:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 12:01:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 12:01:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha3-relatorio\/35","type":"ERROR","message":"404","page":"\/minha-conta\/trilha3-relatorio\/35","date":"2019-04-24 12:01:06","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 12:01:06","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 12:01:06","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha3-relatorio\/35","type":"ERROR","message":"404","page":"\/minha-conta\/trilha3-relatorio\/35","date":"2019-04-24 12:01:07","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 12:01:07","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 12:01:07","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/inteligencias-multiplas?pg=1","type":"ERROR","message":"404","page":"\/inteligencias-multiplas","date":"2019-04-24 12:07:02","ip":"10.0.2.29","get":{"pg":"1"}}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 12:07:02","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/trilha4?pg=1","type":"ERROR","message":"error exception","page":"\/trilha4","date":"2019-04-24 12:07:11","ip":"10.0.2.29","get":{"pg":"1"}}
+{"url":"10.0.0.224:8342\/pontos-fortes","type":"ERROR","message":"404","page":"\/pontos-fortes","date":"2019-04-24 12:53:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 12:53:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/pontos-fortes","type":"ERROR","message":"404","page":"\/pontos-fortes","date":"2019-04-24 12:55:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-24 12:55:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:13:58","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:14:47","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:14:56","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:15:02","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:15:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:15:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:15:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:15:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:15:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:15:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:15:26","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:15:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:15:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:16:42","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:16:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:17:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:17:22","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:17:47","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:17:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:18:01","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/minha-conta\/trilha6-relatorio\/35","type":"ERROR","message":"error exception","page":"\/minha-conta\/trilha6-relatorio\/35","date":"2019-04-24 14:18:20","ip":"10.0.2.29"}

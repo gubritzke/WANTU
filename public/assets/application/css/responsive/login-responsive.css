@@ -1,0 +1,24 @@
+@media( max-width:650px ) {
+	#box-login {
+	    width: 100%;
+	    height: 900px;
+	    box-sizing: border-box;
+	    padding: 0;
+	    background: #fff;
+	    display: inline-block;
+	    /* margin-top: -263px; */
+	    border-radius: 10px;
+	    box-shadow: #d4d4d4 0px 5px 12px 0px;
+	    margin-bottom: 63px;
+	    z-index: 999999999999999999;
+	    margin-top: 280px;
+	}
+	.height-ajst {
+	    height: 494px !important;
+	    padding: 95px 70px !important;
+	    position: relative;
+	}
+	label > input {
+	    font-size: 17px;
+	}
+}

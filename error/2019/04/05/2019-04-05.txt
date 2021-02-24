@@ -1,0 +1,12 @@
+{"url":"10.0.0.224:8342\/checkout\/sucesso","type":"ERROR","message":"error exception","page":"\/checkout\/sucesso","date":"2019-04-05 11:56:30","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/sucesso","type":"ERROR","message":"error exception","page":"\/checkout\/sucesso","date":"2019-04-05 11:56:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/sucesso","type":"ERROR","message":"error exception","page":"\/checkout\/sucesso","date":"2019-04-05 11:58:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/sucesso","type":"ERROR","message":"error exception","page":"\/checkout\/sucesso","date":"2019-04-05 11:59:02","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/sucesso","type":"ERROR","message":"error exception","page":"\/checkout\/sucesso","date":"2019-04-05 13:35:20","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/sucesso","type":"ERROR","message":"error exception","page":"\/checkout\/sucesso","date":"2019-04-05 13:46:15","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/sucesso","type":"ERROR","message":"error exception","page":"\/checkout\/sucesso","date":"2019-04-05 13:46:20","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/sucesso","type":"ERROR","message":"error exception","page":"\/checkout\/sucesso","date":"2019-04-05 13:46:58","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/sucesso","type":"ERROR","message":"error exception","page":"\/checkout\/sucesso","date":"2019-04-05 13:48:51","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/checkout\/sucesso","type":"ERROR","message":"error exception","page":"\/checkout\/sucesso","date":"2019-04-05 13:54:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/planos","type":"ERROR","message":"404","page":"\/planos","date":"2019-04-05 13:56:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2019-04-05 13:56:16","ip":"10.0.2.29"}

@@ -1,0 +1,5 @@
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-09-10 11:58:00","ip":"10.0.2.29"}
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-09-10 12:01:09","ip":"10.0.2.29"}
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-09-10 12:11:43","ip":"10.0.2.29"}
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-09-10 12:17:26","ip":"10.0.2.29"}
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-09-10 14:10:31","ip":"10.0.2.29"}

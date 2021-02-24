@@ -1,0 +1,413 @@
+#full-teste{
+	width: 100%;
+	float: left;
+	margin-top: 130px;
+	margin-bottom: 100px;
+}
+.progresso{
+	width: 50%;
+	float: left;
+}
+.formulario{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.buttons{
+	width: 100%;
+	float: left;
+	margin-top: -20px;
+}
+a.button-voltar{
+	float: left;
+	background: #28c2cf;
+	color: #fff;
+	padding: 15px 35px;
+	border-radius: 7px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.dowload-button{
+	color: #84139e;
+	float: right;
+	text-decoration: underline;
+	/* margin: 13px 14px 0 0; */
+	border: none;
+	background: #fff;
+	font-size: 16px;
+	float: left;
+	background: #28c2cf;
+	color: #fff;
+	padding: 12px 35px;
+	border-radius: 7px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor:  pointer;
+}
+/* 
+	progresso
+*/
+.etapa1{
+	background: url("/assets/application/img/analise/progresso/img-01.png");
+	width: 668px;
+	height: 742px;
+	display: none;
+}
+.etapa2{
+	background: url("/assets/application/img/analise/progresso/img-02.png");
+	width: 668px;
+	height: 742px;
+	display: none;
+}
+.etapa3{
+	background: url("/assets/application/img/analise/progresso/img-03.png");
+	width: 668px;
+	height: 742px;
+	display: none;
+}
+.etapa4{
+	background: url("/assets/application/img/analise/progresso/img-04.png");
+	width: 668px;
+	height: 742px;
+	display: none;
+}
+.etapa5{
+	background: url("/assets/application/img/analise/progresso/img-05.png");
+	width: 668px;
+	height: 742px;
+	display: none;
+}
+.etapa6{
+	background: url("/assets/application/img/analise/progresso/img-06.png");
+	width: 668px;
+	height: 742px;
+	display: none;
+}
+.etapa7{
+	background: url("/assets/application/img/analise/progresso/img-07.png");
+	width: 668px;
+	height: 742px;
+	display: none;
+}
+.etapa8{
+	background: url("/assets/application/img/analise/progresso/img-08.png");
+	width: 668px;
+	height: 742px;
+	display: none;
+}
+.active-img{
+	display: block !important;
+}
+
+
+/* Cursos */
+.buttons2{
+	width: 100%;
+	float: left;
+	margin-top: 25px;
+}
+.button-add{
+	width: 100%;
+	float: left;
+}
+a.button-curso{
+	margin-top: -35px;
+}
+.cursos{
+	width: 100%;
+	float: left;
+	margin-top: 45px;
+
+}
+.caixas{
+	width: 100%;
+
+	background: #eeeeee;
+	font-size: 16px;
+	margin-bottom: 3px;
+
+}
+.caixas td:first-child{
+	width: 35%;
+}
+.caixas td{
+	border-top:3px solid #fff;
+}
+.caixas  p,
+.caixas  a{
+	font-size: 16px;
+	text-align: left;
+	line-height:  30px;
+}
+.caixas p.nome-curso{
+
+
+	padding-left: 9px;
+	line-height: 18px;
+	padding: 5px;
+}
+.caixas p.nivel-curso{
+
+}
+.caixas  a{
+	color: red;
+}
+
+/* EXPERIENCIA PROFISSIONAL */
+a.add-form{
+	float: left;
+	color: #28c2cf;
+	margin-bottom: 16px;
+}
+a.add-form span.ico{
+	border: 1px solid #28c2cf;
+	width: 17px;
+	height: 17px;
+	border-radius: 200px;
+	float: left;
+	text-align: center;
+	margin-right: 5px;
+	font-size: 25px;
+	display: inline-block;
+	line-height: 18px;
+}
+a.vermais i{
+	color: #28c2cf;
+}
+.width-td1{
+	width: 75% !important;
+}
+.width-td2{
+	width: 20%;
+}
+.width-td3{
+	width: 5%;
+}
+.empresas{
+	width: 100%;
+	float: left;
+}
+.resumo-serv.active{
+	display: block;
+}
+.resumo-serv{
+	width: 100%;
+	text-align: center;
+	border-collapse: separate;
+	border-spacing: 2px;
+}
+.resumo-serv td{
+	background: #f5f5f5;
+	line-height: 38px;
+}
+
+.resumo{
+	background: #f5f5f5;
+	width: 100%;
+	float: left;
+	margin-top: 3px;
+	height: 40px;
+	line-height: 38px;
+}
+.resumo-txt{
+	background: #f5f5f5;
+	width: 435px;
+	max-width: 435px;
+	float: left;
+	margin-top: 3px;
+	height: auto;
+	line-height: 22px;
+}
+.td-1{
+	width: 100%;
+	float: left;
+}
+.td-2{
+	width: 48.5%;
+	float: left;
+	border-right: 1px solid white;
+}
+.td-3{
+	width: 48.5%;
+	float: left;
+	border-left: 1px solid white;
+}
+/* ENTREVISTA */
+.box-align{
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+.texto-f-2{
+	margin: 30px 0;
+	font-weight: 500;
+}
+/* CURRICULO */
+#box-curriculo{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-bottom: 150px;
+}
+#curriculo{
+	width: 1000px;
+	display: inline-block;
+	background: #fff;
+	text-align: left;
+	margin-top: -290px;
+	box-sizing:  border-box;
+	padding: 115px 115px;
+	box-shadow: 2px 2px 2px 2px #f2f2f2;
+	position: relative;
+}
+p.name{
+	font-size: 29px;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+#curriculo > div{
+	margin-bottom: 70px;
+}
+p.text{
+	line-height: 28px;
+	font-size: 16px;
+}
+p.c-tittle{
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 18px;
+}
+p > span{
+	font-weight: 600;
+}
+div.conteudo{
+	margin-bottom: 30px;
+}
+div.conteudo:last-child{
+	margin-bottom: 0px;
+}
+a.img-perfil img{
+	position: absolute;
+	width: 226px;
+	height: 226px;
+	display: inline-block;
+	right: 116px;
+	border-radius: 2200px;
+}
+.buttons-curriculo{
+	width: 100%;
+	float: right;
+	margin-top: 45px;
+}
+.buttons-curriculo > a{
+	float: right;
+}
+a.imp{
+	float: right;
+	background: #28c2cf;
+	color: #fff;
+	padding: 13px 28px;
+	border-radius: 15px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 0 134px 0 32px;
+}
+a.imp i{
+	font-size: 24px;
+}
+.form-align label > span.select2 {
+	top: 0 !important;
+	text-align: left;
+}
+span.select2{
+	width: 100% !important;
+}
+i.info{
+	width: 15px;
+	height: 15px;
+	background: #84139e;
+	display: inline-block;
+	border-radius: 100px;
+	color: #fff;
+	font-size: 13px;
+	position: absolute;
+	top: -6px;
+	right: -17px;
+	font-style: unset;
+	text-align: center;
+}
+.tooltipster-box {
+    background: #fff !important;
+    border: 1px solid #d2d2d2 !important;
+    border-radius: 6px !important;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.4) !important;
+}
+.tooltipster-sidetip .tooltipster-content {
+    color: #000 !important;
+    line-height: 22px;
+    text-align: center;
+}
+.ajust-buttonadd{
+	padding: 10px 35px;
+    margin-top: 12px;
+    width: 85%;
+}
+.jconfirm.jconfirm-white .jconfirm-box, 
+.jconfirm.jconfirm-light .jconfirm-box{
+	width: 30% !important;
+}
+/* error message */
+#message{
+    text-align: center;
+   	height: 50px;
+   	line-height: 50px;
+   	background: #ff00008f;
+   	position: absolute;
+   	width: 100%;
+   	top: 357px;
+}
+
+
+@page { 
+	size: auto;  
+	margin: 0mm; 
+}
+@media print {
+	footer{
+		display: none;
+	}
+	#topo-cadastro{
+		display: none;
+	}
+	#curriculo{
+		margin-top: 0;
+		box-shadow: 0px 0px 0px 0px #fff;
+		padding: 115px 50px 0 50px;
+	}
+	a[href]:after {
+	    content: none !important;
+	}
+	.buttons-curriculo{
+		display: none;
+	}
+}
+@media( max-width:650px ){
+	
+	.progresso{
+		display: none;
+	}
+	.formulario{
+		width: 100%;
+	}
+	label > input {
+	    font-size: 19px;
+	}
+	
+	label > select {
+	    font-size: 18px;
+	}
+	
+}

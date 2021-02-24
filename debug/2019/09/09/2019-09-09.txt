@@ -1,0 +1,7 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-09-09 11:48:13","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-09-09 15:40:38","ip":"10.0.2.29"}
+{"module":"painel","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel","date":"2019-09-09 15:53:46","ip":"10.0.2.29"}
+{"module":"painel","controller":"login","action":"index","get":{"r":"\/painel"},"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/login","date":"2019-09-09 15:53:46","ip":"10.0.2.29"}
+{"module":"painel","controller":"login","action":"index","get":{"r":"\/painel"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"},"type":"DEBUG","message":"acesso","page":"\/painel\/login","date":"2019-09-09 15:54:00","ip":"10.0.2.29"}
+{"module":"painel","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/index","date":"2019-09-09 15:54:00","ip":"10.0.2.29"}
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-09-09 16:03:22","ip":"10.0.2.29"}

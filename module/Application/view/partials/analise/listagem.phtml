@@ -1,0 +1,40 @@
+<?php $this->result = (object) $this->result; ?>
+<table class="empresas boxGrp boxAccordionHide  id-<?php echo $this->result->id_analise_experiencia_profissional?>" cellspacing="0">
+	<tbody>
+		<tr class="caixas">
+			<td class="width-td1"><p class="nome-curso"><?php echo $this->result->nome_da_empresa; ?></p></td>
+			<td class="width-td2"><a href="javascript:;"><i class="far fa-trash-alt"></i> Excluir</a></td>
+			<td class="width-td3"><a href="javascript:;" class="vermais boxAccordionBt"><i class="fas fa-angle-down"></i></a></td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				
+				<div class="boxAccordionContent" style="display: none;">
+					<table class="resumo-serv" cellspacing="0">
+						<tbody>
+							<tr>
+								<td colspan="2"><?php echo $r->tipo_da_experiencia; ?></td>
+							</tr>
+							<tr>
+								<td width="50%"><?php echo $this->result->nome_da_empresa; ?></td>
+								<td><?php echo $this->result->cargo; ?></td>
+							</tr>
+							<tr>
+								<td width="50%"><?php echo $this->result->data_de_inicio_empresarial; ?></td>
+								<td><?php echo $this->result->data_de_termino_empresarial; ?></td>
+							</tr>
+							<tr>
+								<td width="50%"><?php echo $this->result->trabalho_atual; ?></td>
+								<td><?php echo $this->result->regime_de_contrato; ?></td>
+							</tr>
+							<tr>
+								<td colspan="2"><?php echo $this->result->resumo_das_atividades; ?></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</td>
+		</tr>
+		
+	</tbody>
+</table>

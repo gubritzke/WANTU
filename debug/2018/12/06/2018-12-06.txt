@@ -1,0 +1,7 @@
+{"module":"application","controller":"pontos-fortes","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/pontos-fortes","date":"2018-12-06 14:10:37","ip":"10.0.2.29"}
+{"module":"application","controller":"painel","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/pAINEL","date":"2018-12-06 14:10:43","ip":"10.0.2.29"}
+{"module":"painel","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel","date":"2018-12-06 14:10:47","ip":"10.0.2.29"}
+{"module":"painel","controller":"relatorios-gerais","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/relatorios-gerais","date":"2018-12-06 14:10:48","ip":"10.0.2.29"}
+{"module":"painel","controller":"relatorios-gerais","action":"inteligencia-multipla","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/relatorios-gerais\/inteligencia-multipla\/8","date":"2018-12-06 14:10:52","ip":"10.0.2.29"}
+{"module":"painel","controller":"relatorios-gerais","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/relatorios-gerais","date":"2018-12-06 14:13:37","ip":"10.0.2.29"}
+{"module":"painel","controller":"relatorios-gerais","action":"relatorio-perfil","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/relatorios-gerais\/relatorio-perfil\/12","date":"2018-12-06 14:13:42","ip":"10.0.2.29"}

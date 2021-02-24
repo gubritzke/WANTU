@@ -1,0 +1,7 @@
+{"module":"application","controller":"blog","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/blog","date":"2019-05-22 16:13:36","ip":"10.0.2.29"}
+{"module":"application","controller":"blog","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/blog","date":"2019-05-22 16:13:41","ip":"10.0.2.29"}
+{"module":"application","controller":"blog","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/blog","date":"2019-05-22 16:14:23","ip":"10.0.2.29"}
+{"module":"application","controller":"blog","action":"detalhe","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/blog\/lorem-ipsum-dolor-sit-amet","date":"2019-05-22 16:14:26","ip":"10.0.2.29"}
+{"module":"application","controller":"blog","action":"detalhe","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/blog\/lorem-ipsum-dolor-sit-amet","date":"2019-05-22 16:14:33","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-05-22 16:15:37","ip":"10.0.2.29"}
+{"module":"application","controller":"blog","action":"detalhe","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/blog\/teste-teste","date":"2019-05-22 16:22:02","ip":"10.0.2.29"}

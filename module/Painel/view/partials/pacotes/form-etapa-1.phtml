@@ -1,0 +1,43 @@
+<form class="etapa etapa2 animated" style="display: inline-block;">
+	<p>Selecione um pacote</p>
+
+	<div class="">
+		<div class="group">      
+            <?php  foreach ($this->planos as $key=>$row):?>
+            	<div class="exibe-plano animated plano<?php echo $row['id_plano']; ?> <?php if($key == 0 ){ echo 'active';}?>">
+            		<h2><?php echo $row['plano'];?></h2>
+            		<div class="imagem">
+            			<img src="<?php echo $row['imagem'];?>" width="100" />
+            		</div>
+            		<div class="detalhe">
+            			<h3>Valor da Compra: R$<?php echo \Naicheframework\Helper\Convert::toReal($row['valor']);?></h3>
+            			<ul>
+			        		<li><i class="fas fa-database"></i> Campanhas: <?php echo $row['campanhas'];?></li>
+			        		<li><i class="far fa-check-circle"></i> Validações: <?php echo $row['validacao'];?></li>
+			        		<li><i class="far fa-check-circle"></i> <i class="far fa-check-circle"></i> Complemento de dados: <?php echo $row['completar'];?></li>
+			        		<li><i class="far fa-check-circle"></i> <i class="far fa-check-circle"></i> <i class="far fa-check-circle"></i> Análises de Comportamento: <?php echo $row['comportamento'];?> </li>
+			       		</ul>
+            		</div>
+            	</div>
+    		<?php  endforeach;?>	
+        </div>
+	</div>
+
+	<div class="">
+		<div class="group">      
+            <select name="plano" class="required planoselect" required  onchange="mudaPlano($(this).val())">
+            	<?php foreach ($this->planos as $row):?>
+            	<option value="<?php echo $row['id_plano']?>"><?php echo $row['plano'];?></option>
+            	<?php endforeach;?>
+            </select>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label></label>
+        </div>
+	</div>
+
+	<div class="footer">
+		<button type="button" onclick="segundoPasso()" class="btn">Proximo</button>
+	</div>
+	
+</form>

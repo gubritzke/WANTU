@@ -1,0 +1,4 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-11-23 11:34:56","ip":"10.0.2.29"}
+{"module":"application","controller":"competencias","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/competencias","date":"2018-11-23 11:50:58","ip":"10.0.2.29"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2018-11-23 11:59:49","ip":"10.0.2.29"}
+{"module":"application","controller":"competencias","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/competencias","date":"2018-11-23 12:00:16","ip":"10.0.2.29"}

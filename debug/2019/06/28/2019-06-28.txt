@@ -1,0 +1,14 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-06-28 11:26:12","ip":"10.0.0.200"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-06-28 11:41:44","ip":"10.0.0.200"}
+{"module":"application","controller":"login","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/login","date":"2019-06-28 11:41:54","ip":"10.0.0.200"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-06-28 11:45:05","ip":"10.0.0.200"}
+{"module":"application","controller":"como-funciona","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/como-funciona","date":"2019-06-28 11:45:12","ip":"10.0.0.200"}
+{"module":"application","controller":"como-funciona","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/como-funciona","date":"2019-06-28 11:45:14","ip":"10.0.0.200"}
+{"module":"application","controller":"como-funciona","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/como-funciona","date":"2019-06-28 11:45:15","ip":"10.0.0.200"}
+{"module":"application","controller":"como-funciona","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/como-funciona","date":"2019-06-28 11:45:15","ip":"10.0.0.200"}
+{"module":"application","controller":"como-funciona","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/como-funciona","date":"2019-06-28 11:45:15","ip":"10.0.0.200"}
+{"module":"application","controller":"sobre-nos","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/sobre-nos","date":"2019-06-28 11:45:24","ip":"10.0.0.200"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-06-28 14:27:40","ip":"10.0.0.200"}
+{"module":"application","controller":"cadastro","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/cadastro","date":"2019-06-28 14:53:38","ip":"10.0.0.200"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-06-28 15:01:08","ip":"10.0.0.200"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-06-28 16:50:48","ip":"10.0.0.200"}

@@ -1,0 +1,3 @@
+{"module":"application","controller":"perfis-comportamentais","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/perfis-comportamentais","date":"2019-01-25 11:03:18","ip":"10.0.2.29"}
+{"module":"application","controller":"perfis-comportamentais","action":"sucesso","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/perfis-comportamentais\/sucesso","date":"2019-01-25 11:03:20","ip":"10.0.2.29"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2019-01-25 11:03:30","ip":"10.0.2.29"}

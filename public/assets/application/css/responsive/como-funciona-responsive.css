@@ -1,0 +1,26 @@
+@media( max-width:650px ) {
+	.faq-right > span.image1 {
+	    margin-top: 10px;
+	}
+	.faq-right > span.image2 {
+	    margin-top: 50px;
+	}
+	.faq-right > span.image3 {
+	    margin-top: 15px;
+	}
+	.faq-right > span.image4 {
+	    margin-top: 45px;
+	}
+	.faq-right > span.image5 {
+	    margin-top: 45px;
+	}
+	.ajst-font-m{
+		font-size: 20px !important;
+	}
+	.banner .conteudo {
+	    float: left;
+	}
+	.banner {
+	    background: url(/assets/application/img/como-funciona/banner.jpg) no-repeat -205px;
+	}
+}

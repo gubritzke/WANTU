@@ -1,0 +1,14 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-01-10 10:29:09","ip":"10.0.2.29"}
+{"module":"application","controller":"blog","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/blog","date":"2019-01-10 10:29:35","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-01-10 10:35:18","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-01-10 11:09:12","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-01-10 11:09:18","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-01-10 17:46:30","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-01-10 17:48:25","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-01-10 17:48:46","ip":"10.0.2.29"}
+{"module":"application","controller":"cadastro","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/cadastro","date":"2019-01-10 17:48:50","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-01-10 17:48:52","ip":"10.0.2.29"}
+{"module":"application","controller":"sobre-nos","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/sobre-nos","date":"2019-01-10 17:48:58","ip":"10.0.2.29"}
+{"module":"application","controller":"sobre-nos","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/sobre-nos","date":"2019-01-10 17:49:08","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-01-10 17:49:10","ip":"10.0.2.29"}
+{"module":"application","controller":"sobre-nos","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/sobre-nos","date":"2019-01-10 17:51:39","ip":"10.0.2.29"}

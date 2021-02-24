@@ -1,0 +1,120 @@
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais","type":"ERROR","message":"error exception","page":"\/painel\/relatorios-gerais","date":"2018-07-09 10:43:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 10:54:00","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais","type":"ERROR","message":"error exception","page":"\/painel\/relatorios-gerais","date":"2018-07-09 10:54:02","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/analise","type":"ERROR","message":"error exception","page":"\/painel\/relatorios-gerais\/analise","date":"2018-07-09 10:57:34","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/analise","type":"ERROR","message":"error exception","page":"\/painel\/relatorios-gerais\/analise","date":"2018-07-09 10:57:35","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/analise","type":"ERROR","message":"error exception","page":"\/painel\/relatorios-gerais\/analise","date":"2018-07-09 10:57:38","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 10:57:55","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais","type":"ERROR","message":"error exception","page":"\/painel\/relatorios-gerais","date":"2018-07-09 11:21:00","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais","type":"ERROR","message":"error exception","page":"\/painel\/relatorios-gerais","date":"2018-07-09 11:28:36","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/analise","type":"ERROR","message":"error exception","page":"\/painel\/relatorios-gerais\/analise","date":"2018-07-09 11:58:15","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/analise?busca=","type":"ERROR","message":"error exception","page":"\/painel\/relatorios-gerais\/analise","date":"2018-07-09 11:58:56","ip":"10.0.2.29","get":{"busca":""}}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/analise?busca=","type":"ERROR","message":"error exception","page":"\/painel\/relatorios-gerais\/analise","date":"2018-07-09 11:58:58","ip":"10.0.2.29","get":{"busca":""}}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/analise?busca=","type":"ERROR","message":"error exception","page":"\/painel\/relatorios-gerais\/analise","date":"2018-07-09 11:59:24","ip":"10.0.2.29","get":{"busca":""}}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 12:00:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 12:02:10","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:10:29","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:10:30","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:25:37","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:27:50","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:28:19","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:28:36","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:29:43","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:31:56","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:43:37","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:44:26","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:44:35","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:44:58","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:45:31","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:45:58","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/salvar","type":"ERROR","message":"404","page":"\/salvar","date":"2018-07-09 14:46:03","ip":"10.0.2.29","post":{"p1":"","p2":"","p3":"1","p4":"","p5":"3","p6":"","p7":"","p8":"","p9":"","p10":"","p11":"","p12":"","p13":"","p14":"","p15":"","p16":"","p17":"","p18":"","p19":"","p20":"","p21":"","p22":"","p23":"","p24":"","p25":"","p26":"","p27":"","p28":"","p29":"","p30":"","p31":"","p32":"","p33":"","p34":"","p35":"","p36":"","p37":"","p38":"","p39":"","p40":"","p41":"","p42":"","p43":"","p44":"","p45":"","p46":"","p47":"","p48":"","p49":"","p50":"","p51":"","p52":"","p53":"","p54":"","method":"salvar"}}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 14:46:03","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:46:32","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:47:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:47:11","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:47:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:48:01","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:49:36","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/%22%22","type":"ERROR","message":"404","page":"\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/%22%22","date":"2018-07-09 14:50:36","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 14:50:36","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:50:36","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/%22%22","type":"ERROR","message":"404","page":"\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/%22%22","date":"2018-07-09 14:51:14","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 14:51:14","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:51:14","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/%22%22","type":"ERROR","message":"404","page":"\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/%22%22","date":"2018-07-09 14:52:34","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 14:52:34","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:52:34","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/","type":"ERROR","message":"404","page":"\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/","date":"2018-07-09 14:52:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 14:52:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 14:52:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/","type":"ERROR","message":"404","page":"\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/","date":"2018-07-09 14:52:48","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 14:52:48","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 14:52:48","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:54:42","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:54:45","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:55:02","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:56:07","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:57:00","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:57:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:57:30","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/","type":"ERROR","message":"404","page":"\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/","date":"2018-07-09 14:57:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 14:57:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 14:57:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 14:57:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/","type":"ERROR","message":"404","page":"\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/","date":"2018-07-09 14:58:30","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 14:58:30","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 14:58:30","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/","type":"ERROR","message":"404","page":"\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/","date":"2018-07-09 15:06:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 15:06:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/","type":"ERROR","message":"404","page":"\/painel\/relatorios-gerais\/painel\/relatorios-gerais\/analise\/","date":"2018-07-09 15:06:45","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 15:06:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 15:06:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 15:06:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 15:08:44","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorios-gerais\/salvar","type":"ERROR","message":"404","page":"\/painel\/relatorios-gerais\/salvar","date":"2018-07-09 15:12:40","ip":"10.0.2.29","post":{"p1":"","p2":"","p3":"","p4":"","p5":"","p6":"","p7":"","p8":"","p9":"","p10":"","p11":"","p12":"","p13":"","p14":"","p15":"","p16":"","p17":"","p18":"","p19":"","p20":"","p21":"","p22":"","p23":"","p24":"","p25":"","p26":"","p27":"","p28":"","p29":"","p30":"","p31":"","p32":"","p33":"","p34":"","p35":"","p36":"","p37":"","p38":"","p39":"","p40":"","p41":"","p42":"","p43":"","p44":"","p45":"","p46":"","p47":"","p48":"","p49":"","p50":"","p51":"","p52":"","p53":"","p54":"","id_login":"3","method":"salvar"}}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 15:12:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 15:12:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 15:33:50","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:17:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:17:42","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:17:55","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:20:31","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:22:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:27:00","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/relatorio-gerais\/?page=2","type":"ERROR","message":"404","page":"\/painel\/relatorio-gerais\/","date":"2018-07-09 16:37:59","ip":"10.0.2.29","get":{"page":"2"}}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-09 16:37:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:40:11","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:53:15","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:53:32","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:53:48","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:54:27","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:54:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:54:45","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:54:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:55:07","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:55:22","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:55:47","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:56:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:56:22","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:58:47","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 16:59:37","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:00:15","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:04:22","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:04:43","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:16:31","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:17:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:18:21","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:18:32","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:18:33","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:18:37","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:19:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:20:13","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:21:01","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:21:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:34:02","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:39:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:39:20","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 17:39:23","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 18:14:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 18:29:23","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-09 18:29:25","ip":"10.0.2.29"}

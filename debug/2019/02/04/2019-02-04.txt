@@ -1,0 +1,14 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-02-04 13:51:47","ip":"10.0.0.200"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-02-04 19:15:23","ip":"10.0.1.211"}
+{"module":"application","controller":"sobre-nos","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/sobre-nos","date":"2019-02-04 19:15:58","ip":"10.0.1.211"}
+{"module":"application","controller":"como-funciona","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/como-funciona","date":"2019-02-04 19:16:09","ip":"10.0.1.211"}
+{"module":"application","controller":"contato","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/contato","date":"2019-02-04 19:16:25","ip":"10.0.1.211"}
+{"module":"application","controller":"sobre-nos","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/sobre-nos","date":"2019-02-04 19:16:30","ip":"10.0.1.211"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-02-04 19:16:35","ip":"10.0.1.211"}
+{"module":"application","controller":"login","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/login","date":"2019-02-04 19:16:52","ip":"10.0.1.211"}
+{"module":"application","controller":"login","action":"index","get":[],"post":{"login":"gustavo.britzke@gmail.com","senha":"mudar123","method":"logaradmin"},"type":"DEBUG","message":"acesso","page":"\/login","date":"2019-02-04 19:16:54","ip":"10.0.1.211"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2019-02-04 19:16:55","ip":"10.0.1.211"}
+{"module":"application","controller":"minha-conta","action":"relatorio-perfil","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta\/relatorio-perfil\/2","date":"2019-02-04 19:17:03","ip":"10.0.1.211"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2019-02-04 19:17:07","ip":"10.0.1.211"}
+{"module":"application","controller":"minha-conta","action":"relatorio-perfil","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta\/relatorio-perfil\/2","date":"2019-02-04 19:17:10","ip":"10.0.1.211"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2019-02-04 19:17:21","ip":"10.0.1.211"}

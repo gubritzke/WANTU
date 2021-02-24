@@ -1,0 +1,11 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2019-07-16 11:46:10","ip":"10.0.1.120"}
+{"module":"painel","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel","date":"2019-07-16 14:38:25","ip":"10.0.2.29"}
+{"module":"painel","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel","date":"2019-07-16 14:38:28","ip":"10.0.2.29"}
+{"module":"painel","controller":"relatorio-final","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/relatorio-final","date":"2019-07-16 14:38:30","ip":"10.0.2.29"}
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-07-16 14:38:32","ip":"10.0.2.29"}
+{"module":"painel","controller":"contato","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/contato","date":"2019-07-16 14:38:34","ip":"10.0.2.29"}
+{"module":"painel","controller":"contato","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/contato","date":"2019-07-16 14:39:27","ip":"10.0.2.29"}
+{"module":"painel","controller":"contato","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/contato","date":"2019-07-16 14:40:40","ip":"10.0.2.29"}
+{"module":"painel","controller":"contato","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/contato","date":"2019-07-16 14:40:43","ip":"10.0.2.29"}
+{"module":"painel","controller":"usuarios","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/usuarios","date":"2019-07-16 14:40:44","ip":"10.0.2.29"}
+{"module":"painel","controller":"blog","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/painel\/blog","date":"2019-07-16 14:40:46","ip":"10.0.2.29"}

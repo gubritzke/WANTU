@@ -1,0 +1,286 @@
+<link href="/assets/painel/css/relatorios-gerais.css" media="" rel="stylesheet" type="text/css">
+<link href="/assets/application/css/main.css" media="" rel="stylesheet" type="text/css">
+<?php
+$title = 'Inteligências múltiplas';
+include 'module/Application/view/partials/headers/topo-analise-perfil.phtml'; ?>
+
+<?php $textos = array();?>
+
+<?php $textos['Espacial'] = 
+'<div class="line-tittle">
+	<p>
+		Inteligência espacial
+	</p>
+</div>
+<span style="width:12%;float: left; margin: 54px 0 0 18px;" class="image quadrado"></span>
+
+<p style="width:85%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+		“Entendeu ou quer que eu desenhe?”  Você adora observar o mundo, os objetos e os contextos em diferentes ângulos! Provavelmente você tem habilidades que lhe permite criar imagens mentais, desenhar e identificar detalhes, além de um sentimento pessoal de estética. 
+	</span>
+</p>
+<p class="text-perfil box-int">
+	<span class="text-full">
+		#dicaWatU: deixe o GPS um pouco de lado. Tente decorar mapas de ruas e experimente caminhos alternativos para chegar ao seu destino. Jogos de labirinto, sudoku ou xadrez exploram a sua capacidade espacial de imaginar movimentos e fazer jogadas. Bora?
+	</span>
+</p>
+';?>
+
+<?php $textos['Musical'] = 
+"<div class='line-tittle'>
+	<p>
+		Musical
+	</p>
+</div>
+<span style='width:12%;float: left; margin: 85px 0 0 18px;' class='image circulo'></span>
+
+<p  style='width:85%; float: right; margin-bottom: -60px !important;' class='text-perfil box-int'>
+	<span class='text-full'>
+		Please don't stop the music! A música é uma arte universal e como já dizia nossa bisa “quem canta seus males espanta!”. Todas as culturas têm alguma forma de música, não é mesmo? E você tem essa capacidade bem desenvolvida, assim, a interpretação e a produção de sons com o uso de instrumentos musicais provavelmente fazem parte da sua vida. Mas mesmo que não seja o novo pop star, o seu resultado mostra que você tem afinidade com a música e pode aprender mais até em outras áreas quando você “sente” o som!
+	</span>
+</p>
+<p class='text-perfil box-int'>
+	<span class='text-full'>
+		#dicaWantU: escute mais música e preste atenção à letra e aos sons, pois eles estimulam novos caminhos e conexões cerebrais. Cante no banho, no carro, no karaokê. Ou que tal participar de algum coral? Na universidade ou na igreja...não importa! Gaste tempo aprendendo a tocar algum instrumento, qualquer um. Então, solta o som dj! Já estou ouvindo o som do seu batuque!
+	</span>
+</p>
+";?>
+
+<?php $textos['Corporal'] = 
+'<div class="line-tittle">
+	<p>
+		Inteligência corporal e cinestésica
+	</p>
+</div>
+<span style="width:12%;float: left; margin: 54px 0 0 18px;" class="image positivo"></span>
+
+<p style="width:85%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+		“Eu me remexo muito! Eu me remexo...muito!” Sua capacidade de controlar e orquestrar movimentos corporais é significativa. As habilidades motoras do corpo são necessárias para utilizar ferramentas ou para expressar certas emoções. Nada mal hein?! Aproveite essa capacidade para conquistar objetivos!	
+	</span>
+</p>
+<p class="text-perfil box-int">
+	<span class="text-full">
+		#dicaWantU: pratique esportes que ampliem sua consciência corporal, yoga, pilates, dança, teatro ou grupo de improviso. E então, vamos pra pista?
+	</span>
+</p>
+
+';?>
+
+<?php $textos['Intrapessoal'] = 
+'<div class="line-tittle">
+	<p>
+		Inteligência intrapessoal
+	</p>
+</div>
+<span style="width:12%;float: left; margin: 65px 0 0 18px;" class="image estrela"></span>
+
+<p style="width:85%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+		“Espelho espelho meu, ninguém me conhece mais do que eu!” A inteligência intrapessoal se refere à inteligência que nos permite compreender e se controlar internamente. Você consegue acessar seus sentimentos e refletir sobre eles e, ainda, transformar facilmente hábitos inconscientes em atitudes conscientes. Tem o poder de controlar vícios, entender crenças e dominar as causas do estresse. 
+	</span>
+</p>
+<p class="text-perfil box-int">
+	<span class="text-full">
+		#dicaWantU: reserve parte do seu dia para a autorreflexão e o autodesenvolvimento. A meditação pode ajudar a aumentar a consciência sobre seu corpo e suas emoções. Estabeleça desafios e metas para sua própria vida e busque caminhos para alcançá-los. Comece baixando um app de meditação em 3 2 1! 
+	</span>
+</p>
+
+';?>
+
+<?php $textos['Naturalista'] = 
+'<div class="line-tittle">
+	<p>
+		Inteligência naturalista
+	</p>
+</div>
+<span style="width:12%;float: left; margin: 65px 0 0 18px;" class="image hexagono"></span>
+
+<p style="width:85%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+		“Bom dia sol! Bom dia árvores! Bom dia vida!”  Você tem facilidade para detectar, diferenciar e categorizar as questões relacionadas com a natureza, como espécies animais e vegetais ou fenômenos relacionados ao clima, geografia ou fenômenos naturais. Você possui a sensibilidade para compreender a importância da fauna, flora, meio ambiente e seus componentes, em um mundo cada vez mais degradado. 
+	</span>
+</p>
+<p class="text-perfil box-int">
+	<span class="text-full">
+		#dicaWantU: faça mais passeios ao ar livre, como caminhar em parques, praças, sítios e busque contemplar o ambiente ao seu redor. Jardinagem e compostagem podem ser ótimas atividades para desenvolver nossa inteligência natural, mesmo em ambientes urbanos. Mão na massa?! 
+	</span>
+</p>
+';?>
+
+<?php $textos['Existencial'] = 
+'<div class="line-tittle">
+	<p>
+		Inteligência existencial
+	</p>
+</div>
+<span style="width:12%;float: left; margin: 65px 0 0 18px;" class="image grafico"></span>
+
+<p style="width:85%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+		“Mais do que a chegada, a caminhada”. Você possui sensibilidade e capacidade de abordar questões profundas sobre a existência humana, tais como o sentido da vida, por que morremos, e como chegamos aqui. Essa capacidade é própria de pessoas que desfrutam ajudando os demais. Você deve ser um amante da não violência e de fomentar o respeito entre todos os seres.
+	</span>
+</p>
+<p class="text-perfil box-int">
+	<span class="text-full">
+		#dicaWantU: seja solidário. Olhe para o outro, trabalhe em ONGs, em projetos de empreendedorismo social como voluntário e pratique essa capacidade rara. O que acha? 
+	</span>
+</p>
+
+
+';?>
+
+<?php $textos['Interpessoal'] = 
+'<div class="line-tittle">
+	<p>
+		Inteligência interpessoal
+	</p>
+</div>
+<span style="width:11%;float: left; margin: 57px 0 0 18px;" class="image coracao"></span>
+
+<p style="width:85%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+		“Oi! Você vem sempre aqui?” Empatia! Você tem a capacidade de interpretar palavras, gestos, objetivos e metas subentendidos em cada discurso. É uma inteligência muito valiosa para as pessoas que trabalham com grandes grupos, pois permite detectar e compreender as circunstâncias, intenções, desejos e problemas dos outros. 
+	</span>
+</p>
+<p class="text-perfil box-int">
+	<span class="text-full">
+		#dicaWantU: experimente praticar desafios que ampliam a capacidade interpessoal, como negociações, mediações, vendas. Converse mais com pessoas e converse com mais pessoas. Vai logo, anota meu whatsapp aí! hhahahha
+	</span>
+</p>
+';?>
+<?php $textos['Linguistica'] = 
+'<div class="line-tittle">
+	<p>Liguística</p>
+</div>
+
+<span style="width:10%;float: left; margin: 38px 0 0 18px;" class="image triangulo"></span>
+
+<p class="text-perfil box-int">
+	<span style="width:85%; float: right; margin-bottom: -20px !important;" class="text-full">
+		Do you speak english? Você domina a linguagem, tanto oral como escrita e gestual. Tem facilidade para se comunicar e aprender novos idiomas.  Aproveite...use a fala e a escrita para atingir seus objetivos.
+	</span>
+</p>
+
+<p class="text-perfil box-int">
+	<span style="float: right;" class="text-full">
+		#dicaWantU: a leitura é a principal forma de ampliar seu vocabulário. Escrever histórias e poemas também desenvolverá sua inteligência linguística. Tente fazer mais apresentações e discursos e não deixe o medo de falar em público dominar você, e para isso nada melhor que a prática, não é mesmo?
+	</span>
+</p>
+';?>
+
+<?php $textos['Logico-matematico'] = 
+'<div class="line-tittle">
+	<p>
+		Lógico matemático
+	</p>
+</div>
+<span style="width:10%;float: left; margin: 47px 0 0 18px;" class="image losango"></span>
+
+<p style="width:85%; float: right; margin-bottom: -60px !important;" class="text-perfil box-int">
+	<span class="text-full">
+		Hum...aqui tem muita cuca no lance! E já que você gosta que tal resolvermos uma equação de derivada para passar direto pra próxima fase WantU? Gostou? Te peguei ne?!  Seu resultado indicou que você tem alta capacidade de raciocínio lógico, de realizar deduções e resolução de problemas matemáticos. 
+	</span>
+</p>
+<p class="text-perfil box-int">
+	<span class="text-full">
+		#dicaWantU: que tal encarar uma partidinha de poker? Jogar cartas ou qualquer outro jogo matemático pode lhe ajudar a potencializar essa capacidade. Também vale a pena deixar a calculadora de lado e forçar mais sua mente para cálculos. 
+	</span>
+</p>
+';?>
+
+<div id="box-curriculo">
+	<div class="container">
+		<div id="curriculo">
+			<?php foreach ( $perfil as $row ):?>
+			<p class="name-topo">Trilha 4 | <?php echo $row->nome?></p>
+			<?php endforeach; ?>
+			<hr>
+			<a class="logo-wantu"></a>
+			<span class="big-ola">Olá!</span>
+			<p class="text-perfil">
+				Neste relatório iremos apresentar um diagnóstico para ajudá-lo a compreender quais são os pilares principais que norteiam as suas decisões de carreira. 
+			</p>			
+
+			<div class="line margin-line"></div>
+			<?php echo $textos[$this->tres[0]];?>
+			
+							<div style="clear: both;"></div>
+				<p style="page-break-before: always">
+				<div style="clear: both;"></div>
+				<div class="mg-print"></div>
+			<?php echo $textos[$this->tres[1]];?>
+			<?php echo $textos[$this->tres[2]];?>
+			
+			
+			<div class="line"></div>
+			
+			<div style="clear: both;"></div>
+			<p style="page-break-before: always">
+			<div style="clear: both;"></div>
+			<div class="mg-print"></div>
+			
+			<div class="roda-inferior">
+				
+				<div class="roda-left">
+					<a class="img-roda"></a>
+				</div>
+				
+				<div class="roda-right">
+					<p class="text-perfil">
+						E então, ficou inquieto com seu resultado ou já era de se esperar? Vamos continuar nesta aventura de descobrimento e partir para a próxima! 
+					</p>
+				</div>	
+				<div class="roda-full">
+					<p class="text-perfil">
+						Um grande abraço!<br>
+						Equipe <span class="text-style">WantU.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="buttons-curriculo">
+			<a class="imp dowload-button" onclick="printCurriculo()"><img alt="" src="/assets/application/img/analise/seta.png"></a>	
+			<a class="button" href="/painel/relatorios-gerais/inteligencias-multiplas">Voltar para o painel</a>
+		</div>
+	</div>
+</div>
+
+<script>
+function printCurriculo() {
+    window.print();
+}
+</script>
+
+<style>
+@page { 
+	size: auto;  
+	margin: 0mm; 
+}
+@media print {
+	footer{
+		display: none;
+	}
+	#topo-cadastro{
+		display: none;
+	}
+	#curriculo{
+		margin-top: 100px !important;
+		box-shadow: none;
+		padding: 0px 10px 0 10px !important;
+	}
+	a[href]:after {
+	    content: none !important;
+	}
+	.buttons-curriculo{
+		display: none;
+	}
+	.mg-print{
+		margin-top: 50px;
+		display: inline-block;
+		height: 1px;
+		width: 1px;
+	}
+</style>

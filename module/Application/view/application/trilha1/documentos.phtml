@@ -1,0 +1,58 @@
+<?php
+	$title = '<span style="margin-top:20px; display: inline-block;">Trilha 1</span>';
+	include 'module/Application/view/partials/headers/topo-teste.phtml'; 
+?>
+<link href="/assets/application/js/extensions/jquery.tooltipster/dist/css/tooltipster.bundle.min.css" media="" rel="stylesheet" type="text/css">
+<div id="full-teste">
+	<div class="container">
+		<div class="progresso">
+			<?php include 'module/Application/view/application/trilha1/progresso.phtml'; ?>
+		</div>
+		
+		<div class="formulario">
+			<div class="form-align">
+				<p class="tittle">Documentos</p>
+				<form id="form-submit2" class="validate" action="" method="post">
+				
+					<label class="input-50">
+						<span>RG</span>
+						<input type="text" name="rg" >
+					</label>
+					
+					<label class="input-50 right">
+						<span>Orgão Emissor</span>
+						<input type="text" name="orgao_emissor" >
+					</label>
+					
+					<label class="input-50">
+						<span style="position: relative; float: left;">Carteira de Trabalho<i class="info tooltip" title="Não obrigatório">?</i></span>
+						<input type="text" name="carteira_de_trabalho" style="margin-top: -20px;">
+					</label>
+
+<!-- 					<label class="input-50 right"> -->
+<!-- 						<span>Número de Série</span> -->
+<!-- 						<input type="text" name="numero_de_serie" > -->
+<!-- 					</label> -->
+					
+					<input type="hidden" name="code" value="<?php echo $data->id_analise_de_curriculo; ?>"/>
+ 					<input type="hidden" name="method" value="salvarEtapa2" />
+
+				</form>
+				
+				<div class="buttons">
+					<a class="button-voltar" href="/trilha1">voltar</a>
+					<a class="button right" href="javascript:$('#form-submit2').submit();">Próximo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$('.tooltip').tooltipster({
+	   animation: 'fade',
+	   delay: 200,
+	   theme: 'Light',
+	   arrow: false,
+});
+</script>

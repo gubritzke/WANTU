@@ -1,0 +1,21 @@
+<?php include 'module/Application/view/partials/headers/topo-cadastro.phtml'; ?>
+<div class="container">
+	<div class="box-full">
+		
+		<div id="box-login" class="height-ajst">
+			
+			<form id="form-submit" method="post">
+				<label class="input-100">
+					<span>Digite seu Email</span>
+					<input type="text" name="email" value="" required placeholder="">
+				</label>
+				
+				<input type="submit" style="display: none;">
+				<input type="hidden" name="method" value="recuperarEmail">
+			</form>
+			
+			<a class="button" onclick="$('#form-submit').submit();" href="javascript:;">Enviar</a>
+			<a class="n-cadastrado" href="/cadastro">Não é Cadastrado?</a>
+		</div>
+	</div>
+</div>

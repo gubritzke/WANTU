@@ -1,0 +1,14 @@
+/****************/
+/* GERAL */
+/****************/
+table .image{
+    float: left;
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    margin: 0 5px 5px 0;
+}
+table .image:after{
+    display: none;
+}

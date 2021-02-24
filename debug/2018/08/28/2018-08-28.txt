@@ -1,0 +1,10 @@
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-08-28 11:07:15","ip":"10.0.2.29"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2018-08-28 11:16:46","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-08-28 11:23:28","ip":"10.0.2.29"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2018-08-28 11:38:18","ip":"10.0.2.29"}
+{"module":"application","controller":"aptidoes-profissionais","action":"index","get":{"pg":"1"},"post":[],"type":"DEBUG","message":"acesso","page":"\/aptidoes-profissionais","date":"2018-08-28 14:04:05","ip":"10.0.2.29"}
+{"module":"application","controller":"minha-conta","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/minha-conta","date":"2018-08-28 16:48:32","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-08-28 16:49:16","ip":"10.0.2.29"}
+{"module":"application","controller":"contato","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/contato","date":"2018-08-28 16:49:29","ip":"10.0.2.29"}
+{"module":"application","controller":"blog","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/blog","date":"2018-08-28 16:49:30","ip":"10.0.2.29"}
+{"module":"application","controller":"index","action":"index","get":[],"post":[],"type":"DEBUG","message":"acesso","page":"\/","date":"2018-08-28 16:52:13","ip":"10.0.2.29"}

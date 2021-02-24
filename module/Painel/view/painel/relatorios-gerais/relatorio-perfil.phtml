@@ -1,0 +1,159 @@
+<link href="/assets/painel/css/relatorios-gerais.css" media="" rel="stylesheet" type="text/css">
+<link href="/assets/application/css/main.css" media="" rel="stylesheet" type="text/css">
+<?php 
+$title = 'Perfil Comportamental';
+include 'module/Application/view/partials/headers/topo-analise-perfil.phtml'; 
+?>
+
+<div id="box-curriculo">
+	<div class="container">
+		<div id="curriculo">
+			<?php foreach ( $perfil as $row ):?>
+			<p class="name-topo">Trilha 2 | <?php echo $row->nome?></p>
+			<?php endforeach; ?>
+			<hr>
+			<a class="logo-wantu"></a>
+			<span class="big-ola">Olá!</span>
+			<p class="text-perfil">
+				Neste relatório iremos apresentar um diagnóstico para ajudá-la em sua carreira, baseado em nossa tecnologia exclusiva de <b>People Analytics:</b>
+				<br><br>
+				Cada um é um. Com seu jeito de ser, experiências de vida, escolaridade...Mas de alguma forma, todos se parecem com alguém. Vários estudos apontam para a existência de quatro perfis gerais de comportamentos típicos, bem diferentes entre si, e que às vezes se combinam, formando grupos de pessoas com características similares.
+				<br><br>
+				A WantU considera que a maioria das pessoas se enquadra em algum destes grupos: “Mão na massa”, que valorizam a ação e cumprimento de tarefas; “Cheguei chegando”, que são voltadas para a comunicação e relacionamento com os outros; “Fala que eu te escuto”, que são estáveis e amigáveis; e “Só sei que nada sei”, orientadas pelo próprio pensamento e resolução de problemas. 
+				<br><br>
+				Descubra abaixo qual é o seu nível em cada um destes perfis.
+			</p>			
+		
+			
+			<div class="line margin-line"></div>
+			
+										<div style="clear: both;"></div>
+				<p style="page-break-before: always">
+				<div style="clear: both;"></div>
+				<div class="mg-print"></div>
+			
+			<div class="line-tittle">
+				<p>MÃO NA MASSA</p>
+			</div>
+			
+			<p class="text-perfil box-int">
+				
+				<span class="text-full"><span class="text-style">Você nasceu pronto!</span> Quando se depara com um desafio, sente-se logo impulsionado a agir, pois pode contar com sua autoconfiança e coragem. Gosta de ser o primeiro e não raramente assume a frente de um grupo. Não mede esforços para que aceitem seus pontos de vista. Você é desses: “Alguém pensou em resultado? Opa! Deixa comigo...” E nem precisa ninguém cobrar, pois você vai entregar!</span>
+				
+				<span class="text-result">Seu indicador nesse perfil foi</span><span class="result <?php echo $resultado['executor_cor'] ?>"> <?php echo $resultado['executor'] ?>%</span>
+			
+			</p>
+			
+			<div class="line-tittle">
+				<p>CHEGUEI CHEGANDO</p>
+			</div>
+			
+			<p class="text-perfil box-int">
+				
+				<span class="text-full"><span class="text-style">Você é a alma da festa!</span> Quando chega em um ambiente desconhecido, não se intimida: vai logo procurando um meio de fazer novas amizades. Gosta de novidades, vê sempre o lado bom das coisas e trabalha bem em equipe.  Não muito raro, fala o que vem à mente. Você é desses: “Oi, tudo bem? Eu sou o Olaf e gosto de abraços quentinhos...” E esse calor humano acaba contagiando a todos, pois carisma você tem de sobra!</span>
+				
+				<span class="text-result">Seu indicador nesse perfil foi</span><span class="result <?php echo $resultado['comunicador_cor'] ?>"> <?php echo $resultado['comunicador'] ?>%</span>
+			
+			</p>
+			
+										<div style="clear: both;"></div>
+				<p style="page-break-before: always">
+				<div style="clear: both;"></div>
+				<div class="mg-print"></div>
+			
+			<div class="line-tittle">
+				<p>FALA QUE EU TE ESCUTO</p>
+			</div>
+			
+			<p class="text-perfil box-int">
+				
+				<span class="text-full"><span class="text-style">Você é o ombro amigo!</span> Quando parece que o mundo vai desabar, mantém a mesma calma e se prepara para ajudar os sobreviventes. Gosta de manter seu ritmo, resolver conflitos e ouvir as pessoas. Prefere ficar na sua, e fazer as coisas do seu jeito, e às vezes, vê as coisas com certo pessimismo. Você é desses: “Devagar e sempre...Com os pés no chão, passo a passo eu chego lá”. Essa previsibilidade e constância fazem de você uma pessoa confiável!</span>
+				
+				<span class="text-result">Seu indicador nesse perfil foi</span><span class="result <?php echo $resultado['planejador_cor'] ?>"> <?php echo $resultado['planejador'] ?>%</span>
+			
+			</p>
+	
+			<div class="line-tittle">
+				<p>SÓ SEI QUE NADA SEI</p>
+			</div>
+			
+			<p class="text-perfil box-int">
+				
+				<span class="text-full"><span class="text-style">Sua mente não para!</span> Quando vê um quebra-cabeça desmontado, vai logo procurando os ângulos pra decifrar a cena. Gosta de saber os mínimos detalhes, lida bem com números, gosta de resolver questões difíceis até o final. Não raro, prefere confiar em si mesmo e seu pensamento lógico. Sou desses: “Problemas, Oba! Deixa comigo... Mas nada de me cobrar, pois pressionado, tendo a abandonar o barco”.  Sua exigência o leva a fazer tudo muito bem-feito, mesmo se precisar repetir 100 vezes!</span>
+				
+				<span class="text-result">Seu indicador nesse perfil foi</span><span class="result <?php echo $resultado['analiista_cor'] ?>"> <?php echo $resultado['analiista'] ?>%</span>
+			
+			</p>
+			
+										<div style="clear: both;"></div>
+				<p style="page-break-before: always">
+				<div style="clear: both;"></div>
+				<div class="mg-print"></div>
+			<div class="line"></div>
+			
+			<div class="roda-inferior">
+				
+				<div class="roda-left">
+					<a class="img-roda"></a>
+				</div>
+				
+				<div class="roda-right">
+					<p class="text-perfil">
+						Sabemos que as respostas a estas questões não são fáceis, mas estamos aqui justamente para isso: ajudá-lo a se conhecer melhor, e alinhar suas ações em direção a seus talentos e sonhos!
+						<br>
+						Então vamos continuar nesta aventura de descobrimento e partir para o próximo teste!
+					</p>
+				</div>	
+				<div class="roda-full">
+					<p class="text-perfil">
+						Um grande abraço!<br>
+						Equipe <span class="text-style">WantU.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="buttons-curriculo">
+			<a class="imp dowload-button" onclick="printCurriculo()"><img alt="" src="/assets/application/img/analise/seta.png"></a>	
+			<a class="button" href="/painel/relatorios-gerais/perfil-comportamental">Voltar para o painel</a>
+		</div>
+	</div>
+</div>
+
+<script>
+function printCurriculo() {
+    window.print();
+}
+</script>
+
+<style>
+@page { 
+	size: auto;  
+	margin: 0mm; 
+}
+@media print {
+	footer{
+		display: none;
+	}
+	#topo-cadastro{
+		display: none;
+	}
+	#curriculo{
+		margin-top: 100px !important;
+		box-shadow: none;
+		padding: 0px 10px 0 10px !important;
+	}
+	a[href]:after {
+	    content: none !important;
+	}
+	.buttons-curriculo{
+		display: none;
+	}
+	.mg-print{
+		margin-top: 50px;
+		display: inline-block;
+		height: 1px;
+		width: 1px;
+	}
+</style>

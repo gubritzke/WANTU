@@ -1,0 +1,30 @@
+{"type":"ERROR","message":"retorno da fun\u00e7\u00e3o error_get_last()","file":"\/var\/www\/mount\/WANTU\/vendor\/naicheframework\/Log\/Log.php","line":57,"page":"\/","date":"2020-01-13 12:12:49","ip":"10.0.0.190"}
+{"url":"10.0.0.224:8342\/","type":"ERROR","message":"error exception","page":"\/","date":"2020-01-13 12:12:56","ip":"10.0.2.29"}
+
+{"type":"ERROR","message":"retorno da fun\u00e7\u00e3o error_get_last()","file":"Unknown","line":0,"page":"\/","date":"2020-01-13 12:12:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/","type":"ERROR","message":"error exception","page":"\/","date":"2020-01-13 12:12:58","ip":"10.0.2.29"}
+{"type":"ERROR","message":"retorno da fun\u00e7\u00e3o error_get_last()","file":"Unknown","line":0,"page":"\/","date":"2020-01-13 12:13:29","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/","type":"ERROR","message":"error exception","page":"\/","date":"2020-01-13 12:13:30","ip":"10.0.2.29"}
+{"type":"ERROR","message":"retorno da fun\u00e7\u00e3o error_get_last()","file":"Unknown","line":0,"page":"\/","date":"2020-01-13 12:14:03","ip":"10.0.0.190"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 12:20:32","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 12:25:27","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 12:25:56","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 12:26:47","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 12:29:12","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 15:00:35","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 15:01:20","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2020-01-13 15:01:36","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/cartao\/","type":"ERROR","message":"404","page":"\/assets\/application\/img\/cartao\/","date":"2020-01-13 15:01:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/uploads\/user\/39594020_948539165344716_7509688121634586624_n_5c49b678617f7.jpg","type":"ERROR","message":"404","page":"\/assets\/uploads\/user\/39594020_948539165344716_7509688121634586624_n_5c49b678617f7.jpg","date":"2020-01-13 15:01:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 15:02:55","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 15:03:05","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 15:21:21","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 15:56:54","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 16:01:03","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"type":"ERROR","message":"retorno da fun\u00e7\u00e3o error_get_last()","file":"Unknown","line":0,"page":"\/trilha1","date":"2020-01-13 16:01:27","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 16:54:16","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 17:43:48","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 17:43:57","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/minha-conta.js?version=1.0","type":"ERROR","message":"404","page":"\/assets\/application\/js\/minha-conta.js","date":"2020-01-13 17:48:46","ip":"10.0.2.29","get":{"version":"1.0"}}
+{"type":"ERROR","message":"retorno da fun\u00e7\u00e3o error_get_last()","file":"Unknown","line":0,"page":"\/","date":"2020-01-13 18:18:37","ip":"10.0.2.29"}
+{"type":"ERROR","message":"retorno da fun\u00e7\u00e3o error_get_last()","file":"Unknown","line":0,"page":"\/login","date":"2020-01-13 18:23:40","ip":"10.0.2.29"}

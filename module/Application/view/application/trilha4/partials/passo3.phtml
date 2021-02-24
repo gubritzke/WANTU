@@ -1,0 +1,56 @@
+<?php
+$title = '<span style="margin-top:20px; display: inline-block;">Trilha 4</span>';
+include 'module/Application/view/partials/headers/topo-teste.phtml';
+?>
+
+<div id="pesquisa">
+	<div class="container">
+	
+		<div class="time">
+			<span>00:45</span>
+			<div class="time-bar"></div>
+			<div class="time-bar"></div>
+			<div class="time-bar"><span class="p1">+10</span></div>
+		</div>
+		
+		<div class="question">
+			<p>3- Imagine que você está navegando na internet de boa, qual site é seu preferido?</p>
+		</div>
+		<form class="pesq" id="form-submit" method="post">
+			<div class="options" data-question="<?php echo $_GET['pg']; ?>">
+						
+				<a class="option" data-name="Corporal" data-value="5">
+					<span class="image positivo"></span>
+					<span class="text-opt" style="margin-top: 76px;">
+						Sites de Equipamentos <br>
+						de esporte.
+					</span>
+				</a>
+				
+				<a class="option" style="margin: 0 20px;"  data-name="Naturalista" data-value="2">
+					<span class="image hexagono"></span>
+					<span class="text-opt" style="margin-top: 69px;">
+						Canal no youtube com<br>
+						vídeos estilo “National<br>
+						Geographic”.
+					</span>
+				</a>
+				
+				<a class="option"  data-name="Existencial" data-value="3">
+					<span class="image grafico"></span>
+					<span class="text-opt" style="margin-top: 59px;">
+						Livraria online categoria<br>
+						de livros sobre questões<br>
+						existenciais como livros <br>
+						de Dalai Lama.
+					</span>
+				</a>
+				
+				<input type="hidden" name="prev" value="<?php echo $prev; ?>">
+				<input type="hidden" name="next" value="<?php echo $next; ?>">
+				<input type="hidden" class="result">
+				
+			</div>
+		</form>	
+	</div>
+</div>

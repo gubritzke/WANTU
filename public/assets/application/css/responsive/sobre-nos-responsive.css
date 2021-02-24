@@ -1,0 +1,15 @@
+@media( max-width:650px ) {
+	.sobre-right{
+		display: none;
+	}
+	.sobre-left{
+		width: 100%;
+		float: left;	
+	}
+	.sobre-text-2 li{
+		margin-right: 10px;
+	}
+	.banner .conteudo {
+	    float: left;
+	}
+}

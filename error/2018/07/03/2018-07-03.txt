@@ -1,0 +1,315 @@
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:14:08","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:14:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:14:41","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:14:41","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:14:43","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:14:43","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:14:44","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:14:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:14:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:14:51","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:14:51","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:14:51","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:15:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:15:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:15:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:15:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:15:55","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:15:56","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:15:56","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:16:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-03 11:16:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:16:12","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-03 11:16:12","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:20:11","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-03 11:20:12","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:22:28","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:22:28","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:22:29","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:22:29","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:22:30","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/js\/ckeditor\/init.js","type":"ERROR","message":"404","page":"\/assets\/application\/js\/ckeditor\/init.js","date":"2018-07-03 11:23:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-03 11:23:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:24:20","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:26:01","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:32:42","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:33:42","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:33:45","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:33:48","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:33:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:33:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:33:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:33:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:33:50","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:33:50","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:35:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:36:44","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:36:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:38:28","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:38:50","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:38:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:58:07","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 11:58:14","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:11:33","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:15:32","ip":"10.0.1.212"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:18:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:19:15","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:19:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:19:23","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:19:34","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:19:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:19:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/analise\/assets\/application\/css\/analise.css","type":"ERROR","message":"404","page":"\/analise\/assets\/application\/css\/analise.css","date":"2018-07-03 12:19:58","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:19:58","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/analise\/assets\/application\/css\/analise.css","type":"ERROR","message":"404","page":"\/analise\/assets\/application\/css\/analise.css","date":"2018-07-03 12:20:35","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:20:36","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/analise\/assets\/application\/css\/analise.css","type":"ERROR","message":"404","page":"\/analise\/assets\/application\/css\/analise.css","date":"2018-07-03 12:20:52","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:20:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 12:21:03","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:40:29","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:42:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:42:28","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:42:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:43:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:43:34","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:43:41","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:43:45","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:45:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:45:30","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:45:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:53:26","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 13:53:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 14:06:22","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 14:07:22","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 14:08:19","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 14:08:26","ip":"10.0.1.120"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 14:08:50","ip":"10.0.2.30"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 14:09:13","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 14:12:31","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 14:12:51","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 14:16:15","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 14:16:28","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 14:29:31","ip":"10.0.2.148"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:31:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:32:17","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:32:45","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:32:47","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:33:07","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:34:30","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:35:12","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:35:37","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:35:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:35:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:36:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/analise\/lala","type":"ERROR","message":"404","page":"\/analise\/lala","date":"2018-07-03 15:37:31","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-03 15:37:31","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-03 15:37:31","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:37:32","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:38:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:38:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:39:01","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:43:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:44:28","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:44:43","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:44:47","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:44:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:45:08","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:45:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:45:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:46:29","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:47:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:47:52","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:48:03","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:48:11","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:48:20","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 15:52:20","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:00:34","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:00:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:01:03","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:06:53","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:06:56","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:07:24","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:07:29","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:07:47","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:10:21","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:10:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:10:57","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:12:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:13:36","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:14:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 16:32:51","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/logo.png","type":"ERROR","message":"404","page":"\/assets\/application\/img\/logo.png","date":"2018-07-03 16:32:51","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login","type":"ERROR","message":"404","page":"\/painel\/login","date":"2018-07-03 16:33:39","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-03 16:33:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 16:33:43","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/logo.png","type":"ERROR","message":"404","page":"\/assets\/application\/img\/logo.png","date":"2018-07-03 16:33:43","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 16:37:55","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/application\/img\/logo.png","type":"ERROR","message":"404","page":"\/assets\/application\/img\/logo.png","date":"2018-07-03 16:37:55","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:42:24","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:42:25","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:43:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:45:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 16:50:14","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painek","type":"ERROR","message":"404","page":"\/painek","date":"2018-07-03 16:52:45","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-03 16:52:45","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 17:00:35","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 17:00:54","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 17:03:26","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 17:04:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 17:04:38","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 17:59:25","ip":"10.0.2.29","get":{"r":"\/painel"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","r":"\/painel","method":"logar"}}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:00:41","ip":"10.0.2.29","get":{"r":"\/painel"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","r":"\/painel","method":"logar"}}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:00:41","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:00:43","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:01:06","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:01:06","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:01:08","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:01:08","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:01:09","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:01:10","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/paine","type":"ERROR","message":"404","page":"\/paine","date":"2018-07-03 18:01:13","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/css\/error.css","type":"ERROR","message":"404","page":"\/assets\/css\/error.css","date":"2018-07-03 18:01:13","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:01:16","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:01:16","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:03:00","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:03:00","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:03:24","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:03:24","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:03:45","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:03:46","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:03:50","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:03:51","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:03:52","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:04:02","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:04:03","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:04:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:04:04","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:04:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:04:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:04:11","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/","type":"ERROR","message":"error exception","page":"\/painel\/login\/","date":"2018-07-03 18:04:18","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:04:19","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 18:06:51","ip":"10.0.2.29","post":{"method":"configSave","config":{"navClean":"true"}}}
+{"url":"10.0.0.224:8342\/painel\/login","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 18:06:52","ip":"10.0.2.29","post":{"method":"configSave","config":{"navClean":"false"}}}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:08:07","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:08:24","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:08:28","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:08:31","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:09:43","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:10:28","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:10:41","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:11:14","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:12:23","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:12:50","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:13:02","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:13:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:15:20","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:15:42","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:16:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:16:25","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:17:19","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:18:18","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/favicon.ico","type":"ERROR","message":"404","page":"\/favicon.ico","date":"2018-07-03 18:18:40","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:07:39","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:07:41","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:07:41","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:07:50","ip":"10.0.2.29","get":{"r":"\/painel"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:07:51","ip":"10.0.2.29","get":{"r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:07:51","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:08:52","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:08:52","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:10:14","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:10:14","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:10:47","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:10:47","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:11:24","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:11:24","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:12:03","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:12:03","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:12:43","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:12:43","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:14:26","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:14:26","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:14:30","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:14:30","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:14:30","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:14:30","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:14:47","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:14:47","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:15:27","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:15:27","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:15:51","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naioche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:15:51","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:16:43","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:16:44","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:17:55","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:17:55","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:18:05","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:18:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:21:05","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:21:05","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:21:09","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:21:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:21:09","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:21:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:21:09","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:21:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:21:10","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:21:10","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:21:10","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:21:10","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:21:16","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logar","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:21:16","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:22:07","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:22:07","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:22:37","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:22:37","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:22:38","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:22:38","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/index","type":"ERROR","message":"error exception","page":"\/painel\/login\/index","date":"2018-07-03 19:22:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:22:49","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/index","type":"ERROR","message":"error exception","page":"\/painel\/login\/index","date":"2018-07-03 19:23:03","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:23:03","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/index","type":"ERROR","message":"error exception","page":"\/painel\/login\/index","date":"2018-07-03 19:25:11","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:25:11","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/index","type":"ERROR","message":"error exception","page":"\/painel\/login\/index","date":"2018-07-03 19:25:20","ip":"10.0.2.29","post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:25:21","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login\/index","type":"ERROR","message":"error exception","page":"\/painel\/login\/index","date":"2018-07-03 19:26:09","ip":"10.0.2.29","post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:26:09","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/","type":"ERROR","message":"error exception","page":"\/","date":"2018-07-03 19:26:13","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:28:44","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:28:44","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:28:58","ip":"10.0.2.29","post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:28:58","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:29:58","ip":"10.0.2.29","post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:30:58","ip":"10.0.2.29","get":{"r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:30:59","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:31:07","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:31:07","ip":"10.0.2.29","get":{"r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:31:08","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:31:50","ip":"10.0.2.29","get":{"r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:31:51","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:31:58","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:31:58","ip":"10.0.2.29","get":{"r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:31:58","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:34:30","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:34:30","ip":"10.0.2.29","get":{"r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:34:30","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:35:17","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:36:19","ip":"10.0.2.29","get":{"r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:36:19","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:36:23","ip":"10.0.2.29","get":{"r":"\/painel"}}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:36:26","ip":"10.0.2.29","get":{"r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:36:26","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:37:14","ip":"10.0.2.29","get":{"r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:37:14","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:37:22","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:37:22","ip":"10.0.2.29","get":{"r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:37:22","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/painel\/login?r=\/painel\/index","type":"ERROR","message":"error exception","page":"\/painel\/login","date":"2018-07-03 19:39:17","ip":"10.0.2.29","get":{"r":"\/painel\/index"},"post":{"lg":"admin@naiche.com.br","pw":"mudar123","method":"logarAdmin","r":"\/painel\/index"}}
+{"url":"10.0.0.224:8342\/assets\/painel\/css\/saldo.css","type":"ERROR","message":"404","page":"\/assets\/painel\/css\/saldo.css","date":"2018-07-03 19:39:17","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/logo-segmenta.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/logo-segmenta.png","date":"2018-07-03 19:39:17","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/icon1.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/icon1.png","date":"2018-07-03 19:39:17","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/ico-perfil.png","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/ico-perfil.png","date":"2018-07-03 19:39:17","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/painel\/img\/duda.jpg","type":"ERROR","message":"404","page":"\/assets\/painel\/img\/duda.jpg","date":"2018-07-03 19:39:18","ip":"10.0.2.29"}
+{"url":"10.0.0.224:8342\/assets\/painel\/css\/saldo.css","type":"ERROR","message":"404","page":"\/assets\/painel\/css\/saldo.css","date":"2018-07-03 19:39:18","ip":"10.0.2.29"}

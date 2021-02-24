@@ -1,0 +1,121 @@
+<div class="container">
+	<div class="row">
+	
+		<form method="get" class="filter default">
+			<div class="column column-12 margin-align2">
+						
+				<div class="inline icon-right" align="left">
+		        	<b>Data de</b><br/>
+		        	<input type="text" name="data_inicial" value="<?php echo !empty($this->filter['data_inicial']) ? $this->filter['data_inicial'] : null; ?>" id="calendar_range_from" class="calendar_range_from calendar" data-parent="calendar_range_to" />
+		        	<i class="far fa-calendar-alt"></i>
+		        </div>
+		        		
+		        <div class="inline icon-right" align="left" style="margin-right: 20px">
+		        	<b>Até</b><br/>
+		        	<input type="text" name="data_final" value="<?php echo !empty($this->filter['data_final']) ? $this->filter['data_final'] : null; ?>" id="calendar_range_to" class="calendar_range_to calendar" data-parent="calendar_range_from" />
+		        	<i class="far fa-calendar-alt"></i>
+		      	</div>
+		      	
+				<div class="inline" align="left">
+		        	<b>Nome</b><br/>
+		        	<input type="text" name="nome" value=""/>
+		      	</div>
+		      	
+		      	<div class="inline icon-right" align="left" style="margin-right: 20px">
+		        	<b>Data de nascimento</b><br/>
+		        	<input type="text" name="data_nascimento" value="" />
+		        	<i class="far fa-calendar-alt"></i>
+		        </div>
+
+			</div>
+			
+				
+        	<div class="column column-12 margin-align2" align="left">
+        		<a onclick="$(this).parents('form').submit();" class="bt bt-inline bt-round bg-orange2">Filtrar <i class="fa fa-refresh"></i></a>
+        	</div>
+			
+		</form>
+		
+	</div>
+		
+	<hr />
+		
+	<div class="row">
+		<div class="column column-12">
+		
+			<form method="post" id="analise">
+				<table class="content">
+				<thead style="border-bottom: 2px solid #6f6f6f;">
+					<tr>
+						<th width="400" style="color: #84139e; font-size: 18px; text-transform: none;">Análise de Perfis Comportamentais</th>
+						<th width="200"></th>
+						<th width="200" style="text-align: center;"></th>
+						<th width="50">Relatório</th>
+						<th width="170" style="text-align: center;"><a href="javascript:;" class="order" data-order="status">Status</a></th>
+					</tr>
+				</thead>
+				
+				<tbody class="font-small" class="lines-td">
+					<?php foreach ( $perfil as $row ): $row = (object)$row; ?>
+					<tr>
+						<td style="line-height: 42px;">
+							<img alt="" class="img-user" <?php if (!empty($row->imagem)){ ?>src="/assets/application/uploads/user/<?php echo $row->imagem ?>"<?php } else { ?> src="/assets/application/img/minhaconta/user-padrao.jpg"<?php } ?>>
+							<?php echo $row->nome; ?>
+						</td>
+						<td align="center">
+							<span class="font-blue">Data:</span> 
+							<?php echo date('d/m/Y', strtotime($row->criado)); ?>
+						</td>
+						<td align="center">
+
+						</td>
+						<td align="center">
+							<a href="/painel/relatorios-gerais/relatorio-perfil/<?php echo $row->id_login; ?>"><i class="far fa-file-alt ico-size"></i></a>
+						</td>
+						<td align="center">
+							<a class="arquive-stats" href="javascript:;">Finalizado</a>
+						</td>
+					</tr>
+					<?php  endforeach; ?>
+				</tbody>
+				</table>
+				
+				<div class="right" align="right">
+					<?php echo $this->pagination($this->pagination); ?>
+				</div>
+				
+				<div class="paginacao" style="clear:both;">
+					<?php
+					$url = "painel/relatorios-gerais/perfil-comportamental";
+					$_GET['name_page'] = 'page_1';
+					$_GET['local_page'] = 'analise';
+					echo $this->paginationControl($perfil, 'sliding', 'partials/paginator.phtml', ['url' => $url]);
+					?>
+				</div>
+				
+				<input type="hidden" name="method" value="delete" />
+			</form>
+			
+		</div>
+		
+		<!-- Quantidade de Avaliações -->
+		<div class="column column-4 box box-small box-small2" style="display: none;">
+			<p class="font-medium qtd-aval-text">Quantidade de Avaliações</p>
+			<span class="qtd-aval">156</span>
+			
+		</div>
+		
+		<!-- Avaliações para Finalizar-->
+		<div class="column column-4 box box-small box-small2" style="float: right; display: none;">
+			<p class="font-medium qtd-aval-text">Avaliações para Finalizar</p>
+			<span class="qtd-fin">50</span>
+		</div>
+
+	</div>
+</div>
+
+<form method="post" id="formStatus" class="ajaxsubmit">
+	<input type="hidden" name="aguardando" id="inputValue" />
+	<input type="hidden" name="id_analise_de_curriculo" id="inputId" />
+	<input type="hidden" name="method" value="aguardando" />
+</form>
